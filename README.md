@@ -1,1 +1,1 @@
-# This is my README
+# Benchmarks for GPGPU-Sim
