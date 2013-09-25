@@ -1,0 +1,225 @@
+
+
+
+
+
+
+
+.version 3.0
+.target sm_20
+.address_size 64
+
+.file	1 "/tmp/tmpxft_00002821_00000000-7_wave.cpp3.i"
+.file	2 "wave.cu"
+.file	3 "/usr/local/cuda/nvvm/ci_include.h"
+
+.entry _Z11wave_kernelPfS_fS_i(
+.param .u64 _Z11wave_kernelPfS_fS_i_param_0,
+.param .u64 _Z11wave_kernelPfS_fS_i_param_1,
+.param .f32 _Z11wave_kernelPfS_fS_i_param_2,
+.param .u64 _Z11wave_kernelPfS_fS_i_param_3,
+.param .u32 _Z11wave_kernelPfS_fS_i_param_4
+)
+{
+.reg .f32 %f<62>;
+.reg .pred %p<13>;
+.reg .s32 %r<82>;
+.reg .s64 %rl<17>;
+
+
+ld.param.u64 %rl6, [_Z11wave_kernelPfS_fS_i_param_0];
+ld.param.u64 %rl7, [_Z11wave_kernelPfS_fS_i_param_1];
+ld.param.u32 %r1, [_Z11wave_kernelPfS_fS_i_param_4];
+cvta.to.global.u64 %rl15, %rl6;
+cvta.to.global.u64 %rl16, %rl7;
+.loc 2 151 1
+mov.u32 %r14, %ntid.x;
+mov.u32 %r15, 40;
+.loc 2 151 1
+div.u32 %r16, %r15, %r14;
+rem.u32 %r17, %r15, %r14;
+setp.ne.s32 %p2, %r17, 0;
+selp.u32 %r18, 1, 0, %p2;
+.loc 2 151 1
+add.s32 %r3, %r18, %r16;
+.loc 2 152 1
+mov.u32 %r19, %ntid.y;
+div.u32 %r20, %r15, %r19;
+rem.u32 %r21, %r15, %r19;
+setp.ne.s32 %p3, %r21, 0;
+selp.u32 %r22, 1, 0, %p3;
+.loc 2 152 1
+add.s32 %r23, %r22, %r20;
+.loc 2 153 1
+mov.u32 %r24, %ntid.z;
+div.u32 %r25, %r15, %r24;
+rem.u32 %r26, %r15, %r24;
+setp.ne.s32 %p4, %r26, 0;
+selp.u32 %r27, 1, 0, %p4;
+.loc 2 153 1
+add.s32 %r28, %r27, %r25;
+.loc 2 154 1
+mul.lo.s32 %r4, %r23, %r3;
+mul.lo.s32 %r5, %r4, %r28;
+.loc 2 157 1
+setp.lt.s32 %p5, %r1, 1;
+@%p5 bra BB0_8;
+
+.loc 2 149 1
+mov.u32 %r79, %ctaid.x;
+.loc 2 158 1
+setp.lt.s32 %p1, %r79, %r5;
+mov.u32 %r80, 0;
+
+BB0_2:
+mov.u64 %rl13, %rl15;
+mov.u64 %rl5, %rl16;
+mov.u64 %rl16, %rl13;
+.loc 2 158 1
+@!%p1 bra BB0_7;
+
+mov.u32 %r81, %r79;
+
+BB0_4:
+mov.u32 %r8, %r81;
+.loc 2 161 1
+rem.s32 %r30, %r8, %r4;
+div.s32 %r31, %r30, %r3;
+.loc 2 162 1
+rem.s32 %r33, %r8, %r3;
+.loc 2 165 1
+mov.u32 %r34, %tid.x;
+mad.lo.s32 %r35, %r14, %r33, %r34;
+add.s32 %r9, %r35, 4;
+.loc 2 166 1
+mov.u32 %r37, %tid.y;
+mad.lo.s32 %r38, %r19, %r31, %r37;
+add.s32 %r10, %r38, 4;
+.loc 2 160 1
+div.s32 %r40, %r8, %r4;
+.loc 2 167 1
+mov.u32 %r41, %tid.z;
+mad.lo.s32 %r42, %r24, %r40, %r41;
+add.s32 %r11, %r42, 4;
+.loc 2 169 1
+setp.lt.s32 %p6, %r9, 44;
+setp.lt.s32 %p7, %r10, 44;
+and.pred %p8, %p6, %p7;
+.loc 2 169 1
+setp.lt.s32 %p9, %r11, 44;
+and.pred %p10, %p8, %p9;
+.loc 2 169 1
+@!%p10 bra BB0_6;
+
+.loc 2 171 1
+mad.lo.s32 %r43, %r10, 48, %r9;
+mad.lo.s32 %r44, %r11, 2304, %r43;
+mul.wide.s32 %rl8, %r44, 4;
+add.s64 %rl9, %rl5, %rl8;
+.loc 2 172 1
+add.s64 %rl10, %rl16, %rl8;
+.loc 2 171 1
+ld.global.f32 %f2, [%rl9];
+.loc 2 173 1
+add.f32 %f3, %f2, %f2;
+.loc 2 172 1
+ld.global.f32 %f4, [%rl10];
+.loc 2 173 1
+sub.f32 %f5, %f3, %f4;
+ld.param.u64 %rl12, [_Z11wave_kernelPfS_fS_i_param_3];
+cvta.to.global.u64 %rl11, %rl12;
+.loc 2 174 1
+ld.global.f32 %f6, [%rl11];
+.loc 2 175 1
+ld.global.f32 %f7, [%rl9+-4];
+ld.global.f32 %f8, [%rl9+4];
+add.f32 %f9, %f8, %f7;
+ld.global.f32 %f10, [%rl9+192];
+add.f32 %f11, %f9, %f10;
+ld.global.f32 %f12, [%rl9+-192];
+add.f32 %f13, %f11, %f12;
+ld.global.f32 %f14, [%rl9+9216];
+add.f32 %f15, %f13, %f14;
+ld.global.f32 %f16, [%rl9+-9216];
+add.f32 %f17, %f15, %f16;
+ld.global.f32 %f18, [%rl11+4];
+mul.f32 %f19, %f18, %f17;
+fma.rn.f32 %f20, %f6, %f2, %f19;
+.loc 2 178 1
+ld.global.f32 %f21, [%rl9+-8];
+ld.global.f32 %f22, [%rl9+8];
+add.f32 %f23, %f22, %f21;
+ld.global.f32 %f24, [%rl9+384];
+add.f32 %f25, %f23, %f24;
+ld.global.f32 %f26, [%rl9+-384];
+add.f32 %f27, %f25, %f26;
+ld.global.f32 %f28, [%rl9+18432];
+add.f32 %f29, %f27, %f28;
+ld.global.f32 %f30, [%rl9+-18432];
+add.f32 %f31, %f29, %f30;
+ld.global.f32 %f32, [%rl11+8];
+fma.rn.f32 %f33, %f32, %f31, %f20;
+.loc 2 181 1
+ld.global.f32 %f34, [%rl9+-12];
+ld.global.f32 %f35, [%rl9+12];
+add.f32 %f36, %f35, %f34;
+ld.global.f32 %f37, [%rl9+576];
+add.f32 %f38, %f36, %f37;
+ld.global.f32 %f39, [%rl9+-576];
+add.f32 %f40, %f38, %f39;
+ld.global.f32 %f41, [%rl9+27648];
+add.f32 %f42, %f40, %f41;
+ld.global.f32 %f43, [%rl9+-27648];
+add.f32 %f44, %f42, %f43;
+ld.global.f32 %f45, [%rl11+12];
+fma.rn.f32 %f46, %f45, %f44, %f33;
+.loc 2 184 1
+ld.global.f32 %f47, [%rl9+-16];
+ld.global.f32 %f48, [%rl9+16];
+add.f32 %f49, %f48, %f47;
+ld.global.f32 %f50, [%rl9+768];
+add.f32 %f51, %f49, %f50;
+ld.global.f32 %f52, [%rl9+-768];
+add.f32 %f53, %f51, %f52;
+ld.global.f32 %f54, [%rl9+36864];
+add.f32 %f55, %f53, %f54;
+ld.global.f32 %f56, [%rl9+-36864];
+add.f32 %f57, %f55, %f56;
+ld.global.f32 %f58, [%rl11+16];
+fma.rn.f32 %f59, %f58, %f57, %f46;
+ld.param.f32 %f61, [_Z11wave_kernelPfS_fS_i_param_2];
+.loc 2 187 1
+fma.rn.f32 %f60, %f59, %f61, %f5;
+st.global.f32 [%rl10], %f60;
+
+BB0_6:
+.loc 2 150 1
+mov.u32 %r77, %nctaid.x;
+.loc 2 158 64
+add.s32 %r12, %r8, %r77;
+.loc 2 158 1
+setp.lt.s32 %p11, %r12, %r5;
+mov.u32 %r81, %r12;
+.loc 2 158 1
+@%p11 bra BB0_4;
+
+BB0_7:
+.loc 3 75 5
+membar.gl;
+.loc 2 200 1
+bar.sync 0;
+.loc 2 157 26
+add.s32 %r80, %r80, 1;
+ld.param.u32 %r78, [_Z11wave_kernelPfS_fS_i_param_4];
+.loc 2 157 1
+setp.lt.s32 %p12, %r80, %r78;
+mov.u64 %rl15, %rl5;
+.loc 2 157 1
+@%p12 bra BB0_2;
+
+BB0_8:
+.loc 2 208 2
+ret;
+}
+
+

@@ -1,0 +1,8 @@
+ptxas info    : Compiling entry function '_Z16bitonicSortSmallPfij' for 'sm_20'
+ptxas info    : Function properties for _Z16bitonicSortSmallPfij
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 14 registers, 4096+0 bytes smem, 48 bytes cmem[0], 24 bytes cmem[14]
+ptxas info    : Compiling entry function '_Z19bitonic_sort_ibsyncPVfi' for 'sm_20'
+ptxas info    : Function properties for _Z19bitonic_sort_ibsyncPVfi
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 14 registers, 44 bytes cmem[0], 24 bytes cmem[14]

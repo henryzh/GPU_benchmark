@@ -1,0 +1,765 @@
+
+Fatbin elf code:
+================
+arch = sm_20
+code version = [1,4]
+producer = cuda
+host = linux
+compile_size = 64bit
+identifier = reduction.cu
+
+.section .strtab	STRTAB
+
+.section .shstrtab	STRTAB
+
+.section .symtab	SYMTAB
+ index           value           size      info    other  shndx    name  
+   0               0               0        0        0      0     (null)
+   1               0               0        3        0      1     .shstrtab
+   2               0               0        3        0      2     .strtab
+   3               0               0        3        0      3     .symtab
+   4               0               0        3        0      0     
+   5               0               0        3        0      0     
+   6               0             968        3        0      4     .text._Z3sumPKfjPf
+   7               0               0        3        0      6     .nv.info._Z3sumPKfjPf
+   8               0               0        3        0      8     .nv.info
+   9               0               0        3        0      7     .nv.shared._Z3sumPKfjPf
+  10               0               0        3        0      5     .nv.constant0._Z3sumPKfjPf
+  11               0             968       12       10      4     _Z3sumPKfjPf
+
+
+.nv.constant0._Z3sumPKfjPf	PROGBITS
+0x00000000  0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  
+
+
+.nv.shared._Z3sumPKfjPf	NOBITS
+   No data to be dumped. 
+
+
+.text._Z3sumPKfjPf	PROGBITS
+bar = 1	reg = 12	lmem=0	smem=2304
+0x00005de4  0x28004404  0x94011c04  0x2c000000  
+0x84001c04  0x2c000000  0xc0009de4  0x28004000  
+0xd000dde4  0x28004000  0x20415ca3  0x20004000  
+0x20021de4  0x28004000  0xa0000007  0x60000004  
+0xa051dc03  0x188e4000  0x20415ca3  0x50004000  
+0x200001e7  0x40000000  0xfc001df4  0x28000000  
+0x84025c04  0x2c000000  0x80019de4  0x28004000  
+0x23f1dc23  0x190e4000  0x24511c23  0x40000000  
+0x20929c03  0x48004000  0x08925e03  0x6000c000  
+0x1041dc43  0x5000c000  0x10411c03  0x200dc000  
+0x2852dc23  0x40000000  0x08a29e03  0x6000c000  
+0x90715c43  0x48004000  0x10b19c03  0x200dc000  
+0x10b1dc43  0x5000c000  0x00415c85  0x84000000  
+0x9071dc43  0x48004000  0x00619c85  0x84000000  
+0x00915c85  0xc9000000  0x00a19c85  0xc9000000  
+0xa00001e7  0x40000001  0x081fdc03  0x20060000  
+0xfc8fdc03  0x207e0000  0xffffdc04  0x50ee0000  
+0x2003dc03  0x1b0e0000  0x00812403  0x48000000  
+0x00916485  0xc1000000  0x04821c03  0x5800c000  
+0x08412603  0x6000c000  0xfc81dc23  0x1a8e0000  
+0x00412485  0xc1000000  0x10512400  0x50000000  
+0x00912485  0xc9000000  0x600001e7  0x4003fffe  
+0x03f01c95  0xc1000000  0x84011c04  0x2c000000  
+0x80000007  0x60000001  0xfc43dc23  0x1a8e0000  
+0xfc41dc23  0x190e0000  0x000005e7  0x40000001  
+0x94011c04  0x2c000000  0xc0015de4  0x28004000  
+0x10419c03  0x200bc000  0x10411c43  0x5000c000  
+0xd041dc43  0x48004000  0x00601c85  0x94000000  
+0x00001c05  0xe0000000  0x00001c25  0xe0000000  
+0x00001df4  0x40000000  0x00001c05  0xe0000000  
+0x00001c25  0xe0000000  0x94001c04  0x2c000000  
+0xfc03dc23  0x1a8e0000  0x000005e7  0x80000000  
+0x84001c04  0x2c000000  0xa0000007  0x60000006  
+0x7c03dc03  0x1a0ec000  0x400005e7  0x40000006  
+0x84001c04  0x2c000000  0x081fdc03  0x20060000  
+0x08019e03  0x6000c000  0x10001c43  0x5000c000  
+0xc0621c03  0x48014000  0xd0025c43  0x48004000  
+0x00601c03  0x4800c020  0x00815c85  0x84000000  
+0x00811c85  0x84000002  0x00615c85  0xc9000020  
+0x00611c85  0xc9000022  0xffffdc04  0x50ee0000  
+0x00016485  0xc1000000  0x00012485  0xc1000002  
+0x10512400  0x50000000  0x00012485  0xc9000000  
+0xffffdc04  0x50ee0000  0x84011c04  0x2c000000  
+0x3c43dc03  0x1a0ec000  0x00016485  0xc1000000  
+0x00012485  0xc1000001  0x10512400  0x50000000  
+0x00012485  0xc9000000  0xffffdc04  0x50ee0000  
+0x84011c04  0x2c000000  0x1c43dc03  0x1a0ec000  
+0x00016485  0xc1000000  0x80012485  0xc1000000  
+0x10512400  0x50000000  0x00012485  0xc9000000  
+0xffffdc04  0x50ee0000  0x84011c04  0x2c000000  
+0x0c43dc03  0x1a0ec000  0x00016485  0xc1000000  
+0x40012485  0xc1000000  0x10512400  0x50000000  
+0x00012485  0xc9000000  0xffffdc04  0x50ee0000  
+0x84011c04  0x2c000000  0x0443dc03  0x1a0ec000  
+0x00016485  0xc1000000  0x20012485  0xc1000000  
+0x10512400  0x50000000  0x00012485  0xc9000000  
+0xffffdc04  0x50ee0000  0x00014085  0xc1000000  
+0x10010085  0xc1000000  0x10514000  0x50000000  
+0x00014085  0xc9000000  0x03f11c95  0xc1000020  
+0xfc011df4  0x28000000  0x00210085  0x94000000  
+0x00001de7  0x80000000  
+
+
+.nv.info._Z3sumPKfjPf	PROGBITS
+	<0x1>
+	Attribute:	EIATTR_PARAM_CBANK
+	Format:	EIFMT_SVAL
+	Value:	0xa 0x180020 
+	<0x2>
+	Attribute:	EIATTR_CBANK_PARAM_SIZE
+	Format:	EIFMT_HVAL
+	Value:	0x18
+	<0x3>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0x0	Ordinal : 0x2	Offset  : 0x10	Size    : 0x8
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : CBANK	
+	<0x4>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0x0	Ordinal : 0x1	Offset  : 0x8	Size    : 0x4
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : CBANK	
+	<0x5>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0x0	Ordinal : 0x0	Offset  : 0x0	Size    : 0x8
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : CBANK	
+	<0x6>
+	Attribute:	EIATTR_SYNC_STACK
+	Format:	EIFMT_SVAL
+	Value:	0x5003c 0x3 
+
+
+.nv.info	PROGBITS
+	<0x1>
+	Attribute:	EIATTR_MIN_STACK_SIZE
+	Format:	EIFMT_SVAL
+	Value:	function: _Z3sumPKfjPf(0xb)	min stack size: 0x0
+	<0x2>
+	Attribute:	EIATTR_FRAME_SIZE
+	Format:	EIFMT_SVAL
+	Value:	function: _Z3sumPKfjPf(0xb)	frame size: 0x0
+
+	code for sm_20
+		Function : _Z3sumPKfjPf
+	/*0000*/     /*0x00005de428004404*/ 	MOV R1, c [0x1] [0x100];
+	/*0008*/     /*0x94011c042c000000*/ 	S2R R4, SR_CTAid_X;
+	/*0010*/     /*0x84001c042c000000*/ 	S2R R0, SR_Tid_X;
+	/*0018*/     /*0xc0009de428004000*/ 	MOV R2, c [0x0] [0x30];
+	/*0020*/     /*0xd000dde428004000*/ 	MOV R3, c [0x0] [0x34];
+	/*0028*/     /*0x20415ca320004000*/ 	IMAD R5, R4, c [0x0] [0x8], R0;
+	/*0030*/     /*0x20021de428004000*/ 	MOV R8, c [0x0] [0x8];
+	/*0038*/     /*0xa000000760000004*/ 	SSY 0x168;
+	/*0040*/     /*0xa051dc03188e4000*/ 	ISETP.LT.U32.AND P0, pt, R5, c [0x0] [0x28], pt;
+	/*0048*/     /*0x20415ca350004000*/ 	IMUL R5, R4, c [0x0] [0x8];
+	/*0050*/     /*0x200001e740000000*/ 	@P0 BRA 0x60;
+	/*0058*/     /*0xfc001df428000000*/ 	MOV.S R0, RZ;
+	/*0060*/     /*0x84025c042c000000*/ 	S2R R9, SR_Tid_X;
+	/*0068*/     /*0x80019de428004000*/ 	MOV R6, c [0x0] [0x20];
+	/*0070*/     /*0x23f1dc23190e4000*/ 	ISETP.EQ.AND P0, pt, RZ, c [0x0] [0x8], pt;
+	/*0078*/     /*0x24511c2340000000*/ 	ISCADD R4, R5, R9, 0x1;
+	/*0080*/     /*0x20929c0348004000*/ 	IADD R10, R9, c [0x0] [0x8];
+	/*0088*/     /*0x08925e036000c000*/ 	SHL.W R9, R9, 0x2;
+	/*0090*/     /*0x1041dc435000c000*/ 	IMUL.U32.U32.HI R7, R4, 0x4;
+	/*0098*/     /*0x10411c03200dc000*/ 	IMAD.U32.U32 R4.CC, R4, 0x4, R6;
+	/*00a0*/     /*0x2852dc2340000000*/ 	ISCADD R11, R5, R10, 0x1;
+	/*00a8*/     /*0x08a29e036000c000*/ 	SHL.W R10, R10, 0x2;
+	/*00b0*/     /*0x90715c4348004000*/ 	IADD.X R5, R7, c [0x0] [0x24];
+	/*00b8*/     /*0x10b19c03200dc000*/ 	IMAD.U32.U32 R6.CC, R11, 0x4, R6;
+	/*00c0*/     /*0x10b1dc435000c000*/ 	IMUL.U32.U32.HI R7, R11, 0x4;
+	/*00c8*/     /*0x00415c8584000000*/ 	LD.E R5, [R4];
+	/*00d0*/     /*0x9071dc4348004000*/ 	IADD.X R7, R7, c [0x0] [0x24];
+	/*00d8*/     /*0x00619c8584000000*/ 	LD.E R6, [R6];
+	/*00e0*/     /*0x00915c85c9000000*/ 	STS [R9], R5;
+	/*00e8*/     /*0x00a19c85c9000000*/ 	STS [R10], R6;
+	/*00f0*/     /*0xa00001e740000001*/ 	@P0 BRA 0x160;
+	/*00f8*/     /*0x081fdc0320060000*/ 	IMAD.U32.U32 RZ, R1, R2, R3;
+	/*0100*/     /*0xfc8fdc03207e0000*/ 	IMAD.U32.U32 RZ, R8, RZ, RZ;
+	/*0108*/     /*0xffffdc0450ee0000*/ 	BAR.RED.POPC RZ, RZ;
+	/*0110*/     /*0x2003dc031b0e0000*/ 	ISETP.GE.U32.AND P1, pt, R0, R8, pt;
+	/*0118*/     /*0x0081240348000000*/ 	@!P1 IADD R4, R8, R0;
+	/*0120*/     /*0x00916485c1000000*/ 	@!P1 LDS R5, [R9];
+	/*0128*/     /*0x04821c035800c000*/ 	SHR.U32 R8, R8, 0x1;
+	/*0130*/     /*0x084126036000c000*/ 	@!P1 SHL.W R4, R4, 0x2;
+	/*0138*/     /*0xfc81dc231a8e0000*/ 	ISETP.NE.AND P0, pt, R8, RZ, pt;
+	/*0140*/     /*0x00412485c1000000*/ 	@!P1 LDS R4, [R4];
+	/*0148*/     /*0x1051240050000000*/ 	@!P1 FADD R4, R5, R4;
+	/*0150*/     /*0x00912485c9000000*/ 	@!P1 STS [R9], R4;
+	/*0158*/     /*0x600001e74003fffe*/ 	@P0 BRA 0xf8;
+	/*0160*/     /*0x03f01c95c1000000*/ 	LDS.S R0, [0x0];
+	/*0168*/     /*0x84011c042c000000*/ 	S2R R4, SR_Tid_X;
+	/*0170*/     /*0x8000000760000001*/ 	SSY 0x1d8;
+	/*0178*/     /*0xfc43dc231a8e0000*/ 	ISETP.NE.AND P1, pt, R4, RZ, pt;
+	/*0180*/     /*0xfc41dc23190e0000*/ 	ISETP.EQ.AND P0, pt, R4, RZ, pt;
+	/*0188*/     /*0x000005e740000001*/ 	@P1 BRA 0x1d0;
+	/*0190*/     /*0x94011c042c000000*/ 	S2R R4, SR_CTAid_X;
+	/*0198*/     /*0xc0015de428004000*/ 	MOV R5, c [0x0] [0x30];
+	/*01a0*/     /*0x10419c03200bc000*/ 	IMAD.U32.U32 R6.CC, R4, 0x4, R5;
+	/*01a8*/     /*0x10411c435000c000*/ 	IMUL.U32.U32.HI R4, R4, 0x4;
+	/*01b0*/     /*0xd041dc4348004000*/ 	IADD.X R7, R4, c [0x0] [0x34];
+	/*01b8*/     /*0x00601c8594000000*/ 	ST.E [R6], R0;
+	/*01c0*/     /*0x00001c05e0000000*/ 	MEMBAR.CTA;
+	/*01c8*/     /*0x00001c25e0000000*/ 	MEMBAR.GL;
+	/*01d0*/     /*0x00001df440000000*/ 	NOP.S CC.T;
+	/*01d8*/     /*0x00001c05e0000000*/ 	MEMBAR.CTA;
+	/*01e0*/     /*0x00001c25e0000000*/ 	MEMBAR.GL;
+	/*01e8*/     /*0x94001c042c000000*/ 	S2R R0, SR_CTAid_X;
+	/*01f0*/     /*0xfc03dc231a8e0000*/ 	ISETP.NE.AND P1, pt, R0, RZ, pt;
+	/*01f8*/     /*0x000005e780000000*/ 	@P1 EXIT;
+	/*0200*/     /*0x84001c042c000000*/ 	S2R R0, SR_Tid_X;
+	/*0208*/     /*0xa000000760000006*/ 	SSY 0x3b8;
+	/*0210*/     /*0x7c03dc031a0ec000*/ 	ISETP.GT.U32.AND P1, pt, R0, 0x1f, pt;
+	/*0218*/     /*0x400005e740000006*/ 	@P1 BRA 0x3b0;
+	/*0220*/     /*0x84001c042c000000*/ 	S2R R0, SR_Tid_X;
+	/*0228*/     /*0x081fdc0320060000*/ 	IMAD.U32.U32 RZ, R1, R2, R3;
+	/*0230*/     /*0x08019e036000c000*/ 	SHL.W R6, R0, 0x2;
+	/*0238*/     /*0x10001c435000c000*/ 	IMUL.U32.U32.HI R0, R0, 0x4;
+	/*0240*/     /*0xc0621c0348014000*/ 	IADD R8.CC, R6, c [0x0] [0x30];
+	/*0248*/     /*0xd0025c4348004000*/ 	IADD.X R9, R0, c [0x0] [0x34];
+	/*0250*/     /*0x00601c034800c020*/ 	IADD R0, R6, 0x800;
+	/*0258*/     /*0x00815c8584000000*/ 	LD.E R5, [R8];
+	/*0260*/     /*0x00811c8584000002*/ 	LD.E R4, [R8+0x80];
+	/*0268*/     /*0x00615c85c9000020*/ 	STS [R6+0x800], R5;
+	/*0270*/     /*0x00611c85c9000022*/ 	STS [R6+0x880], R4;
+	/*0278*/     /*0xffffdc0450ee0000*/ 	BAR.RED.POPC RZ, RZ;
+	/*0280*/     /*0x00016485c1000000*/ 	@!P1 LDS R5, [R0];
+	/*0288*/     /*0x00012485c1000002*/ 	@!P1 LDS R4, [R0+0x80];
+	/*0290*/     /*0x1051240050000000*/ 	@!P1 FADD R4, R5, R4;
+	/*0298*/     /*0x00012485c9000000*/ 	@!P1 STS [R0], R4;
+	/*02a0*/     /*0xffffdc0450ee0000*/ 	BAR.RED.POPC RZ, RZ;
+	/*02a8*/     /*0x84011c042c000000*/ 	S2R R4, SR_Tid_X;
+	/*02b0*/     /*0x3c43dc031a0ec000*/ 	ISETP.GT.U32.AND P1, pt, R4, 0xf, pt;
+	/*02b8*/     /*0x00016485c1000000*/ 	@!P1 LDS R5, [R0];
+	/*02c0*/     /*0x00012485c1000001*/ 	@!P1 LDS R4, [R0+0x40];
+	/*02c8*/     /*0x1051240050000000*/ 	@!P1 FADD R4, R5, R4;
+	/*02d0*/     /*0x00012485c9000000*/ 	@!P1 STS [R0], R4;
+	/*02d8*/     /*0xffffdc0450ee0000*/ 	BAR.RED.POPC RZ, RZ;
+	/*02e0*/     /*0x84011c042c000000*/ 	S2R R4, SR_Tid_X;
+	/*02e8*/     /*0x1c43dc031a0ec000*/ 	ISETP.GT.U32.AND P1, pt, R4, 0x7, pt;
+	/*02f0*/     /*0x00016485c1000000*/ 	@!P1 LDS R5, [R0];
+	/*02f8*/     /*0x80012485c1000000*/ 	@!P1 LDS R4, [R0+0x20];
+	/*0300*/     /*0x1051240050000000*/ 	@!P1 FADD R4, R5, R4;
+	/*0308*/     /*0x00012485c9000000*/ 	@!P1 STS [R0], R4;
+	/*0310*/     /*0xffffdc0450ee0000*/ 	BAR.RED.POPC RZ, RZ;
+	/*0318*/     /*0x84011c042c000000*/ 	S2R R4, SR_Tid_X;
+	/*0320*/     /*0x0c43dc031a0ec000*/ 	ISETP.GT.U32.AND P1, pt, R4, 0x3, pt;
+	/*0328*/     /*0x00016485c1000000*/ 	@!P1 LDS R5, [R0];
+	/*0330*/     /*0x40012485c1000000*/ 	@!P1 LDS R4, [R0+0x10];
+	/*0338*/     /*0x1051240050000000*/ 	@!P1 FADD R4, R5, R4;
+	/*0340*/     /*0x00012485c9000000*/ 	@!P1 STS [R0], R4;
+	/*0348*/     /*0xffffdc0450ee0000*/ 	BAR.RED.POPC RZ, RZ;
+	/*0350*/     /*0x84011c042c000000*/ 	S2R R4, SR_Tid_X;
+	/*0358*/     /*0x0443dc031a0ec000*/ 	ISETP.GT.U32.AND P1, pt, R4, 0x1, pt;
+	/*0360*/     /*0x00016485c1000000*/ 	@!P1 LDS R5, [R0];
+	/*0368*/     /*0x20012485c1000000*/ 	@!P1 LDS R4, [R0+0x8];
+	/*0370*/     /*0x1051240050000000*/ 	@!P1 FADD R4, R5, R4;
+	/*0378*/     /*0x00012485c9000000*/ 	@!P1 STS [R0], R4;
+	/*0380*/     /*0xffffdc0450ee0000*/ 	BAR.RED.POPC RZ, RZ;
+	/*0388*/     /*0x00014085c1000000*/ 	@P0 LDS R5, [R0];
+	/*0390*/     /*0x10010085c1000000*/ 	@P0 LDS R4, [R0+0x4];
+	/*0398*/     /*0x1051400050000000*/ 	@P0 FADD R5, R5, R4;
+	/*03a0*/     /*0x00014085c9000000*/ 	@P0 STS [R0], R5;
+	/*03a8*/     /*0x03f11c95c1000020*/ 	LDS.S R4, [0x800];
+	/*03b0*/     /*0xfc011df428000000*/ 	MOV.S R4, RZ;
+	/*03b8*/     /*0x0021008594000000*/ 	@P0 ST.E [R2], R4;
+	/*03c0*/     /*0x00001de780000000*/ 	EXIT;
+		.............................
+
+
+
+Fatbin ptx code:
+================
+arch = sm_20
+code version = [3,0]
+producer = cuda
+host = linux
+compile_size = 64bit
+identifier = reduction.cu
+
+
+
+
+
+
+.version 3.0
+.target sm_20
+.address_size 64
+
+.file	1 "/tmp/tmpxft_000008d6_00000000-7_reduction.cpp3.i"
+.file	2 "reduction.cu"
+.file	3 "/usr/local/cuda/nvvm/ci_include.h"
+.shared .align 4 .b8 __cuda_local_var_16904_35_non_const_partialSum[2048];
+.shared .align 4 .b8 __cuda_local_var_16923_35_non_const_partialSum[256];
+
+.visible .func (.param .b32 func_retval0) _Z19calculatePartialSumPKfj(
+.param .b64 _Z19calculatePartialSumPKfj_param_0,
+.param .b32 _Z19calculatePartialSumPKfj_param_1
+)
+{
+.reg .f32 %f<8>;
+.reg .pred %p<5>;
+.reg .s32 %r<25>;
+.reg .s64 %rl<15>;
+
+
+ld.param.u32 %r6, [_Z19calculatePartialSumPKfj_param_1];
+.loc 2 12 1
+mov.u32 %r1, %tid.x;
+.loc 2 14 1
+mov.u32 %r7, %ctaid.x;
+.loc 2 13 1
+mov.u32 %r24, %ntid.x;
+.loc 2 14 1
+mul.lo.s32 %r3, %r7, %r24;
+.loc 2 15 1
+mad.lo.s32 %r8, %r7, %r24, %r1;
+.loc 2 16 1
+setp.lt.u32 %p1, %r8, %r6;
+@%p1 bra BB0_2;
+
+mov.f32 %f1, 0f00000000;
+.loc 2 29 1
+st.param.f32	[func_retval0+0], %f1;
+ret;
+
+BB0_2:
+shl.b32 %r9, %r3, 1;
+.loc 2 12 1
+mov.u32 %r23, %tid.x;
+.loc 2 21 1
+add.s32 %r10, %r9, %r23;
+mul.wide.u32 %rl3, %r10, 4;
+ld.param.u64 %rl14, [_Z19calculatePartialSumPKfj_param_0];
+.loc 2 21 1
+add.s64 %rl4, %rl14, %rl3;
+mul.wide.u32 %rl5, %r23, 4;
+mov.u64 %rl6, __cuda_local_var_16904_35_non_const_partialSum;
+add.s64 %rl2, %rl6, %rl5;
+.loc 2 21 1
+ld.f32 %f2, [%rl4];
+st.shared.f32 [%rl2], %f2;
+.loc 2 13 1
+mov.u32 %r22, %ntid.x;
+.loc 2 22 1
+add.s32 %r13, %r22, %r23;
+add.s32 %r14, %r13, %r9;
+mul.wide.u32 %rl7, %r14, 4;
+add.s64 %rl8, %rl14, %rl7;
+mul.wide.u32 %rl9, %r13, 4;
+add.s64 %rl10, %rl6, %rl9;
+.loc 2 22 1
+ld.f32 %f3, [%rl8];
+st.shared.f32 [%rl10], %f3;
+setp.eq.s32 %p2, %r22, 0;
+.loc 2 25 1
+@%p2 bra BB0_6;
+
+BB0_3:
+.loc 2 26 1
+bar.sync 0;
+.loc 2 27 1
+setp.ge.u32 %p3, %r1, %r24;
+@%p3 bra BB0_5;
+
+.loc 2 27 1
+add.s32 %r17, %r24, %r1;
+mul.wide.u32 %rl11, %r17, 4;
+add.s64 %rl13, %rl6, %rl11;
+.loc 2 27 1
+ld.shared.f32 %f4, [%rl2];
+ld.shared.f32 %f5, [%rl13];
+add.f32 %f6, %f4, %f5;
+st.shared.f32 [%rl2], %f6;
+
+BB0_5:
+.loc 2 25 24
+shr.u32 %r24, %r24, 1;
+.loc 2 25 1
+setp.ne.s32 %p4, %r24, 0;
+@%p4 bra BB0_3;
+
+BB0_6:
+.loc 2 29 1
+ld.shared.f32 %f7, [__cuda_local_var_16904_35_non_const_partialSum];
+st.param.f32	[func_retval0+0], %f7;
+ret;
+}
+
+.visible .func (.param .b32 func_retval0) _Z17calculateTotalSumPf(
+.param .b64 _Z17calculateTotalSumPf_param_0
+)
+{
+.reg .f32 %f<23>;
+.reg .pred %p<8>;
+.reg .s32 %r<37>;
+.reg .s64 %rl<7>;
+
+
+.loc 2 33 1
+mov.u32 %r1, %tid.x;
+setp.gt.u32 %p1, %r1, 31;
+.loc 2 35 1
+@%p1 bra BB1_14;
+
+.loc 2 33 1
+mov.u32 %r36, %tid.x;
+.loc 2 37 1
+mul.wide.u32 %rl3, %r36, 4;
+ld.param.u64 %rl6, [_Z17calculateTotalSumPf_param_0];
+.loc 2 37 1
+add.s64 %rl4, %rl6, %rl3;
+mov.u64 %rl5, __cuda_local_var_16923_35_non_const_partialSum;
+add.s64 %rl2, %rl5, %rl3;
+.loc 2 37 1
+ld.f32 %f1, [%rl4];
+st.shared.f32 [%rl2], %f1;
+.loc 2 38 1
+ld.f32 %f2, [%rl4+128];
+st.shared.f32 [%rl2+128], %f2;
+.loc 2 40 1
+bar.sync 0;
+.loc 2 41 1
+@%p1 bra BB1_3;
+
+.loc 2 41 1
+ld.shared.f32 %f3, [%rl2];
+ld.shared.f32 %f4, [%rl2+128];
+add.f32 %f5, %f3, %f4;
+st.shared.f32 [%rl2], %f5;
+
+BB1_3:
+.loc 2 40 1
+bar.sync 0;
+.loc 2 33 1
+mov.u32 %r35, %tid.x;
+.loc 2 41 1
+setp.gt.u32 %p3, %r35, 15;
+@%p3 bra BB1_5;
+
+.loc 2 41 1
+ld.shared.f32 %f6, [%rl2];
+ld.shared.f32 %f7, [%rl2+64];
+add.f32 %f8, %f6, %f7;
+st.shared.f32 [%rl2], %f8;
+
+BB1_5:
+.loc 2 40 1
+bar.sync 0;
+.loc 2 33 1
+mov.u32 %r34, %tid.x;
+.loc 2 41 1
+setp.gt.u32 %p4, %r34, 7;
+@%p4 bra BB1_7;
+
+.loc 2 41 1
+ld.shared.f32 %f9, [%rl2];
+ld.shared.f32 %f10, [%rl2+32];
+add.f32 %f11, %f9, %f10;
+st.shared.f32 [%rl2], %f11;
+
+BB1_7:
+.loc 2 40 1
+bar.sync 0;
+.loc 2 33 1
+mov.u32 %r33, %tid.x;
+.loc 2 41 1
+setp.gt.u32 %p5, %r33, 3;
+@%p5 bra BB1_9;
+
+.loc 2 41 1
+ld.shared.f32 %f12, [%rl2];
+ld.shared.f32 %f13, [%rl2+16];
+add.f32 %f14, %f12, %f13;
+st.shared.f32 [%rl2], %f14;
+
+BB1_9:
+.loc 2 40 1
+bar.sync 0;
+.loc 2 33 1
+mov.u32 %r32, %tid.x;
+.loc 2 41 1
+setp.gt.u32 %p6, %r32, 1;
+@%p6 bra BB1_11;
+
+.loc 2 41 1
+ld.shared.f32 %f15, [%rl2];
+ld.shared.f32 %f16, [%rl2+8];
+add.f32 %f17, %f15, %f16;
+st.shared.f32 [%rl2], %f17;
+
+BB1_11:
+.loc 2 40 1
+bar.sync 0;
+.loc 2 33 1
+mov.u32 %r31, %tid.x;
+.loc 2 41 1
+setp.ne.s32 %p7, %r31, 0;
+@%p7 bra BB1_13;
+
+.loc 2 41 1
+ld.shared.f32 %f18, [%rl2];
+ld.shared.f32 %f19, [%rl2+4];
+add.f32 %f20, %f18, %f19;
+st.shared.f32 [%rl2], %f20;
+
+BB1_13:
+.loc 2 43 1
+ld.shared.f32 %f21, [__cuda_local_var_16923_35_non_const_partialSum];
+st.param.f32	[func_retval0+0], %f21;
+ret;
+
+BB1_14:
+mov.f32 %f22, 0f00000000;
+.loc 2 43 1
+st.param.f32	[func_retval0+0], %f22;
+ret;
+}
+
+.entry _Z3sumPKfjPf(
+.param .u64 _Z3sumPKfjPf_param_0,
+.param .u32 _Z3sumPKfjPf_param_1,
+.param .u64 _Z3sumPKfjPf_param_2
+)
+{
+.reg .f32 %f<34>;
+.reg .pred %p<14>;
+.reg .s32 %r<68>;
+.reg .s64 %rl<23>;
+
+
+ld.param.u64 %rl5, [_Z3sumPKfjPf_param_0];
+ld.param.u32 %r7, [_Z3sumPKfjPf_param_1];
+ld.param.u64 %rl6, [_Z3sumPKfjPf_param_2];
+cvta.to.global.u64 %rl1, %rl6;
+cvta.to.global.u64 %rl2, %rl5;
+.loc 2 14 1
+mov.u32 %r1, %ctaid.x;
+.loc 2 13 1
+mov.u32 %r67, %ntid.x;
+.loc 2 14 1
+mul.lo.s32 %r3, %r1, %r67;
+.loc 2 12 1
+mov.u32 %r4, %tid.x;
+.loc 2 15 1
+mad.lo.s32 %r8, %r1, %r67, %r4;
+.loc 2 16 1
+setp.lt.u32 %p2, %r8, %r7;
+@%p2 bra BB2_2;
+
+mov.f32 %f32, 0f00000000;
+bra.uni BB2_7;
+
+BB2_2:
+shl.b32 %r9, %r3, 1;
+.loc 2 12 1
+mov.u32 %r59, %tid.x;
+.loc 2 21 1
+add.s32 %r10, %r9, %r59;
+mul.wide.u32 %rl7, %r10, 4;
+add.s64 %rl8, %rl2, %rl7;
+mul.wide.u32 %rl9, %r59, 4;
+mov.u64 %rl10, __cuda_local_var_16904_35_non_const_partialSum;
+add.s64 %rl3, %rl10, %rl9;
+.loc 2 21 1
+ld.global.f32 %f6, [%rl8];
+st.shared.f32 [%rl3], %f6;
+.loc 2 13 1
+mov.u32 %r47, %ntid.x;
+.loc 2 22 1
+add.s32 %r13, %r47, %r59;
+add.s32 %r14, %r13, %r9;
+mul.wide.u32 %rl11, %r14, 4;
+add.s64 %rl12, %rl2, %rl11;
+mul.wide.u32 %rl13, %r13, 4;
+add.s64 %rl14, %rl10, %rl13;
+.loc 2 22 1
+ld.global.f32 %f7, [%rl12];
+st.shared.f32 [%rl14], %f7;
+setp.eq.s32 %p3, %r47, 0;
+.loc 2 25 1
+@%p3 bra BB2_6;
+
+BB2_3:
+.loc 2 26 1
+bar.sync 0;
+.loc 2 27 1
+setp.ge.u32 %p4, %r4, %r67;
+@%p4 bra BB2_5;
+
+.loc 2 27 1
+add.s32 %r17, %r67, %r4;
+mul.wide.u32 %rl15, %r17, 4;
+add.s64 %rl17, %rl10, %rl15;
+.loc 2 27 1
+ld.shared.f32 %f8, [%rl3];
+ld.shared.f32 %f9, [%rl17];
+add.f32 %f10, %f8, %f9;
+st.shared.f32 [%rl3], %f10;
+
+BB2_5:
+.loc 2 25 24
+shr.u32 %r67, %r67, 1;
+.loc 2 25 1
+setp.ne.s32 %p5, %r67, 0;
+@%p5 bra BB2_3;
+
+BB2_6:
+.loc 2 29 1
+ld.shared.f32 %f32, [__cuda_local_var_16904_35_non_const_partialSum];
+
+BB2_7:
+.loc 2 12 1
+mov.u32 %r66, %tid.x;
+.loc 2 54 1
+setp.eq.s32 %p1, %r66, 0;
+setp.ne.s32 %p6, %r66, 0;
+@%p6 bra BB2_9;
+
+.loc 2 14 1
+mov.u32 %r57, %ctaid.x;
+.loc 2 58 1
+mul.wide.u32 %rl18, %r57, 4;
+add.s64 %rl19, %rl1, %rl18;
+st.global.f32 [%rl19], %f32;
+.loc 3 75 5
+membar.gl;
+
+BB2_9:
+.loc 3 75 5
+ib.sync 3;
+.loc 2 14 1
+mov.u32 %r58, %ctaid.x;
+.loc 2 86 1
+setp.ne.s32 %p7, %r58, 0;
+@%p7 bra BB2_26;
+
+.loc 2 12 1
+mov.u32 %r65, %tid.x;
+setp.gt.u32 %p8, %r65, 31;
+.loc 2 35 1
+@%p8 bra BB2_24;
+
+.loc 2 12 1
+mov.u32 %r64, %tid.x;
+.loc 2 37 1
+mul.wide.u32 %rl20, %r64, 4;
+add.s64 %rl21, %rl1, %rl20;
+mov.u64 %rl22, __cuda_local_var_16923_35_non_const_partialSum;
+add.s64 %rl4, %rl22, %rl20;
+.loc 2 37 1
+ld.global.f32 %f11, [%rl21];
+st.shared.f32 [%rl4], %f11;
+.loc 2 38 1
+ld.global.f32 %f12, [%rl21+128];
+st.shared.f32 [%rl4+128], %f12;
+.loc 2 40 1
+bar.sync 0;
+.loc 2 41 1
+@%p8 bra BB2_13;
+
+.loc 2 41 1
+ld.shared.f32 %f13, [%rl4];
+ld.shared.f32 %f14, [%rl4+128];
+add.f32 %f15, %f13, %f14;
+st.shared.f32 [%rl4], %f15;
+
+BB2_13:
+.loc 2 40 1
+bar.sync 0;
+.loc 2 12 1
+mov.u32 %r63, %tid.x;
+.loc 2 41 1
+setp.gt.u32 %p10, %r63, 15;
+@%p10 bra BB2_15;
+
+.loc 2 41 1
+ld.shared.f32 %f16, [%rl4];
+ld.shared.f32 %f17, [%rl4+64];
+add.f32 %f18, %f16, %f17;
+st.shared.f32 [%rl4], %f18;
+
+BB2_15:
+.loc 2 40 1
+bar.sync 0;
+.loc 2 12 1
+mov.u32 %r62, %tid.x;
+.loc 2 41 1
+setp.gt.u32 %p11, %r62, 7;
+@%p11 bra BB2_17;
+
+.loc 2 41 1
+ld.shared.f32 %f19, [%rl4];
+ld.shared.f32 %f20, [%rl4+32];
+add.f32 %f21, %f19, %f20;
+st.shared.f32 [%rl4], %f21;
+
+BB2_17:
+.loc 2 40 1
+bar.sync 0;
+.loc 2 12 1
+mov.u32 %r61, %tid.x;
+.loc 2 41 1
+setp.gt.u32 %p12, %r61, 3;
+@%p12 bra BB2_19;
+
+.loc 2 41 1
+ld.shared.f32 %f22, [%rl4];
+ld.shared.f32 %f23, [%rl4+16];
+add.f32 %f24, %f22, %f23;
+st.shared.f32 [%rl4], %f24;
+
+BB2_19:
+.loc 2 40 1
+bar.sync 0;
+.loc 2 12 1
+mov.u32 %r60, %tid.x;
+.loc 2 41 1
+setp.gt.u32 %p13, %r60, 1;
+@%p13 bra BB2_21;
+
+.loc 2 41 1
+ld.shared.f32 %f25, [%rl4];
+ld.shared.f32 %f26, [%rl4+8];
+add.f32 %f27, %f25, %f26;
+st.shared.f32 [%rl4], %f27;
+
+BB2_21:
+.loc 2 40 1
+bar.sync 0;
+.loc 2 41 1
+@!%p1 bra BB2_23;
+
+.loc 2 41 1
+ld.shared.f32 %f28, [%rl4];
+ld.shared.f32 %f29, [%rl4+4];
+add.f32 %f30, %f28, %f29;
+st.shared.f32 [%rl4], %f30;
+
+BB2_23:
+.loc 2 43 1
+ld.shared.f32 %f33, [__cuda_local_var_16923_35_non_const_partialSum];
+bra.uni BB2_25;
+
+BB2_24:
+mov.f32 %f33, 0f00000000;
+
+BB2_25:
+.loc 2 90 1
+@%p1 bra BB2_27;
+
+BB2_26:
+.loc 2 101 2
+ret;
+
+BB2_27:
+.loc 2 94 1
+st.global.f32 [%rl1], %f33;
+.loc 2 101 2
+ret;
+}
+
+

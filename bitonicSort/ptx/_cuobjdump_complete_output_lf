@@ -1,0 +1,1026 @@
+
+Fatbin elf code:
+================
+arch = sm_20
+code version = [1,4]
+producer = <unknown>
+host = linux
+compile_size = 64bit
+identifier = bitonic_sort.cu
+
+.section .strtab	STRTAB
+
+.section .shstrtab	STRTAB
+
+.section .symtab	SYMTAB
+ index           value           size      info    other  shndx    name  
+   0               0               0        0        0      0     (null)
+   1               0               0        3        0      1     .shstrtab
+   2               0               0        3        0      2     .strtab
+   3               0               0        3        0      3     .symtab
+   4               0               0        3        0     13     .nv.global.init
+   5               0               0        3        0     14     .nv.global
+   6               0             680        3        0      7     .text._Z16bitonicSortSmallPfij
+   7               0               0        3        0      9     .nv.info._Z16bitonicSortSmallPfij
+   8               0               0        3        0     15     .nv.info
+   9               0             736        3        0      4     .text._Z19bitonic_sort_ibsyncPVfiPiS1_
+  10               0               0        3        0      6     .nv.info._Z19bitonic_sort_ibsyncPVfiPiS1_
+  11               0               0        3        0     10     .nv.shared._Z16bitonicSortSmallPfij
+  12               0               0        3        0      8     .nv.constant0._Z16bitonicSortSmallPfij
+  13               0               0        3        0      5     .nv.constant0._Z19bitonic_sort_ibsyncPVfiPiS1_
+  14               0               0        3        0     11     .nv.constant14
+  15               0               0        3        0     12     .rel.nv.constant14
+  16               0             680       12       10      7     _Z16bitonicSortSmallPfij
+  17               0             736       12       10      4     _Z19bitonic_sort_ibsyncPVfiPiS1_
+  18               0               7       11        0     13     $str
+  19               0               4       11        0     14     g_mutex
+  20               7               2       11        0     13     $str1
+
+
+.nv.constant0._Z19bitonic_sort_ibsyncPVfiPiS1_	PROGBITS
+0x00000000  0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  
+
+
+.nv.constant0._Z16bitonicSortSmallPfij	PROGBITS
+0x00000000  0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  
+
+
+.nv.shared._Z16bitonicSortSmallPfij	NOBITS
+   No data to be dumped. 
+
+
+.nv.constant14	PROGBITS
+0x00000000  0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  
+
+.section .rel.nv.constant14	REL
+16    $str1    R_NV_64
+0    g_mutex    R_NV_64
+8    $str    R_NV_64
+
+
+.nv.global.init	PROGBITS
+0x332e3125  0x0a002066   0 
+
+
+.text._Z19bitonic_sort_ibsyncPVfiPiS1_	PROGBITS
+bar = 1	reg = 19	lmem=0	smem=0
+0x00005de4  0x28004404  0xa0001de4  0x28004000  
+0x94039c04  0x2c000000  0x8403dc04  0x2c000000  
+0x0801dc03  0x188ec000  0x20e2dca3  0x201e4000  
+0x000001e7  0x80000000  0x84001c04  0x2c000000  
+0x10011de2  0x18000000  0x04b31c03  0x6000c000  
+0x1000dce3  0x5000c000  0xc0009ca3  0x20098000  
+0x94001c04  0x2c000000  0xfc029de4  0x28000000  
+0xd030dc43  0x48004000  0xe0011ca3  0x20098000  
+0x10001ce3  0x5000c000  0x08035de2  0x18000000  
+0xf0015c43  0x48004000  0x04d01c03  0x5800c000  
+0xfc01dc23  0x190e0000  0x400001e7  0x40000008  
+0x2c019c03  0x68000000  0x80041de4  0x28004000  
+0xfc61dc23  0x190e0000  0xfc019c03  0x4800ffff  
+0x0003dc03  0x1a0ec004  0xfcd7dc03  0x1a0ec003  
+0x2c619c03  0x68000000  0x0405dc23  0x190ec000  
+0x18c21d03  0x48000000  0x0c23dc04  0x0c220000  
+0x00819c03  0x48000000  0x10825c43  0x5000c000  
+0x1061dc43  0x5000c000  0x10619c03  0x2021c000  
+0x9071dc43  0x48004000  0x10821c03  0x2021c000  
+0x00645f85  0x84000000  0x90925c43  0x48004000  
+0x00849f85  0x84000000  0x4529dc00  0x22400000  
+0x00847385  0x84000000  0x0064b385  0x84000000  
+0x0084b385  0x94000000  0x00647385  0x94000000  
+0x800005e7  0x40000000  0x081fdc03  0x20060000  
+0x144fdc03  0x207e0000  0xffffdc04  0x50ee0000  
+0x40001de7  0x40000004  0xfcf3dc23  0x1a8e0000  
+0x04a29c03  0x4800c000  0xa00085e7  0x40000000  
+0xc001a5e4  0x28004000  0x10e1e4e3  0x5000c000  
+0x10e1a4a3  0x200dc000  0xd071e443  0x48004000  
+0x0062a785  0x94000000  0x04e5dc23  0x1a8ec000  
+0x00000007  0x60000002  0x000009f4  0x40000000  
+0x50f5dc23  0x1b0e4000  0xa0000007  0x60000000  
+0x600009e7  0x40000000  0x00219f85  0x84000000  
+0x2867dc23  0x1a8e0000  0xa0000de7  0x4003ffff  
+0x081fdc13  0x20060000  0x144fdc03  0x207e0000  
+0xffffdc04  0x50ee0000  0xe001a9e4  0x28004000  
+0x10f1e8e3  0x5000c000  0x10f1a8a3  0x200dc000  
+0xf071e843  0x48004000  0x0062ab85  0x94000000  
+0x00001df4  0x40000000  0xa0000007  0x60000000  
+0x600005e7  0x40000000  0x00419f85  0x84000000  
+0x2863dc23  0x1a8e0000  0xa00005e7  0x4003ffff  
+0x081fdc13  0x20060000  0x144fdc03  0x207e0000  
+0xffffdc04  0x50ee0000  0x04001c03  0x5800c000  
+0xfc03dc23  0x1a8e0000  0x200005e7  0x4003fff8  
+0x04d35c03  0x6000c000  0xa0d1dc03  0x198e4000  
+0x000001e7  0x4003fff7  0x00001de7  0x80000000  
+
+
+
+.nv.info._Z19bitonic_sort_ibsyncPVfiPiS1_	PROGBITS
+	<0x1>
+	Attribute:	EIATTR_PARAM_CBANK
+	Format:	EIFMT_SVAL
+	Value:	0xd 0x200020 
+	<0x2>
+	Attribute:	EIATTR_CBANK_PARAM_SIZE
+	Format:	EIFMT_HVAL
+	Value:	0x20
+	<0x3>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0x0	Ordinal : 0x3	Offset  : 0x18	Size    : 0x8
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : CBANK	
+	<0x4>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0x0	Ordinal : 0x2	Offset  : 0x10	Size    : 0x8
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : CBANK	
+	<0x5>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0x0	Ordinal : 0x1	Offset  : 0x8	Size    : 0x4
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : CBANK	
+	<0x6>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0x0	Ordinal : 0x0	Offset  : 0x0	Size    : 0x8
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : CBANK	
+	<0x7>
+	Attribute:	EIATTR_SYNC_STACK
+	Format:	EIFMT_SVAL
+	Value:	0x220198 0x20 
+
+
+.text._Z16bitonicSortSmallPfij	PROGBITS
+bar = 1	reg = 14	lmem=0	smem=4096
+0x00005de4  0x28004404  0xa0029de4  0x28004000  
+0x7ca01c03  0x5800c000  0x0ca1dc03  0x188ec000  
+0xa0009c03  0x48004000  0x84001c04  0x2c000000  
+0x04211c23  0x5800c000  0x08025e03  0x6000c000  
+0x10009ce3  0x5000c000  0x0040dc03  0x48000000  
+0x80919c03  0x48014000  0x08315e03  0x6000c000  
+0x9021dc43  0x48004000  0x1030dce3  0x5000c000  
+0x80509c03  0x48014000  0x00619c85  0x84000000  
+0x9030dc43  0x48004000  0x00221c85  0x84000000  
+0x00919c85  0xc9000000  0x00521c85  0xc9000000  
+0x800001e7  0x40000003  0x08019de2  0x18000000  
+0x0461dc03  0x5800c000  0x00721c03  0x68000000  
+0xfc71dc23  0x190e0000  0x07f21c23  0x3110c000  
+0xb0821c83  0x68004000  0x400001e7  0x40000002  
+0x201fdc03  0x207e0000  0xffffdc04  0x50ee0000  
+0xfc725c03  0x4800ffff  0x00925c03  0x68000000  
+0x24025c23  0x40800000  0x1c929c03  0x48000000  
+0x0892de03  0x6000c000  0x0471dc03  0x5800c000  
+0x08a29e03  0x6000c000  0x00b31c85  0xc1000000  
+0x00a35c85  0xc1000000  0x34c1dc00  0x220e0000  
+0x07f25c04  0x2010c000  0xfc71dc23  0x1a8e0000  
+0x2093dc23  0x1a8e0000  0x00b36485  0xc9000000  
+0x00a32485  0xc9000000  0xc00001e7  0x4003fffd  
+0x04619c03  0x6000c000  0xa061dc03  0x188e4000  
+0xa00001e7  0x4003fffc  0xa0019de4  0x28004000  
+0x04619c03  0x4800c000  0x0c61dc03  0x188ec000  
+0x800001e7  0x40000002  0x84019c04  0x2c000000  
+0x04619c03  0x6000c000  0x201fdc03  0x207e0000  
+0xffffdc04  0x50ee0000  0xfc41dc03  0x4800ffff  
+0x0071dc03  0x68000000  0x1c61dd03  0x48000000  
+0x10721c03  0x48000000  0x08725e03  0x6000c000  
+0x04411c03  0x5800c000  0x08821e03  0x6000c000  
+0x00929c85  0xc1000000  0x0082dc85  0xc1000000  
+0x2ca1dc00  0x220e0000  0x07f1dc04  0x2010c000  
+0xfc41dc23  0x1a8e0000  0xb073dc23  0x1a8e4000  
+0x0092e485  0xc9000000  0x0082a485  0xc9000000  
+0xc00001e7  0x4003fffd  0x201fdc03  0x207e0000  
+0xffffdc04  0x50ee0000  0x84001c04  0x2c000000  
+0x08011e03  0x6000c000  0x10019ce3  0x5000c000  
+0x00501c85  0xc1000000  0x80421c03  0x48014000  
+0x00411c85  0xc1000000  0x90625c43  0x48004000  
+0x00811c85  0x94000000  0x00201c85  0x94000000  
+0x00001de7  0x80000000  
+
+
+.nv.info._Z16bitonicSortSmallPfij	PROGBITS
+	<0x1>
+	Attribute:	EIATTR_PARAM_CBANK
+	Format:	EIFMT_SVAL
+	Value:	0xc 0x100020 
+	<0x2>
+	Attribute:	EIATTR_CBANK_PARAM_SIZE
+	Format:	EIFMT_HVAL
+	Value:	0x10
+	<0x3>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0x0	Ordinal : 0x2	Offset  : 0xc	Size    : 0x4
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : CBANK	
+	<0x4>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0x0	Ordinal : 0x1	Offset  : 0x8	Size    : 0x4
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : CBANK	
+	<0x5>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0x0	Ordinal : 0x0	Offset  : 0x0	Size    : 0x8
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : CBANK	
+	<0x6>
+	Attribute:	EIATTR_SYNC_STACK
+	Format:	EIFMT_SVAL
+	Value:	0x20018 0x1 
+
+
+.nv.info	PROGBITS
+	<0x1>
+	Attribute:	EIATTR_MIN_STACK_SIZE
+	Format:	EIFMT_SVAL
+	Value:	function: _Z19bitonic_sort_ibsyncPVfiPiS1_(0x11)	min stack size: 0x0
+	<0x2>
+	Attribute:	EIATTR_FRAME_SIZE
+	Format:	EIFMT_SVAL
+	Value:	function: _Z19bitonic_sort_ibsyncPVfiPiS1_(0x11)	frame size: 0x0
+	<0x3>
+	Attribute:	EIATTR_MIN_STACK_SIZE
+	Format:	EIFMT_SVAL
+	Value:	function: _Z16bitonicSortSmallPfij(0x10)	min stack size: 0x0
+	<0x4>
+	Attribute:	EIATTR_FRAME_SIZE
+	Format:	EIFMT_SVAL
+	Value:	function: _Z16bitonicSortSmallPfij(0x10)	frame size: 0x0
+
+	code for sm_20
+		Function : _Z19bitonic_sort_ibsyncPVfiPiS1_
+	/*0000*/     /*0x00005de428004404*/ 	MOV R1, c [0x1] [0x100];
+	/*0008*/     /*0xa0001de428004000*/ 	MOV R0, c [0x0] [0x28];
+	/*0010*/     /*0x94039c042c000000*/ 	S2R R14, SR_CTAid_X;
+	/*0018*/     /*0x8403dc042c000000*/ 	S2R R15, SR_Tid_X;
+	/*0020*/     /*0x0801dc03188ec000*/ 	ISETP.LT.U32.AND P0, pt, R0, 0x2, pt;
+	/*0028*/     /*0x20e2dca3201e4000*/ 	IMAD R11, R14, c [0x0] [0x8], R15;
+	/*0030*/     /*0x000001e780000000*/ 	@P0 EXIT;
+	/*0038*/     /*0x84001c042c000000*/ 	S2R R0, SR_Tid_X;
+	/*0040*/     /*0x10011de218000000*/ 	MOV32I R4, 0x4;
+	/*0048*/     /*0x04b31c036000c000*/ 	SHL R12, R11, 0x1;
+	/*0050*/     /*0x1000dce35000c000*/ 	IMUL.HI R3, R0, 0x4;
+	/*0058*/     /*0xc0009ca320098000*/ 	IMAD R2.CC, R0, R4, c [0x0] [0x30];
+	/*0060*/     /*0x94001c042c000000*/ 	S2R R0, SR_CTAid_X;
+	/*0068*/     /*0xfc029de428000000*/ 	MOV R10, RZ;
+	/*0070*/     /*0xd030dc4348004000*/ 	IADD.X R3, R3, c [0x0] [0x34];
+	/*0078*/     /*0xe0011ca320098000*/ 	IMAD R4.CC, R0, R4, c [0x0] [0x38];
+	/*0080*/     /*0x10001ce35000c000*/ 	IMUL.HI R0, R0, 0x4;
+	/*0088*/     /*0x08035de218000000*/ 	MOV32I R13, 0x2;
+	/*0090*/     /*0xf0015c4348004000*/ 	IADD.X R5, R0, c [0x0] [0x3c];
+	/*0098*/     /*0x04d01c035800c000*/ 	SHR.U32 R0, R13, 0x1;
+	/*00a0*/     /*0xfc01dc23190e0000*/ 	ISETP.EQ.AND P0, pt, R0, RZ, pt;
+	/*00a8*/     /*0x400001e740000008*/ 	@P0 BRA 0x2c0;
+	/*00b0*/     /*0x2c019c0368000000*/ 	LOP.AND R6, R0, R11;
+	/*00b8*/     /*0x80041de428004000*/ 	MOV R16, c [0x0] [0x20];
+	/*00c0*/     /*0xfc61dc23190e0000*/ 	ISETP.EQ.AND P0, pt, R6, RZ, pt;
+	/*00c8*/     /*0xfc019c034800ffff*/ 	IADD R6, R0, 0xfffff;
+	/*00d0*/     /*0x0003dc031a0ec004*/ 	ISETP.GT.U32.AND P1, pt, R0, 0x100, pt;
+	/*00d8*/     /*0xfcd7dc031a0ec003*/ 	ISETP.GT.U32.AND P3, pt, R13, 0xff, pt;
+	/*00e0*/     /*0x2c619c0368000000*/ 	LOP.AND R6, R6, R11;
+	/*00e8*/     /*0x0405dc23190ec000*/ 	ISETP.EQ.AND P2, pt, R0, 0x1, pt;
+	/*00f0*/     /*0x18c21d0348000000*/ 	IADD R8, R12, -R6;
+	/*00f8*/     /*0x0c23dc040c220000*/ 	PSETP.AND.OR P1, pt, P1, P3, P2;
+	/*0100*/     /*0x00819c0348000000*/ 	IADD R6, R8, R0;
+	/*0108*/     /*0x10825c435000c000*/ 	IMUL.U32.U32.HI R9, R8, 0x4;
+	/*0110*/     /*0x1061dc435000c000*/ 	IMUL.U32.U32.HI R7, R6, 0x4;
+	/*0118*/     /*0x10619c032021c000*/ 	IMAD.U32.U32 R6.CC, R6, 0x4, R16;
+	/*0120*/     /*0x9071dc4348004000*/ 	IADD.X R7, R7, c [0x0] [0x24];
+	/*0128*/     /*0x10821c032021c000*/ 	IMAD.U32.U32 R8.CC, R8, 0x4, R16;
+	/*0130*/     /*0x00645f8584000000*/ 	LD.E.CV R17, [R6];
+	/*0138*/     /*0x90925c4348004000*/ 	IADD.X R9, R9, c [0x0] [0x24];
+	/*0140*/     /*0x00849f8584000000*/ 	LD.E.CV R18, [R8];
+	/*0148*/     /*0x4529dc0022400000*/ 	FSETP.GT.XOR P4, pt, R18, R17, P0;
+	/*0150*/     /*0x0084738584000000*/ 	@!P4 LD.E.CV R17, [R8];
+	/*0158*/     /*0x0064b38584000000*/ 	@!P4 LD.E.CV R18, [R6];
+	/*0160*/     /*0x0084b38594000000*/ 	@!P4 ST.E.WT [R8], R18;
+	/*0168*/     /*0x0064738594000000*/ 	@!P4 ST.E.WT [R6], R17;
+	/*0170*/     /*0x800005e740000000*/ 	@P1 BRA 0x198;
+	/*0178*/     /*0x081fdc0320060000*/ 	IMAD.U32.U32 RZ, R1, R2, R3;
+	/*0180*/     /*0x144fdc03207e0000*/ 	IMAD.U32.U32 RZ, R4, R5, RZ;
+	/*0188*/     /*0xffffdc0450ee0000*/ 	BAR.RED.POPC RZ, RZ;
+	/*0190*/     /*0x40001de740000004*/ 	BRA 0x2a8;
+	/*0198*/     /*0xfcf3dc231a8e0000*/ 	ISETP.NE.AND P1, pt, R15, RZ, pt;
+	/*01a0*/     /*0x04a29c034800c000*/ 	IADD R10, R10, 0x1;
+	/*01a8*/     /*0xa00085e740000000*/ 	@P1 BRA.U 0x1d8;
+	/*01b0*/     /*0xc001a5e428004000*/ 	@!P1 MOV R6, c [0x0] [0x30];
+	/*01b8*/     /*0x10e1e4e35000c000*/ 	@!P1 IMUL.HI R7, R14, 0x4;
+	/*01c0*/     /*0x10e1a4a3200dc000*/ 	@!P1 IMAD R6.CC, R14, 0x4, R6;
+	/*01c8*/     /*0xd071e44348004000*/ 	@!P1 IADD.X R7, R7, c [0x0] [0x34];
+	/*01d0*/     /*0x0062a78594000000*/ 	@!P1 ST.E.WT [R6], R10;
+	/*01d8*/     /*0x04e5dc231a8ec000*/ 	ISETP.NE.AND P2, pt, R14, 0x1, pt;
+	/*01e0*/     /*0x0000000760000002*/ 	SSY 0x268;
+	/*01e8*/     /*0x000009f440000000*/ 	@P2 NOP.S CC.T;
+	/*01f0*/     /*0x50f5dc231b0e4000*/ 	ISETP.GE.AND P2, pt, R15, c [0x0] [0x14], pt;
+	/*01f8*/     /*0xa000000760000000*/ 	SSY 0x228;
+	/*0200*/     /*0x600009e740000000*/ 	@P2 BRA 0x220;
+	/*0208*/     /*0x00219f8584000000*/ 	LD.E.CV R6, [R2];
+	/*0210*/     /*0x2867dc231a8e0000*/ 	ISETP.NE.AND P3, pt, R6, R10, pt;
+	/*0218*/     /*0xa0000de74003ffff*/ 	@P3 BRA 0x208;
+	/*0220*/     /*0x081fdc1320060000*/ 	IMAD.U32.U32.S RZ, R1, R2, R3;
+	/*0228*/     /*0x144fdc03207e0000*/ 	IMAD.U32.U32 RZ, R4, R5, RZ;
+	/*0230*/     /*0xffffdc0450ee0000*/ 	BAR.RED.POPC RZ, RZ;
+	/*0238*/     /*0xe001a9e428004000*/ 	@!P2 MOV R6, c [0x0] [0x38];
+	/*0240*/     /*0x10f1e8e35000c000*/ 	@!P2 IMUL.HI R7, R15, 0x4;
+	/*0248*/     /*0x10f1a8a3200dc000*/ 	@!P2 IMAD R6.CC, R15, 0x4, R6;
+	/*0250*/     /*0xf071e84348004000*/ 	@!P2 IADD.X R7, R7, c [0x0] [0x3c];
+	/*0258*/     /*0x0062ab8594000000*/ 	@!P2 ST.E.WT [R6], R10;
+	/*0260*/     /*0x00001df440000000*/ 	NOP.S CC.T;
+	/*0268*/     /*0xa000000760000000*/ 	SSY 0x298;
+	/*0270*/     /*0x600005e740000000*/ 	@P1 BRA 0x290;
+	/*0278*/     /*0x00419f8584000000*/ 	LD.E.CV R6, [R4];
+	/*0280*/     /*0x2863dc231a8e0000*/ 	ISETP.NE.AND P1, pt, R6, R10, pt;
+	/*0288*/     /*0xa00005e74003ffff*/ 	@P1 BRA 0x278;
+	/*0290*/     /*0x081fdc1320060000*/ 	IMAD.U32.U32.S RZ, R1, R2, R3;
+	/*0298*/     /*0x144fdc03207e0000*/ 	IMAD.U32.U32 RZ, R4, R5, RZ;
+	/*02a0*/     /*0xffffdc0450ee0000*/ 	BAR.RED.POPC RZ, RZ;
+	/*02a8*/     /*0x04001c035800c000*/ 	SHR.U32 R0, R0, 0x1;
+	/*02b0*/     /*0xfc03dc231a8e0000*/ 	ISETP.NE.AND P1, pt, R0, RZ, pt;
+	/*02b8*/     /*0x200005e74003fff8*/ 	@P1 BRA 0xc8;
+	/*02c0*/     /*0x04d35c036000c000*/ 	SHL R13, R13, 0x1;
+	/*02c8*/     /*0xa0d1dc03198e4000*/ 	ISETP.LE.U32.AND P0, pt, R13, c [0x0] [0x28], pt;
+	/*02d0*/     /*0x000001e74003fff7*/ 	@P0 BRA 0x98;
+	/*02d8*/     /*0x00001de780000000*/ 	EXIT;
+		.................................................
+
+
+		Function : _Z16bitonicSortSmallPfij
+	/*0000*/     /*0x00005de428004404*/ 	MOV R1, c [0x1] [0x100];
+	/*0008*/     /*0xa0029de428004000*/ 	MOV R10, c [0x0] [0x28];
+	/*0010*/     /*0x7ca01c035800c000*/ 	SHR.U32 R0, R10, 0x1f;
+	/*0018*/     /*0x0ca1dc03188ec000*/ 	ISETP.LT.U32.AND P0, pt, R10, 0x3, pt;
+	/*0020*/     /*0xa0009c0348004000*/ 	IADD R2, R0, c [0x0] [0x28];
+	/*0028*/     /*0x84001c042c000000*/ 	S2R R0, SR_Tid_X;
+	/*0030*/     /*0x04211c235800c000*/ 	SHR R4, R2, 0x1;
+	/*0038*/     /*0x08025e036000c000*/ 	SHL.W R9, R0, 0x2;
+	/*0040*/     /*0x10009ce35000c000*/ 	IMUL.HI R2, R0, 0x4;
+	/*0048*/     /*0x0040dc0348000000*/ 	IADD R3, R4, R0;
+	/*0050*/     /*0x80919c0348014000*/ 	IADD R6.CC, R9, c [0x0] [0x20];
+	/*0058*/     /*0x08315e036000c000*/ 	SHL.W R5, R3, 0x2;
+	/*0060*/     /*0x9021dc4348004000*/ 	IADD.X R7, R2, c [0x0] [0x24];
+	/*0068*/     /*0x1030dce35000c000*/ 	IMUL.HI R3, R3, 0x4;
+	/*0070*/     /*0x80509c0348014000*/ 	IADD R2.CC, R5, c [0x0] [0x20];
+	/*0078*/     /*0x00619c8584000000*/ 	LD.E R6, [R6];
+	/*0080*/     /*0x9030dc4348004000*/ 	IADD.X R3, R3, c [0x0] [0x24];
+	/*0088*/     /*0x00221c8584000000*/ 	LD.E R8, [R2];
+	/*0090*/     /*0x00919c85c9000000*/ 	STS [R9], R6;
+	/*0098*/     /*0x00521c85c9000000*/ 	STS [R5], R8;
+	/*00a0*/     /*0x800001e740000003*/ 	@P0 BRA 0x188;
+	/*00a8*/     /*0x08019de218000000*/ 	MOV32I R6, 0x2;
+	/*00b0*/     /*0x0461dc035800c000*/ 	SHR.U32 R7, R6, 0x1;
+	/*00b8*/     /*0x00721c0368000000*/ 	LOP.AND R8, R7, R0;
+	/*00c0*/     /*0xfc71dc23190e0000*/ 	ISETP.EQ.AND P0, pt, R7, RZ, pt;
+	/*00c8*/     /*0x07f21c233110c000*/ 	ICMP.EQ R8, RZ, 0x1, R8;
+	/*00d0*/     /*0xb0821c8368004000*/ 	LOP.XOR R8, R8, c [0x0] [0x2c];
+	/*00d8*/     /*0x400001e740000002*/ 	@P0 BRA 0x170;
+	/*00e0*/     /*0x201fdc03207e0000*/ 	IMAD.U32.U32 RZ, R1, R8, RZ;
+	/*00e8*/     /*0xffffdc0450ee0000*/ 	BAR.RED.POPC RZ, RZ;
+	/*00f0*/     /*0xfc725c034800ffff*/ 	IADD R9, R7, 0xfffff;
+	/*00f8*/     /*0x00925c0368000000*/ 	LOP.AND R9, R9, R0;
+	/*0100*/     /*0x24025c2340800000*/ 	ISCADD R9, R0, -R9, 0x1;
+	/*0108*/     /*0x1c929c0348000000*/ 	IADD R10, R9, R7;
+	/*0110*/     /*0x0892de036000c000*/ 	SHL.W R11, R9, 0x2;
+	/*0118*/     /*0x0471dc035800c000*/ 	SHR.U32 R7, R7, 0x1;
+	/*0120*/     /*0x08a29e036000c000*/ 	SHL.W R10, R10, 0x2;
+	/*0128*/     /*0x00b31c85c1000000*/ 	LDS R12, [R11];
+	/*0130*/     /*0x00a35c85c1000000*/ 	LDS R13, [R10];
+	/*0138*/     /*0x34c1dc00220e0000*/ 	FSETP.GT.AND P0, pt, R12, R13, pt;
+	/*0140*/     /*0x07f25c042010c000*/ 	SEL R9, RZ, 0x1, !P0;
+	/*0148*/     /*0xfc71dc231a8e0000*/ 	ISETP.NE.AND P0, pt, R7, RZ, pt;
+	/*0150*/     /*0x2093dc231a8e0000*/ 	ISETP.NE.AND P1, pt, R9, R8, pt;
+	/*0158*/     /*0x00b36485c9000000*/ 	@!P1 STS [R11], R13;
+	/*0160*/     /*0x00a32485c9000000*/ 	@!P1 STS [R10], R12;
+	/*0168*/     /*0xc00001e74003fffd*/ 	@P0 BRA 0xe0;
+	/*0170*/     /*0x04619c036000c000*/ 	SHL R6, R6, 0x1;
+	/*0178*/     /*0xa061dc03188e4000*/ 	ISETP.LT.U32.AND P0, pt, R6, c [0x0] [0x28], pt;
+	/*0180*/     /*0xa00001e74003fffc*/ 	@P0 BRA 0xb0;
+	/*0188*/     /*0xa0019de428004000*/ 	MOV R6, c [0x0] [0x28];
+	/*0190*/     /*0x04619c034800c000*/ 	IADD R6, R6, 0x1;
+	/*0198*/     /*0x0c61dc03188ec000*/ 	ISETP.LT.U32.AND P0, pt, R6, 0x3, pt;
+	/*01a0*/     /*0x800001e740000002*/ 	@P0 BRA 0x248;
+	/*01a8*/     /*0x84019c042c000000*/ 	S2R R6, SR_Tid_X;
+	/*01b0*/     /*0x04619c036000c000*/ 	SHL R6, R6, 0x1;
+	/*01b8*/     /*0x201fdc03207e0000*/ 	IMAD.U32.U32 RZ, R1, R8, RZ;
+	/*01c0*/     /*0xffffdc0450ee0000*/ 	BAR.RED.POPC RZ, RZ;
+	/*01c8*/     /*0xfc41dc034800ffff*/ 	IADD R7, R4, 0xfffff;
+	/*01d0*/     /*0x0071dc0368000000*/ 	LOP.AND R7, R7, R0;
+	/*01d8*/     /*0x1c61dd0348000000*/ 	IADD R7, R6, -R7;
+	/*01e0*/     /*0x10721c0348000000*/ 	IADD R8, R7, R4;
+	/*01e8*/     /*0x08725e036000c000*/ 	SHL.W R9, R7, 0x2;
+	/*01f0*/     /*0x04411c035800c000*/ 	SHR.U32 R4, R4, 0x1;
+	/*01f8*/     /*0x08821e036000c000*/ 	SHL.W R8, R8, 0x2;
+	/*0200*/     /*0x00929c85c1000000*/ 	LDS R10, [R9];
+	/*0208*/     /*0x0082dc85c1000000*/ 	LDS R11, [R8];
+	/*0210*/     /*0x2ca1dc00220e0000*/ 	FSETP.GT.AND P0, pt, R10, R11, pt;
+	/*0218*/     /*0x07f1dc042010c000*/ 	SEL R7, RZ, 0x1, !P0;
+	/*0220*/     /*0xfc41dc231a8e0000*/ 	ISETP.NE.AND P0, pt, R4, RZ, pt;
+	/*0228*/     /*0xb073dc231a8e4000*/ 	ISETP.NE.AND P1, pt, R7, c [0x0] [0x2c], pt;
+	/*0230*/     /*0x0092e485c9000000*/ 	@!P1 STS [R9], R11;
+	/*0238*/     /*0x0082a485c9000000*/ 	@!P1 STS [R8], R10;
+	/*0240*/     /*0xc00001e74003fffd*/ 	@P0 BRA 0x1b8;
+	/*0248*/     /*0x201fdc03207e0000*/ 	IMAD.U32.U32 RZ, R1, R8, RZ;
+	/*0250*/     /*0xffffdc0450ee0000*/ 	BAR.RED.POPC RZ, RZ;
+	/*0258*/     /*0x84001c042c000000*/ 	S2R R0, SR_Tid_X;
+	/*0260*/     /*0x08011e036000c000*/ 	SHL.W R4, R0, 0x2;
+	/*0268*/     /*0x10019ce35000c000*/ 	IMUL.HI R6, R0, 0x4;
+	/*0270*/     /*0x00501c85c1000000*/ 	LDS R0, [R5];
+	/*0278*/     /*0x80421c0348014000*/ 	IADD R8.CC, R4, c [0x0] [0x20];
+	/*0280*/     /*0x00411c85c1000000*/ 	LDS R4, [R4];
+	/*0288*/     /*0x90625c4348004000*/ 	IADD.X R9, R6, c [0x0] [0x24];
+	/*0290*/     /*0x00811c8594000000*/ 	ST.E [R8], R4;
+	/*0298*/     /*0x00201c8594000000*/ 	ST.E [R2], R0;
+	/*02a0*/     /*0x00001de780000000*/ 	EXIT;
+		.........................................
+
+
+
+Fatbin ptx code:
+================
+arch = sm_20
+code version = [3,0]
+producer = <unknown>
+host = linux
+compile_size = 64bit
+identifier = bitonic_sort.cu
+
+
+
+
+
+
+.version 3.0
+.target sm_20
+.address_size 64
+
+.file	1 "/tmp/tmpxft_00005ed3_00000000-7_bitonic_sort.cpp3.i"
+.file	2 "ib_sync.cu"
+.file	3 "/usr/local/cuda/nvvm/ci_include.h"
+.file	4 "/usr/local/cuda/include/sm_11_atomic_functions.h"
+.file	5 "bitonic_sort.cu"
+.extern .func (.param .b32 func_retval0) vprintf
+(
+.param .b64 vprintf_param_0,
+.param .b64 vprintf_param_1
+)
+;
+.global .align 4 .u32 g_mutex;
+.global .align 1 .b8 $str[7] = {37, 49, 46, 51, 102, 32, 0};
+.global .align 1 .b8 $str1[2] = {10, 0};
+
+
+.visible .func _Z18__ib_sync_lockfreeiPViS0_(
+.param .b32 _Z18__ib_sync_lockfreeiPViS0__param_0,
+.param .b64 _Z18__ib_sync_lockfreeiPViS0__param_1,
+.param .b64 _Z18__ib_sync_lockfreeiPViS0__param_2
+)
+{
+.reg .pred %p<8>;
+.reg .s32 %r<25>;
+.reg .s64 %rl<15>;
+
+
+.loc 2 2 1
+mov.u32 %r2, %tid.x;
+.loc 2 5 1
+setp.eq.s32 %p1, %r2, 0;
+setp.ne.s32 %p3, %r2, 0;
+@%p3 bra BB0_2;
+
+.loc 2 4 1
+mov.u32 %r21, %ctaid.x;
+.loc 2 6 1
+mul.wide.s32 %rl5, %r21, 4;
+ld.param.u64 %rl12, [_Z18__ib_sync_lockfreeiPViS0__param_1];
+.loc 2 6 1
+add.s64 %rl6, %rl12, %rl5;
+ld.param.u32 %r11, [_Z18__ib_sync_lockfreeiPViS0__param_0];
+.loc 2 6 1
+st.volatile.u32 [%rl6], %r11;
+
+BB0_2:
+.loc 2 4 1
+mov.u32 %r20, %ctaid.x;
+.loc 2 8 1
+setp.ne.s32 %p4, %r20, 1;
+@%p4 bra BB0_8;
+
+.loc 2 3 1
+mov.u32 %r18, %nctaid.x;
+.loc 2 2 1
+mov.u32 %r24, %tid.x;
+.loc 2 9 1
+setp.lt.s32 %p2, %r24, %r18;
+setp.ge.s32 %p5, %r24, %r18;
+@%p5 bra BB0_6;
+
+.loc 2 2 1
+mov.u32 %r22, %tid.x;
+.loc 2 10 1
+mul.wide.s32 %rl7, %r22, 4;
+ld.param.u64 %rl11, [_Z18__ib_sync_lockfreeiPViS0__param_1];
+.loc 2 10 1
+add.s64 %rl3, %rl11, %rl7;
+
+BB0_5:
+ld.volatile.u32 %r6, [%rl3];
+ld.param.u32 %r14, [_Z18__ib_sync_lockfreeiPViS0__param_0];
+.loc 2 10 1
+setp.ne.s32 %p6, %r6, %r14;
+@%p6 bra BB0_5;
+
+BB0_6:
+.loc 2 12 1
+bar.sync 0;
+.loc 2 13 1
+@!%p2 bra BB0_8;
+
+.loc 2 2 1
+mov.u32 %r23, %tid.x;
+.loc 2 14 1
+mul.wide.s32 %rl8, %r23, 4;
+ld.param.u64 %rl14, [_Z18__ib_sync_lockfreeiPViS0__param_2];
+.loc 2 14 1
+add.s64 %rl9, %rl14, %rl8;
+ld.param.u32 %r12, [_Z18__ib_sync_lockfreeiPViS0__param_0];
+.loc 2 14 1
+st.volatile.u32 [%rl9], %r12;
+
+BB0_8:
+.loc 2 17 1
+@!%p1 bra BB0_11;
+
+.loc 2 18 1
+mul.wide.s32 %rl10, %r20, 4;
+ld.param.u64 %rl13, [_Z18__ib_sync_lockfreeiPViS0__param_2];
+.loc 2 18 1
+add.s64 %rl4, %rl13, %rl10;
+
+BB0_10:
+ld.volatile.u32 %r9, [%rl4];
+ld.param.u32 %r13, [_Z18__ib_sync_lockfreeiPViS0__param_0];
+.loc 2 18 1
+setp.ne.s32 %p7, %r9, %r13;
+@%p7 bra BB0_10;
+
+BB0_11:
+.loc 2 20 1
+bar.sync 0;
+.loc 2 21 2
+ret;
+}
+
+.visible .func _Z9__ib_synci(
+.param .b32 _Z9__ib_synci_param_0
+)
+{
+.reg .pred %p<3>;
+.reg .s32 %r<6>;
+.reg .s64 %rl<2>;
+
+
+.loc 2 27 1
+mov.u32 %r2, %tid.x;
+.loc 2 28 1
+setp.ne.s32 %p1, %r2, 0;
+@%p1 bra BB1_3;
+
+.loc 3 1832 5
+mov.u64 %rl1, g_mutex;
+atom.global.add.u32 %r3, [%rl1], 1;
+
+BB1_2:
+.loc 2 30 1
+ld.volatile.global.u32 %r4, [g_mutex];
+ld.param.u32 %r5, [_Z9__ib_synci_param_0];
+.loc 2 30 1
+setp.ne.s32 %p2, %r4, %r5;
+@%p2 bra BB1_2;
+
+BB1_3:
+.loc 2 32 1
+bar.sync 0;
+.loc 2 33 2
+ret;
+}
+
+.visible .func _Z15gpu_array_printPfi(
+.param .b64 _Z15gpu_array_printPfi_param_0,
+.param .b32 _Z15gpu_array_printPfi_param_1
+)
+{
+.local .align 8 .b8 __local_depot2[8];
+.reg .b64 %SP;
+.reg .f32 %f<2>;
+.reg .f64 %fd<2>;
+.reg .pred %p<3>;
+.reg .s32 %r<10>;
+.reg .s64 %rl<11>;
+
+
+mov.u64 %SP, __local_depot2;
+ld.param.u32 %r1, [_Z15gpu_array_printPfi_param_1];
+.loc 5 163 1
+setp.lt.s32 %p1, %r1, 1;
+@%p1 bra BB2_3;
+
+add.u64 %rl6, %SP, 0;
+.loc 5 164 1
+mov.u64 %rl2, $str;
+cvta.local.u64 %rl3, %rl6;
+mov.u32 %r9, 0;
+ld.param.u64 %rl10, [_Z15gpu_array_printPfi_param_0];
+
+BB2_2:
+.loc 5 164 1
+ld.f32 %f1, [%rl10];
+cvt.f64.f32 %fd1, %f1;
+st.local.f64 [%SP+0], %fd1;
+
+	{
+.reg .b32 temp_param_reg;
+.param .b64 param0;
+.loc 5 164 1
+st.param.b64	[param0+0], %rl2;
+.param .b64 param1;
+st.param.b64	[param1+0], %rl3;
+.param .b32 retval0;
+call.uni (retval0), 
+vprintf, 
+(
+param0, 
+param1
+);
+ld.param.b32	%r6, [retval0+0];
+}
+
+	add.s64 %rl10, %rl10, 4;
+.loc 5 163 97
+add.s32 %r9, %r9, 1;
+ld.param.u32 %r8, [_Z15gpu_array_printPfi_param_1];
+.loc 5 163 1
+setp.lt.s32 %p2, %r9, %r8;
+@%p2 bra BB2_2;
+
+BB2_3:
+.loc 5 166 1
+mov.u64 %rl7, $str1;
+mov.u64 %rl8, 0;
+
+	{
+.reg .b32 temp_param_reg;
+.param .b64 param0;
+.loc 5 166 1
+st.param.b64	[param0+0], %rl7;
+.param .b64 param1;
+st.param.b64	[param1+0], %rl8;
+.param .b32 retval0;
+call.uni (retval0), 
+vprintf, 
+(
+param0, 
+param1
+);
+ld.param.b32	%r7, [retval0+0];
+}
+
+	.loc 5 167 2
+ret;
+}
+
+.entry _Z16bitonicSortSmallPfij(
+.param .u64 _Z16bitonicSortSmallPfij_param_0,
+.param .u32 _Z16bitonicSortSmallPfij_param_1,
+.param .u32 _Z16bitonicSortSmallPfij_param_2
+)
+{
+.reg .f32 %f<9>;
+.reg .pred %p<12>;
+.reg .s32 %r<61>;
+.reg .s64 %rl<26>;
+
+	.shared .align 4 .b8 __cuda_local_var_19039_35_non_const_src_shared[4096];
+
+ld.param.u64 %rl1, [_Z16bitonicSortSmallPfij_param_0];
+ld.param.u32 %r1, [_Z16bitonicSortSmallPfij_param_1];
+cvta.to.global.u64 %rl8, %rl1;
+.loc 5 180 1
+mov.u32 %r14, %tid.x;
+.loc 5 183 1
+mul.wide.s32 %rl9, %r14, 4;
+add.s64 %rl10, %rl8, %rl9;
+mov.u64 %rl11, __cuda_local_var_19039_35_non_const_src_shared;
+add.s64 %rl12, %rl11, %rl9;
+.loc 5 183 1
+ld.global.f32 %f5, [%rl10];
+st.shared.f32 [%rl12], %f5;
+.loc 5 184 1
+shr.u32 %r17, %r1, 31;
+add.s32 %r18, %r1, %r17;
+shr.s32 %r60, %r18, 1;
+add.s32 %r19, %r60, %r14;
+mul.wide.s32 %rl13, %r19, 4;
+add.s64 %rl2, %rl8, %rl13;
+add.s64 %rl3, %rl11, %rl13;
+.loc 5 184 1
+ld.global.f32 %f6, [%rl2];
+st.shared.f32 [%rl3], %f6;
+.loc 5 186 1
+setp.lt.u32 %p1, %r1, 3;
+@%p1 bra BB3_7;
+
+mov.u32 %r58, 2;
+
+BB3_2:
+shr.u32 %r59, %r58, 1;
+.loc 5 187 1
+and.b32 %r24, %r59, %r14;
+setp.ne.s32 %p2, %r24, 0;
+selp.u32 %r25, 1, 0, %p2;
+ld.param.u32 %r55, [_Z16bitonicSortSmallPfij_param_2];
+.loc 5 187 1
+xor.b32 %r6, %r25, %r55;
+setp.eq.s32 %p3, %r59, 0;
+.loc 5 188 1
+@%p3 bra BB3_6;
+
+BB3_3:
+.loc 5 189 1
+bar.sync 0;
+add.s32 %r27, %r59, -1;
+.loc 5 190 1
+and.b32 %r28, %r27, %r14;
+shl.b32 %r29, %r14, 1;
+.loc 5 190 1
+sub.s32 %r30, %r29, %r28;
+.loc 5 191 1
+add.s32 %r31, %r30, %r59;
+mul.wide.u32 %rl14, %r31, 4;
+add.s64 %rl4, %rl11, %rl14;
+mul.wide.u32 %rl16, %r30, 4;
+add.s64 %rl5, %rl11, %rl16;
+.loc 5 191 1
+ld.shared.f32 %f1, [%rl4];
+ld.shared.f32 %f2, [%rl5];
+setp.gt.f32 %p4, %f2, %f1;
+selp.u32 %r34, 1, 0, %p4;
+setp.ne.s32 %p5, %r34, %r6;
+@%p5 bra BB3_5;
+
+.loc 5 191 1
+st.shared.f32 [%rl5], %f1;
+st.shared.f32 [%rl4], %f2;
+
+BB3_5:
+shr.u32 %r59, %r59, 1;
+.loc 5 188 1
+setp.ne.s32 %p6, %r59, 0;
+@%p6 bra BB3_3;
+
+BB3_6:
+.loc 5 186 37
+shl.b32 %r58, %r58, 1;
+ld.param.u32 %r53, [_Z16bitonicSortSmallPfij_param_1];
+.loc 5 186 1
+setp.lt.u32 %p7, %r58, %r53;
+@%p7 bra BB3_2;
+
+BB3_7:
+ld.param.u32 %r52, [_Z16bitonicSortSmallPfij_param_1];
+add.s32 %r37, %r52, 1;
+setp.lt.u32 %p8, %r37, 3;
+.loc 5 195 1
+@%p8 bra BB3_12;
+
+.loc 5 180 1
+mov.u32 %r57, %tid.x;
+shl.b32 %r11, %r57, 1;
+
+BB3_9:
+.loc 5 196 1
+bar.sync 0;
+add.s32 %r38, %r60, -1;
+.loc 5 197 1
+and.b32 %r39, %r38, %r14;
+sub.s32 %r40, %r11, %r39;
+mul.wide.u32 %rl17, %r40, 4;
+add.s64 %rl6, %rl11, %rl17;
+.loc 5 198 1
+add.s32 %r41, %r40, %r60;
+mul.wide.u32 %rl19, %r41, 4;
+add.s64 %rl7, %rl11, %rl19;
+.loc 5 198 1
+ld.shared.f32 %f3, [%rl7];
+ld.shared.f32 %f4, [%rl6];
+setp.gt.f32 %p9, %f4, %f3;
+selp.u32 %r44, 1, 0, %p9;
+ld.param.u32 %r54, [_Z16bitonicSortSmallPfij_param_2];
+.loc 5 198 1
+setp.ne.s32 %p10, %r44, %r54;
+@%p10 bra BB3_11;
+
+.loc 5 198 1
+st.shared.f32 [%rl6], %f3;
+st.shared.f32 [%rl7], %f4;
+
+BB3_11:
+.loc 5 195 23
+shr.u32 %r60, %r60, 1;
+.loc 5 195 1
+setp.ne.s32 %p11, %r60, 0;
+@%p11 bra BB3_9;
+
+BB3_12:
+.loc 5 201 1
+bar.sync 0;
+.loc 5 180 1
+mov.u32 %r56, %tid.x;
+mul.wide.s32 %rl20, %r56, 4;
+add.s64 %rl22, %rl11, %rl20;
+ld.param.u64 %rl25, [_Z16bitonicSortSmallPfij_param_0];
+cvta.to.global.u64 %rl23, %rl25;
+.loc 5 183 1
+add.s64 %rl24, %rl23, %rl20;
+.loc 5 202 1
+ld.shared.f32 %f7, [%rl22];
+st.global.f32 [%rl24], %f7;
+.loc 5 203 1
+ld.shared.f32 %f8, [%rl3];
+st.global.f32 [%rl2], %f8;
+.loc 5 204 2
+ret;
+}
+
+.entry _Z19bitonic_sort_ibsyncPVfiPiS1_(
+.param .u64 _Z19bitonic_sort_ibsyncPVfiPiS1__param_0,
+.param .u32 _Z19bitonic_sort_ibsyncPVfiPiS1__param_1,
+.param .u64 _Z19bitonic_sort_ibsyncPVfiPiS1__param_2,
+.param .u64 _Z19bitonic_sort_ibsyncPVfiPiS1__param_3
+)
+{
+.reg .f32 %f<5>;
+.reg .pred %p<20>;
+.reg .s32 %r<53>;
+.reg .s64 %rl<24>;
+
+
+ld.param.u32 %r1, [_Z19bitonic_sort_ibsyncPVfiPiS1__param_1];
+ld.param.u64 %rl2, [_Z19bitonic_sort_ibsyncPVfiPiS1__param_2];
+ld.param.u64 %rl3, [_Z19bitonic_sort_ibsyncPVfiPiS1__param_3];
+cvta.to.global.u64 %rl4, %rl3;
+cvta.to.global.u64 %rl5, %rl2;
+.loc 5 211 1
+mov.u32 %r2, %ctaid.x;
+mov.u32 %r16, %ntid.x;
+mov.u32 %r3, %tid.x;
+mad.lo.s32 %r4, %r2, %r16, %r3;
+.loc 5 212 1
+setp.lt.u32 %p2, %r1, 2;
+@%p2 bra BB4_20;
+
+shl.b32 %r5, %r4, 1;
+.loc 5 211 1
+mov.u32 %r49, %tid.x;
+.loc 2 10 1
+mul.wide.s32 %rl10, %r49, 4;
+add.s64 %rl6, %rl5, %rl10;
+.loc 5 211 1
+mov.u32 %r48, %ctaid.x;
+.loc 2 18 1
+mul.wide.s32 %rl11, %r48, 4;
+add.s64 %rl7, %rl4, %rl11;
+mov.u32 %r52, 0;
+mov.u32 %r50, 2;
+
+BB4_2:
+shr.u32 %r51, %r50, 1;
+setp.eq.s32 %p3, %r51, 0;
+.loc 5 213 1
+@%p3 bra BB4_19;
+
+.loc 5 214 1
+and.b32 %r19, %r51, %r4;
+setp.eq.s32 %p1, %r19, 0;
+
+BB4_4:
+add.s32 %r20, %r51, -1;
+.loc 5 215 1
+and.b32 %r21, %r20, %r4;
+sub.s32 %r22, %r5, %r21;
+.loc 5 216 1
+add.s32 %r23, %r22, %r51;
+ld.param.u64 %rl21, [_Z19bitonic_sort_ibsyncPVfiPiS1__param_0];
+cvta.to.global.u64 %rl12, %rl21;
+.loc 5 216 1
+mul.wide.u32 %rl13, %r23, 4;
+add.s64 %rl8, %rl12, %rl13;
+.loc 5 216 1
+mul.wide.u32 %rl14, %r22, 4;
+add.s64 %rl9, %rl12, %rl14;
+ld.volatile.global.f32 %f1, [%rl8];
+ld.volatile.global.f32 %f2, [%rl9];
+setp.gt.f32 %p4, %f2, %f1;
+xor.pred %p5, %p4, %p1;
+.loc 5 216 1
+@%p5 bra BB4_6;
+
+.loc 5 216 1
+ld.volatile.global.f32 %f3, [%rl9];
+ld.volatile.global.f32 %f4, [%rl8];
+st.volatile.global.f32 [%rl9], %f4;
+st.volatile.global.f32 [%rl8], %f3;
+
+BB4_6:
+.loc 5 217 1
+setp.gt.u32 %p6, %r51, 256;
+setp.gt.u32 %p7, %r50, 255;
+.loc 5 217 1
+setp.eq.s32 %p8, %r51, 1;
+and.pred %p9, %p8, %p7;
+or.pred %p10, %p6, %p9;
+.loc 5 217 1
+@%p10 bra BB4_8;
+
+.loc 5 223 1
+bar.sync 0;
+bra.uni BB4_18;
+
+BB4_8:
+.loc 5 219 1
+add.s32 %r52, %r52, 1;
+.loc 2 5 1
+setp.ne.s32 %p11, %r3, 0;
+@%p11 bra BB4_10;
+
+ld.param.u64 %rl22, [_Z19bitonic_sort_ibsyncPVfiPiS1__param_2];
+cvta.to.global.u64 %rl15, %rl22;
+.loc 2 6 1
+mul.wide.s32 %rl16, %r2, 4;
+add.s64 %rl17, %rl15, %rl16;
+st.volatile.global.u32 [%rl17], %r52;
+
+BB4_10:
+.loc 2 8 1
+setp.ne.s32 %p12, %r2, 1;
+@%p12 bra BB4_15;
+
+.loc 2 3 1
+mov.u32 %r35, %nctaid.x;
+.loc 2 9 1
+setp.ge.s32 %p13, %r3, %r35;
+@%p13 bra BB4_13;
+
+BB4_12:
+.loc 2 10 1
+ld.volatile.global.u32 %r36, [%rl6];
+setp.ne.s32 %p14, %r36, %r52;
+@%p14 bra BB4_12;
+
+BB4_13:
+.loc 2 12 1
+bar.sync 0;
+.loc 2 13 1
+@%p13 bra BB4_15;
+
+ld.param.u64 %rl23, [_Z19bitonic_sort_ibsyncPVfiPiS1__param_3];
+cvta.to.global.u64 %rl18, %rl23;
+.loc 2 14 1
+mul.wide.s32 %rl19, %r3, 4;
+add.s64 %rl20, %rl18, %rl19;
+st.volatile.global.u32 [%rl20], %r52;
+
+BB4_15:
+.loc 2 17 1
+@%p11 bra BB4_17;
+
+BB4_16:
+.loc 2 18 1
+ld.volatile.global.u32 %r43, [%rl7];
+setp.ne.s32 %p17, %r43, %r52;
+@%p17 bra BB4_16;
+
+BB4_17:
+.loc 2 20 1
+bar.sync 0;
+
+BB4_18:
+shr.u32 %r51, %r51, 1;
+.loc 5 213 1
+setp.ne.s32 %p18, %r51, 0;
+@%p18 bra BB4_4;
+
+BB4_19:
+.loc 5 212 38
+shl.b32 %r50, %r50, 1;
+ld.param.u32 %r45, [_Z19bitonic_sort_ibsyncPVfiPiS1__param_1];
+.loc 5 212 1
+setp.le.u32 %p19, %r50, %r45;
+@%p19 bra BB4_2;
+
+BB4_20:
+.loc 5 227 2
+ret;
+}
+
+

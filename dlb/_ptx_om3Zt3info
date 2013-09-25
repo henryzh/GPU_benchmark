@@ -1,0 +1,16 @@
+ptxas info    : Compiling entry function '_Z10makeOctreeI6DLBABPEvPT_P6float4S4_PjjS5_S5_jb' for 'sm_20'
+ptxas info    : Function properties for _Z10makeOctreeI6DLBABPEvPT_P6float4S4_PjjS5_S5_jb
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, 148+0 bytes smem, 93 bytes cmem[0], 96 bytes cmem[2], 16 bytes cmem[14], 12 bytes cmem[16]
+ptxas info    : Compiling entry function '_Z10initOctreeI6DLBABPEvPT_PjS3_i' for 'sm_20'
+ptxas info    : Function properties for _Z10initOctreeI6DLBABPEvPT_PjS3_i
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 14 registers, 60 bytes cmem[0], 96 bytes cmem[2], 16 bytes cmem[14]
+ptxas info    : Compiling entry function '_Z10makeOctreeI9DLBStaticEvPT_P6float4S4_PjjS5_S5_jb' for 'sm_20'
+ptxas info    : Function properties for _Z10makeOctreeI9DLBStaticEvPT_P6float4S4_PjjS5_S5_jb
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 30 registers, 148+0 bytes smem, 93 bytes cmem[0], 96 bytes cmem[2], 16 bytes cmem[14], 8 bytes cmem[16]
+ptxas info    : Compiling entry function '_Z10initOctreeI9DLBStaticEvPT_PjS3_i' for 'sm_20'
+ptxas info    : Function properties for _Z10initOctreeI9DLBStaticEvPT_PjS3_i
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 9 registers, 60 bytes cmem[0], 96 bytes cmem[2], 16 bytes cmem[14]

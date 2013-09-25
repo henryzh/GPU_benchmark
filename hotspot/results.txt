@@ -1,0 +1,11 @@
+[STATS] gpu_tot_sim_cycle = 223358
+[STATS] gpu_tot_sim_insn = 110148884
+[STATS] gpu_tot_ipc = 493.1495
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 6 min, 59 sec (419 sec)
+
+[STATS] gpu_tot_sim_cycle = 202675
+[STATS] gpu_tot_sim_insn = 110148884
+[STATS] gpu_tot_ipc = 543.4754
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 8 min, 40 sec (520 sec)
+
+223358/202675 = 1.10205008018

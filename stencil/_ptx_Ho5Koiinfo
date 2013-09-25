@@ -1,0 +1,4 @@
+ptxas info    : Compiling entry function '_Z11tile_3D_newiffPfS_iii' for 'sm_20'
+ptxas info    : Function properties for _Z11tile_3D_newiffPfS_iii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 20 registers, 4096+0 bytes smem, 76 bytes cmem[0], 8 bytes cmem[14]

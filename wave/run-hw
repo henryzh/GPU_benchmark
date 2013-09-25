@@ -1,0 +1,3 @@
+cp ptx/_cuobjdump_complete_output .
+cp ptx/_ptx_info .
+./wave

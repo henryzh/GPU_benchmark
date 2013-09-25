@@ -1,0 +1,12 @@
+#ifndef COMMON_H
+#define COMMON_H
+
+//#define tx threadIdx.x
+//#define bx blockIdx.x
+//#define bs blockDim.x
+
+//#define ATOMIC
+//#define LOCKFREE
+#define HW_BARRIER
+
+#endif

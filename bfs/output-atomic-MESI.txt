@@ -1,0 +1,83 @@
+[CUAPI] __cudaRegisterFatBinary
+[VERSION] GPGPU-Sim V3.1.2+ruby [build 14831]
+[RUBY] initializing gpusim_ruby
+[RUBY] init ruby
+[CUAPI] __cudaRegisterFunction
+[CUAPI] __cudaRegisterFunction
+[CUAPI] __cudaRegisterFunction
+[CUAPI] __cudaRegisterTexture
+[CUAPI] __cudaRegisterTexture
+[BENCH] BFS from Parboil
+[BENCH] Atomic Barrier
+[CUAPI] cudaMalloc
+[CUAPI] cudaMemcpy
+[DEBUG] Setting Ruby membar
+[CUAPI] cudaMalloc
+[CUAPI] cudaMemcpy
+[DEBUG] Setting Ruby membar
+[CUAPI] cudaMalloc
+[CUAPI] cudaMalloc
+[CUAPI] cudaMalloc
+[CUAPI] cudaMalloc
+[CUAPI] cudaMalloc
+[CUAPI] cudaMalloc
+[CUAPI] cudaMemcpy
+[DEBUG] Setting Ruby membar
+[CUAPI] cudaMemcpy
+[DEBUG] Setting Ruby membar
+[CUAPI] cudaBindTexture
+[CUAPI] cudaBindTexture
+[BENCH] Starting GPU kernel
+[DEBUG] Setting Ruby membar
+[CUAPI] cudaMemcpy
+[DEBUG] Setting Ruby membar
+[CUAPI] cudaMemcpy
+[DEBUG] Setting Ruby membar
+[CUAPI] cudaMemcpy
+[DEBUG] Setting Ruby membar
+[CUAPI] cudaMalloc
+[CUAPI] cudaMalloc
+[CUAPI] cudaMalloc
+[CUAPI] cudaMalloc
+[CUAPI] cudaMalloc
+[CUAPI] cudaMemcpy
+[DEBUG] Setting Ruby membar
+[CUAPI] cudaMalloc
+[CUAPI] cudaMemcpy
+[DEBUG] Setting Ruby membar
+[CUAPI] cudaMemcpy
+[DEBUG] Setting Ruby membar
+[CUAPI] cudaMemcpy
+[DEBUG] Setting Ruby membar
+[CUAPI] __cudaLaunch
+[DEBUG] pushing kernel '_Z17BFS_in_GPU_kernelPiS_P4int2S1_S_S_iS_iiS_' to stream 0
+[DEBUG] gridDim= (1,1,1) blockDim = (512,1,1)
+[DEBUG] Setting Ruby membar
+[DEBUG] Allocating CTA barrier: kernel_id=1, num_ctas=1
+[SYNC] CTA barrier allocated for Grid #1
+[DEBUG] CTA/core = 3, limited by: threads shmem regs
+[SYNC] CTA barrier deallocated for Grid #1
+[DEBUG] Kenel done, CTA barrier deallocated
+[STAT] kernel_sim_cycle = 17960083
+[STAT] tot_sim_cycle = 17960083
+[STAT] tot_sim_insn = 22104424
+[STAT] tot_ipc = 1.231
+[STATS] gpu_tot_l1_miss_rate = -nan
+[STATS] gpu_tot_l2_miss_rate = 0.0663
+
+[STATS] simulation_time = 0 days, 0 hrs, 20 min, 52 sec (1252 sec)
+[CUAPI] cudaMemcpy
+[DEBUG] Setting Ruby membar
+[CUAPI] cudaMemcpy
+[DEBUG] Setting Ruby membar
+[CUAPI] cudaMemcpy
+[DEBUG] Setting Ruby membar
+[CUAPI] cudaMemcpy
+[DEBUG] Setting Ruby membar
+[CUAPI] __cudaLaunch
+[DEBUG] pushing kernel '_Z26BFS_kernel_multi_blk_inGPUPiS_P4int2S1_S_S_S_S_iiS_S_S_S_S_S_' to stream 0
+[DEBUG] gridDim= (14,1,1) blockDim = (512,1,1)
+[DEBUG] Setting Ruby membar
+[DEBUG] Allocating CTA barrier: kernel_id=2, num_ctas=14
+[SYNC] CTA barrier allocated for Grid #2
+[DEBUG] CTA/core = 2, limited by: regs

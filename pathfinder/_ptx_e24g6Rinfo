@@ -1,0 +1,4 @@
+ptxas info    : Compiling entry function '_Z14dynproc_kerneliPiS_S_iiii' for 'sm_20'
+ptxas info    : Function properties for _Z14dynproc_kerneliPiS_S_iiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 15 registers, 2048+0 bytes smem, 80 bytes cmem[0]

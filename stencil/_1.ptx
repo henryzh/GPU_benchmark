@@ -1,0 +1,402 @@
+
+
+
+
+
+
+
+.version 3.0
+.target sm_20
+.address_size 64
+
+.file	1 "/tmp/tmpxft_00007857_00000000-7_main.cpp3.i"
+.file	2 "kernels.cu"
+.file	3 "/usr/local/cuda/nvvm/ci_include.h"
+.file	4 "/usr/local/cuda/include/sm_11_atomic_functions.h"
+.global .align 4 .u32 mutex;
+
+
+.entry _Z11tile_3D_newiffPfS_iii(
+.param .u32 _Z11tile_3D_newiffPfS_iii_param_0,
+.param .f32 _Z11tile_3D_newiffPfS_iii_param_1,
+.param .f32 _Z11tile_3D_newiffPfS_iii_param_2,
+.param .u64 _Z11tile_3D_newiffPfS_iii_param_3,
+.param .u64 _Z11tile_3D_newiffPfS_iii_param_4,
+.param .u32 _Z11tile_3D_newiffPfS_iii_param_5,
+.param .u32 _Z11tile_3D_newiffPfS_iii_param_6,
+.param .u32 _Z11tile_3D_newiffPfS_iii_param_7
+)
+{
+.reg .f32 %f<40>;
+.reg .pred %p<23>;
+.reg .s32 %r<264>;
+.reg .s64 %rl<73>;
+.reg .s16 %rc<5>;
+
+	.shared .align 4 .b8 __cuda_local_var_18902_32_non_const_sh_mem[4096];
+
+.loc 2 68 1
+mov.u32 %r11, %tid.x;
+.loc 2 74 1
+mov.u32 %r12, %ntid.x;
+.loc 2 71 1
+mov.u32 %r13, %ctaid.x;
+.loc 2 74 1
+mad.lo.s32 %r5, %r12, %r13, %r11;
+.loc 2 75 1
+mov.u32 %r14, %ntid.y;
+.loc 2 72 1
+mov.u32 %r15, %ctaid.y;
+.loc 2 69 1
+mov.u32 %r16, %tid.y;
+.loc 2 75 1
+mad.lo.s32 %r6, %r14, %r15, %r16;
+.loc 2 76 1
+mov.u32 %r17, %ntid.z;
+.loc 2 73 1
+mov.u32 %r18, %ctaid.z;
+.loc 2 70 1
+mov.u32 %r19, %tid.z;
+.loc 2 76 1
+mad.lo.s32 %r7, %r17, %r18, %r19;
+.loc 2 78 1
+mul.lo.s32 %r20, %r12, %r19;
+mad.lo.s32 %r21, %r12, %r16, %r11;
+mad.lo.s32 %r22, %r20, %r14, %r21;
+mul.wide.s32 %rl8, %r22, 4;
+mov.u64 %rl69, __cuda_local_var_18902_32_non_const_sh_mem;
+add.s64 %rl3, %rl69, %rl8;
+mov.u32 %r23, 0;
+.loc 2 83 1
+st.shared.u32 [%rl3], %r23;
+.loc 2 84 1
+st.shared.u32 [%rl3+2048], %r23;
+.loc 2 85 1
+bar.sync 0;
+.loc 2 87 1
+setp.gt.s32 %p2, %r5, 0;
+setp.gt.s32 %p3, %r6, 0;
+and.pred %p4, %p2, %p3;
+.loc 2 87 1
+setp.gt.s32 %p5, %r7, 0;
+and.pred %p6, %p4, %p5;
+ld.param.u32 %r252, [_Z11tile_3D_newiffPfS_iii_param_5];
+add.s32 %r26, %r252, -1;
+.loc 2 87 1
+setp.lt.s32 %p7, %r5, %r26;
+and.pred %p8, %p6, %p7;
+ld.param.u32 %r261, [_Z11tile_3D_newiffPfS_iii_param_6];
+add.s32 %r27, %r261, -1;
+.loc 2 87 1
+setp.lt.s32 %p9, %r6, %r27;
+and.pred %p10, %p8, %p9;
+.loc 2 87 1
+@%p10 bra BB0_2;
+
+mov.u16 %rc4, 0;
+bra.uni BB0_3;
+
+BB0_2:
+ld.param.u32 %r262, [_Z11tile_3D_newiffPfS_iii_param_7];
+add.s32 %r28, %r262, -1;
+.loc 2 87 1
+setp.lt.s32 %p11, %r7, %r28;
+selp.u16 %rc4, 1, 0, %p11;
+
+BB0_3:
+ld.param.u32 %r260, [_Z11tile_3D_newiffPfS_iii_param_6];
+.loc 2 95 1
+mad.lo.s32 %r29, %r7, %r260, %r6;
+ld.param.u32 %r251, [_Z11tile_3D_newiffPfS_iii_param_5];
+.loc 2 95 1
+mad.lo.s32 %r30, %r29, %r251, %r5;
+ld.param.u64 %rl63, [_Z11tile_3D_newiffPfS_iii_param_3];
+cvta.to.global.u64 %rl10, %rl63;
+.loc 2 95 1
+mul.wide.s32 %rl11, %r30, 4;
+add.s64 %rl12, %rl10, %rl11;
+ld.global.f32 %f21, [%rl12];
+st.shared.f32 [%rl3], %f21;
+.loc 2 96 1
+bar.sync 0;
+ld.param.u32 %r243, [_Z11tile_3D_newiffPfS_iii_param_0];
+.loc 2 98 1
+setp.gt.s32 %p12, %r243, 0;
+@%p12 bra BB0_5;
+
+add.s64 %rl70, %rl69, 2048;
+bra.uni BB0_31;
+
+BB0_5:
+.loc 2 99 1
+{
+.reg .s16 %temp1;
+.reg .s16 %temp2;
+cvt.s16.s8 %temp1, %rc4;
+mov.b16 %temp2, 0;
+cvt.s16.s8 %temp2, %temp2;
+setp.eq.s16 %p1, %temp1, %temp2;
+}
+mov.u32 %r263, 0;
+mov.u64 %rl72, __cuda_local_var_18902_32_non_const_sh_mem;
+add.s64 %rl71, %rl72, 2048;
+
+BB0_6:
+mov.u64 %rl65, %rl71;
+mov.u64 %rl5, %rl72;
+mov.u64 %rl72, %rl65;
+.loc 2 99 1
+@%p1 bra BB0_26;
+
+.loc 2 88 1
+setp.eq.s32 %p13, %r11, 0;
+.loc 2 101 1
+@%p13 bra BB0_9;
+
+.loc 2 113 1
+mul.wide.s32 %rl17, %r22, 4;
+add.s64 %rl18, %rl5, %rl17;
+.loc 2 102 1
+ld.shared.f32 %f34, [%rl18+-4];
+bra.uni BB0_10;
+
+BB0_9:
+ld.param.u64 %rl62, [_Z11tile_3D_newiffPfS_iii_param_3];
+cvta.to.global.u64 %rl19, %rl62;
+ld.param.u32 %r259, [_Z11tile_3D_newiffPfS_iii_param_6];
+.loc 2 95 1
+mad.lo.s32 %r52, %r7, %r259, %r6;
+ld.param.u32 %r250, [_Z11tile_3D_newiffPfS_iii_param_5];
+.loc 2 95 1
+mad.lo.s32 %r57, %r52, %r250, %r5;
+mul.wide.s32 %rl20, %r57, 4;
+add.s64 %rl21, %rl19, %rl20;
+.loc 2 101 1
+ld.global.f32 %f34, [%rl21+-4];
+
+BB0_10:
+add.s32 %r60, %r12, -1;
+.loc 2 89 1
+setp.eq.s32 %p14, %r11, %r60;
+.loc 2 103 1
+@%p14 bra BB0_12;
+
+.loc 2 113 1
+mul.wide.s32 %rl22, %r22, 4;
+add.s64 %rl23, %rl5, %rl22;
+.loc 2 104 1
+ld.shared.f32 %f35, [%rl23+4];
+bra.uni BB0_13;
+
+BB0_12:
+ld.param.u64 %rl61, [_Z11tile_3D_newiffPfS_iii_param_3];
+cvta.to.global.u64 %rl24, %rl61;
+ld.param.u32 %r258, [_Z11tile_3D_newiffPfS_iii_param_6];
+.loc 2 95 1
+mad.lo.s32 %r79, %r7, %r258, %r6;
+ld.param.u32 %r249, [_Z11tile_3D_newiffPfS_iii_param_5];
+.loc 2 95 1
+mad.lo.s32 %r84, %r79, %r249, %r5;
+mul.wide.s32 %rl25, %r84, 4;
+add.s64 %rl26, %rl24, %rl25;
+.loc 2 103 1
+ld.global.f32 %f35, [%rl26+4];
+
+BB0_13:
+.loc 2 90 1
+setp.eq.s32 %p15, %r16, 0;
+.loc 2 105 1
+@%p15 bra BB0_15;
+
+.loc 2 106 1
+sub.s32 %r95, %r22, %r12;
+mul.wide.u32 %rl27, %r95, 4;
+add.s64 %rl28, %rl5, %rl27;
+ld.shared.f32 %f36, [%rl28];
+bra.uni BB0_16;
+
+BB0_15:
+ld.param.u64 %rl60, [_Z11tile_3D_newiffPfS_iii_param_3];
+cvta.to.global.u64 %rl29, %rl60;
+ld.param.u32 %r257, [_Z11tile_3D_newiffPfS_iii_param_6];
+mad.lo.s32 %r105, %r7, %r257, %r6;
+.loc 2 105 1
+add.s32 %r106, %r105, -1;
+ld.param.u32 %r248, [_Z11tile_3D_newiffPfS_iii_param_5];
+.loc 2 105 1
+mad.lo.s32 %r111, %r106, %r248, %r5;
+mul.wide.s32 %rl30, %r111, 4;
+add.s64 %rl31, %rl29, %rl30;
+ld.global.f32 %f36, [%rl31];
+
+BB0_16:
+add.s32 %r114, %r14, -1;
+.loc 2 91 1
+setp.eq.s32 %p16, %r16, %r114;
+.loc 2 107 1
+@%p16 bra BB0_18;
+
+.loc 2 108 1
+add.s32 %r124, %r12, %r22;
+mul.wide.u32 %rl32, %r124, 4;
+add.s64 %rl33, %rl5, %rl32;
+ld.shared.f32 %f37, [%rl33];
+bra.uni BB0_19;
+
+BB0_18:
+ld.param.u64 %rl59, [_Z11tile_3D_newiffPfS_iii_param_3];
+cvta.to.global.u64 %rl34, %rl59;
+ld.param.u32 %r256, [_Z11tile_3D_newiffPfS_iii_param_6];
+.loc 2 107 1
+mad.lo.s32 %r134, %r7, %r256, %r6;
+add.s32 %r135, %r134, 1;
+ld.param.u32 %r247, [_Z11tile_3D_newiffPfS_iii_param_5];
+.loc 2 107 1
+mad.lo.s32 %r140, %r135, %r247, %r5;
+mul.wide.s32 %rl35, %r140, 4;
+add.s64 %rl36, %rl34, %rl35;
+ld.global.f32 %f37, [%rl36];
+
+BB0_19:
+.loc 2 92 1
+setp.eq.s32 %p17, %r19, 0;
+.loc 2 109 1
+@%p17 bra BB0_21;
+
+.loc 2 112 1
+mul.lo.s32 %r151, %r14, %r12;
+.loc 2 110 1
+sub.s32 %r152, %r22, %r151;
+mul.wide.u32 %rl37, %r152, 4;
+add.s64 %rl38, %rl5, %rl37;
+ld.shared.f32 %f38, [%rl38];
+bra.uni BB0_22;
+
+BB0_21:
+ld.param.u64 %rl58, [_Z11tile_3D_newiffPfS_iii_param_3];
+cvta.to.global.u64 %rl39, %rl58;
+add.s32 %r158, %r7, -1;
+ld.param.u32 %r255, [_Z11tile_3D_newiffPfS_iii_param_6];
+.loc 2 109 1
+mad.lo.s32 %r163, %r158, %r255, %r6;
+ld.param.u32 %r246, [_Z11tile_3D_newiffPfS_iii_param_5];
+.loc 2 109 1
+mad.lo.s32 %r168, %r163, %r246, %r5;
+mul.wide.s32 %rl40, %r168, 4;
+add.s64 %rl41, %rl39, %rl40;
+ld.global.f32 %f38, [%rl41];
+
+BB0_22:
+add.s32 %r171, %r17, -1;
+.loc 2 93 1
+setp.eq.s32 %p18, %r19, %r171;
+.loc 2 111 1
+@%p18 bra BB0_24;
+
+.loc 2 112 1
+mad.lo.s32 %r181, %r14, %r12, %r22;
+mul.wide.u32 %rl42, %r181, 4;
+add.s64 %rl43, %rl5, %rl42;
+ld.shared.f32 %f39, [%rl43];
+bra.uni BB0_25;
+
+BB0_24:
+ld.param.u64 %rl57, [_Z11tile_3D_newiffPfS_iii_param_3];
+cvta.to.global.u64 %rl44, %rl57;
+.loc 2 111 1
+add.s32 %r187, %r7, 1;
+ld.param.u32 %r254, [_Z11tile_3D_newiffPfS_iii_param_6];
+.loc 2 111 1
+mad.lo.s32 %r192, %r187, %r254, %r6;
+ld.param.u32 %r245, [_Z11tile_3D_newiffPfS_iii_param_5];
+.loc 2 111 1
+mad.lo.s32 %r197, %r192, %r245, %r5;
+mul.wide.s32 %rl45, %r197, 4;
+add.s64 %rl46, %rl44, %rl45;
+ld.global.f32 %f39, [%rl46];
+
+BB0_25:
+.loc 2 113 1
+add.f32 %f22, %f37, %f36;
+add.f32 %f23, %f22, %f34;
+add.f32 %f24, %f23, %f35;
+add.f32 %f25, %f24, %f39;
+add.f32 %f26, %f25, %f38;
+ld.param.f32 %f33, [_Z11tile_3D_newiffPfS_iii_param_2];
+.loc 2 113 1
+mul.f32 %f27, %f26, %f33;
+mul.wide.s32 %rl47, %r22, 4;
+add.s64 %rl48, %rl5, %rl47;
+ld.shared.f32 %f28, [%rl48];
+neg.f32 %f29, %f28;
+ld.param.f32 %f32, [_Z11tile_3D_newiffPfS_iii_param_1];
+.loc 2 113 1
+fma.rn.f32 %f30, %f29, %f32, %f27;
+add.s64 %rl49, %rl72, %rl47;
+st.shared.f32 [%rl49], %f30;
+
+BB0_26:
+.loc 2 115 1
+add.s32 %r263, %r263, 1;
+.loc 2 77 1
+mov.u32 %r209, %nctaid.x;
+.loc 2 115 1
+mul.lo.s32 %r10, %r263, %r209;
+.loc 2 78 1
+mul.lo.s32 %r215, %r20, %r14;
+.loc 2 115 1
+mad.lo.s32 %r216, %r12, %r16, %r215;
+neg.s32 %r218, %r11;
+.loc 2 115 1
+setp.ne.s32 %p19, %r216, %r218;
+@%p19 bra BB0_29;
+
+.loc 3 1832 5
+mov.u64 %rl50, mutex;
+atom.global.add.u32 %r219, [%rl50], 1;
+
+BB0_28:
+.loc 2 115 1
+ld.volatile.global.u32 %r220, [mutex];
+setp.ne.s32 %p20, %r220, %r10;
+@%p20 bra BB0_28;
+
+BB0_29:
+.loc 2 115 1
+bar.sync 0;
+ld.param.u32 %r242, [_Z11tile_3D_newiffPfS_iii_param_0];
+.loc 2 98 1
+setp.lt.s32 %p21, %r263, %r242;
+mov.u64 %rl71, %rl5;
+.loc 2 98 1
+@%p21 bra BB0_6;
+
+mov.u64 %rl69, %rl72;
+mov.u64 %rl70, %rl5;
+
+BB0_31:
+ld.param.u32 %r241, [_Z11tile_3D_newiffPfS_iii_param_0];
+and.b32 %r221, %r241, 1;
+setp.eq.s32 %p22, %r221, 0;
+selp.b64 %rl51, %rl69, %rl70, %p22;
+mul.wide.s32 %rl52, %r22, 4;
+add.s64 %rl53, %rl51, %rl52;
+ld.param.u32 %r253, [_Z11tile_3D_newiffPfS_iii_param_6];
+.loc 2 95 1
+mad.lo.s32 %r235, %r7, %r253, %r6;
+ld.param.u32 %r244, [_Z11tile_3D_newiffPfS_iii_param_5];
+.loc 2 95 1
+mad.lo.s32 %r238, %r235, %r244, %r5;
+ld.param.u64 %rl64, [_Z11tile_3D_newiffPfS_iii_param_4];
+cvta.to.global.u64 %rl54, %rl64;
+.loc 2 121 1
+mul.wide.s32 %rl55, %r238, 4;
+add.s64 %rl56, %rl54, %rl55;
+ld.shared.f32 %f31, [%rl53];
+.loc 2 121 1
+st.global.f32 [%rl56], %f31;
+.loc 2 122 2
+ret;
+}
+
+

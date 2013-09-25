@@ -1,0 +1,485 @@
+
+
+
+
+
+
+
+.version 3.0
+.target sm_20
+.address_size 64
+
+.file	1 "/tmp/tmpxft_000008d6_00000000-7_reduction.cpp3.i"
+.file	2 "reduction.cu"
+.file	3 "/usr/local/cuda/nvvm/ci_include.h"
+.shared .align 4 .b8 __cuda_local_var_16904_35_non_const_partialSum[2048];
+.shared .align 4 .b8 __cuda_local_var_16923_35_non_const_partialSum[256];
+
+.visible .func (.param .b32 func_retval0) _Z19calculatePartialSumPKfj(
+.param .b64 _Z19calculatePartialSumPKfj_param_0,
+.param .b32 _Z19calculatePartialSumPKfj_param_1
+)
+{
+.reg .f32 %f<8>;
+.reg .pred %p<5>;
+.reg .s32 %r<25>;
+.reg .s64 %rl<15>;
+
+
+ld.param.u32 %r6, [_Z19calculatePartialSumPKfj_param_1];
+.loc 2 12 1
+mov.u32 %r1, %tid.x;
+.loc 2 14 1
+mov.u32 %r7, %ctaid.x;
+.loc 2 13 1
+mov.u32 %r24, %ntid.x;
+.loc 2 14 1
+mul.lo.s32 %r3, %r7, %r24;
+.loc 2 15 1
+mad.lo.s32 %r8, %r7, %r24, %r1;
+.loc 2 16 1
+setp.lt.u32 %p1, %r8, %r6;
+@%p1 bra BB0_2;
+
+mov.f32 %f1, 0f00000000;
+.loc 2 29 1
+st.param.f32	[func_retval0+0], %f1;
+ret;
+
+BB0_2:
+shl.b32 %r9, %r3, 1;
+.loc 2 12 1
+mov.u32 %r23, %tid.x;
+.loc 2 21 1
+add.s32 %r10, %r9, %r23;
+mul.wide.u32 %rl3, %r10, 4;
+ld.param.u64 %rl14, [_Z19calculatePartialSumPKfj_param_0];
+.loc 2 21 1
+add.s64 %rl4, %rl14, %rl3;
+mul.wide.u32 %rl5, %r23, 4;
+mov.u64 %rl6, __cuda_local_var_16904_35_non_const_partialSum;
+add.s64 %rl2, %rl6, %rl5;
+.loc 2 21 1
+ld.f32 %f2, [%rl4];
+st.shared.f32 [%rl2], %f2;
+.loc 2 13 1
+mov.u32 %r22, %ntid.x;
+.loc 2 22 1
+add.s32 %r13, %r22, %r23;
+add.s32 %r14, %r13, %r9;
+mul.wide.u32 %rl7, %r14, 4;
+add.s64 %rl8, %rl14, %rl7;
+mul.wide.u32 %rl9, %r13, 4;
+add.s64 %rl10, %rl6, %rl9;
+.loc 2 22 1
+ld.f32 %f3, [%rl8];
+st.shared.f32 [%rl10], %f3;
+setp.eq.s32 %p2, %r22, 0;
+.loc 2 25 1
+@%p2 bra BB0_6;
+
+BB0_3:
+.loc 2 26 1
+bar.sync 0;
+.loc 2 27 1
+setp.ge.u32 %p3, %r1, %r24;
+@%p3 bra BB0_5;
+
+.loc 2 27 1
+add.s32 %r17, %r24, %r1;
+mul.wide.u32 %rl11, %r17, 4;
+add.s64 %rl13, %rl6, %rl11;
+.loc 2 27 1
+ld.shared.f32 %f4, [%rl2];
+ld.shared.f32 %f5, [%rl13];
+add.f32 %f6, %f4, %f5;
+st.shared.f32 [%rl2], %f6;
+
+BB0_5:
+.loc 2 25 24
+shr.u32 %r24, %r24, 1;
+.loc 2 25 1
+setp.ne.s32 %p4, %r24, 0;
+@%p4 bra BB0_3;
+
+BB0_6:
+.loc 2 29 1
+ld.shared.f32 %f7, [__cuda_local_var_16904_35_non_const_partialSum];
+st.param.f32	[func_retval0+0], %f7;
+ret;
+}
+
+.visible .func (.param .b32 func_retval0) _Z17calculateTotalSumPf(
+.param .b64 _Z17calculateTotalSumPf_param_0
+)
+{
+.reg .f32 %f<23>;
+.reg .pred %p<8>;
+.reg .s32 %r<37>;
+.reg .s64 %rl<7>;
+
+
+.loc 2 33 1
+mov.u32 %r1, %tid.x;
+setp.gt.u32 %p1, %r1, 31;
+.loc 2 35 1
+@%p1 bra BB1_14;
+
+.loc 2 33 1
+mov.u32 %r36, %tid.x;
+.loc 2 37 1
+mul.wide.u32 %rl3, %r36, 4;
+ld.param.u64 %rl6, [_Z17calculateTotalSumPf_param_0];
+.loc 2 37 1
+add.s64 %rl4, %rl6, %rl3;
+mov.u64 %rl5, __cuda_local_var_16923_35_non_const_partialSum;
+add.s64 %rl2, %rl5, %rl3;
+.loc 2 37 1
+ld.f32 %f1, [%rl4];
+st.shared.f32 [%rl2], %f1;
+.loc 2 38 1
+ld.f32 %f2, [%rl4+128];
+st.shared.f32 [%rl2+128], %f2;
+.loc 2 40 1
+bar.sync 0;
+.loc 2 41 1
+@%p1 bra BB1_3;
+
+.loc 2 41 1
+ld.shared.f32 %f3, [%rl2];
+ld.shared.f32 %f4, [%rl2+128];
+add.f32 %f5, %f3, %f4;
+st.shared.f32 [%rl2], %f5;
+
+BB1_3:
+.loc 2 40 1
+bar.sync 0;
+.loc 2 33 1
+mov.u32 %r35, %tid.x;
+.loc 2 41 1
+setp.gt.u32 %p3, %r35, 15;
+@%p3 bra BB1_5;
+
+.loc 2 41 1
+ld.shared.f32 %f6, [%rl2];
+ld.shared.f32 %f7, [%rl2+64];
+add.f32 %f8, %f6, %f7;
+st.shared.f32 [%rl2], %f8;
+
+BB1_5:
+.loc 2 40 1
+bar.sync 0;
+.loc 2 33 1
+mov.u32 %r34, %tid.x;
+.loc 2 41 1
+setp.gt.u32 %p4, %r34, 7;
+@%p4 bra BB1_7;
+
+.loc 2 41 1
+ld.shared.f32 %f9, [%rl2];
+ld.shared.f32 %f10, [%rl2+32];
+add.f32 %f11, %f9, %f10;
+st.shared.f32 [%rl2], %f11;
+
+BB1_7:
+.loc 2 40 1
+bar.sync 0;
+.loc 2 33 1
+mov.u32 %r33, %tid.x;
+.loc 2 41 1
+setp.gt.u32 %p5, %r33, 3;
+@%p5 bra BB1_9;
+
+.loc 2 41 1
+ld.shared.f32 %f12, [%rl2];
+ld.shared.f32 %f13, [%rl2+16];
+add.f32 %f14, %f12, %f13;
+st.shared.f32 [%rl2], %f14;
+
+BB1_9:
+.loc 2 40 1
+bar.sync 0;
+.loc 2 33 1
+mov.u32 %r32, %tid.x;
+.loc 2 41 1
+setp.gt.u32 %p6, %r32, 1;
+@%p6 bra BB1_11;
+
+.loc 2 41 1
+ld.shared.f32 %f15, [%rl2];
+ld.shared.f32 %f16, [%rl2+8];
+add.f32 %f17, %f15, %f16;
+st.shared.f32 [%rl2], %f17;
+
+BB1_11:
+.loc 2 40 1
+bar.sync 0;
+.loc 2 33 1
+mov.u32 %r31, %tid.x;
+.loc 2 41 1
+setp.ne.s32 %p7, %r31, 0;
+@%p7 bra BB1_13;
+
+.loc 2 41 1
+ld.shared.f32 %f18, [%rl2];
+ld.shared.f32 %f19, [%rl2+4];
+add.f32 %f20, %f18, %f19;
+st.shared.f32 [%rl2], %f20;
+
+BB1_13:
+.loc 2 43 1
+ld.shared.f32 %f21, [__cuda_local_var_16923_35_non_const_partialSum];
+st.param.f32	[func_retval0+0], %f21;
+ret;
+
+BB1_14:
+mov.f32 %f22, 0f00000000;
+.loc 2 43 1
+st.param.f32	[func_retval0+0], %f22;
+ret;
+}
+
+.entry _Z3sumPKfjPf(
+.param .u64 _Z3sumPKfjPf_param_0,
+.param .u32 _Z3sumPKfjPf_param_1,
+.param .u64 _Z3sumPKfjPf_param_2
+)
+{
+.reg .f32 %f<34>;
+.reg .pred %p<14>;
+.reg .s32 %r<68>;
+.reg .s64 %rl<23>;
+
+
+ld.param.u64 %rl5, [_Z3sumPKfjPf_param_0];
+ld.param.u32 %r7, [_Z3sumPKfjPf_param_1];
+ld.param.u64 %rl6, [_Z3sumPKfjPf_param_2];
+cvta.to.global.u64 %rl1, %rl6;
+cvta.to.global.u64 %rl2, %rl5;
+.loc 2 14 1
+mov.u32 %r1, %ctaid.x;
+.loc 2 13 1
+mov.u32 %r67, %ntid.x;
+.loc 2 14 1
+mul.lo.s32 %r3, %r1, %r67;
+.loc 2 12 1
+mov.u32 %r4, %tid.x;
+.loc 2 15 1
+mad.lo.s32 %r8, %r1, %r67, %r4;
+.loc 2 16 1
+setp.lt.u32 %p2, %r8, %r7;
+@%p2 bra BB2_2;
+
+mov.f32 %f32, 0f00000000;
+bra.uni BB2_7;
+
+BB2_2:
+shl.b32 %r9, %r3, 1;
+.loc 2 12 1
+mov.u32 %r59, %tid.x;
+.loc 2 21 1
+add.s32 %r10, %r9, %r59;
+mul.wide.u32 %rl7, %r10, 4;
+add.s64 %rl8, %rl2, %rl7;
+mul.wide.u32 %rl9, %r59, 4;
+mov.u64 %rl10, __cuda_local_var_16904_35_non_const_partialSum;
+add.s64 %rl3, %rl10, %rl9;
+.loc 2 21 1
+ld.global.f32 %f6, [%rl8];
+st.shared.f32 [%rl3], %f6;
+.loc 2 13 1
+mov.u32 %r47, %ntid.x;
+.loc 2 22 1
+add.s32 %r13, %r47, %r59;
+add.s32 %r14, %r13, %r9;
+mul.wide.u32 %rl11, %r14, 4;
+add.s64 %rl12, %rl2, %rl11;
+mul.wide.u32 %rl13, %r13, 4;
+add.s64 %rl14, %rl10, %rl13;
+.loc 2 22 1
+ld.global.f32 %f7, [%rl12];
+st.shared.f32 [%rl14], %f7;
+setp.eq.s32 %p3, %r47, 0;
+.loc 2 25 1
+@%p3 bra BB2_6;
+
+BB2_3:
+.loc 2 26 1
+bar.sync 0;
+.loc 2 27 1
+setp.ge.u32 %p4, %r4, %r67;
+@%p4 bra BB2_5;
+
+.loc 2 27 1
+add.s32 %r17, %r67, %r4;
+mul.wide.u32 %rl15, %r17, 4;
+add.s64 %rl17, %rl10, %rl15;
+.loc 2 27 1
+ld.shared.f32 %f8, [%rl3];
+ld.shared.f32 %f9, [%rl17];
+add.f32 %f10, %f8, %f9;
+st.shared.f32 [%rl3], %f10;
+
+BB2_5:
+.loc 2 25 24
+shr.u32 %r67, %r67, 1;
+.loc 2 25 1
+setp.ne.s32 %p5, %r67, 0;
+@%p5 bra BB2_3;
+
+BB2_6:
+.loc 2 29 1
+ld.shared.f32 %f32, [__cuda_local_var_16904_35_non_const_partialSum];
+
+BB2_7:
+.loc 2 12 1
+mov.u32 %r66, %tid.x;
+.loc 2 54 1
+setp.eq.s32 %p1, %r66, 0;
+setp.ne.s32 %p6, %r66, 0;
+@%p6 bra BB2_9;
+
+.loc 2 14 1
+mov.u32 %r57, %ctaid.x;
+.loc 2 58 1
+mul.wide.u32 %rl18, %r57, 4;
+add.s64 %rl19, %rl1, %rl18;
+st.global.f32 [%rl19], %f32;
+.loc 3 75 5
+membar.gl;
+
+BB2_9:
+.loc 3 75 5
+ib.sync 3;
+.loc 2 14 1
+mov.u32 %r58, %ctaid.x;
+.loc 2 86 1
+setp.ne.s32 %p7, %r58, 0;
+@%p7 bra BB2_26;
+
+.loc 2 12 1
+mov.u32 %r65, %tid.x;
+setp.gt.u32 %p8, %r65, 31;
+.loc 2 35 1
+@%p8 bra BB2_24;
+
+.loc 2 12 1
+mov.u32 %r64, %tid.x;
+.loc 2 37 1
+mul.wide.u32 %rl20, %r64, 4;
+add.s64 %rl21, %rl1, %rl20;
+mov.u64 %rl22, __cuda_local_var_16923_35_non_const_partialSum;
+add.s64 %rl4, %rl22, %rl20;
+.loc 2 37 1
+ld.global.f32 %f11, [%rl21];
+st.shared.f32 [%rl4], %f11;
+.loc 2 38 1
+ld.global.f32 %f12, [%rl21+128];
+st.shared.f32 [%rl4+128], %f12;
+.loc 2 40 1
+bar.sync 0;
+.loc 2 41 1
+@%p8 bra BB2_13;
+
+.loc 2 41 1
+ld.shared.f32 %f13, [%rl4];
+ld.shared.f32 %f14, [%rl4+128];
+add.f32 %f15, %f13, %f14;
+st.shared.f32 [%rl4], %f15;
+
+BB2_13:
+.loc 2 40 1
+bar.sync 0;
+.loc 2 12 1
+mov.u32 %r63, %tid.x;
+.loc 2 41 1
+setp.gt.u32 %p10, %r63, 15;
+@%p10 bra BB2_15;
+
+.loc 2 41 1
+ld.shared.f32 %f16, [%rl4];
+ld.shared.f32 %f17, [%rl4+64];
+add.f32 %f18, %f16, %f17;
+st.shared.f32 [%rl4], %f18;
+
+BB2_15:
+.loc 2 40 1
+bar.sync 0;
+.loc 2 12 1
+mov.u32 %r62, %tid.x;
+.loc 2 41 1
+setp.gt.u32 %p11, %r62, 7;
+@%p11 bra BB2_17;
+
+.loc 2 41 1
+ld.shared.f32 %f19, [%rl4];
+ld.shared.f32 %f20, [%rl4+32];
+add.f32 %f21, %f19, %f20;
+st.shared.f32 [%rl4], %f21;
+
+BB2_17:
+.loc 2 40 1
+bar.sync 0;
+.loc 2 12 1
+mov.u32 %r61, %tid.x;
+.loc 2 41 1
+setp.gt.u32 %p12, %r61, 3;
+@%p12 bra BB2_19;
+
+.loc 2 41 1
+ld.shared.f32 %f22, [%rl4];
+ld.shared.f32 %f23, [%rl4+16];
+add.f32 %f24, %f22, %f23;
+st.shared.f32 [%rl4], %f24;
+
+BB2_19:
+.loc 2 40 1
+bar.sync 0;
+.loc 2 12 1
+mov.u32 %r60, %tid.x;
+.loc 2 41 1
+setp.gt.u32 %p13, %r60, 1;
+@%p13 bra BB2_21;
+
+.loc 2 41 1
+ld.shared.f32 %f25, [%rl4];
+ld.shared.f32 %f26, [%rl4+8];
+add.f32 %f27, %f25, %f26;
+st.shared.f32 [%rl4], %f27;
+
+BB2_21:
+.loc 2 40 1
+bar.sync 0;
+.loc 2 41 1
+@!%p1 bra BB2_23;
+
+.loc 2 41 1
+ld.shared.f32 %f28, [%rl4];
+ld.shared.f32 %f29, [%rl4+4];
+add.f32 %f30, %f28, %f29;
+st.shared.f32 [%rl4], %f30;
+
+BB2_23:
+.loc 2 43 1
+ld.shared.f32 %f33, [__cuda_local_var_16923_35_non_const_partialSum];
+bra.uni BB2_25;
+
+BB2_24:
+mov.f32 %f33, 0f00000000;
+
+BB2_25:
+.loc 2 90 1
+@%p1 bra BB2_27;
+
+BB2_26:
+.loc 2 101 2
+ret;
+
+BB2_27:
+.loc 2 94 1
+st.global.f32 [%rl1], %f33;
+.loc 2 101 2
+ret;
+}
+
+

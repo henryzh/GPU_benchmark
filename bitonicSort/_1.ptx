@@ -1,0 +1,350 @@
+
+
+
+
+
+
+
+.version 3.0
+.target sm_20
+.address_size 64
+
+.file	1 "/tmp/tmpxft_00004ecc_00000000-7_bitonic_sort.cpp3.i"
+.file	2 "bitonic_sort.cu"
+.file	3 "/usr/local/cuda/nvvm/ci_include.h"
+
+
+.entry _Z19bitonicSortLockfreePfiPiS0_(
+.param .u64 _Z19bitonicSortLockfreePfiPiS0__param_0,
+.param .u32 _Z19bitonicSortLockfreePfiPiS0__param_1,
+.param .u64 _Z19bitonicSortLockfreePfiPiS0__param_2,
+.param .u64 _Z19bitonicSortLockfreePfiPiS0__param_3
+)
+{
+.reg .f32 %f<3>;
+.reg .pred %p<20>;
+.reg .s32 %r<55>;
+.reg .s64 %rl<24>;
+
+
+ld.param.u32 %r1, [_Z19bitonicSortLockfreePfiPiS0__param_1];
+ld.param.u64 %rl2, [_Z19bitonicSortLockfreePfiPiS0__param_2];
+ld.param.u64 %rl3, [_Z19bitonicSortLockfreePfiPiS0__param_3];
+cvta.to.global.u64 %rl4, %rl3;
+cvta.to.global.u64 %rl5, %rl2;
+.loc 2 154 1
+setp.lt.u32 %p2, %r1, 2;
+@%p2 bra BB0_20;
+
+.loc 2 153 1
+mov.u32 %r50, %tid.x;
+.loc 2 163 1
+mul.wide.s32 %rl10, %r50, 4;
+add.s64 %rl6, %rl5, %rl10;
+.loc 2 153 1
+mov.u32 %r51, %ctaid.x;
+.loc 2 163 1
+mul.wide.s32 %rl11, %r51, 4;
+add.s64 %rl7, %rl4, %rl11;
+mov.u32 %r54, 0;
+mov.u32 %r52, 2;
+
+BB0_2:
+shr.u32 %r53, %r52, 1;
+setp.eq.s32 %p3, %r53, 0;
+.loc 2 155 1
+@%p3 bra BB0_19;
+
+.loc 2 153 1
+mov.u32 %r17, %ntid.x;
+mad.lo.s32 %r19, %r51, %r17, %r50;
+.loc 2 156 1
+and.b32 %r20, %r53, %r19;
+setp.eq.s32 %p1, %r20, 0;
+
+BB0_4:
+add.s32 %r25, %r53, -1;
+.loc 2 157 1
+and.b32 %r26, %r25, %r19;
+shl.b32 %r27, %r19, 1;
+.loc 2 157 1
+sub.s32 %r28, %r27, %r26;
+.loc 2 158 1
+add.s32 %r29, %r28, %r53;
+ld.param.u64 %rl21, [_Z19bitonicSortLockfreePfiPiS0__param_0];
+cvta.to.global.u64 %rl12, %rl21;
+.loc 2 158 1
+mul.wide.u32 %rl13, %r29, 4;
+add.s64 %rl8, %rl12, %rl13;
+.loc 2 158 1
+mul.wide.u32 %rl14, %r28, 4;
+add.s64 %rl9, %rl12, %rl14;
+ld.global.f32 %f1, [%rl8];
+ld.global.f32 %f2, [%rl9];
+setp.gt.f32 %p4, %f2, %f1;
+xor.pred %p5, %p4, %p1;
+.loc 2 158 1
+@%p5 bra BB0_6;
+
+.loc 2 158 1
+st.global.f32 [%rl9], %f1;
+st.global.f32 [%rl8], %f2;
+
+BB0_6:
+.loc 2 159 1
+setp.gt.u32 %p6, %r53, 512;
+setp.gt.u32 %p7, %r52, 511;
+.loc 2 159 1
+setp.eq.s32 %p8, %r53, 1;
+and.pred %p9, %p8, %p7;
+or.pred %p10, %p6, %p9;
+.loc 2 159 1
+@%p10 bra BB0_8;
+
+.loc 2 167 1
+bar.sync 0;
+bra.uni BB0_18;
+
+BB0_8:
+.loc 3 75 5
+membar.gl;
+.loc 2 162 1
+add.s32 %r54, %r54, 1;
+.loc 2 163 1
+setp.ne.s32 %p11, %r50, 0;
+@%p11 bra BB0_10;
+
+ld.param.u64 %rl22, [_Z19bitonicSortLockfreePfiPiS0__param_2];
+cvta.to.global.u64 %rl15, %rl22;
+.loc 2 163 1
+mul.wide.s32 %rl16, %r51, 4;
+add.s64 %rl17, %rl15, %rl16;
+st.volatile.global.u32 [%rl17], %r54;
+
+BB0_10:
+.loc 2 163 1
+setp.ne.s32 %p12, %r51, 1;
+@%p12 bra BB0_15;
+
+.loc 2 163 1
+mov.u32 %r39, %nctaid.x;
+.loc 2 163 1
+setp.ge.s32 %p13, %r50, %r39;
+@%p13 bra BB0_13;
+
+BB0_12:
+.loc 2 163 1
+ld.volatile.global.u32 %r40, [%rl6];
+setp.ne.s32 %p14, %r40, %r54;
+@%p14 bra BB0_12;
+
+BB0_13:
+.loc 2 163 1
+bar.sync 0;
+.loc 2 163 1
+@%p13 bra BB0_15;
+
+ld.param.u64 %rl23, [_Z19bitonicSortLockfreePfiPiS0__param_3];
+cvta.to.global.u64 %rl18, %rl23;
+.loc 2 163 1
+mul.wide.s32 %rl19, %r50, 4;
+add.s64 %rl20, %rl18, %rl19;
+st.volatile.global.u32 [%rl20], %r54;
+
+BB0_15:
+.loc 2 163 1
+@%p11 bra BB0_17;
+
+BB0_16:
+.loc 2 163 1
+ld.volatile.global.u32 %r47, [%rl7];
+setp.ne.s32 %p17, %r47, %r54;
+@%p17 bra BB0_16;
+
+BB0_17:
+.loc 2 163 1
+bar.sync 0;
+
+BB0_18:
+shr.u32 %r53, %r53, 1;
+.loc 2 155 1
+setp.ne.s32 %p18, %r53, 0;
+@%p18 bra BB0_4;
+
+BB0_19:
+.loc 2 154 38
+shl.b32 %r52, %r52, 1;
+ld.param.u32 %r49, [_Z19bitonicSortLockfreePfiPiS0__param_1];
+.loc 2 154 1
+setp.le.u32 %p19, %r52, %r49;
+@%p19 bra BB0_2;
+
+BB0_20:
+.loc 2 172 2
+ret;
+}
+
+.entry _Z16bitonicSortSmallPfij(
+.param .u64 _Z16bitonicSortSmallPfij_param_0,
+.param .u32 _Z16bitonicSortSmallPfij_param_1,
+.param .u32 _Z16bitonicSortSmallPfij_param_2
+)
+{
+.reg .f32 %f<9>;
+.reg .pred %p<12>;
+.reg .s32 %r<61>;
+.reg .s64 %rl<26>;
+
+	.shared .align 4 .b8 __cuda_local_var_19017_35_non_const_src_shared[4096];
+
+ld.param.u64 %rl1, [_Z16bitonicSortSmallPfij_param_0];
+ld.param.u32 %r1, [_Z16bitonicSortSmallPfij_param_1];
+cvta.to.global.u64 %rl8, %rl1;
+.loc 2 208 1
+mov.u32 %r14, %tid.x;
+.loc 2 211 1
+mul.wide.s32 %rl9, %r14, 4;
+add.s64 %rl10, %rl8, %rl9;
+mov.u64 %rl11, __cuda_local_var_19017_35_non_const_src_shared;
+add.s64 %rl12, %rl11, %rl9;
+.loc 2 211 1
+ld.global.f32 %f5, [%rl10];
+st.shared.f32 [%rl12], %f5;
+.loc 2 212 1
+shr.u32 %r17, %r1, 31;
+add.s32 %r18, %r1, %r17;
+shr.s32 %r60, %r18, 1;
+add.s32 %r19, %r60, %r14;
+mul.wide.s32 %rl13, %r19, 4;
+add.s64 %rl2, %rl8, %rl13;
+add.s64 %rl3, %rl11, %rl13;
+.loc 2 212 1
+ld.global.f32 %f6, [%rl2];
+st.shared.f32 [%rl3], %f6;
+.loc 2 214 1
+setp.lt.u32 %p1, %r1, 3;
+@%p1 bra BB1_7;
+
+mov.u32 %r58, 2;
+
+BB1_2:
+shr.u32 %r59, %r58, 1;
+.loc 2 215 1
+and.b32 %r24, %r59, %r14;
+setp.ne.s32 %p2, %r24, 0;
+selp.u32 %r25, 1, 0, %p2;
+ld.param.u32 %r55, [_Z16bitonicSortSmallPfij_param_2];
+.loc 2 215 1
+xor.b32 %r6, %r25, %r55;
+setp.eq.s32 %p3, %r59, 0;
+.loc 2 216 1
+@%p3 bra BB1_6;
+
+BB1_3:
+.loc 2 217 1
+bar.sync 0;
+add.s32 %r27, %r59, -1;
+.loc 2 218 1
+and.b32 %r28, %r27, %r14;
+shl.b32 %r29, %r14, 1;
+.loc 2 218 1
+sub.s32 %r30, %r29, %r28;
+.loc 2 219 1
+add.s32 %r31, %r30, %r59;
+mul.wide.u32 %rl14, %r31, 4;
+add.s64 %rl4, %rl11, %rl14;
+mul.wide.u32 %rl16, %r30, 4;
+add.s64 %rl5, %rl11, %rl16;
+.loc 2 219 1
+ld.shared.f32 %f1, [%rl4];
+ld.shared.f32 %f2, [%rl5];
+setp.gt.f32 %p4, %f2, %f1;
+selp.u32 %r34, 1, 0, %p4;
+setp.ne.s32 %p5, %r34, %r6;
+@%p5 bra BB1_5;
+
+.loc 2 219 1
+st.shared.f32 [%rl5], %f1;
+st.shared.f32 [%rl4], %f2;
+
+BB1_5:
+shr.u32 %r59, %r59, 1;
+.loc 2 216 1
+setp.ne.s32 %p6, %r59, 0;
+@%p6 bra BB1_3;
+
+BB1_6:
+.loc 2 214 37
+shl.b32 %r58, %r58, 1;
+ld.param.u32 %r53, [_Z16bitonicSortSmallPfij_param_1];
+.loc 2 214 1
+setp.lt.u32 %p7, %r58, %r53;
+@%p7 bra BB1_2;
+
+BB1_7:
+ld.param.u32 %r52, [_Z16bitonicSortSmallPfij_param_1];
+add.s32 %r37, %r52, 1;
+setp.lt.u32 %p8, %r37, 3;
+.loc 2 223 1
+@%p8 bra BB1_12;
+
+.loc 2 208 1
+mov.u32 %r57, %tid.x;
+shl.b32 %r11, %r57, 1;
+
+BB1_9:
+.loc 2 224 1
+bar.sync 0;
+add.s32 %r38, %r60, -1;
+.loc 2 225 1
+and.b32 %r39, %r38, %r14;
+sub.s32 %r40, %r11, %r39;
+mul.wide.u32 %rl17, %r40, 4;
+add.s64 %rl6, %rl11, %rl17;
+.loc 2 226 1
+add.s32 %r41, %r40, %r60;
+mul.wide.u32 %rl19, %r41, 4;
+add.s64 %rl7, %rl11, %rl19;
+.loc 2 226 1
+ld.shared.f32 %f3, [%rl7];
+ld.shared.f32 %f4, [%rl6];
+setp.gt.f32 %p9, %f4, %f3;
+selp.u32 %r44, 1, 0, %p9;
+ld.param.u32 %r54, [_Z16bitonicSortSmallPfij_param_2];
+.loc 2 226 1
+setp.ne.s32 %p10, %r44, %r54;
+@%p10 bra BB1_11;
+
+.loc 2 226 1
+st.shared.f32 [%rl6], %f3;
+st.shared.f32 [%rl7], %f4;
+
+BB1_11:
+.loc 2 223 23
+shr.u32 %r60, %r60, 1;
+.loc 2 223 1
+setp.ne.s32 %p11, %r60, 0;
+@%p11 bra BB1_9;
+
+BB1_12:
+.loc 2 229 1
+bar.sync 0;
+.loc 2 208 1
+mov.u32 %r56, %tid.x;
+mul.wide.s32 %rl20, %r56, 4;
+add.s64 %rl22, %rl11, %rl20;
+ld.param.u64 %rl25, [_Z16bitonicSortSmallPfij_param_0];
+cvta.to.global.u64 %rl23, %rl25;
+.loc 2 211 1
+add.s64 %rl24, %rl23, %rl20;
+.loc 2 230 1
+ld.shared.f32 %f7, [%rl22];
+st.global.f32 [%rl24], %f7;
+.loc 2 231 1
+ld.shared.f32 %f8, [%rl3];
+st.global.f32 [%rl2], %f8;
+.loc 2 232 2
+ret;
+}
+
+

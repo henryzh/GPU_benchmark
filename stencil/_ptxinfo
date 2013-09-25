@@ -1,0 +1,20 @@
+ptxas info    : Compiling entry function '_Z11block2D_oldffPfS_iii' for 'sm_20'
+ptxas info    : Function properties for _Z11block2D_oldffPfS_iii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 23 registers, 68 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z9tiled_oldffPfS_iii' for 'sm_20'
+ptxas info    : Function properties for _Z9tiled_oldffPfS_iii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 20 registers, 68 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z9tiled_newffPfS_iii' for 'sm_20'
+ptxas info    : Function properties for _Z9tiled_newffPfS_iii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 19 registers, 68 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z12naive_kernelffPfS_iii' for 'sm_20'
+ptxas info    : Function properties for _Z12naive_kernelffPfS_iii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 14 registers, 68 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z11block2D_newffPfS_iii' for 'sm_20'
+ptxas info    : Function properties for _Z11block2D_newffPfS_iii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 22 registers, 68 bytes cmem[0]

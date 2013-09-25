@@ -1,0 +1,23 @@
+CUDA_DIR = /usr/local/cuda
+# CUDA toolkit libraries
+CUDA_LIB_DIR := $(CUDA_DIR)/lib
+ifeq ($(shell uname -m), x86_64)
+     ifeq ($(shell if test -d $(CUDA_DIR)/lib64; then echo T; else echo F; fi), T)
+     	CUDA_LIB_DIR := $(CUDA_DIR)/lib64
+     endif
+endif
+
+CC := $(CUDA_DIR)/bin/nvcc
+INCLUDE := $(CUDA_DIR)/include
+EXE := cc
+SRC := main.cu
+CCFILES	:= #imageWrite.cpp
+	
+CU_DEPS := CudaCuts.cu CudaCuts.h CudaCuts_kernel.cu Example.h #edgeWeight.cu PushRelabel_kernel.cu Bfs_kernel.cu
+CUFLAGS += -arch=sm_13 # -g -Xptxas -dlcm=cg
+
+release: $(SRC)
+	$(CC) $(CUFLAGS) $(SRC) -o $(EXE) -I$(INCLUDE) -L$(CUDA_LIB_DIR)
+clean: $(SRC)
+	rm -f $(EXE) 
+

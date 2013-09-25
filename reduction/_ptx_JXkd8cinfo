@@ -1,0 +1,4 @@
+ptxas info    : Compiling entry function '_Z3sumPKfjPfPViS3_' for 'sm_20'
+ptxas info    : Function properties for _Z3sumPKfjPfPViS3_
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 12 registers, 2304+0 bytes smem, 72 bytes cmem[0]
