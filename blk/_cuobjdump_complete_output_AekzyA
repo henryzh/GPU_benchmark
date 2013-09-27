@@ -1,0 +1,457 @@
+
+Fatbin elf code:
+================
+arch = sm_10
+code version = [1,2]
+producer = <unknown>
+host = linux
+compile_size = 64bit
+identifier = BlackScholes.cu
+
+.section .strtab	STRTAB
+
+.section .shstrtab	STRTAB
+
+.section .symtab	SYMTAB
+ index           value           size      info    other  shndx    name  
+   0               0               0        0        0      0     (null)
+   1               0               0        3        0      1     .shstrtab
+   2               0               0        3        0      2     .strtab
+   3               0               0        3        0      3     .symtab
+   4               0               0        3        0      0     
+   5               0               0        3        0      0     
+   6               0             680        3        0      4     .text._Z15BlackScholesGPUPfS_S_S_S_ffi
+   7               0               0        3        0      6     .nv.info._Z15BlackScholesGPUPfS_S_S_S_ffi
+   8               0               0        3        0      7     .nv.shared._Z15BlackScholesGPUPfS_S_S_S_ffi
+   9               0               0        3        0      5     .nv.constant1._Z15BlackScholesGPUPfS_S_S_S_ffi
+  10               0               0       12       10      4     _Z15BlackScholesGPUPfS_S_S_S_ffi
+
+
+.nv.constant1._Z15BlackScholesGPUPfS_S_S_S_ffi	PROGBITS
+0x7e800000  0x3e6d3389  0x3faa466f  0x3fe40778  0xbeb68f87  
+0x3ea385fa  0x3f800000  0x3e800000  
+
+
+.nv.shared._Z15BlackScholesGPUPfS_S_S_S_ffi	NOBITS
+   No data to be dumped. 
+
+
+.text._Z15BlackScholesGPUPfS_S_S_S_ffi	PROGBITS
+bar = 0	reg = 17	lmem=0	smem=68
+0x10004205  0x0023c780  0xa0000005  0x04000780  
+0x60014c01  0x00204780  0x3000e1fd  0x6c20c7c8  
+0x30000003  0x00000280  0xc1007e11  0x03f00003  
+0x1100fc08  0x11002208  0x3002000d  0xc4100780  
+0xe004de21  0x00208780  0x4102282c  0x2103f014  
+0x2103f41c  0x2103f830  0x2103e828  0x2103ec18  
+0x30021625  0xc4100780  0xd00e0a0d  0x80c00780  
+0xd00e0e11  0x80c00780  0xd00e1839  0x80c00780  
+0xb08009fd  0x605107c8  0x10008604  0x10008808  
+0xc00edc35  0x00200780  0xc087060d  0x00400680  
+0xc0870811  0x00400680  0x90000810  0xc004060c  
+0xc03b9a11  0x03fb8aa3  0xb0000811  0xc0004780  
+0x90000811  0xc0000780  0xc0020835  0x00000780  
+0x90000609  0x60000780  0xc0180409  0x03f31723  
+0xe0081c0d  0x00008780  0x90001c09  0x40000780  
+0x90000408  0xc1027e10  0xb08009fd  0x605107c8  
+0xc087060d  0x00400680  0xc0870811  0x00400680  
+0x90000810  0xc0040610  0xc0000839  0x0bf00003  
+0x1000800d  0x03f80003  0xe002de09  0x04210780  
+0xb07c09fd  0x600107c8  0xc00e083d  0x00000780  
+0xa0000811  0xc4104780  0xe0810811  0x0040c780  
+0xc0000439  0x0bf00003  0xb07c05fd  0x600107d8  
+0xc00e0439  0x00000780  0xa0000409  0xc4104780  
+0xe009040d  0x03e6d33b  0x102a8009  0x0bfe91ef  
+0x90000841  0x00000780  0xe0822011  0x00408780  
+0xe1042011  0x0040c780  0xe1042011  0x00410780  
+0xe1042011  0x00414780  0xc0042011  0x00000780  
+0xc03b1e3d  0x03fb8aa3  0xb0001e3d  0xc0004780  
+0x90001e3d  0xc0000780  0xc02a1e3d  0x03ecc423  
+0xc0041e10  0x9000060c  0xe02f0609  0x03faa467  
+0xe1020609  0x0040c780  0xe1020609  0x00410780  
+0xe1020609  0x00414780  0xc002060d  0x00000780  
+0xc03b1c09  0x03fb8aa3  0xb0000409  0xc0004780  
+0x90000409  0xc0000780  0xc02a0409  0x03ecc423  
+0xc0030409  0x00000780  0xb1000811  0x04418280  
+0xb1000409  0x04419280  0xb0008839  0x03f80003  
+0xc0021a0c  0xc00e0238  0xe0040205  0x0800c780  
+0xb0008409  0x03f80003  0xe0021a09  0x08038780  
+0xd00e1405  0xa0c00780  0x20000001  0x0402c780  
+0xd00e0c09  0xa0c00780  0x200c9230  0x2007921c  
+0x3000e1fd  0x6c2107c8  0x20098a14  0x200a9228  
+0x20001219  0x04018780  0x1000d003  0x00000280  
+0xf0000001  0xe0000001  
+
+
+.nv.info._Z15BlackScholesGPUPfS_S_S_S_ffi	PROGBITS
+	<0x1>
+	Attribute:	EIATTR_SMEM_PARAM_SIZE
+	Format:	EIFMT_HVAL
+	Value:	0x34
+	<0x2>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0x0	Ordinal : 0x7	Offset  : 0x30	Size    : 0x4
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : SMEM	
+	<0x3>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0x0	Ordinal : 0x6	Offset  : 0x2c	Size    : 0x4
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : SMEM	
+	<0x4>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0x0	Ordinal : 0x5	Offset  : 0x28	Size    : 0x4
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : SMEM	
+	<0x5>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0x0	Ordinal : 0x4	Offset  : 0x20	Size    : 0x8
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : SMEM	
+	<0x6>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0x0	Ordinal : 0x3	Offset  : 0x18	Size    : 0x8
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : SMEM	
+	<0x7>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0x0	Ordinal : 0x2	Offset  : 0x10	Size    : 0x8
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : SMEM	
+	<0x8>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0x0	Ordinal : 0x1	Offset  : 0x8	Size    : 0x8
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : SMEM	
+	<0x9>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0x0	Ordinal : 0x0	Offset  : 0x0	Size    : 0x8
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : SMEM	
+	<0x10>
+	Attribute:	EIATTR_SYNC_STACK
+	Format:	EIFMT_SVAL
+	Value:	0x200100 0x20 
+
+	code for sm_10
+		Function : _Z15BlackScholesGPUPfS_S_S_S_ffi
+	/*0000*/     /*0x100042050023c780*/ 	MOV.U16 R0H, g [0x1].U16;
+	/*0008*/     /*0xa000000504000780*/ 	I2I.U32.U16 R1, R0L;
+	/*0010*/     /*0x60014c0100204780*/ 	IMAD.U16 R0, g [0x6].U16, R0H, R1;
+	/*0018*/     /*0x3000e1fd6c20c7c8*/ 	ISET.S32.C0 o [0x7f], g [0x10], R0, LE;
+	/*0020*/     /*0x3000000300000280*/ 	RET C0.NE;
+	/*0028*/     /*0xc1007e1103f00003*/ 	FMUL32I R4, g [0xf], 0x3f000000;
+	/*0030*/     /*0x1100fc08        */ 	MOV32 R2, g [0xe];
+	/*0034*/     /*0x11002208        */ 	MOV32.U16 R1L, g [0x1].U16;
+	/*0038*/     /*0x3002000dc4100780*/ 	SHL R3, R0, 0x2;
+	/*0040*/     /*0xe004de2100208780*/ 	FMAD R8, g [0xf], R4, R2;
+	/*0048*/     /*0x4102282c        */ 	IMUL32.U16.U16 R11, g [0x4].U16, R1L;
+	/*004c*/     /*0x2103f014        */ 	IADD32 R5, g [0x8], R3;
+	/*0050*/     /*0x2103f41c        */ 	IADD32 R7, g [0xa], R3;
+	/*0054*/     /*0x2103f830        */ 	IADD32 R12, g [0xc], R3;
+	/*0058*/     /*0x2103e828        */ 	IADD32 R10, g [0x4], R3;
+	/*005c*/     /*0x2103ec18        */ 	IADD32 R6, g [0x6], R3;
+	/*0060*/     /*0x30021625c4100780*/ 	SHL R9, R11, 0x2;
+	/*0068*/     /*0xd00e0a0d80c00780*/ 	GLD.U32 R3, global14 [R5];
+	/*0070*/     /*0xd00e0e1180c00780*/ 	GLD.U32 R4, global14 [R7];
+	/*0078*/     /*0xd00e183980c00780*/ 	GLD.U32 R14, global14 [R12];
+	/*0080*/     /*0xb08009fd605107c8*/ 	FSET.C0 o [0x7f], |R4|, c [0x1] [0x0], GT;
+	/*0088*/     /*0x10008604        */ 	MOV32 R1, R3;
+	/*008c*/     /*0x10008808        */ 	MOV32 R2, R4;
+	/*0090*/     /*0xc00edc3500200780*/ 	FMUL R13, g [0xe], R14;
+	/*0098*/     /*0xc087060d00400680*/ 	FMUL R3 (C0.NEU), R3, c [0x1] [0x7];
+	/*00a0*/     /*0xc087081100400680*/ 	FMUL R4 (C0.NEU), R4, c [0x1] [0x7];
+	/*00a8*/     /*0x90000810        */ 	RCP32 R4, R4;
+	/*00ac*/     /*0xc004060c        */ 	FMUL32 R3, R3, R4;
+	/*00b0*/     /*0xc03b9a1103fb8aa3*/ 	FMUL32I R4, -R13, 0x3fb8aa3b;
+	/*00b8*/     /*0xb0000811c0004780*/ 	RRO R4, R4, EX2;
+	/*00c0*/     /*0x90000811c0000780*/ 	EX2 R4, R4;
+	/*00c8*/     /*0xc002083500000780*/ 	FMUL R13, R4, R2;
+	/*00d0*/     /*0x9000060960000780*/ 	LG2 R2, R3;
+	/*00d8*/     /*0xc018040903f31723*/ 	FMUL32I R2, R2, 0x3f317218;
+	/*00e0*/     /*0xe0081c0d00008780*/ 	FMAD R3, R14, R8, R2;
+	/*00e8*/     /*0x90001c0940000780*/ 	RSQ R2, R14;
+	/*00f0*/     /*0x90000408        */ 	RCP32 R2, R2;
+	/*00f4*/     /*0xc1027e10        */ 	FMUL32 R4, g [0xf], R2;
+	/*00f8*/     /*0xb08009fd605107c8*/ 	FSET.C0 o [0x7f], |R4|, c [0x1] [0x0], GT;
+	/*0100*/     /*0xc087060d00400680*/ 	FMUL R3 (C0.NEU), R3, c [0x1] [0x7];
+	/*0108*/     /*0xc087081100400680*/ 	FMUL R4 (C0.NEU), R4, c [0x1] [0x7];
+	/*0110*/     /*0x90000810        */ 	RCP32 R4, R4;
+	/*0114*/     /*0xc0040610        */ 	FMUL32 R4, R3, R4;
+	/*0118*/     /*0xc00008390bf00003*/ 	FMUL32I R14, R4, -0x41000000;
+	/*0120*/     /*0x1000800d03f80003*/ 	MVI R3, 0x3f800000;
+	/*0128*/     /*0xe002de0904210780*/ 	FMAD R2, -g [0xf], R2, R4;
+	/*0130*/     /*0xb07c09fd600107c8*/ 	FSET.C0 o [0x7f], R4, R124, GT;
+	/*0138*/     /*0xc00e083d00000780*/ 	FMUL R15, R4, R14;
+	/*0140*/     /*0xa0000811c4104780*/ 	F2F.F32.F32 R4, |R4|;
+	/*0148*/     /*0xe08108110040c780*/ 	FMAD R4, R4, c [0x1] [0x1], R3;
+	/*0150*/     /*0xc00004390bf00003*/ 	FMUL32I R14, R2, -0x41000000;
+	/*0158*/     /*0xb07c05fd600107d8*/ 	FSET.C1 o [0x7f], R2, R124, GT;
+	/*0160*/     /*0xc00e043900000780*/ 	FMUL R14, R2, R14;
+	/*0168*/     /*0xa0000409c4104780*/ 	F2F.F32.F32 R2, |R2|;
+	/*0170*/     /*0xe009040d03e6d33b*/ 	FMAD32I R3, R2, 0x3e6d3389, R3;
+	/*0178*/     /*0x102a80090bfe91ef*/ 	MVI R2, -0x4016e116;
+	/*0180*/     /*0x9000084100000780*/ 	RCP R16, R4;
+	/*0188*/     /*0xe082201100408780*/ 	FMAD R4, R16, c [0x1] [0x2], R2;
+	/*0190*/     /*0xe10420110040c780*/ 	FMAD R4, R16, R4, c [0x1] [0x3];
+	/*0198*/     /*0xe104201100410780*/ 	FMAD R4, R16, R4, c [0x1] [0x4];
+	/*01a0*/     /*0xe104201100414780*/ 	FMAD R4, R16, R4, c [0x1] [0x5];
+	/*01a8*/     /*0xc004201100000780*/ 	FMUL R4, R16, R4;
+	/*01b0*/     /*0xc03b1e3d03fb8aa3*/ 	FMUL32I R15, R15, 0x3fb8aa3b;
+	/*01b8*/     /*0xb0001e3dc0004780*/ 	RRO R15, R15, EX2;
+	/*01c0*/     /*0x90001e3dc0000780*/ 	EX2 R15, R15;
+	/*01c8*/     /*0xc02a1e3d03ecc423*/ 	FMUL32I R15, R15, 0x3ecc422a;
+	/*01d0*/     /*0xc0041e10        */ 	FMUL32 R4, R15, R4;
+	/*01d4*/     /*0x9000060c        */ 	RCP32 R3, R3;
+	/*01d8*/     /*0xe02f060903faa467*/ 	FMAD32I R2, R3, 0x3faa466f, R2;
+	/*01e0*/     /*0xe10206090040c780*/ 	FMAD R2, R3, R2, c [0x1] [0x3];
+	/*01e8*/     /*0xe102060900410780*/ 	FMAD R2, R3, R2, c [0x1] [0x4];
+	/*01f0*/     /*0xe102060900414780*/ 	FMAD R2, R3, R2, c [0x1] [0x5];
+	/*01f8*/     /*0xc002060d00000780*/ 	FMUL R3, R3, R2;
+	/*0200*/     /*0xc03b1c0903fb8aa3*/ 	FMUL32I R2, R14, 0x3fb8aa3b;
+	/*0208*/     /*0xb0000409c0004780*/ 	RRO R2, R2, EX2;
+	/*0210*/     /*0x90000409c0000780*/ 	EX2 R2, R2;
+	/*0218*/     /*0xc02a040903ecc423*/ 	FMUL32I R2, R2, 0x3ecc422a;
+	/*0220*/     /*0xc003040900000780*/ 	FMUL R2, R2, R3;
+	/*0228*/     /*0xb100081104418280*/ 	FADD R4 (C0.NE), -R4, c [0x1] [0x6];
+	/*0230*/     /*0xb100040904419280*/ 	FADD R2 (C1.NE), -R2, c [0x1] [0x6];
+	/*0238*/     /*0xb000883903f80003*/ 	FADD32I R14, -R4, 0x3f800000;
+	/*0240*/     /*0xc0021a0c        */ 	FMUL32 R3, R13, R2;
+	/*0244*/     /*0xc00e0238        */ 	FMUL32 R14, R1, R14;
+	/*0248*/     /*0xe00402050800c780*/ 	FMAD R1, R1, R4, -R3;
+	/*0250*/     /*0xb000840903f80003*/ 	FADD32I R2, -R2, 0x3f800000;
+	/*0258*/     /*0xe0021a0908038780*/ 	FMAD R2, R13, R2, -R14;
+	/*0260*/     /*0xd00e1405a0c00780*/ 	GST.U32 global14 [R10], R1;
+	/*0268*/     /*0x200000010402c780*/ 	IADD R0, R0, R11;
+	/*0270*/     /*0xd00e0c09a0c00780*/ 	GST.U32 global14 [R6], R2;
+	/*0278*/     /*0x200c9230        */ 	IADD32 R12, R9, R12;
+	/*027c*/     /*0x2007921c        */ 	IADD32 R7, R9, R7;
+	/*0280*/     /*0x3000e1fd6c2107c8*/ 	ISET.S32.C0 o [0x7f], g [0x10], R0, GT;
+	/*0288*/     /*0x20098a14        */ 	IADD32 R5, R5, R9;
+	/*028c*/     /*0x200a9228        */ 	IADD32 R10, R9, R10;
+	/*0290*/     /*0x2000121904018780*/ 	IADD R6, R9, R6;
+	/*0298*/     /*0x1000d00300000280*/ 	BRA C0.NE, 0x68;
+	/*02a0*/     /*0xf0000001e0000001*/ 	NOP;
+		.................................................
+
+
+
+Fatbin ptx code:
+================
+arch = sm_10
+code version = [1,4]
+producer = <unknown>
+host = linux
+compile_size = 64bit
+identifier = BlackScholes.cu
+ptxasOptions = -dlcm=cg  
+	.version 1.4
+.target sm_10, map_f64_to_f32
+
+	
+
+
+	
+	
+
+
+	
+	
+	
+	
+	
+	
+	
+
+.file	1	"<command-line>"
+.file	2	"/tmp/tmpxft_00005ff6_00000000-6_BlackScholes.cudafe2.gpu"
+.file	3	"/usr/lib/gcc/x86_64-linux-gnu/4.4.6/include/stddef.h"
+.file	4	"/usr/local/cuda/include/crt/device_runtime.h"
+.file	5	"/usr/local/cuda/include/host_defines.h"
+.file	6	"/usr/local/cuda/include/builtin_types.h"
+.file	7	"/usr/local/cuda/include/device_types.h"
+.file	8	"/usr/local/cuda/include/driver_types.h"
+.file	9	"/usr/local/cuda/include/surface_types.h"
+.file	10	"/usr/local/cuda/include/texture_types.h"
+.file	11	"/usr/local/cuda/include/vector_types.h"
+.file	12	"/usr/local/cuda/include/device_launch_parameters.h"
+.file	13	"/usr/local/cuda/include/crt/storage_class.h"
+.file	14	"BlackScholes_kernel.cuh"
+.file	15	"/usr/local/cuda/include/common_functions.h"
+.file	16	"/usr/local/cuda/include/math_functions.h"
+.file	17	"/usr/local/cuda/include/math_constants.h"
+.file	18	"/usr/local/cuda/include/device_functions.h"
+.file	19	"/usr/local/cuda/include/sm_11_atomic_functions.h"
+.file	20	"/usr/local/cuda/include/sm_12_atomic_functions.h"
+.file	21	"/usr/local/cuda/include/sm_13_double_functions.h"
+.file	22	"/usr/local/cuda/include/sm_20_atomic_functions.h"
+.file	23	"/usr/local/cuda/include/sm_20_intrinsics.h"
+.file	24	"/usr/local/cuda/include/sm_30_intrinsics.h"
+.file	25	"/usr/local/cuda/include/surface_functions.h"
+.file	26	"/usr/local/cuda/include/texture_fetch_functions.h"
+.file	27	"/usr/local/cuda/include/math_functions_dbl_ptx1.h"
+
+
+.entry _Z15BlackScholesGPUPfS_S_S_S_ffi (
+.param .u64 __cudaparm__Z15BlackScholesGPUPfS_S_S_S_ffi_d_CallResult,
+.param .u64 __cudaparm__Z15BlackScholesGPUPfS_S_S_S_ffi_d_PutResult,
+.param .u64 __cudaparm__Z15BlackScholesGPUPfS_S_S_S_ffi_d_StockPrice,
+.param .u64 __cudaparm__Z15BlackScholesGPUPfS_S_S_S_ffi_d_OptionStrike,
+.param .u64 __cudaparm__Z15BlackScholesGPUPfS_S_S_S_ffi_d_OptionYears,
+.param .f32 __cudaparm__Z15BlackScholesGPUPfS_S_S_S_ffi_Riskfree,
+.param .f32 __cudaparm__Z15BlackScholesGPUPfS_S_S_S_ffi_Volatility,
+.param .s32 __cudaparm__Z15BlackScholesGPUPfS_S_S_S_ffi_optN)
+{
+.reg .u16 %rh<5>;
+.reg .u32 %r<8>;
+.reg .u64 %rd<16>;
+.reg .f32 %f<92>;
+.reg .pred %p<6>;
+.loc	14	79	0
+$LDWbegin__Z15BlackScholesGPUPfS_S_S_S_ffi:
+.loc	14	88	0
+mov.u16 %rh1, %ntid.x;
+mov.u16 %rh2, %ctaid.x;
+mul.wide.u16 %r1, %rh2, %rh1;
+cvt.u32.u16 %r2, %tid.x;
+add.u32 %r3, %r2, %r1;
+mov.s32 %r4, %r3;
+ld.param.s32 %r5, [__cudaparm__Z15BlackScholesGPUPfS_S_S_S_ffi_optN];
+setp.le.s32 %p1, %r5, %r3;
+@%p1 bra $Lt_0_2818;
+ld.param.f32 %f1, [__cudaparm__Z15BlackScholesGPUPfS_S_S_S_ffi_Volatility];
+mov.f32 %f2, 0f3f000000; 
+	mul.f32 %f3, %f1, %f2;
+mov.u16 %rh3, %nctaid.x;
+mul.wide.u16 %r6, %rh3, %rh1;
+cvt.s64.s32 %rd1, %r3;
+mul.wide.s32 %rd2, %r3, 4;
+cvt.s64.u32 %rd3, %r6;
+ld.param.f32 %f4, [__cudaparm__Z15BlackScholesGPUPfS_S_S_S_ffi_Riskfree];
+mad.f32 %f5, %f1, %f3, %f4;
+ld.param.u64 %rd4, [__cudaparm__Z15BlackScholesGPUPfS_S_S_S_ffi_d_StockPrice];
+add.u64 %rd5, %rd4, %rd2;
+mul.wide.u32 %rd6, %r6, 4;
+ld.param.u64 %rd7, [__cudaparm__Z15BlackScholesGPUPfS_S_S_S_ffi_d_OptionStrike];
+add.u64 %rd8, %rd7, %rd2;
+ld.param.u64 %rd9, [__cudaparm__Z15BlackScholesGPUPfS_S_S_S_ffi_d_OptionYears];
+add.u64 %rd10, %rd9, %rd2;
+ld.param.u64 %rd11, [__cudaparm__Z15BlackScholesGPUPfS_S_S_S_ffi_d_CallResult];
+add.u64 %rd12, %rd11, %rd2;
+ld.param.u64 %rd13, [__cudaparm__Z15BlackScholesGPUPfS_S_S_S_ffi_d_PutResult];
+add.u64 %rd14, %rd13, %rd2;
+$Lt_0_3330:
+
+	.loc	14	89	0
+ld.global.f32 %f6, [%rd5+0];
+ld.global.f32 %f7, [%rd8+0];
+ld.global.f32 %f8, [%rd10+0];
+.loc	14	88	0
+ld.param.f32 %f4, [__cudaparm__Z15BlackScholesGPUPfS_S_S_S_ffi_Riskfree];
+.loc	14	89	0
+mul.f32 %f9, %f8, %f4;
+div.full.f32 %f10, %f6, %f7;
+sqrt.approx.f32 %f11, %f8;
+neg.f32 %f12, %f9;
+lg2.approx.f32 %f13, %f10;
+.loc	14	88	0
+ld.param.f32 %f1, [__cudaparm__Z15BlackScholesGPUPfS_S_S_S_ffi_Volatility];
+.loc	14	89	0
+mul.f32 %f14, %f11, %f1;
+mov.f32 %f15, 0f3fb8aa3b; 
+	mul.f32 %f16, %f12, %f15;
+mov.f32 %f17, 0f3f317218; 
+	mul.f32 %f18, %f13, %f17;
+ex2.approx.f32 %f19, %f16;
+mad.f32 %f20, %f8, %f5, %f18;
+mul.f32 %f21, %f19, %f7;
+div.full.f32 %f22, %f20, %f14;
+mul.f32 %f23, %f1, %f11;
+sub.f32 %f24, %f22, %f23;
+mov.f32 %f25, 0f00000000; 
+	setp.gt.f32 %p2, %f22, %f25;
+mov.f32 %f26, 0fbf000000; 
+	mul.f32 %f27, %f22, %f26;
+abs.f32 %f28, %f22;
+mov.f32 %f29, 0f00000000; 
+	setp.gt.f32 %p3, %f24, %f29;
+mov.f32 %f30, 0fbf000000; 
+	mul.f32 %f31, %f24, %f30;
+abs.f32 %f32, %f24;
+mul.f32 %f33, %f22, %f27;
+mov.f32 %f34, 0f3f800000; 
+	mov.f32 %f35, 0f3e6d3389; 
+	mad.f32 %f36, %f28, %f35, %f34;
+mul.f32 %f37, %f24, %f31;
+mov.f32 %f38, 0f3f800000; 
+	mov.f32 %f39, 0f3e6d3389; 
+	mad.f32 %f40, %f32, %f39, %f38;
+mov.f32 %f41, 0f3fb8aa3b; 
+	mul.f32 %f42, %f33, %f41;
+rcp.approx.f32 %f43, %f36;
+mov.f32 %f44, 0f3fb8aa3b; 
+	mul.f32 %f45, %f37, %f44;
+rcp.approx.f32 %f46, %f40;
+ex2.approx.f32 %f47, %f42;
+mov.f32 %f48, 0fbfe91eea; 
+	mov.f32 %f49, 0f3faa466f; 
+	mad.f32 %f50, %f49, %f43, %f48;
+ex2.approx.f32 %f51, %f45;
+mov.f32 %f52, 0fbfe91eea; 
+	mov.f32 %f53, 0f3faa466f; 
+	mad.f32 %f54, %f53, %f46, %f52;
+mov.f32 %f55, 0f3ecc422a; 
+	mul.f32 %f56, %f47, %f55;
+mov.f32 %f57, 0f3fe40778; 
+	mad.f32 %f58, %f43, %f50, %f57;
+mov.f32 %f59, 0f3ecc422a; 
+	mul.f32 %f60, %f51, %f59;
+mov.f32 %f61, 0f3fe40778; 
+	mad.f32 %f62, %f46, %f54, %f61;
+mov.f32 %f63, 0fbeb68f87; 
+	mad.f32 %f64, %f43, %f58, %f63;
+mov.f32 %f65, 0fbeb68f87; 
+	mad.f32 %f66, %f46, %f62, %f65;
+mov.f32 %f67, 0f3ea385fa; 
+	mad.f32 %f68, %f43, %f64, %f67;
+mov.f32 %f69, 0f3ea385fa; 
+	mad.f32 %f70, %f46, %f66, %f69;
+mul.f32 %f71, %f43, %f68;
+mul.f32 %f72, %f46, %f70;
+mul.f32 %f73, %f56, %f71;
+mul.f32 %f74, %f60, %f72;
+mov.f32 %f75, 0f3f800000; 
+	sub.f32 %f76, %f75, %f73;
+mov.f32 %f77, 0f3f800000; 
+	sub.f32 %f78, %f77, %f74;
+selp.f32 %f79, %f76, %f73, %p2;
+selp.f32 %f80, %f78, %f74, %p3;
+mul.f32 %f81, %f21, %f80;
+mul.f32 %f82, %f6, %f79;
+sub.f32 %f83, %f82, %f81;
+st.global.f32 [%rd12+0], %f83;
+mov.f32 %f84, 0f3f800000; 
+	sub.f32 %f85, %f84, %f79;
+mul.f32 %f86, %f6, %f85;
+mov.f32 %f87, 0f3f800000; 
+	sub.f32 %f88, %f87, %f80;
+mul.f32 %f89, %f21, %f88;
+sub.f32 %f90, %f89, %f86;
+st.global.f32 [%rd14+0], %f90;
+add.s32 %r4, %r4, %r6;
+add.u64 %rd14, %rd14, %rd6;
+add.u64 %rd12, %rd12, %rd6;
+add.u64 %rd10, %rd10, %rd6;
+add.u64 %rd8, %rd8, %rd6;
+add.u64 %rd5, %rd5, %rd6;
+.loc	14	88	0
+ld.param.s32 %r5, [__cudaparm__Z15BlackScholesGPUPfS_S_S_S_ffi_optN];
+.loc	14	89	0
+setp.lt.s32 %p4, %r4, %r5;
+@%p4 bra $Lt_0_3330;
+$Lt_0_2818:
+.loc	14	98	0
+exit;
+$LDWend__Z15BlackScholesGPUPfS_S_S_S_ffi:
+} 
+

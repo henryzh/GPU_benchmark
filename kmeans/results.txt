@@ -1,0 +1,30 @@
+Size: test
+[STATS] gpu_tot_sim_cycle = 150381
+[STATS] gpu_tot_sim_insn = 2592647
+[STATS] gpu_tot_ipc = 17.2434
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 0 min, 12 sec (12 sec)
+
+perfect mem
+[STATS] gpu_tot_sim_cycle = 125957
+[STATS] gpu_tot_sim_insn = 2592647
+[STATS] gpu_tot_ipc = 20.5836
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 0 min, 9 sec (9 sec)
+
+150356/125957 = 1.19370896417
+
+
+Size: large
+perfect mem
+[STATS] gpu_tot_sim_cycle = 2181025
+[STATS] gpu_tot_sim_insn = 1356492223
+[STATS] gpu_tot_ipc = 621.9517
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 45 min, 28 sec (2728 sec)
+
+
+[STATS] gpu_tot_sim_cycle = 5958461
+[STATS] gpu_tot_sim_insn = 1356492223
+[STATS] gpu_tot_ipc = 227.6581
+[DEBUG] gpgpu_simulation_time = 0 days, 1 hrs, 18 min, 35 sec (4715 sec)
+
+5958461/2181025 = 2.73195447095
+

@@ -1,0 +1,1 @@
+cuda/lud_cuda -i 512.dat 

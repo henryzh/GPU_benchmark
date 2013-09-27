@@ -1,0 +1,8 @@
+Size: default
+normal
+[STATS] gpu_tot_sim_cycle = 1004030
+[STATS] gpu_tot_sim_insn = 467739162
+[STATS] gpu_tot_ipc = 465.8618
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 20 min, 10 sec (1210 sec)
+
+perfect mem

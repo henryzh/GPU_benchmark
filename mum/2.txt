@@ -1,0 +1,23 @@
+Loading ref: ./data/NC_003997.20k.fna... 1399930 bp. [0.05364s]
+Opening ./data/NC_003997_q25bp.50k.fna...
+Building reference texture...
+  Creating Suffix Tree... 2316237 nodes [0.90860s]
+  Renumbering tree... [0.60323s]
+  Flattening Tree... [0.77609s]
+Running under CUDA 1.0
+CUDA device has 804978688 bytes of memory
+There are 724893696 bytes left on the board
+50000 queries (1250000 bp), need 4150000 bytes on the GPU [0.04672s]
+loadQueries on GPU: Allocating device memory for queries...
+loadQueries on GPU: allocated 1750000 bytes done
+allocating reference texture
+done
+done
+Allocating result array for 50000 queries (2400000 bytes) ...done
+Using blocks of 256 x 1 x 1 threads
+Using a grid of 196 x 1 x 1 blocks
+Memory footprint is:
+	queries: 1750000
+	ref: 80084992
+	results: 2400000
+kernel time= 5.638000

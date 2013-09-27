@@ -1,0 +1,453 @@
+
+	.version 1.4
+.target sm_10, map_f64_to_f32
+
+	
+
+
+	
+	
+
+
+	
+	
+	
+	
+	
+	
+	
+
+.file	1	"<command-line>"
+.file	2	"/tmp/tmpxft_00001380_00000000-6_lbm.cudafe2.gpu"
+.file	3	"/usr/lib/gcc/x86_64-linux-gnu/4.4.6/include/stddef.h"
+.file	4	"/usr/local/cuda/include/crt/device_runtime.h"
+.file	5	"/usr/local/cuda/include/host_defines.h"
+.file	6	"/usr/local/cuda/include/builtin_types.h"
+.file	7	"/usr/local/cuda/include/device_types.h"
+.file	8	"/usr/local/cuda/include/driver_types.h"
+.file	9	"/usr/local/cuda/include/surface_types.h"
+.file	10	"/usr/local/cuda/include/texture_types.h"
+.file	11	"/usr/local/cuda/include/vector_types.h"
+.file	12	"/usr/local/cuda/include/device_launch_parameters.h"
+.file	13	"/usr/local/cuda/include/crt/storage_class.h"
+.file	14	"lbm_kernel.cu"
+.file	15	"/usr/local/cuda/include/common_functions.h"
+.file	16	"/usr/local/cuda/include/math_functions.h"
+.file	17	"/usr/local/cuda/include/math_constants.h"
+.file	18	"/usr/local/cuda/include/device_functions.h"
+.file	19	"/usr/local/cuda/include/sm_11_atomic_functions.h"
+.file	20	"/usr/local/cuda/include/sm_12_atomic_functions.h"
+.file	21	"/usr/local/cuda/include/sm_13_double_functions.h"
+.file	22	"/usr/local/cuda/include/sm_20_atomic_functions.h"
+.file	23	"/usr/local/cuda/include/sm_20_intrinsics.h"
+.file	24	"/usr/local/cuda/include/surface_functions.h"
+.file	25	"/usr/local/cuda/include/texture_fetch_functions.h"
+.file	26	"/usr/local/cuda/include/math_functions_dbl_ptx1.h"
+
+
+.entry _Z27performStreamCollide_kernelPfS_ (
+.param .u64 __cudaparm__Z27performStreamCollide_kernelPfS__srcGrid,
+.param .u64 __cudaparm__Z27performStreamCollide_kernelPfS__dstGrid)
+{
+.reg .u16 %rh<3>;
+.reg .u32 %r<20>;
+.reg .u64 %rd<13>;
+.reg .f32 %f<233>;
+.reg .pred %p<4>;
+.loc	14	16	0
+$LDWbegin__Z27performStreamCollide_kernelPfS_:
+.loc	14	34	0
+cvt.s32.u16 %r1, %ctaid.y;
+cvt.u16.u32 %rh1, %r1;
+mul.wide.u16 %r2, %rh1, 120;
+cvt.s32.u16 %r3, %ctaid.x;
+add.s32 %r4, %r2, %r3;
+mul.lo.s32 %r5, %r4, 128;
+cvt.s32.u16 %r6, %tid.x;
+add.s32 %r7, %r5, %r6;
+mul.lo.s32 %r8, %r7, 20;
+cvt.s64.s32 %rd1, %r8;
+mul.wide.s32 %rd2, %r8, 4;
+ld.param.u64 %rd3, [__cudaparm__Z27performStreamCollide_kernelPfS__srcGrid];
+add.u64 %rd4, %rd3, %rd2;
+ld.global.f32 %f1, [%rd4+0];
+.loc	14	35	0
+ld.global.f32 %f2, [%rd4+4];
+.loc	14	36	0
+ld.global.f32 %f3, [%rd4+8];
+.loc	14	37	0
+ld.global.f32 %f4, [%rd4+12];
+.loc	14	38	0
+ld.global.f32 %f5, [%rd4+16];
+.loc	14	39	0
+ld.global.f32 %f6, [%rd4+20];
+.loc	14	40	0
+ld.global.f32 %f7, [%rd4+24];
+.loc	14	41	0
+ld.global.f32 %f8, [%rd4+28];
+.loc	14	42	0
+ld.global.f32 %f9, [%rd4+32];
+.loc	14	43	0
+ld.global.f32 %f10, [%rd4+36];
+.loc	14	44	0
+ld.global.f32 %f11, [%rd4+40];
+.loc	14	45	0
+ld.global.f32 %f12, [%rd4+44];
+.loc	14	46	0
+ld.global.f32 %f13, [%rd4+48];
+.loc	14	47	0
+ld.global.f32 %f14, [%rd4+52];
+.loc	14	48	0
+ld.global.f32 %f15, [%rd4+56];
+.loc	14	49	0
+ld.global.f32 %f16, [%rd4+60];
+.loc	14	50	0
+ld.global.f32 %f17, [%rd4+64];
+.loc	14	51	0
+ld.global.f32 %f18, [%rd4+68];
+.loc	14	52	0
+ld.global.f32 %f19, [%rd4+72];
+ld.global.u32 %r9, [%rd4+76];
+and.b32 %r10, %r9, 1;
+mov.u32 %r11, 0;
+setp.eq.s32 %p1, %r10, %r11;
+@%p1 bra $Lt_0_2050;
+.loc	14	58	0
+mov.f32 %f20, %f3;
+mov.f32 %f3, %f2;
+.loc	14	59	0
+mov.f32 %f21, %f5;
+mov.f32 %f5, %f4;
+.loc	14	60	0
+mov.f32 %f22, %f7;
+mov.f32 %f7, %f6;
+.loc	14	61	0
+mov.f32 %f23, %f11;
+mov.f32 %f11, %f8;
+.loc	14	62	0
+mov.f32 %f24, %f10;
+mov.f32 %f10, %f9;
+.loc	14	63	0
+mov.f32 %f25, %f15;
+mov.f32 %f15, %f12;
+.loc	14	64	0
+mov.f32 %f26, %f14;
+mov.f32 %f14, %f13;
+.loc	14	65	0
+mov.f32 %f27, %f19;
+mov.f32 %f19, %f16;
+.loc	14	66	0
+mov.f32 %f28, %f18;
+mov.f32 %f18, %f17;
+bra.uni $Lt_0_1794;
+$Lt_0_2050:
+.loc	14	72	0
+add.f32 %f29, %f2, %f1;
+add.f32 %f30, %f3, %f29;
+add.f32 %f31, %f4, %f30;
+add.f32 %f32, %f5, %f31;
+add.f32 %f33, %f6, %f32;
+add.f32 %f34, %f7, %f33;
+add.f32 %f35, %f8, %f34;
+add.f32 %f36, %f9, %f35;
+add.f32 %f37, %f10, %f36;
+add.f32 %f38, %f11, %f37;
+add.f32 %f39, %f12, %f38;
+add.f32 %f40, %f13, %f39;
+add.f32 %f41, %f14, %f40;
+add.f32 %f42, %f15, %f41;
+add.f32 %f43, %f16, %f42;
+add.f32 %f44, %f17, %f43;
+add.f32 %f45, %f18, %f44;
+add.f32 %f46, %f19, %f45;
+.loc	14	99	0
+sub.f32 %f47, %f4, %f5;
+add.f32 %f48, %f8, %f47;
+sub.f32 %f49, %f48, %f9;
+add.f32 %f50, %f10, %f49;
+sub.f32 %f51, %f50, %f11;
+add.f32 %f52, %f16, %f51;
+add.f32 %f53, %f17, %f52;
+sub.f32 %f54, %f53, %f18;
+sub.f32 %f55, %f54, %f19;
+div.full.f32 %f56, %f55, %f46;
+.loc	14	100	0
+sub.f32 %f57, %f2, %f3;
+add.f32 %f58, %f8, %f57;
+add.f32 %f59, %f9, %f58;
+sub.f32 %f60, %f59, %f10;
+sub.f32 %f61, %f60, %f11;
+add.f32 %f62, %f12, %f61;
+add.f32 %f63, %f13, %f62;
+sub.f32 %f64, %f63, %f14;
+sub.f32 %f65, %f64, %f15;
+div.full.f32 %f66, %f65, %f46;
+.loc	14	101	0
+sub.f32 %f67, %f6, %f7;
+add.f32 %f68, %f12, %f67;
+sub.f32 %f69, %f68, %f13;
+add.f32 %f70, %f14, %f69;
+sub.f32 %f71, %f70, %f15;
+add.f32 %f72, %f16, %f71;
+sub.f32 %f73, %f72, %f17;
+add.f32 %f74, %f18, %f73;
+sub.f32 %f75, %f74, %f19;
+div.full.f32 %f76, %f75, %f46;
+and.b32 %r12, %r9, 2;
+mov.u32 %r13, 0;
+setp.eq.u32 %p2, %r12, %r13;
+@%p2 bra $Lt_0_2306;
+mov.f32 %f76, 0f00000000; 
+	mov.f32 %f66, 0f3b03126f; 
+	mov.f32 %f56, 0f3ba3d70a; 
+$Lt_0_2306:
+.loc	14	116	0
+mul.f32 %f77, %f66, %f66;
+mov.f32 %f78, 0f3ff9999a; 
+	mul.f32 %f79, %f46, %f78;
+mad.f32 %f80, %f56, %f56, %f77;
+mad.f32 %f81, %f76, %f76, %f80;
+mov.f32 %f82, 0fbf800000; 
+	mov.f32 %f83, 0f3fc00000; 
+	mad.f32 %f84, %f81, %f83, %f82;
+mov.f32 %f85, 0f3eaaaaab; 
+	mul.f32 %f86, %f79, %f85;
+mul.f32 %f87, %f84, %f86;
+mov.f32 %f88, 0fbf733334; 
+	mul.f32 %f89, %f88, %f1;
+sub.f32 %f1, %f89, %f87;
+.loc	14	118	0
+mov.f32 %f90, 0f3d638e39; 
+	mul.f32 %f91, %f79, %f90;
+mov.f32 %f92, 0fbf733334; 
+	mul.f32 %f93, %f2, %f92;
+mov.f32 %f94, 0f40400000; 
+	mov.f32 %f95, 0f40900000; 
+	mad.f32 %f96, %f95, %f66, %f94;
+mul.f32 %f97, %f66, %f96;
+sub.f32 %f98, %f97, %f84;
+mad.f32 %f20, %f91, %f98, %f93;
+.loc	14	119	0
+mov.f32 %f99, 0fbf733334; 
+	mul.f32 %f100, %f3, %f99;
+mov.f32 %f101, 0fc0400000; 
+	mov.f32 %f102, 0f40900000; 
+	mad.f32 %f103, %f102, %f66, %f101;
+mul.f32 %f104, %f66, %f103;
+sub.f32 %f105, %f104, %f84;
+mad.f32 %f3, %f91, %f105, %f100;
+.loc	14	120	0
+mov.f32 %f106, 0fbf733334; 
+	mul.f32 %f107, %f6, %f106;
+mov.f32 %f108, 0f40400000; 
+	mov.f32 %f109, 0f40900000; 
+	mad.f32 %f110, %f109, %f76, %f108;
+mul.f32 %f111, %f76, %f110;
+sub.f32 %f112, %f111, %f84;
+mad.f32 %f22, %f91, %f112, %f107;
+.loc	14	121	0
+mov.f32 %f113, 0fbf733334; 
+	mul.f32 %f114, %f7, %f113;
+mov.f32 %f115, 0fc0400000; 
+	mov.f32 %f116, 0f40900000; 
+	mad.f32 %f117, %f116, %f76, %f115;
+mul.f32 %f118, %f76, %f117;
+sub.f32 %f119, %f118, %f84;
+mad.f32 %f7, %f91, %f119, %f114;
+.loc	14	122	0
+mov.f32 %f120, 0fbf733334; 
+	mul.f32 %f121, %f4, %f120;
+mov.f32 %f122, 0f40400000; 
+	mov.f32 %f123, 0f40900000; 
+	mad.f32 %f124, %f123, %f56, %f122;
+mul.f32 %f125, %f56, %f124;
+sub.f32 %f126, %f125, %f84;
+mad.f32 %f21, %f91, %f126, %f121;
+.loc	14	123	0
+mov.f32 %f127, 0fbf733334; 
+	mul.f32 %f128, %f5, %f127;
+mov.f32 %f129, 0fc0400000; 
+	mov.f32 %f130, 0f40900000; 
+	mad.f32 %f131, %f130, %f56, %f129;
+mul.f32 %f132, %f56, %f131;
+sub.f32 %f133, %f132, %f84;
+mad.f32 %f5, %f91, %f133, %f128;
+.loc	14	125	0
+add.f32 %f134, %f76, %f66;
+mov.f32 %f135, 0f3ce38e39; 
+	mul.f32 %f136, %f79, %f135;
+mov.f32 %f137, 0fbf733334; 
+	mul.f32 %f138, %f12, %f137;
+mov.f32 %f139, 0f40400000; 
+	mov.f32 %f140, 0f40900000; 
+	mad.f32 %f141, %f134, %f140, %f139;
+mul.f32 %f142, %f134, %f141;
+sub.f32 %f143, %f142, %f84;
+mad.f32 %f25, %f136, %f143, %f138;
+.loc	14	126	0
+sub.f32 %f144, %f66, %f76;
+mov.f32 %f145, 0fbf733334; 
+	mul.f32 %f146, %f13, %f145;
+mov.f32 %f147, 0f40400000; 
+	mov.f32 %f148, 0f40900000; 
+	mad.f32 %f149, %f144, %f148, %f147;
+mul.f32 %f150, %f149, %f144;
+sub.f32 %f151, %f150, %f84;
+mad.f32 %f26, %f136, %f151, %f146;
+.loc	14	127	0
+sub.f32 %f152, %f76, %f66;
+mov.f32 %f153, 0fbf733334; 
+	mul.f32 %f154, %f14, %f153;
+mov.f32 %f155, 0f40400000; 
+	mov.f32 %f156, 0f40900000; 
+	mad.f32 %f157, %f152, %f156, %f155;
+mul.f32 %f158, %f157, %f152;
+sub.f32 %f159, %f158, %f84;
+mad.f32 %f14, %f136, %f159, %f154;
+.loc	14	128	0
+mov.f32 %f160, 0f40400000; 
+	neg.f32 %f161, %f134;
+mov.f32 %f162, 0f40900000; 
+	mad.f32 %f163, %f161, %f162, %f160;
+mad.f32 %f164, %f134, %f163, %f84;
+mul.f32 %f165, %f136, %f164;
+mov.f32 %f166, 0fbf733334; 
+	mul.f32 %f167, %f166, %f15;
+sub.f32 %f15, %f167, %f165;
+.loc	14	129	0
+add.f32 %f168, %f66, %f56;
+mov.f32 %f169, 0fbf733334; 
+	mul.f32 %f170, %f8, %f169;
+mov.f32 %f171, 0f40400000; 
+	mov.f32 %f172, 0f40900000; 
+	mad.f32 %f173, %f168, %f172, %f171;
+mul.f32 %f174, %f168, %f173;
+sub.f32 %f175, %f174, %f84;
+mad.f32 %f23, %f136, %f175, %f170;
+.loc	14	130	0
+sub.f32 %f176, %f56, %f66;
+mov.f32 %f177, 0fbf733334; 
+	mul.f32 %f178, %f10, %f177;
+mov.f32 %f179, 0f40400000; 
+	mov.f32 %f180, 0f40900000; 
+	mad.f32 %f181, %f176, %f180, %f179;
+mul.f32 %f182, %f181, %f176;
+sub.f32 %f183, %f182, %f84;
+mad.f32 %f10, %f136, %f183, %f178;
+.loc	14	131	0
+add.f32 %f184, %f76, %f56;
+mov.f32 %f185, 0fbf733334; 
+	mul.f32 %f186, %f16, %f185;
+mov.f32 %f187, 0f40400000; 
+	mov.f32 %f188, 0f40900000; 
+	mad.f32 %f189, %f184, %f188, %f187;
+mul.f32 %f190, %f184, %f189;
+sub.f32 %f191, %f190, %f84;
+mad.f32 %f27, %f136, %f191, %f186;
+.loc	14	132	0
+sub.f32 %f192, %f56, %f76;
+mov.f32 %f193, 0fbf733334; 
+	mul.f32 %f194, %f17, %f193;
+mov.f32 %f195, 0f40400000; 
+	mov.f32 %f196, 0f40900000; 
+	mad.f32 %f197, %f192, %f196, %f195;
+mul.f32 %f198, %f197, %f192;
+sub.f32 %f199, %f198, %f84;
+mad.f32 %f28, %f136, %f199, %f194;
+.loc	14	133	0
+sub.f32 %f200, %f66, %f56;
+mov.f32 %f201, 0fbf733334; 
+	mul.f32 %f202, %f9, %f201;
+mov.f32 %f203, 0f40400000; 
+	mov.f32 %f204, 0f40900000; 
+	mad.f32 %f205, %f200, %f204, %f203;
+mul.f32 %f206, %f205, %f200;
+sub.f32 %f207, %f206, %f84;
+mad.f32 %f24, %f136, %f207, %f202;
+.loc	14	134	0
+mov.f32 %f208, 0f40400000; 
+	neg.f32 %f209, %f168;
+mov.f32 %f210, 0f40900000; 
+	mad.f32 %f211, %f209, %f210, %f208;
+mad.f32 %f212, %f168, %f211, %f84;
+mul.f32 %f213, %f136, %f212;
+mov.f32 %f214, 0fbf733334; 
+	mul.f32 %f215, %f214, %f11;
+sub.f32 %f11, %f215, %f213;
+.loc	14	135	0
+sub.f32 %f216, %f76, %f56;
+mov.f32 %f217, 0fbf733334; 
+	mul.f32 %f218, %f18, %f217;
+mov.f32 %f219, 0f40400000; 
+	mov.f32 %f220, 0f40900000; 
+	mad.f32 %f221, %f216, %f220, %f219;
+mul.f32 %f222, %f221, %f216;
+sub.f32 %f223, %f222, %f84;
+mad.f32 %f18, %f136, %f223, %f218;
+.loc	14	136	0
+mov.f32 %f224, 0f40400000; 
+	neg.f32 %f225, %f184;
+mov.f32 %f226, 0f40900000; 
+	mad.f32 %f227, %f225, %f226, %f224;
+mad.f32 %f228, %f184, %f227, %f84;
+mul.f32 %f229, %f136, %f228;
+mov.f32 %f230, 0fbf733334; 
+	mul.f32 %f231, %f230, %f19;
+sub.f32 %f19, %f231, %f229;
+$Lt_0_1794:
+.loc	14	142	0
+ld.param.u64 %rd5, [__cudaparm__Z27performStreamCollide_kernelPfS__dstGrid];
+add.u64 %rd6, %rd2, %rd5;
+st.global.f32 [%rd6+0], %f1;
+.loc	14	144	0
+mul.lo.s32 %r14, %r3, 128;
+mul.wide.u16 %r15, %rh1, 15360;
+add.s32 %r16, %r14, %r6;
+add.s32 %r17, %r15, %r16;
+mul.lo.s32 %r18, %r17, 20;
+cvt.s64.s32 %rd7, %r18;
+mul.wide.s32 %rd8, %r18, 4;
+add.u64 %rd9, %rd5, %rd8;
+st.global.f32 [%rd9+10244], %f20;
+.loc	14	145	0
+st.global.f32 [%rd9+-10232], %f3;
+.loc	14	146	0
+st.global.f32 [%rd9+92], %f21;
+.loc	14	147	0
+st.global.f32 [%rd9+-64], %f5;
+.loc	14	148	0
+add.u64 %rd10, %rd9, 1245184;
+st.global.f32 [%rd10+-16364], %f22;
+.loc	14	149	0
+sub.u64 %rd11, %rd9, 1245184;
+st.global.f32 [%rd11+16408], %f7;
+.loc	14	151	0
+st.global.f32 [%rd9+10348], %f23;
+.loc	14	152	0
+st.global.f32 [%rd9+10192], %f24;
+.loc	14	153	0
+st.global.f32 [%rd9+-10124], %f10;
+.loc	14	154	0
+st.global.f32 [%rd9+-10280], %f11;
+.loc	14	155	0
+st.global.f32 [%rd10+-6100], %f25;
+.loc	14	156	0
+st.global.f32 [%rd11+26672], %f26;
+.loc	14	157	0
+st.global.f32 [%rd10+-26572], %f14;
+.loc	14	158	0
+st.global.f32 [%rd11+6200], %f15;
+.loc	14	159	0
+st.global.f32 [%rd10+-16244], %f27;
+.loc	14	160	0
+st.global.f32 [%rd11+16528], %f28;
+.loc	14	161	0
+st.global.f32 [%rd10+-16396], %f18;
+.loc	14	162	0
+st.global.f32 [%rd11+16376], %f19;
+.loc	14	163	0
+exit;
+$LDWend__Z27performStreamCollide_kernelPfS_:
+} 
+
+

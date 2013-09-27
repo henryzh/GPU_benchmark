@@ -1,0 +1,53 @@
+[CUAPI] __cudaRegisterFatBinary
+[DEBUG] gpgpu_sim_thread_concurrent
+4e8fb49ce349ca70c333c478e277d65c  /home/cxh/gpgpu-sim/v3.x/benchmarks/lbm/lbm
+[CUAPI] __cudaRegisterFunction
+LBM_allocateGrid: allocated 185.2 MByte
+MAIN_printInfo:
+	grid size      : 120 x 120 x 150 = 2.16 * 10^6 Cells
+	nTimeSteps     : 1
+	result file    : result.dat
+	action         : store
+	simulation type: lid-driven cavity
+	obstacle file  : /home/cxh/workspace/parboil/datasets/lbm/short/input/120_120_150_ldc.of
+
+LBM_allocateGrid: allocated 185.2 MByte
+LBM_allocateGrid: allocated 185.2 MByte
+[CUAPI] cudaMalloc
+[CUAPI] cudaMalloc
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+LBM_showGridStatistics:
+	nObstacleCells:  343321 nAccelCells:   26912 nFluidCells: 1789767
+	minRho:   1.0000 maxRho:   1.0000 mass: 2.160000e+06
+	minU: 0.000000e+00 maxU: 0.000000e+00
+
+[CUAPI] cudaLaunch
+[DEBUG] pushing kernel '_Z27performStreamCollide_kernelPfS_' to stream 0
+[DEBUG] gridDim = (120,150,1) blockDim = (120,1,1) 
+[STATS] gpu_tot_sim_cycle = 14982274
+[STATS] gpu_tot_sim_insn = 565843056
+[STATS] gpu_tot_ipc = 37.7675
+[STATS] gpu_tot_l1_miss_rate = 0.0542
+[STATS] gpu_tot_l2_miss_rate = 0.2511
+
+[DEBUG] gpgpu_simulation_time = 0 days, 2 hrs, 37 min, 32 sec (9452 sec)
+--------------------------------------------------------------------
+
+LBM_allocateGrid: allocated 185.2 MByte
+[CUAPI] cudaEventSynchronize
+[CUAPI] cudaMemcpy
+LBM_showGridStatistics:
+	nObstacleCells:  343321 nAccelCells:   26912 nFluidCells: 1789767
+	minRho:   0.9966 maxRho:   1.0034 mass: 2.160000e+06
+	minU: 0.000000e+00 maxU: 7.000708e-03
+
+[CUAPI] cudaFree
+[CUAPI] cudaFree
+IO        : 0.213853
+Kernel    : 9437.000000
+Copy      : 21.921703
+Driver    : 9436.172848
+Compute   : 1.536236
+CPU/Kernel Overlap: 9437.000000
+Timer Wall Time: 9460.016602

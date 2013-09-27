@@ -1,0 +1,2 @@
+export PARBOIL_HOME=/home/cxh/workspace/parboil
+PYTHONPATH=$PARBOIL_HOME/common/python python $PARBOIL_HOME/benchmarks/sgemm/tools/compare-output $PARBOIL_HOME/datasets/sgemm/small/output/matrix3.txt matrix3.txt

@@ -1,0 +1,1 @@
+./sc_gpu 2 5 1 10 10 5 none output.txt 1

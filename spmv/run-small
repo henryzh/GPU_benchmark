@@ -1,0 +1,1 @@
+./spmv -i /home/cxh/workspace/parboil/datasets/spmv/small/input/1138_bus.mtx,/home/cxh/workspace/parboil/datasets/spmv/small/input/vector.bin -o 1138_bus.mtx.out

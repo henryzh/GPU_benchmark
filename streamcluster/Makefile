@@ -1,0 +1,37 @@
+#CUDA_DIR = /home/cxh/local/cuda-3.1/cuda
+CUDA_DIR = /usr/local/cuda
+
+# CUDA toolkit libraries
+CUDA_LIB_DIR := $(CUDA_DIR)/lib
+ifeq ($(shell uname -m), x86_64)
+     ifeq ($(shell if test -d $(CUDA_DIR)/lib64; then echo T; else echo F; fi), T)
+     	CUDA_LIB_DIR := $(CUDA_DIR)/lib64
+     endif
+endif
+
+NVCC = $(CUDA_DIR)/bin/nvcc
+NVCC_FLAGS = -I$(CUDA_DIR)/include
+EXE = sc_gpu
+
+# make dbg=1 tells nvcc to add debugging symbols to the binary
+ifeq ($(dbg),1)
+	NVCC_FLAGS += -g -O0
+else
+	NVCC_FLAGS += -O3
+endif
+
+# make emu=1 compiles the CUDA kernels for emulation
+ifeq ($(emu),1)
+	NVCC_FLAGS += -deviceemu
+endif
+
+# make dp=1 compiles the CUDA kernels with double-precision support
+ifeq ($(dp),1)
+	NVCC_FLAGS += --gpu-name sm_13
+endif
+
+$(EXE): streamcluster_cuda_cpu.cpp streamcluster_cuda.cu streamcluster_header.cu
+	$(NVCC) $(NVCC_FLAGS) streamcluster_cuda_cpu.cpp streamcluster_cuda.cu streamcluster_header.cu -o $(EXE) -lcuda
+
+clean:
+	rm -f *.o *~ *.txt $(EXE) *.linkinfo

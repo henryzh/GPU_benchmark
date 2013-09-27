@@ -1,0 +1,1 @@
+./spmv -i /home/cxh/workspace/parboil/datasets/spmv/medium/input/bcsstk18.mtx,/home/cxh/workspace/parboil/datasets/spmv/medium/input/vector.bin -o bcsstk18.mtx.out

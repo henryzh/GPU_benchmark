@@ -1,0 +1,1 @@
+./spmv -i /home/cxh/workspace/parboil/datasets/spmv/large/input/Dubcova3.mtx.bin,/home/cxh/workspace/parboil/datasets/spmv/large/input/vector.bin -o Dubcova3.mtx.out
