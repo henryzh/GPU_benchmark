@@ -1,0 +1,127 @@
+4d48c0a46a497e91883f62a047d4f705  /home/cxh/gpgpu-sim/v3.x/benchmarks/bfs-2/bfs
+[CUAPI] __cudaRegisterFatBinary
+[DEBUG] extract_code_using_cuobjdump
+[DEBUG] gpgpu_sim_thread_concurrent
+[CUAPI] __cudaRegisterFunction
+[CUAPI] __cudaRegisterFunction
+[CUAPI] __cudaRegisterFunction
+[CUAPI] __cudaRegisterVar
+[CUAPI] __cudaRegisterVar
+[CUAPI] __cudaRegisterVar
+[CUAPI] __cudaRegisterVar
+[BENCH] BFS from Parboil
+[BENCH] Atomic Barrier
+[CUAPI] cudaMalloc
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMalloc
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMalloc
+[CUAPI] cudaMalloc
+[CUAPI] cudaMalloc
+[CUAPI] cudaMalloc
+[CUAPI] cudaMalloc
+[CUAPI] cudaMalloc
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[BENCH] Starting GPU kernel
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMalloc
+[CUAPI] cudaMalloc
+[CUAPI] cudaMalloc
+[CUAPI] cudaMalloc
+[CUAPI] cudaMalloc
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMalloc
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaLaunch
+[DEBUG] pushing kernel '_Z17BFS_in_GPU_kernelPiS_P4int2S1_S_S_iS_iiS_' to stream 0
+[DEBUG] gridDim = (1,1,1) blockDim = (512,1,1) 
+[DEBUG] Allocating CTA barrier: kernel_id=1, num_ctas=1
+[SYNC] CTA barrier allocated for Grid #1
+[SYNC] CTA barrier deallocated for Grid #1
+[DEBUG] Kenel done, CTA barrier deallocated
+[STATS] gpu_tot_sim_cycle = 4459104
+[STATS] gpu_tot_sim_insn = 34040372
+[STATS] gpu_tot_ipc = 7.6339
+[STATS] Number of ld.volatile: 0
+[STATS] Number of st.volatile: 0
+[STATS] Number of atomic: 1049089
+[STATS] gpu_tot_l1_miss_rate = 0.8205
+[STATS] gpu_tot_l2_miss_rate = 0.0331
+
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 5 min, 41 sec (341 sec)
+--------------------------------------------------------------------
+
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaLaunch
+[DEBUG] pushing kernel '_Z26BFS_kernel_multi_blk_inGPUPiS_P4int2S1_S_S_S_S_iiS_S_S_S_S_S_' to stream 0
+[DEBUG] gridDim = (14,1,1) blockDim = (512,1,1) 
+[DEBUG] Allocating CTA barrier: kernel_id=2, num_ctas=14
+[SYNC] CTA barrier allocated for Grid #2
+[SYNC] CTA barrier deallocated for Grid #2
+[DEBUG] Kenel done, CTA barrier deallocated
+[STATS] gpu_tot_sim_cycle = 22525128
+[STATS] gpu_tot_sim_insn = 371956046
+[STATS] gpu_tot_ipc = 16.5129
+[STATS] Number of ld.volatile: 7872298
+[STATS] Number of st.volatile: 2924
+[STATS] Number of atomic: 7729121
+[STATS] gpu_tot_l1_miss_rate = 0.9404
+[STATS] gpu_tot_l2_miss_rate = 0.0344
+
+[DEBUG] gpgpu_simulation_time = 0 days, 1 hrs, 23 min, 16 sec (4996 sec)
+--------------------------------------------------------------------
+
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaLaunch
+[DEBUG] pushing kernel '_Z17BFS_in_GPU_kernelPiS_P4int2S1_S_S_iS_iiS_' to stream 0
+[DEBUG] gridDim = (1,1,1) blockDim = (512,1,1) 
+[DEBUG] Allocating CTA barrier: kernel_id=3, num_ctas=1
+[SYNC] CTA barrier allocated for Grid #3
+[SYNC] CTA barrier deallocated for Grid #3
+[DEBUG] Kenel done, CTA barrier deallocated
+[STATS] gpu_tot_sim_cycle = 26902919
+[STATS] gpu_tot_sim_insn = 405968476
+[STATS] gpu_tot_ipc = 15.0901
+[STATS] Number of ld.volatile: 7872298
+[STATS] Number of st.volatile: 2924
+[STATS] Number of atomic: 8777185
+[STATS] gpu_tot_l1_miss_rate = 0.9404
+[STATS] gpu_tot_l2_miss_rate = 0.0344
+
+[DEBUG] gpgpu_simulation_time = 0 days, 1 hrs, 28 min, 51 sec (5331 sec)
+--------------------------------------------------------------------
+
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaFree
+[CUAPI] cudaFree
+[CUAPI] cudaFree
+[CUAPI] cudaEventSynchronize
+[BENCH] GPU kernel done
+[BENCH] Kernel called 3 times (2, 1, 0)
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaFree
+[CUAPI] cudaFree
+[CUAPI] cudaFree
+[CUAPI] cudaFree
+[CUAPI] cudaFree
+[CUAPI] cudaFree
+IO        : 2.194038
+Kernel    : 5327.000000
+Copy      : 2.019766
+Driver    : 5326.597584
+CPU/Kernel Overlap: 5327.000000
+Timer Wall Time: 5330.812012
