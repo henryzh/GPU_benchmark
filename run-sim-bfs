@@ -1,11 +1,12 @@
 
-SIM_ROOT=/home/cxh/gpgpu-sim/ruby
+SIM_ROOT=/home/cxh/gpgpu-sim-ruby
 BENCH_ROOT=$SIM_ROOT/benchmarks
 MODEL="cuda"
 INPUT="sim"
-BENCH="bfs"
+BENCH="bfs-rod"
 CONFIG="ruby"
-OPTION="MESI"
+#OPTION="MESI"
+OPTION="GPU-VIni"
 LOG_FILE=log.txt
 ERR_FILE=error.txt
 OUT_FILE=output.txt

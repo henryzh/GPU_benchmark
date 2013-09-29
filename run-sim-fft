@@ -1,12 +1,12 @@
 
-SIM_ROOT=/home/cxh/gpgpu-sim/v3.x
+SIM_ROOT=/home/cxh/gpgpu-sim-ruby
 BENCH_ROOT=$SIM_ROOT/benchmarks
 MODEL="cuda"
 INPUT="sim"
 BENCH="fft"
-CONFIG=GTX480
-#TeslaC2050
-OPTION="dvfs-600"
+CONFIG="ruby"
+#OPTION="MESI"
+OPTION="GPU-VI"
 LOG_FILE=log.txt
 ERR_FILE=error.txt
 OUT_FILE=output.txt
@@ -29,8 +29,10 @@ for SIZE in $INPUT; do
 	cd $BENCH_ROOT/$BMK
 	rm _cuobjdump*
 	cp $BENCH_ROOT/config/$CONFIG/$OPT/gpgpusim.config .
-	cp $BENCH_ROOT/config/$CONFIG/config_fermi_islip.icnt .
-	cp $BENCH_ROOT/config/$CONFIG/$OPT/gpuwattch_gtx480.xml .
+	cp $BENCH_ROOT/config/$CONFIG/$OPT/baseline_icnt_config.txt .
+#	cp $BENCH_ROOT/config/$CONFIG/config_fermi_islip.icnt .
+#	cp $BENCH_ROOT/config/$CONFIG/$OPT/gpuwattch_gtx480.xml .
+
 	rm stats.txt config.out 2> $output_dir/$ERR_FILE
 	./run-$SIZE > $output_dir/$OUT_FILE 2>> $output_dir/$ERR_FILE
 	echo ">>> Check Results"
@@ -38,7 +40,9 @@ for SIZE in $INPUT; do
 	./check-$SIZE >> $output_dir/$ERR_FILE
 	mv stats.txt $output_dir/.
 	mv config.out $output_dir/.
-	mv gpgpusim_power_report__* $output_dir/.
+	mv gpgpu_inst_stats.txt $output_dir/.
+#	mv gpgpusim_power_report__* $output_dir/.
+
 	echo ">>> End $BMK <$SIZE> <$OPT> at `date`"
 	echo ">>> End $BMK <$SIZE> <$OPT> at `date`" >> $output_dir/$LOG_FILE
 	echo ">>> ========================================================"

@@ -1,12 +1,13 @@
 
-SIM_ROOT=/home/cxh/gpgpu-sim/ruby
+SIM_ROOT=/home/cxh/gpgpu-sim-ruby
 BENCH_ROOT=$SIM_ROOT/benchmarks
 MODEL="cuda"
 INPUT="sim"
 BENCH="bitonicSort"
 CONFIG="ruby"
 #OPTION="no_L1"
-OPTION="MESI"
+#OPTION="MESI"
+OPTION="GPU-VI"
 LOG_FILE=log.txt
 ERR_FILE=error.txt
 OUT_FILE=output.txt
