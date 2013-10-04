@@ -1,3 +1,4 @@
+# CUDA Hotspot
 CUDA_DIR = /usr/local/cuda
 CUDA_LIB_DIR := $(CUDA_DIR)/lib
 ifeq ($(shell uname -m), x86_64)
@@ -6,18 +7,16 @@ ifeq ($(shell uname -m), x86_64)
      endif
 endif
 
-CC := $(CUDA_DIR)/bin/nvcc
-INCLUDE := $(CUDA_DIR)/include
+NVCC = $(CUDA_DIR)/bin/nvcc
+NVCC_FLAGS = -O2 #-Xptxas -dlcm=cg # -g
+INCS = -I$(CUDA_DIR)/include
+LIBS = -L$(CUDA_LIB_DIR)
 SRC = hotspot.cu
 EXE = hotspot
 
 release: $(SRC)
-	$(CC) $(SRC) -o $(EXE) -I$(INCLUDE) -L$(CUDA_LIB_DIR) 
+	$(NVCC) $(NVCC_FLAGS) $(SRC) -o $(EXE) $(INCS) $(LIBS) 
 enum: $(SRC)
-	$(CC) -deviceemu $(SRC) -o $(EXE) -I$(INCLUDE) -L$(CUDA_LIB_DIR) 
-debug: $(SRC)
-	$(CC) -g $(SRC) -o $(EXE) -I$(INCLUDE) -L$(CUDA_LIB_DIR) 
-debugenum: $(SRC)
-	$(CC) -g -deviceemu $(SRC) -o $(EXE) -I$(INCLUDE) -L$(CUDA_LIB_DIR) 
+	$(CC) -deviceemu $(SRC) -o $(EXE) $(INCS) -L$(LIBS) 
 clean: $(SRC)
-	rm -f $(EXE) $(EXE).linkinfo result.txt
+	rm -f $(EXE) result.txt

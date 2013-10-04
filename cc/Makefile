@@ -14,7 +14,7 @@ SRC := main.cu
 CCFILES	:= #imageWrite.cpp
 	
 CU_DEPS := CudaCuts.cu CudaCuts.h CudaCuts_kernel.cu Example.h #edgeWeight.cu PushRelabel_kernel.cu Bfs_kernel.cu
-CUFLAGS += -arch=sm_13 # -g -Xptxas -dlcm=cg
+CUFLAGS += -arch=sm_13 #-Xptxas -dlcm=cg
 
 release: $(SRC)
 	$(CC) $(CUFLAGS) $(SRC) -o $(EXE) -I$(INCLUDE) -L$(CUDA_LIB_DIR)

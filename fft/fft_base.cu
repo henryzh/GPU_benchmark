@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 #include <cuda.h>
-#include "../parboil.h"
+#include "parboil.h"
 //#include "ib_sync.cu"
 
 #define CUERR { cudaError_t err; \

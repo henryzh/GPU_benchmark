@@ -18,9 +18,9 @@
 	
 
 .file	1	"<command-line>"
-.file	2	"/tmp/tmpxft_00000e79_00000000-6_main.cudafe2.gpu"
-.file	3	"/tmp/tmpxft_00000e79_00000000-1_main.cudafe1.gpu"
-.file	4	"/usr/lib/gcc/x86_64-linux-gnu/4.4.6/include/stddef.h"
+.file	2	"/tmp/tmpxft_00003d43_00000000-6_main.cudafe2.gpu"
+.file	3	"/tmp/tmpxft_00003d43_00000000-1_main.cudafe1.gpu"
+.file	4	"/usr/lib/gcc/x86_64-linux-gnu/4.6.1/include/stddef.h"
 .file	5	"/usr/local/cuda/include/crt/device_runtime.h"
 .file	6	"/usr/local/cuda/include/host_defines.h"
 .file	7	"/usr/local/cuda/include/builtin_types.h"
@@ -1274,7 +1274,7 @@ $LDWend__Z17kernel_start_sinkPiS_S_S_S_S_S_S_iiiiiiS_S_S_Pb:
 .reg .u32 %r<119>;
 .reg .u64 %rd<57>;
 .reg .pred %p<37>;
-.shared .align 4 .b8 __cuda___cuda_local_var_15897_37_non_const_height_fn552[1424];
+.shared .align 4 .b8 __cuda___cuda_local_var_15886_37_non_const_height_fn552[1424];
 .loc	16	324	0
 $LDWbegin__Z25kernel_relabel_stochasticPiS_S_S_S_S_S_S_S_iiiiiiS_S_:
 cvt.u32.u16 %r1, %ctaid.y;
@@ -1310,7 +1310,7 @@ cvt.s32.u16 %r22, %tid.x;
 add.u32 %r23, %r15, %r21;
 cvt.s64.s32 %rd6, %r23;
 mul.wide.s32 %rd7, %r23, 4;
-mov.u64 %rd8, __cuda___cuda_local_var_15897_37_non_const_height_fn552;
+mov.u64 %rd8, __cuda___cuda_local_var_15886_37_non_const_height_fn552;
 add.u32 %r24, %r22, %r19;
 cvt.s64.s32 %rd9, %r24;
 mul.wide.s32 %rd10, %r24, 4;
@@ -1671,7 +1671,7 @@ $LDWend__Z10kernel_EndPiS_S_:
 .reg .u32 %r<151>;
 .reg .u64 %rd<47>;
 .reg .pred %p<24>;
-.shared .align 4 .b8 __cuda___cuda_local_var_15960_31_non_const_height_fn2112[1424];
+.shared .align 4 .b8 __cuda___cuda_local_var_15949_31_non_const_height_fn2112[1424];
 .loc	16	389	0
 $LDWbegin__Z23kernel_push1_stochasticPiS_S_S_S_S_S_S_S_iiiiiiS_S_:
 cvt.u32.u16 %r1, %ctaid.y;
@@ -1707,7 +1707,7 @@ cvt.s32.u16 %r22, %tid.x;
 add.u32 %r23, %r15, %r21;
 cvt.s64.s32 %rd6, %r23;
 mul.wide.s32 %rd7, %r23, 4;
-mov.u64 %rd8, __cuda___cuda_local_var_15960_31_non_const_height_fn2112;
+mov.u64 %rd8, __cuda___cuda_local_var_15949_31_non_const_height_fn2112;
 add.u32 %r24, %r22, %r19;
 cvt.s64.s32 %rd9, %r24;
 mul.wide.s32 %rd10, %r24, 4;
@@ -2053,7 +2053,7 @@ $LDWend__Z23kernel_push1_stochasticPiS_S_S_S_S_S_S_S_iiiiiiS_S_:
 .reg .u32 %r<268>;
 .reg .u64 %rd<77>;
 .reg .pred %p<54>;
-.shared .align 4 .b8 __cuda___cuda_local_var_16041_31_non_const_height_fn3664[1424];
+.shared .align 4 .b8 __cuda___cuda_local_var_16030_31_non_const_height_fn3664[1424];
 .loc	16	471	0
 $LDWbegin__Z23kernel_push2_stochasticPiS_S_S_S_S_S_S_S_iiiiiiS_S_S_Pb:
 cvt.u32.u16 %r1, %ctaid.y;
@@ -2087,7 +2087,7 @@ cvt.s32.u16 %r21, %tid.x;
 add.u32 %r22, %r14, %r20;
 cvt.s64.s32 %rd5, %r22;
 mul.wide.s32 %rd6, %r22, 4;
-mov.u64 %rd7, __cuda___cuda_local_var_16041_31_non_const_height_fn3664;
+mov.u64 %rd7, __cuda___cuda_local_var_16030_31_non_const_height_fn3664;
 add.u32 %r23, %r21, %r18;
 cvt.s64.s32 %rd8, %r23;
 mul.wide.s32 %rd9, %r23, 4;
@@ -2977,7 +2977,7 @@ $LDWend__Z23kernel_push_stochastic2PiS_S_S_i:
 .reg .u32 %r<129>;
 .reg .u64 %rd<42>;
 .reg .pred %p<40>;
-.shared .align 4 .b8 __cuda___cuda_local_var_16238_33_non_const_height_fn5360[1424];
+.shared .align 4 .b8 __cuda___cuda_local_var_16227_33_non_const_height_fn5360[1424];
 .loc	16	668	0
 $LDWbegin__Z29kernel_push1_start_stochasticPiS_S_S_S_S_S_S_S_iiiiiiS_S_S_Pb:
 .loc	16	36	0
@@ -3001,7 +3001,7 @@ cvt.s32.u16 %r17, %tid.x;
 add.u32 %r18, %r10, %r16;
 cvt.s64.s32 %rd1, %r18;
 mul.wide.s32 %rd2, %r18, 4;
-mov.u64 %rd3, __cuda___cuda_local_var_16238_33_non_const_height_fn5360;
+mov.u64 %rd3, __cuda___cuda_local_var_16227_33_non_const_height_fn5360;
 add.u32 %r19, %r17, %r14;
 cvt.s64.s32 %rd4, %r19;
 mul.wide.s32 %rd5, %r19, 4;

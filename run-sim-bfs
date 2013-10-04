@@ -4,9 +4,11 @@ BENCH_ROOT=$SIM_ROOT/benchmarks
 MODEL="cuda"
 INPUT="sim"
 BENCH="bfs-rod"
-CONFIG="ruby"
+#CONFIG="ruby"
+CONFIG="test"
 #OPTION="MESI"
-OPTION="GPU-VIni"
+#OPTION="GPU-VIni"
+OPTION="l2-2M"
 LOG_FILE=log.txt
 ERR_FILE=error.txt
 OUT_FILE=output.txt
@@ -41,6 +43,7 @@ for SIZE in $INPUT; do
 	mv stats.txt $output_dir/.
 	mv config.out $output_dir/.
 	mv gpgpu_inst_stats.txt $output_dir/.
+	mv ruby_stat.txt $output_dir/.
 #	mv gpgpusim_power_report__* $output_dir/.
 
 	echo ">>> End $BMK <$SIZE> <$OPT> at `date`"
