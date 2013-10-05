@@ -1,4 +1,4 @@
-Real time: Oct/03/2013 14:02:07
+Real time: Oct/04/2013 13:02:19
 
 Profiler Stats
 --------------
@@ -7,18 +7,18 @@ Elapsed_time_in_minutes: 0
 Elapsed_time_in_hours: 0
 Elapsed_time_in_days: 0
 
-Virtual_time_in_seconds: 0.17
-Virtual_time_in_minutes: 0.00283333
-Virtual_time_in_hours:   4.72222e-05
-Virtual_time_in_days:    4.72222e-05
+Virtual_time_in_seconds: 0.32
+Virtual_time_in_minutes: 0.00533333
+Virtual_time_in_hours:   8.88889e-05
+Virtual_time_in_days:    8.88889e-05
 
 Ruby_current_time: 1876
 Ruby_start_time: 1
 Ruby_cycles: 1875
 
-mbytes_resident: 22.2305
+mbytes_resident: 22.2422
 mbytes_total: 45.6211
-resident_ratio: 0.487285
+resident_ratio: 0.487542
 
 Total_misses: 0
 total_misses: 0 [ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ]
@@ -142,11 +142,11 @@ Resource Usage
 page_size: 4096
 user_time: 0
 system_time: 0
-page_reclaims: 7286
-page_faults: 3
+page_reclaims: 7267
+page_faults: 17
 swaps: 0
-block_inputs: 776
-block_outputs: 104
+block_inputs: 4896
+block_outputs: 112
 
 Coherence Bandwidth Breakdown
 ----------------------
