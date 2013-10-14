@@ -1,0 +1,22 @@
+
+CUDA_DIR = /usr/local/cuda
+CUDA_LIB_DIR := $(CUDA_DIR)/lib
+ifeq ($(shell uname -m), x86_64)
+     ifeq ($(shell if test -d $(CUDA_DIR)/lib64; then echo T; else echo F; fi), T)
+     	CUDA_LIB_DIR := $(CUDA_DIR)/lib64
+     endif
+endif
+
+CC := gcc
+NVCC := $(CUDA_DIR)/bin/nvcc
+INCLUDE := $(CUDA_DIR)/include
+SDK_INC := /home/cxh/CUDA-SDK/cuda-4.1/C/common/inc
+SDK_LIB := /home/cxh/CUDA-SDK/cuda-4.1/C/lib
+EXE := NN
+CUFILES	:= NN.cu
+SRC := $(CUFILES) $(CCFILES)
+
+release: $(SRC)
+	$(NVCC) $(SRC) -o $(EXE) -I$(INCLUDE) -L$(SDK_LIB) -I$(SDK_INC) -L$(CUDA_LIB_DIR)
+clean: $(SRC)
+	rm -f $(EXE) 

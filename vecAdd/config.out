@@ -55,7 +55,7 @@ GPGPU-Sim Configuration options:
 -gpgpu_dram_scheduler                    1 # 0 = fifo, 1 = FR-FCFS (defaul)
 -gpgpu_dram_partition_queues              8:8:8:8 # i2$:$2d:d2$:$2i
 -l2_ideal                               0 # Use a ideal L2 cache that always hit
--gpgpu_cache:dl2                     none # unified banked L2 data cache config  {<nsets>:<bsize>:<assoc>,<rep>:<wr>:<alloc>:<wr_alloc>,<mshr>:<N>:<merge>,<mq>}
+-gpgpu_cache:dl2     128:128:8,L:B:m:W,A:32:4,4 # unified banked L2 data cache config  {<nsets>:<bsize>:<assoc>,<rep>:<wr>:<alloc>:<wr_alloc>,<mshr>:<N>:<merge>,<mq>}
 -gpgpu_cache:dl2_texture_only                    0 # L2 cache used for texture only
 -gpgpu_n_mem                            8 # number of memory modules (e.g. memory controllers) in gpu
 -gpgpu_n_mem_per_ctrlr                    2 # number of memory chips per memory controller
@@ -79,7 +79,7 @@ GPGPU-Sim Configuration options:
 -ruby_mshr_count                       64 # Number of Ruby MSHRs (default=64)
 -ruby_mshr_size                        32 # Number of accesses that can be merged in each Ruby MSHR (default=32)
 -ruby_flit_size                        32 # Flit size (default=32)
--ruby_vns                               2 # Number of virtual networks (default=2)
+-ruby_vns                               4 # Number of virtual networks (default=2)
 -ruby_vcs_per_class                     1 # Virtual channels per class (default=1)
 -ruby_vc_buffer_size                    8 # Virtual channel buffer size in # flits (default=8)
 -ruby_latencies                    70:100 # Minimum latencies in core cycles (L1->L2:L2->Mem) (default=70:100)
@@ -110,7 +110,7 @@ GPGPU-Sim Configuration options:
 -ruby_lifetime_profiler_peraddr_outfile lifetime_profiler_peraddr.txt # Filename for output of per-address information from lifetime profiler (default=lifetime_profiler_peraddr.txt)
 -ruby_lifetimetrace                     0 # Lifetime trace enabled? (1=On, 0=Off (default) )
 -ruby_lifetimetrace_outfile   lifetime_trace.txt # Filename for output of lifetime trace (default=lifetime_trace.txt)
--ruby_flush_L1D                         1 # Flush Ruby's L1D at kernel finish? (1=On, 0=Off (default) )
+-ruby_flush_L1D                         0 # Flush Ruby's L1D at kernel finish? (1=On, 0=Off (default) )
 -gpgpu_mem_addr_mapping dramid@8;00000000.00000000.00000000.00000000.0000RRRR.RRRRRRRR.BBBBCCCC.CCSSSSSS # mapping memory address to dram model {dramid@<start bit>;<memory address map>}
 -gpgpu_mem_addr_test                    0 # run sweep test to check address mapping for aliased address
 -gpgpu_mem_address_mask                    1 # 0 = old addressing mask, 1 = new addressing mask, 2 = new add. mask + flipped bank sel and chip sel bits
@@ -123,7 +123,7 @@ GPGPU-Sim Configuration options:
 -gpu_deadlock_threshold               128000 # Deadlock threshold in # cycles (default=20000)
 -gpgpu_ptx_instruction_classification                    0 # if enabled will classify ptx instruction types per kernel (Max 255 kernels now)
 -gpgpu_ptx_sim_mode                     0 # Select between Performance (default) or Functional simulation (1)
--gpgpu_clock_domains 700.0:1400.0:700.0:924.0 # Clock Domain Frequencies in MhZ {<Core Clock>:<ICNT Clock>:<L2 Clock>:<DRAM Clock>}
+-gpgpu_clock_domains 700.0:700.0:700.0:924.0 # Clock Domain Frequencies in MhZ {<Core Clock>:<ICNT Clock>:<L2 Clock>:<DRAM Clock>}
 -gpgpu_scale_bandwidths              1.0:1.0 # Scale bandwidths by scaling clock frequencies with a multiplier {<ICNT Clock Multipler><DRAM Clock Multiplier>}
 -gpgpu_max_concurrent_kernel                    8 # maximum kernels that can run concurrently on GPU
 -gpgpu_cflog_interval                    0 # Interval between each snapshot in control flow logger
@@ -132,7 +132,7 @@ GPGPU-Sim Configuration options:
 -visualizer_zlevel                      6 # Compression level of the visualizer output log (0=no comp, 9=highest)
 -enable_ptx_file_line_stats                    1 # Turn on PTX source line statistic profiling. (1 = On)
 -ptx_line_stats_filename gpgpu_inst_stats.txt # Output file for PTX source line statistics.
--save_embedded_ptx                      0 # saves ptx files embedded in binary as <n>.ptx
+-save_embedded_ptx                      1 # saves ptx files embedded in binary as <n>.ptx
 -keep                                   0 # keep intermediate files created by GPGPU-Sim when interfacing with external programs
 -gpgpu_ptx_save_converted_ptxplus                    0 # Saved converted ptxplus to a file
 -ptx_opcode_latency_int         4,13,4,5,145 # Opcode latencies for integers <ADD,MAX,MUL,MAD,DIV>Default 1,1,19,25,145
