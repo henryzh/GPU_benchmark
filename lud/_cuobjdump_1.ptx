@@ -18,8 +18,8 @@
 	
 
 .file	1	"<command-line>"
-.file	2	"/tmp/tmpxft_000024ea_00000000-6_lud.cudafe2.gpu"
-.file	3	"/usr/lib/gcc/x86_64-linux-gnu/4.4.6/include/stddef.h"
+.file	2	"/tmp/tmpxft_000070df_00000000-6_lud.cudafe2.gpu"
+.file	3	"/usr/lib/gcc/x86_64-linux-gnu/4.6.1/include/stddef.h"
 .file	4	"/usr/local/cuda/bin/../include/crt/device_runtime.h"
 .file	5	"/usr/local/cuda/bin/../include/host_defines.h"
 .file	6	"/usr/local/cuda/bin/../include/builtin_types.h"

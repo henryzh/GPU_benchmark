@@ -9,7 +9,7 @@
     _1.ptx     9 (pc=    ):  .target sm_20
     _1.ptx    10 (pc=    ):  .address_size 64
     _1.ptx    11 (pc=    ):  
-    _1.ptx    12 (pc=    ):  .file	1 "/tmp/tmpxft_00003e56_00000000-7_pathfinder.cpp3.i"
+    _1.ptx    12 (pc=    ):  .file	1 "/tmp/tmpxft_00006e7c_00000000-7_pathfinder.cpp3.i"
     _1.ptx    13 (pc=    ):  .file	2 "pathfinder.cu"
     _1.ptx    14 (pc=    ):  
     _1.ptx    15 (pc=    ):  
@@ -30,9 +30,9 @@
     _1.ptx    30 (pc=    ):  .reg .s64 %rl<27>;
     _1.ptx    31 (pc=    ):  .reg .s16 %rc<12>;
     _1.ptx    32 (pc=    ):  
-    _1.ptx    33 (pc=    ):  	.shared .align 4 .b8 __cuda_local_var_16943_37_non_const_prev[1024];
+    _1.ptx    33 (pc=    ):  	.shared .align 4 .b8 __cuda_local_var_16933_37_non_const_prev[1024];
     _1.ptx    34 (pc=    ):  
-    _1.ptx    35 (pc=    ):  	.shared .align 4 .b8 __cuda_local_var_16944_37_non_const_result[1024];
+    _1.ptx    35 (pc=    ):  	.shared .align 4 .b8 __cuda_local_var_16934_37_non_const_result[1024];
     _1.ptx    36 (pc=    ):  
     _1.ptx    37 (pc=    ):  ld.param.u32 %r1, [_Z14dynproc_kerneliPiS_S_iiii_param_0];
     _1.ptx    38 (pc=   8):  ld.param.u64 %rl9, [_Z14dynproc_kerneliPiS_S_iiii_param_2];
@@ -95,7 +95,7 @@
     _1.ptx    95 (pc=    ):  .loc 2 104 1
     _1.ptx    96 (pc= 312):  cvt.s64.s32 %rl4, %r62;
     _1.ptx    97 (pc= 320):  mul.wide.s32 %rl10, %r62, 4;
-    _1.ptx    98 (pc= 328):  mov.u64 %rl11, __cuda_local_var_16943_37_non_const_prev;
+    _1.ptx    98 (pc= 328):  mov.u64 %rl11, __cuda_local_var_16933_37_non_const_prev;
     _1.ptx    99 (pc= 336):  add.s64 %rl5, %rl11, %rl10;
     _1.ptx   100 (pc=    ):  .loc 2 94 1
     _1.ptx   101 (pc= 344):  @!%p7 bra BB0_5;
@@ -123,7 +123,7 @@
     _1.ptx   123 (pc= 440):  mul.wide.s32 %rl16, %r9, 4;
     _1.ptx   124 (pc= 448):  add.s64 %rl7, %rl11, %rl16;
     _1.ptx   125 (pc= 456):  shl.b64 %rl17, %rl4, 2;
-    _1.ptx   126 (pc= 464):  mov.u64 %rl18, __cuda_local_var_16944_37_non_const_result;
+    _1.ptx   126 (pc= 464):  mov.u64 %rl18, __cuda_local_var_16934_37_non_const_result;
     _1.ptx   127 (pc= 472):  add.s64 %rl8, %rl18, %rl17;
     _1.ptx   128 (pc= 480):  ld.param.u32 %r57, [_Z14dynproc_kerneliPiS_S_iiii_param_0];
     _1.ptx   129 (pc= 488):  add.s32 %r10, %r57, -1;

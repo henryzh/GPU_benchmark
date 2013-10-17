@@ -79,7 +79,7 @@ GPGPU-Sim Configuration options:
 -ruby_mshr_count                       64 # Number of Ruby MSHRs (default=64)
 -ruby_mshr_size                        32 # Number of accesses that can be merged in each Ruby MSHR (default=32)
 -ruby_flit_size                        32 # Flit size (default=32)
--ruby_vns                               5 # Number of virtual networks (default=2)
+-ruby_vns                               4 # Number of virtual networks (default=2)
 -ruby_vcs_per_class                     1 # Virtual channels per class (default=1)
 -ruby_vc_buffer_size                    8 # Virtual channel buffer size in # flits (default=8)
 -ruby_latencies                    70:100 # Minimum latencies in core cycles (L1->L2:L2->Mem) (default=70:100)
@@ -95,7 +95,7 @@ GPGPU-Sim Configuration options:
 -ruby_cl_pred_pcadaptive              64:16:1 # Cache Lease option - predictor settings for PC-adaptive predictor (writeunexpired:l2evict:expiredhit) (default=64:16:1)
 -ruby_cl_pred_addrfixed lifetime_profiler_peraddr.txt # Cache Lease option - predictor settings for Addr-fixed predictor (inputfile) (default=lifetime_profiler_peraddr.txt)
 -ruby_send_memfence_to_protocol                    0 # Mem fence requests are sent to Ruby protocol (1=On (default), 0=Off)
--ruby_writes_stall_at_mshr                    1 # Write and atomics are stalled by pending requests in MSHRs (1=On, 0=Off (default) )
+-ruby_writes_stall_at_mshr                    0 # Write and atomics are stalled by pending requests in MSHRs (1=On, 0=Off (default) )
 -ruby_single_write_per_warp                    0 # Only one outstanding write request per warp (1=On, 0=Off (default) )
 -ruby_locality_profiler                 none # locality profiler configuration. Bins specified as pow2 {<start_bin>,<end_bin>, <skip_bin>}
 -ruby_l1_assoc                          4 # Ruby L1 associativity (default=4)

@@ -18,8 +18,8 @@
 	
 
 .file	1	"<command-line>"
-.file	2	"/tmp/tmpxft_00005e22_00000000-6_main.cudafe2.gpu"
-.file	3	"/usr/lib/gcc/x86_64-linux-gnu/4.4.6/include/stddef.h"
+.file	2	"/tmp/tmpxft_00004710_00000000-6_main.cudafe2.gpu"
+.file	3	"/usr/lib/gcc/x86_64-linux-gnu/4.6.1/include/stddef.h"
 .file	4	"/usr/local/cuda/include/crt/device_runtime.h"
 .file	5	"/usr/local/cuda/include/host_defines.h"
 .file	6	"/usr/local/cuda/include/builtin_types.h"
@@ -41,9 +41,10 @@
 .file	22	"/usr/local/cuda/include/sm_13_double_functions.h"
 .file	23	"/usr/local/cuda/include/sm_20_atomic_functions.h"
 .file	24	"/usr/local/cuda/include/sm_20_intrinsics.h"
-.file	25	"/usr/local/cuda/include/surface_functions.h"
-.file	26	"/usr/local/cuda/include/texture_fetch_functions.h"
-.file	27	"/usr/local/cuda/include/math_functions_dbl_ptx1.h"
+.file	25	"/usr/local/cuda/include/sm_30_intrinsics.h"
+.file	26	"/usr/local/cuda/include/surface_functions.h"
+.file	27	"/usr/local/cuda/include/texture_fetch_functions.h"
+.file	28	"/usr/local/cuda/include/math_functions_dbl_ptx1.h"
 
 .const .align 4 .b8 jds_ptr_int[20000];
 .const .align 4 .b8 sh_zcnt_int[20000];
@@ -144,5 +145,4 @@ exit;
 $LDWend__Z14spmv_jds_naivePfPKfPKiS3_S1_S3_i:
 } 
 	.tex .u64 tex_x_float;
-
 

@@ -18,8 +18,8 @@
 	
 
 .file	1	"<command-line>"
-.file	2	"/tmp/tmpxft_00002521_00000000-6_lud_kernel.cudafe2.gpu"
-.file	3	"/usr/lib/gcc/x86_64-linux-gnu/4.4.6/include/stddef.h"
+.file	2	"/tmp/tmpxft_00007116_00000000-6_lud_kernel.cudafe2.gpu"
+.file	3	"/usr/lib/gcc/x86_64-linux-gnu/4.6.1/include/stddef.h"
 .file	4	"/usr/local/cuda/bin/../include/crt/device_runtime.h"
 .file	5	"/usr/local/cuda/bin/../include/host_defines.h"
 .file	6	"/usr/local/cuda/bin/../include/builtin_types.h"
@@ -55,10 +55,10 @@
 .reg .u64 %rd<122>;
 .reg .f32 %f<44>;
 .reg .pred %p<8>;
-.shared .align 4 .b8 __cuda___cuda_local_var_17176_33_non_const_shadow16[1024];
+.shared .align 4 .b8 __cuda___cuda_local_var_17166_33_non_const_shadow16[1024];
 .loc	14	7	0
 $LDWbegin__Z12lud_diagonalPfii:
-mov.u64 %rd1, __cuda___cuda_local_var_17176_33_non_const_shadow16;
+mov.u64 %rd1, __cuda___cuda_local_var_17166_33_non_const_shadow16;
 .loc	14	14	0
 ld.param.s32 %r1, [__cudaparm__Z12lud_diagonalPfii_offset];
 ld.param.s32 %r2, [__cudaparm__Z12lud_diagonalPfii_matrix_dim];
@@ -417,9 +417,9 @@ $LDWend__Z12lud_diagonalPfii:
 .reg .u64 %rd<279>;
 .reg .f32 %f<92>;
 .reg .pred %p<9>;
-.shared .align 4 .b8 __cuda___cuda_local_var_17218_33_non_const_peri_row1056[1024];
-.shared .align 4 .b8 __cuda___cuda_local_var_17217_33_non_const_dia2080[1024];
-.shared .align 4 .b8 __cuda___cuda_local_var_17219_33_non_const_peri_col3104[1024];
+.shared .align 4 .b8 __cuda___cuda_local_var_17208_33_non_const_peri_row1056[1024];
+.shared .align 4 .b8 __cuda___cuda_local_var_17207_33_non_const_dia2080[1024];
+.shared .align 4 .b8 __cuda___cuda_local_var_17209_33_non_const_peri_col3104[1024];
 .loc	14	49	0
 $LDWbegin__Z13lud_perimeterPfii:
 cvt.u32.u16 %r1, %tid.x;
@@ -432,8 +432,8 @@ ld.param.s32 %r4, [__cudaparm__Z13lud_perimeterPfii_matrix_dim];
 ld.param.s32 %r5, [__cudaparm__Z13lud_perimeterPfii_offset];
 @!%p1 bra $Lt_1_13058;
 .loc	14	63	0
-mov.u64 %rd2, __cuda___cuda_local_var_17218_33_non_const_peri_row1056;
-mov.u64 %rd3, __cuda___cuda_local_var_17217_33_non_const_dia2080;
+mov.u64 %rd2, __cuda___cuda_local_var_17208_33_non_const_peri_row1056;
+mov.u64 %rd3, __cuda___cuda_local_var_17207_33_non_const_dia2080;
 cvt.s32.u16 %r6, %tid.x;
 cvt.s64.s32 %rd4, %r6;
 .loc	14	49	0
@@ -634,11 +634,11 @@ mul.wide.u32 %rd78, %r63, 4;
 add.u64 %rd79, %rd1, %rd78;
 ld.global.f32 %f24, [%rd79+64];
 st.shared.f32 [%rd31+960], %f24;
-mov.u64 %rd80, __cuda___cuda_local_var_17219_33_non_const_peri_col3104;
+mov.u64 %rd80, __cuda___cuda_local_var_17209_33_non_const_peri_col3104;
 bra.uni $Lt_1_12802;
 $Lt_1_13058:
-mov.u64 %rd3, __cuda___cuda_local_var_17217_33_non_const_dia2080;
-mov.u64 %rd80, __cuda___cuda_local_var_17219_33_non_const_peri_col3104;
+mov.u64 %rd3, __cuda___cuda_local_var_17207_33_non_const_dia2080;
+mov.u64 %rd80, __cuda___cuda_local_var_17209_33_non_const_peri_col3104;
 .loc	14	49	0
 ld.param.s32 %r5, [__cudaparm__Z13lud_perimeterPfii_offset];
 .loc	14	78	0
@@ -842,7 +842,7 @@ mul.wide.s32 %rd155, %r116, 4;
 add.u64 %rd156, %rd1, %rd155;
 ld.global.f32 %f48, [%rd156+-64];
 st.shared.f32 [%rd108+896], %f48;
-mov.u64 %rd2, __cuda___cuda_local_var_17218_33_non_const_peri_row1056;
+mov.u64 %rd2, __cuda___cuda_local_var_17208_33_non_const_peri_row1056;
 $Lt_1_12802:
 .loc	14	89	0
 bar.sync 0;
@@ -1236,12 +1236,12 @@ $LDWend__Z13lud_perimeterPfii:
 .reg .u32 %r<21>;
 .reg .u64 %rd<25>;
 .reg .f32 %f<55>;
-.shared .align 4 .b8 __cuda___cuda_local_var_17296_33_non_const_peri_col4144[1024];
-.shared .align 4 .b8 __cuda___cuda_local_var_17295_33_non_const_peri_row5168[1024];
+.shared .align 4 .b8 __cuda___cuda_local_var_17286_33_non_const_peri_col4144[1024];
+.shared .align 4 .b8 __cuda___cuda_local_var_17285_33_non_const_peri_row5168[1024];
 .loc	14	159	0
 $LDWbegin__Z12lud_internalPfii:
-mov.u64 %rd1, __cuda___cuda_local_var_17296_33_non_const_peri_col4144;
-mov.u64 %rd2, __cuda___cuda_local_var_17295_33_non_const_peri_row5168;
+mov.u64 %rd1, __cuda___cuda_local_var_17286_33_non_const_peri_col4144;
+mov.u64 %rd2, __cuda___cuda_local_var_17285_33_non_const_peri_row5168;
 .loc	14	170	0
 mov.u16 %rh1, %ctaid.x;
 mul.wide.u16 %r1, %rh1, 16;

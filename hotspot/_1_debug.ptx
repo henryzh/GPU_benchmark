@@ -18,9 +18,9 @@
     _1.ptx    18 (pc=    ):  	
     _1.ptx    19 (pc=    ):  
     _1.ptx    20 (pc=    ):  .file	1	"<command-line>"
-    _1.ptx    21 (pc=    ):  .file	2	"/tmp/tmpxft_00005f43_00000000-6_hotspot.cudafe2.gpu"
-    _1.ptx    22 (pc=    ):  .file	3	"/tmp/tmpxft_00005f43_00000000-1_hotspot.cudafe1.gpu"
-    _1.ptx    23 (pc=    ):  .file	4	"/usr/lib/gcc/x86_64-linux-gnu/4.4.6/include/stddef.h"
+    _1.ptx    21 (pc=    ):  .file	2	"/tmp/tmpxft_00004976_00000000-6_hotspot.cudafe2.gpu"
+    _1.ptx    22 (pc=    ):  .file	3	"/tmp/tmpxft_00004976_00000000-1_hotspot.cudafe1.gpu"
+    _1.ptx    23 (pc=    ):  .file	4	"/usr/lib/gcc/x86_64-linux-gnu/4.6.1/include/stddef.h"
     _1.ptx    24 (pc=    ):  .file	5	"/usr/local/cuda/include/crt/device_runtime.h"
     _1.ptx    25 (pc=    ):  .file	6	"/usr/local/cuda/include/host_defines.h"
     _1.ptx    26 (pc=    ):  .file	7	"/usr/local/cuda/include/builtin_types.h"
@@ -69,9 +69,9 @@
     _1.ptx    69 (pc=    ):  .reg .f32 %f<27>;
     _1.ptx    70 (pc=    ):  .reg .f64 %fd<17>;
     _1.ptx    71 (pc=    ):  .reg .pred %p<25>;
-    _1.ptx    72 (pc=    ):  .shared .align 4 .b8 __cuda___cuda_local_var_15273_39_non_const_temp_on_cuda72[1024];
-    _1.ptx    73 (pc=    ):  .shared .align 4 .b8 __cuda___cuda_local_var_15274_39_non_const_power_on_cuda1096[1024];
-    _1.ptx    74 (pc=    ):  .shared .align 4 .b8 __cuda___cuda_local_var_15275_39_non_const_temp_t2120[1024];
+    _1.ptx    72 (pc=    ):  .shared .align 4 .b8 __cuda___cuda_local_var_16136_39_non_const_temp_on_cuda72[1024];
+    _1.ptx    73 (pc=    ):  .shared .align 4 .b8 __cuda___cuda_local_var_16137_39_non_const_power_on_cuda1096[1024];
+    _1.ptx    74 (pc=    ):  .shared .align 4 .b8 __cuda___cuda_local_var_16138_39_non_const_temp_t2120[1024];
     _1.ptx    75 (pc=    ):  .loc	15	88	0
     _1.ptx    76 (pc=    ):  $LDWbegin__Z14calculate_tempiPfS_S_iiiiffffff:
     _1.ptx    77 (pc=    ):  ld.param.s32 %r1, [__cudaparm__Z14calculate_tempiPfS_S_iiiiffffff_iteration];
@@ -105,8 +105,8 @@
     _1.ptx   105 (pc= 224):  setp.gt.s32 %p4, %r19, %r22;
     _1.ptx   106 (pc= 232):  @%p4 bra $Lt_0_15106;
     _1.ptx   107 (pc=    ):  .loc	15	129	0
-    _1.ptx   108 (pc= 240):  mov.u64 %rd1, __cuda___cuda_local_var_15273_39_non_const_temp_on_cuda72;
-    _1.ptx   109 (pc= 248):  mov.u64 %rd2, __cuda___cuda_local_var_15274_39_non_const_power_on_cuda1096;
+    _1.ptx   108 (pc= 240):  mov.u64 %rd1, __cuda___cuda_local_var_16136_39_non_const_temp_on_cuda72;
+    _1.ptx   109 (pc= 248):  mov.u64 %rd2, __cuda___cuda_local_var_16137_39_non_const_power_on_cuda1096;
     _1.ptx   110 (pc= 256):  cvt.s64.s32 %rd3, %r18;
     _1.ptx   111 (pc= 264):  cvt.s64.s32 %rd4, %r9;
     _1.ptx   112 (pc= 272):  mul.wide.s32 %rd5, %r9, 16;
@@ -132,8 +132,8 @@
     _1.ptx   132 (pc= 408):  st.shared.f32 [%rd15+0], %f2;
     _1.ptx   133 (pc=    ):  $Lt_0_15106:
     _1.ptx   134 (pc=    ):  $L_0_10498:
-    _1.ptx   135 (pc= 416):  mov.u64 %rd1, __cuda___cuda_local_var_15273_39_non_const_temp_on_cuda72;
-    _1.ptx   136 (pc= 424):  mov.u64 %rd2, __cuda___cuda_local_var_15274_39_non_const_power_on_cuda1096;
+    _1.ptx   135 (pc= 416):  mov.u64 %rd1, __cuda___cuda_local_var_16136_39_non_const_temp_on_cuda72;
+    _1.ptx   136 (pc= 424):  mov.u64 %rd2, __cuda___cuda_local_var_16137_39_non_const_power_on_cuda1096;
     _1.ptx   137 (pc=    ):  .loc	15	132	0
     _1.ptx   138 (pc= 432):  bar.sync 0;
     _1.ptx   139 (pc= 440):  mov.u32 %r25, 0;
@@ -190,7 +190,7 @@
     _1.ptx   190 (pc= 848):  mov.s32 %r60, %r1;
     _1.ptx   191 (pc= 856):  sub.s32 %r61, %r1, 1;
     _1.ptx   192 (pc= 864):  mov.s32 %r62, 0;
-    _1.ptx   193 (pc= 872):  mov.u64 %rd16, __cuda___cuda_local_var_15275_39_non_const_temp_t2120;
+    _1.ptx   193 (pc= 872):  mov.u64 %rd16, __cuda___cuda_local_var_16138_39_non_const_temp_t2120;
     _1.ptx   194 (pc= 880):  mov.s32 %r63, %r60;
     _1.ptx   195 (pc=    ):  $Lt_0_13058:
     _1.ptx   196 (pc=    ):  
@@ -306,7 +306,7 @@
     _1.ptx   306 (pc=1664):  cvt.s32.s8 %r69, %rh1;
     _1.ptx   307 (pc=1672):  mov.s32 %r70, 0;
     _1.ptx   308 (pc=1680):  setp.ne.s32 %p20, %r69, %r70;
-    _1.ptx   309 (pc=1688):  mov.u64 %rd16, __cuda___cuda_local_var_15275_39_non_const_temp_t2120;
+    _1.ptx   309 (pc=1688):  mov.u64 %rd16, __cuda___cuda_local_var_16138_39_non_const_temp_t2120;
     _1.ptx   310 (pc=1696):  bra.uni $Lt_0_258;
     _1.ptx   311 (pc=    ):  $Lt_0_17922:
     _1.ptx   312 (pc=1704):  mov.s32 %r71, 0;

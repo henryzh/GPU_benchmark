@@ -9,8 +9,8 @@ endif
 CC := $(CUDA_DIR)/bin/nvcc
 CUFLAGS := -O2 -arch=sm_20 --ptxas-options=-v
 INCLUDE := $(CUDA_DIR)/include
-#SRC = pathfinder.cu
-SRC = pathfinder_sync.cu
+SRC = pathfinder.cu
+#SRC = pathfinder_sync.cu
 EXE = pathfinder
 
 release:

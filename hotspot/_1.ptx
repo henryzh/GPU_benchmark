@@ -18,9 +18,9 @@
 	
 
 .file	1	"<command-line>"
-.file	2	"/tmp/tmpxft_00005f43_00000000-6_hotspot.cudafe2.gpu"
-.file	3	"/tmp/tmpxft_00005f43_00000000-1_hotspot.cudafe1.gpu"
-.file	4	"/usr/lib/gcc/x86_64-linux-gnu/4.4.6/include/stddef.h"
+.file	2	"/tmp/tmpxft_00004976_00000000-6_hotspot.cudafe2.gpu"
+.file	3	"/tmp/tmpxft_00004976_00000000-1_hotspot.cudafe1.gpu"
+.file	4	"/usr/lib/gcc/x86_64-linux-gnu/4.6.1/include/stddef.h"
 .file	5	"/usr/local/cuda/include/crt/device_runtime.h"
 .file	6	"/usr/local/cuda/include/host_defines.h"
 .file	7	"/usr/local/cuda/include/builtin_types.h"
@@ -69,9 +69,9 @@
 .reg .f32 %f<27>;
 .reg .f64 %fd<17>;
 .reg .pred %p<25>;
-.shared .align 4 .b8 __cuda___cuda_local_var_15273_39_non_const_temp_on_cuda72[1024];
-.shared .align 4 .b8 __cuda___cuda_local_var_15274_39_non_const_power_on_cuda1096[1024];
-.shared .align 4 .b8 __cuda___cuda_local_var_15275_39_non_const_temp_t2120[1024];
+.shared .align 4 .b8 __cuda___cuda_local_var_16136_39_non_const_temp_on_cuda72[1024];
+.shared .align 4 .b8 __cuda___cuda_local_var_16137_39_non_const_power_on_cuda1096[1024];
+.shared .align 4 .b8 __cuda___cuda_local_var_16138_39_non_const_temp_t2120[1024];
 .loc	15	88	0
 $LDWbegin__Z14calculate_tempiPfS_S_iiiiffffff:
 ld.param.s32 %r1, [__cudaparm__Z14calculate_tempiPfS_S_iiiiffffff_iteration];
@@ -105,8 +105,8 @@ sub.s32 %r22, %r21, 1;
 setp.gt.s32 %p4, %r19, %r22;
 @%p4 bra $Lt_0_15106;
 .loc	15	129	0
-mov.u64 %rd1, __cuda___cuda_local_var_15273_39_non_const_temp_on_cuda72;
-mov.u64 %rd2, __cuda___cuda_local_var_15274_39_non_const_power_on_cuda1096;
+mov.u64 %rd1, __cuda___cuda_local_var_16136_39_non_const_temp_on_cuda72;
+mov.u64 %rd2, __cuda___cuda_local_var_16137_39_non_const_power_on_cuda1096;
 cvt.s64.s32 %rd3, %r18;
 cvt.s64.s32 %rd4, %r9;
 mul.wide.s32 %rd5, %r9, 16;
@@ -132,8 +132,8 @@ add.u64 %rd15, %rd7, %rd2;
 st.shared.f32 [%rd15+0], %f2;
 $Lt_0_15106:
 $L_0_10498:
-mov.u64 %rd1, __cuda___cuda_local_var_15273_39_non_const_temp_on_cuda72;
-mov.u64 %rd2, __cuda___cuda_local_var_15274_39_non_const_power_on_cuda1096;
+mov.u64 %rd1, __cuda___cuda_local_var_16136_39_non_const_temp_on_cuda72;
+mov.u64 %rd2, __cuda___cuda_local_var_16137_39_non_const_power_on_cuda1096;
 .loc	15	132	0
 bar.sync 0;
 mov.u32 %r25, 0;
@@ -190,7 +190,7 @@ min.s32 %r59, %r58, %r40;
 mov.s32 %r60, %r1;
 sub.s32 %r61, %r1, 1;
 mov.s32 %r62, 0;
-mov.u64 %rd16, __cuda___cuda_local_var_15275_39_non_const_temp_t2120;
+mov.u64 %rd16, __cuda___cuda_local_var_16138_39_non_const_temp_t2120;
 mov.s32 %r63, %r60;
 $Lt_0_13058:
 
@@ -306,7 +306,7 @@ $Lt_0_15618:
 cvt.s32.s8 %r69, %rh1;
 mov.s32 %r70, 0;
 setp.ne.s32 %p20, %r69, %r70;
-mov.u64 %rd16, __cuda___cuda_local_var_15275_39_non_const_temp_t2120;
+mov.u64 %rd16, __cuda___cuda_local_var_16138_39_non_const_temp_t2120;
 bra.uni $Lt_0_258;
 $Lt_0_17922:
 mov.s32 %r71, 0;

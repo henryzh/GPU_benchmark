@@ -13,8 +13,7 @@
 #define min( a, b )			a > b ? b : a
 #define ceilDiv( a, b )		( a + b - 1 ) / b
 #define print( x )			printf( #x ": %lu\n", (unsigned long) x )
-#define DEBUG				false
-
+#define DEBUG false
 #define DEFAULT_THREADS_PER_BLOCK 256
 
 #define MAX_ARGS 10
@@ -99,12 +98,13 @@ int main(int argc, char* argv[])
 	cudaThreadSynchronize();
 	unsigned long maxGridX = deviceProp.maxGridSize[0];
 	unsigned long threadsPerBlock = min( deviceProp.maxThreadsPerBlock, DEFAULT_THREADS_PER_BLOCK );
-	size_t totalDeviceMemory;
-	size_t freeDeviceMemory;
-	cudaMemGetInfo(  &freeDeviceMemory, &totalDeviceMemory );
+//	size_t totalDeviceMemory;
+//	size_t freeDeviceMemory;
+//	cudaMemGetInfo(  &freeDeviceMemory, &totalDeviceMemory );
 	cudaThreadSynchronize();
-	unsigned long usableDeviceMemory = freeDeviceMemory * 85 / 100; // 85% arbitrary throttle to compensate for known CUDA bug
-	unsigned long maxThreads = usableDeviceMemory / 12; // 4 bytes in 3 vectors per thread
+//	unsigned long usableDeviceMemory = freeDeviceMemory * 85 / 100; // 85% arbitrary throttle to compensate for known CUDA bug
+	unsigned long maxThreads = 181484202;//usableDeviceMemory / 12; // 4 bytes in 3 vectors per thread
+//	printf("maxThreads=%ld\n", maxThreads);
 	if ( numRecords > maxThreads )
 	{
 		fprintf( stderr, "Error: Input too large.\n" );
@@ -116,11 +116,10 @@ int main(int argc, char* argv[])
 	// There will be no more than (gridY - 1) extra blocks
 	dim3 gridDim( gridX, gridY );
 
-	if ( DEBUG )
-	{
-		print( totalDeviceMemory ); // 804454400
-		print( freeDeviceMemory );
-		print( usableDeviceMemory );
+	if ( DEBUG ) {
+//		print( totalDeviceMemory ); // 804454400
+//		print( freeDeviceMemory );
+//		print( usableDeviceMemory );
 		print( maxGridX ); // 65535
 		print( deviceProp.maxThreadsPerBlock ); // 1024
 		print( threadsPerBlock );

@@ -9,7 +9,7 @@
 .target sm_20
 .address_size 64
 
-.file	1 "/tmp/tmpxft_00003e56_00000000-7_pathfinder.cpp3.i"
+.file	1 "/tmp/tmpxft_00006e7c_00000000-7_pathfinder.cpp3.i"
 .file	2 "pathfinder.cu"
 
 
@@ -30,9 +30,9 @@
 .reg .s64 %rl<27>;
 .reg .s16 %rc<12>;
 
-	.shared .align 4 .b8 __cuda_local_var_16943_37_non_const_prev[1024];
+	.shared .align 4 .b8 __cuda_local_var_16933_37_non_const_prev[1024];
 
-	.shared .align 4 .b8 __cuda_local_var_16944_37_non_const_result[1024];
+	.shared .align 4 .b8 __cuda_local_var_16934_37_non_const_result[1024];
 
 ld.param.u32 %r1, [_Z14dynproc_kerneliPiS_S_iiii_param_0];
 ld.param.u64 %rl9, [_Z14dynproc_kerneliPiS_S_iiii_param_2];
@@ -95,7 +95,7 @@ mov.u32 %r62, %tid.x;
 .loc 2 104 1
 cvt.s64.s32 %rl4, %r62;
 mul.wide.s32 %rl10, %r62, 4;
-mov.u64 %rl11, __cuda_local_var_16943_37_non_const_prev;
+mov.u64 %rl11, __cuda_local_var_16933_37_non_const_prev;
 add.s64 %rl5, %rl11, %rl10;
 .loc 2 94 1
 @!%p7 bra BB0_5;
@@ -123,7 +123,7 @@ add.s64 %rl6, %rl11, %rl14;
 mul.wide.s32 %rl16, %r9, 4;
 add.s64 %rl7, %rl11, %rl16;
 shl.b64 %rl17, %rl4, 2;
-mov.u64 %rl18, __cuda_local_var_16944_37_non_const_result;
+mov.u64 %rl18, __cuda_local_var_16934_37_non_const_result;
 add.s64 %rl8, %rl18, %rl17;
 ld.param.u32 %r57, [_Z14dynproc_kerneliPiS_S_iiii_param_0];
 add.s32 %r10, %r57, -1;
