@@ -13,7 +13,6 @@ syntax:glob
 *.makedepend
 *.bak
 *.mif
-*.txt
 _1_debug.ptx
 _1.ptx
 _cuobjdump*
