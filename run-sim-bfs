@@ -1,21 +1,22 @@
 
 SIM_ROOT=/home/cxh/gpgpu-sim-ruby
-BENCH_ROOT=$SIM_ROOT/benchmarks
+BENCH_ROOT=/home/cxh/benchmarks
 MODEL="cuda"
 INPUT="sim"
 BENCH="bfs-rod"
-#CONFIG="ruby"
-CONFIG="test"
-#OPTION="MESI"
-#OPTION="GPU-VIni"
-OPTION="l2-2M"
+CONFIG="coherence"
+#CONFIG="test"
+#OPTION="GPU-VI"
+#OPTION="no_coherence"
+#OPTION="disable-l2"
+OPTION="TO-PSI"
 LOG_FILE=log.txt
 ERR_FILE=error.txt
 OUT_FILE=output.txt
 RESULT_DIR=$SIM_ROOT/results
 
-cd $SIM_ROOT
-source gpgpusim-env.sh
+#cd $SIM_ROOT
+source TO-PSI-env.sh
 cd $RESULT_DIR
 rm $ERR_FILE
 echo "CUDA Simulation on GPGPU-Sim <$CONFIG>"
@@ -30,8 +31,8 @@ for SIZE in $INPUT; do
 	# launch gpgpu-sim
 	cd $BENCH_ROOT/$BMK
 	rm _cuobjdump*
-	cp $BENCH_ROOT/config/$CONFIG/$OPT/gpgpusim.config .
-	cp $BENCH_ROOT/config/$CONFIG/$OPT/baseline_icnt_config.txt .
+	cp $SIM_ROOT/configs/$CONFIG/$OPT/gpgpusim.config .
+	cp $SIM_ROOT/configs/$CONFIG/$OPT/baseline_icnt_config.txt .
 #	cp $BENCH_ROOT/config/$CONFIG/config_fermi_islip.icnt .
 #	cp $BENCH_ROOT/config/$CONFIG/$OPT/gpuwattch_gtx480.xml .
 

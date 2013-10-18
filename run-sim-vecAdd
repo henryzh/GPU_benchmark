@@ -5,18 +5,17 @@ MODEL="cuda"
 INPUT="sim"
 BENCH="vecAdd"
 CONFIG="coherence"
-#CONFIG="test"
 #OPTION="GPU-VI"
 #OPTION="no_coherence"
-#OPTION="disable-l2"
-OPTION="TO-MSI"
+OPTION="TO-PSI"
 LOG_FILE=log.txt
 ERR_FILE=error.txt
 OUT_FILE=output.txt
 RESULT_DIR=$SIM_ROOT/results
 
-cd $SIM_ROOT
-source gpgpusim-env.sh
+#cd $SIM_ROOT
+#source no-coherence-env.sh
+source TO-PSI-env.sh
 cd $RESULT_DIR
 rm $ERR_FILE
 echo "CUDA Simulation on GPGPU-Sim <$CONFIG>"
