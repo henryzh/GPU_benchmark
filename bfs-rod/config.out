@@ -79,7 +79,7 @@ GPGPU-Sim Configuration options:
 -ruby_mshr_count                       64 # Number of Ruby MSHRs (default=64)
 -ruby_mshr_size                        32 # Number of accesses that can be merged in each Ruby MSHR (default=32)
 -ruby_flit_size                        32 # Flit size (default=32)
--ruby_vns                               4 # Number of virtual networks (default=2)
+-ruby_vns                               2 # Number of virtual networks (default=2)
 -ruby_vcs_per_class                     1 # Virtual channels per class (default=1)
 -ruby_vc_buffer_size                    8 # Virtual channel buffer size in # flits (default=8)
 -ruby_latencies                    70:100 # Minimum latencies in core cycles (L1->L2:L2->Mem) (default=70:100)
@@ -99,9 +99,9 @@ GPGPU-Sim Configuration options:
 -ruby_single_write_per_warp                    0 # Only one outstanding write request per warp (1=On, 0=Off (default) )
 -ruby_locality_profiler                 none # locality profiler configuration. Bins specified as pow2 {<start_bin>,<end_bin>, <skip_bin>}
 -ruby_l1_assoc                          4 # Ruby L1 associativity (default=4)
--ruby_l1_sets_bits                      6 # Ruby L1 # of set bits (#sets=2^bits) (default=6)
+-ruby_l1_sets_bits                      5 # Ruby L1 # of set bits (#sets=2^bits) (default=6)
 -ruby_l2_assoc                          8 # Ruby L2 associativity (default=8)
--ruby_l2_sets_bits                      9 # Ruby L2 # of set bits (#sets=2^bits) (default=9)
+-ruby_l2_sets_bits                      7 # Ruby L2 # of set bits (#sets=2^bits) (default=9)
 -ruby_dir_assoc                         8 # Ruby Directory associativity (default=8)
 -ruby_dir_sets_bits                     9 # Ruby Directory # of set bits (#sets=2^bits) (default=9)
 -ruby_lifetime_profiler_perpc_outmode                    0 # Output mode for per-pc lifetime profiler (0=none, 1=stdout, 2=file, 3=both) (default=0)
@@ -110,7 +110,7 @@ GPGPU-Sim Configuration options:
 -ruby_lifetime_profiler_peraddr_outfile lifetime_profiler_peraddr.txt # Filename for output of per-address information from lifetime profiler (default=lifetime_profiler_peraddr.txt)
 -ruby_lifetimetrace                     0 # Lifetime trace enabled? (1=On, 0=Off (default) )
 -ruby_lifetimetrace_outfile   lifetime_trace.txt # Filename for output of lifetime trace (default=lifetime_trace.txt)
--ruby_flush_L1D                         0 # Flush Ruby's L1D at kernel finish? (1=On, 0=Off (default) )
+-ruby_flush_L1D                         1 # Flush Ruby's L1D at kernel finish? (1=On, 0=Off (default) )
 -gpgpu_mem_addr_mapping dramid@8;00000000.00000000.00000000.00000000.0000RRRR.RRRRRRRR.BBBBCCCC.CCSSSSSS # mapping memory address to dram model {dramid@<start bit>;<memory address map>}
 -gpgpu_mem_addr_test                    0 # run sweep test to check address mapping for aliased address
 -gpgpu_mem_address_mask                    1 # 0 = old addressing mask, 1 = new addressing mask, 2 = new add. mask + flipped bank sel and chip sel bits
