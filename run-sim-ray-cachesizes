@@ -17,9 +17,10 @@ ERR_FILE=error.txt
 OUT_FILE=output.txt
 RESULT_DIR=$SIM_ROOT/results
 
+
+
 cd $BENCH_ROOT
-source no_coherence_runenv.sh
-cd $SIM_ROOT
+source no_coherence-runenv.sh
 cd $RESULT_DIR
 rm $ERR_FILE
 echo "CUDA Simulation on GPGPU-Sim <$CONFIG>"
