@@ -18,9 +18,9 @@
 	
 
 .file	1	"<command-line>"
-.file	2	"/tmp/tmpxft_00006413_00000000-6_rayTracing.cudafe2.gpu"
+.file	2	"/tmp/tmpxft_00003716_00000000-6_rayTracing.cudafe2.gpu"
 .file	3	"rayTracing_kernel.cu"
-.file	4	"/tmp/tmpxft_00006413_00000000-1_rayTracing.cudafe1.gpu"
+.file	4	"/tmp/tmpxft_00003716_00000000-1_rayTracing.cudafe1.gpu"
 .file	5	"/usr/lib/gcc/x86_64-linux-gnu/4.4.6/include/stddef.h"
 .file	6	"/usr/local/cuda/include/crt/device_runtime.h"
 .file	7	"/usr/local/cuda/include/host_defines.h"

@@ -3,32 +3,23 @@ SIM_ROOT=/home/pearson/gpgpu/gpgpu-sim-ruby
 BENCH_ROOT=/home/pearson/gpgpu/benchmarks
 MODEL="cuda"
 INPUT="sim"
-BENCH="BFS2"
+BENCH="ray"
 CONFIG="ruby"
-OPTION="no_coherence_L1-a4-s5_L2-a8-s7
+OPTION="no_coherence_L1-a4-s6_L2-a8-s8
+        no_coherence_L1-a4-s6_L2-a8-s9
         no_coherence_L1-a4-s6_L2-a8-s7
-        no_coherence_L1-a4-s7_L2-a8-s7
-        no_coherence_L1-a4-s5_L2-a8-s8
-        no_coherence_L1-a4-s6_L2-a8-s8
-        no_coherence_L1-a4-s7_L2-a8-s8
-        no_coherence_L1-a4-s5_L2-a8-s4
-        no_coherence_L1-a4-s6_L2-a8-s4
-        no_coherence_L1-a4-s7_L2-a8-s4
-        no_coherence_L1-a4-s5_L2-a8-s5
-        no_coherence_L1-a4-s6_L2-a8-s5
-        no_coherence_L1-a4-s7_L2-a8-s5
-        no_coherence_L1-a4-s5_L2-a8-s6
         no_coherence_L1-a4-s6_L2-a8-s6
-        no_coherence_L1-a4-s7_L2-a8-s6"
-
+        no_coherence_L1-a4-s6_L2-a8-s5
+        no_coherence_L1-a4-s6_L2-a8-s10"
 
 LOG_FILE=log.txt
 ERR_FILE=error.txt
 OUT_FILE=output.txt
 RESULT_DIR=$SIM_ROOT/results
 
+cd $BENCH_ROOT
+source no_coherence_runenv.sh
 cd $SIM_ROOT
-source no_coherence-env.sh
 cd $RESULT_DIR
 rm $ERR_FILE
 echo "CUDA Simulation on GPGPU-Sim <$CONFIG>"
