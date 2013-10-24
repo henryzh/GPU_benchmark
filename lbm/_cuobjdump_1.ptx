@@ -18,7 +18,7 @@
 	
 
 .file	1	"<command-line>"
-.file	2	"/tmp/tmpxft_00001380_00000000-6_lbm.cudafe2.gpu"
+.file	2	"/tmp/tmpxft_00000d93_00000000-6_lbm.cudafe2.gpu"
 .file	3	"/usr/lib/gcc/x86_64-linux-gnu/4.4.6/include/stddef.h"
 .file	4	"/usr/local/cuda/include/crt/device_runtime.h"
 .file	5	"/usr/local/cuda/include/host_defines.h"
@@ -40,9 +40,10 @@
 .file	21	"/usr/local/cuda/include/sm_13_double_functions.h"
 .file	22	"/usr/local/cuda/include/sm_20_atomic_functions.h"
 .file	23	"/usr/local/cuda/include/sm_20_intrinsics.h"
-.file	24	"/usr/local/cuda/include/surface_functions.h"
-.file	25	"/usr/local/cuda/include/texture_fetch_functions.h"
-.file	26	"/usr/local/cuda/include/math_functions_dbl_ptx1.h"
+.file	24	"/usr/local/cuda/include/sm_30_intrinsics.h"
+.file	25	"/usr/local/cuda/include/surface_functions.h"
+.file	26	"/usr/local/cuda/include/texture_fetch_functions.h"
+.file	27	"/usr/local/cuda/include/math_functions_dbl_ptx1.h"
 
 
 .entry _Z27performStreamCollide_kernelPfS_ (
