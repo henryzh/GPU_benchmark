@@ -3,20 +3,24 @@ SIM_ROOT=/home/pearson/gpgpu/gpgpu-sim-ruby
 BENCH_ROOT=/home/pearson/gpgpu/benchmarks
 MODEL="cuda"
 INPUT="sim"
-BENCH="KMN"
+BENCH="mum"
 CONFIG="ruby"
-OPTION="no_coherence_L1-a4-s10_L2-a8-s8
-        no_coherence_L1-a4-s11_L2-a8-s8"
+OPTION="no_coherence_L1-a4-s6_L2-a8-s6
+        no_coherence_L1-a4-s6_L2-a8-s7
+        no_coherence_L1-a4-s6_L2-a8-s8
+        no_coherence_L1-a4-s6_L2-a8-s9
+        no_coherence_L1-a4-s6_L2-a8-s10
+        no_coherence_L1-a4-s6_L2-a8-s11"
 
 LOG_FILE=log.txt
 ERR_FILE=error.txt
 OUT_FILE=output.txt
 RESULT_DIR=$SIM_ROOT/results
 
+
+
 cd $BENCH_ROOT
-echo $PWD
 source no_coherence-runenv.sh
-echo $LD_LIBRARY_PATH
 cd $RESULT_DIR
 rm $ERR_FILE
 echo "CUDA Simulation on GPGPU-Sim <$CONFIG>"

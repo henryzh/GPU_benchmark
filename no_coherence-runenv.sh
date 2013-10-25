@@ -1,3 +1,7 @@
 
+export CUDA_INSTALL_PATH=/usr/local/cuda
+export GPGPUSIM_ROOT=/home/pearson/gpgpu/gpgpu-sim-ruby
+export CUDA_VERSION_NUMBER=4020
+export GPGPUSIM_CONFIG=$CUDA_VERSION_NUMBER/release
 export RUBY_PROTOCOL_NAME=non_coherent_g
 export LD_LIBRARY_PATH=$GPGPUSIM_ROOT/lib/$GPGPUSIM_CONFIG/ruby/$RUBY_PROTOCOL_NAME/:$GPGPUSIM_ROOT/lib/$GPGPUSIM_CONFIG/

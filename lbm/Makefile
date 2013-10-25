@@ -25,10 +25,10 @@ release: $(OBJ)
 	$(NVCC) $(NVCC_FLAGS) $(OBJ) -o $(EXE)
 lbm.o: lbm.cu
 	$(NVCC) $(NVCC_FLAGS) $(SRC) -c -o lbm.o
-parboil_cuda.o: ../parboil_cuda.c
-	$(NVCC) $(NVCC_FLAGS) -c ../parboil_cuda.c -o parboil_cuda.o
-args.o: ../args.c
-	$(CC) $(CC_FLAGS) -c ../args.c -o args.o
+parboil_cuda.o: ../common/parboil_cuda.c
+	$(NVCC) $(NVCC_FLAGS) -c ../common/parboil_cuda.c -o parboil_cuda.o
+args.o: ../common/args.c
+	$(CC) $(CC_FLAGS) -c ../common/args.c -o args.o
 main.o: main.cc
 	$(CXX) $(CC_FLAGS) -c main.cc -o main.o
 clean: $(SRC)

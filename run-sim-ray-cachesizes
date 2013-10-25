@@ -5,11 +5,11 @@ MODEL="cuda"
 INPUT="sim"
 BENCH="ray"
 CONFIG="ruby"
-OPTION="no_coherence_L1-a4-s6_L2-a8-s8
-        no_coherence_L1-a4-s6_L2-a8-s9
-        no_coherence_L1-a4-s6_L2-a8-s7
+OPTION="no_coherence_L1-a4-s6_L2-a8-s5
         no_coherence_L1-a4-s6_L2-a8-s6
-        no_coherence_L1-a4-s6_L2-a8-s5
+        no_coherence_L1-a4-s6_L2-a8-s7
+        no_coherence_L1-a4-s6_L2-a8-s8
+        no_coherence_L1-a4-s6_L2-a8-s9
         no_coherence_L1-a4-s6_L2-a8-s10"
 
 LOG_FILE=log.txt
