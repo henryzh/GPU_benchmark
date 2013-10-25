@@ -18,7 +18,7 @@
     _1.ptx    18 (pc=    ):  	
     _1.ptx    19 (pc=    ):  
     _1.ptx    20 (pc=    ):  .file	1	"<command-line>"
-    _1.ptx    21 (pc=    ):  .file	2	"/tmp/tmpxft_000012a1_00000000-6_vecAdd.cudafe2.gpu"
+    _1.ptx    21 (pc=    ):  .file	2	"/tmp/tmpxft_00002130_00000000-6_vecAdd.cudafe2.gpu"
     _1.ptx    22 (pc=    ):  .file	3	"/usr/lib/gcc/x86_64-linux-gnu/4.4.6/include/stddef.h"
     _1.ptx    23 (pc=    ):  .file	4	"/usr/local/cuda/bin/../include/crt/device_runtime.h"
     _1.ptx    24 (pc=    ):  .file	5	"/usr/local/cuda/bin/../include/host_defines.h"
