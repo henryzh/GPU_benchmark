@@ -9,6 +9,7 @@ GPGPU-Sim Configuration options:
 -gpgpu_ptx_inst_debug_to_file                    0 # Dump executed instructions' debug information to file
 -gpgpu_ptx_inst_debug_file       inst_debug.txt # Executed instructions' debug output file
 -gpgpu_ptx_inst_debug_thread_uid                    1 # Thread UID for executed instructions' debug output
+-coal_bypass                            0 # Coalescing Unit Bypass Enable (default off)
 -gpgpu_simd_model                       1 # 1 = post-dominator
 -gpgpu_shader_core_pipeline              1536:32 # shader core pipeline config, i.e., {<nthread>:<warpsize>}
 -gpgpu_tex_cache:l1  4:128:24,L:R:m:N,F:128:4,128:2 # per-shader L1 texture cache  (READ-ONLY) config  {<nsets>:<bsize>:<assoc>,<rep>:<wr>:<alloc>:<wr_alloc>,<mshr>:<N>:<merge>,<mq>:<rf>}
@@ -105,8 +106,11 @@ GPGPU-Sim Configuration options:
 -ruby_l2_sets_bits                      9 # Ruby L2 # of set bits (#sets=2^bits) (default=8)
 -ruby_dir_assoc                         8 # Ruby Directory associativity (default=8)
 -ruby_dir_sets_bits                     9 # Ruby Directory # of set bits (#sets=2^bits) (default=9)
--ruby_glc_assoc                         8 # Ruby GLC associativity (default=8)
+-ruby_glc_assoc                        16 # Ruby GLC associativity (default=8)
 -ruby_glc_sets_bits                     9 # Ruby GLC # of set bits (#sets=2^bits) (default=9)
+-ruby_l1_repl_policy           PSEDUO_LRU # Ruby L1 cache replacement policy (default=PSEDUO_LRU)
+-ruby_l2_repl_policy                 RRIP # Ruby L2 cache replacement policy (default=PSEDUO_LRU)
+-ruby_glc_repl_policy                 RRIP # Ruby GLC replacement policy (default=PSEDUO_LRU)
 -ruby_lifetime_profiler_perpc_outmode                    0 # Output mode for per-pc lifetime profiler (0=none, 1=stdout, 2=file, 3=both) (default=0)
 -ruby_lifetime_profiler_perpc_outfile lifetime_profiler_perpc.txt # Filename for output of per-pc information from lifetime profiler (default=lifetime_profiler_perpc.txt)
 -ruby_lifetime_profiler_peraddr_outmode                    0 # Output mode for per-address lifetime profiler (0=none, 1=stdout, 2=file, 3=both) (default=0)
