@@ -1,82 +1,35 @@
-###############################################################################
-#
-# Copyright 1993-2013 NVIDIA Corporation.  All rights reserved.
-#
-# NOTICE TO USER:   
-#
-# This source code is subject to NVIDIA ownership rights under U.S. and 
-# international Copyright laws.  
-#
-# NVIDIA MAKES NO REPRESENTATION ABOUT THE SUITABILITY OF THIS SOURCE 
-# CODE FOR ANY PURPOSE.  IT IS PROVIDED "AS IS" WITHOUT EXPRESS OR 
-# IMPLIED WARRANTY OF ANY KIND.  NVIDIA DISCLAIMS ALL WARRANTIES WITH 
-# REGARD TO THIS SOURCE CODE, INCLUDING ALL IMPLIED WARRANTIES OF 
-# MERCHANTABILITY, NONINFRINGEMENT, AND FITNESS FOR A PARTICULAR PURPOSE.   
-# IN NO EVENT SHALL NVIDIA BE LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL, 
-# OR CONSEQUENTIAL DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS 
-# OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE 
-# OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE 
-# OR PERFORMANCE OF THIS SOURCE CODE.  
-#
-# U.S. Government End Users.  This source code is a "commercial item" as 
-# that term is defined at 48 C.F.R. 2.101 (OCT 1995), consisting  of 
-# "commercial computer software" and "commercial computer software 
-# documentation" as such terms are used in 48 C.F.R. 12.212 (SEPT 1995) 
-# and is provided to the U.S. Government only as a commercial end item.  
-# Consistent with 48 C.F.R.12.212 and 48 C.F.R. 227.7202-1 through 
-# 227.7202-4 (JUNE 1995), all U.S. Government End Users acquire the 
-# source code with only those rights set forth herein.
-#
-###############################################################################
-#
-# CUDA Samples
-#
-###############################################################################
-
-# OS Name (Linux or Darwin)
-OSLOWER = $(shell uname -s 2>/dev/null | tr "[:lower:]" "[:upper:]")
-OS_ARCH = $(shell uname -m | sed -e "s/i386/i686/")
-
-ifeq ($(ARMv7),1)
-  OS_ARCH = armv7l
+CUDA_DIR = /usr/local/cuda
+CUDA_LIB_DIR := $(CUDA_DIR)/lib
+ifeq ($(shell uname -m), x86_64)
+     ifeq ($(shell if test -d $(CUDA_DIR)/lib64; then echo T; else echo F; fi), T)
+        CUDA_LIB_DIR := $(CUDA_DIR)/lib64
+     endif
 endif
+SDK_LIB := -lshrutil_x86_64 -lcutil_x86_64 -L/home/cxh/CUDA-SDK/cuda-4.2/shared/lib -L/home/cxh/CUDA-SDK/cuda-4.2/C/lib -L/home/cxh/CUDA-SDK/cuda-4.2/C/common/lib/linux
+CC := gcc
+CXX := g++
+NVCC := $(CUDA_DIR)/bin/nvcc
+INCS := -I$(CUDA_DIR)/include -I/home/cxh/CUDA-SDK/cuda-4.2/C/common/inc -I/home/cxh/CUDA-SDK/cuda-4.2/shared/inc
+LIBS := -L$(CUDA_LIB_DIR) $(SDK_LIB)
+EXE := sobol
+CUFILES := sobol_gpu.cu
+#CUFILES += 
+CUFLAGS := -O2 -arch sm_13
+CCFLAGS := -O2
+CCFILES	:= sobol.cpp sobol_gold.cpp sobol_primitives.cpp
+# Do not link with SHRUTIL
+OMIT_SHRUTIL_LIB := 1
+SRC := $(CUFILES) 
+#$(CCFILES)
+OBJ := sobol.o sobol_gold.o sobol_primitives.o
 
-# Project folders that contain CUDA samples
-PROJECTS ?= $(shell find 0_Simple 1_Utilities 2_Graphics 3_Imaging 4_Finance 5_Simulations 6_Advanced 7_CUDALibraries -name Makefile)
-
-FILTER-OUT :=
-
-ifeq ($(OS_ARCH),armv7l)
-FILTER-OUT += 3_Imaging/cudaDecodeGL/Makefile
-FILTER-OUT += 7_CUDALibraries/imageSegmentationNPP/Makefile
-FILTER-OUT += 7_CUDALibraries/boxFilterNPP/Makefile
-FILTER-OUT += 7_CUDALibraries/grabcutNPP/Makefile
-FILTER-OUT += 7_CUDALibraries/freeImageInteropNPP/Makefile
-FILTER-OUT += 7_CUDALibraries/freeImageInteropNPP/out
-FILTER-OUT += 7_CUDALibraries/histEqualizationNPP/Makefile
-FILTER-OUT += 7_CUDALibraries/jpegNPP/Makefile
-endif
-
-PROJECTS := $(filter-out $(FILTER-OUT),$(PROJECTS))
-
-%.ph_build :
-	+@$(MAKE) -C $(dir $*) $(MAKECMDGOALS)
-
-%.ph_clean : 
-	+@$(MAKE) -C $(dir $*) clean $(USE_DEVICE)
-
-%.ph_clobber :
-	+@$(MAKE) -C $(dir $*) clobber $(USE_DEVICE)
-
-all:  $(addsuffix .ph_build,$(PROJECTS))
-	@echo "Finished building CUDA samples"
-
-build: $(addsuffix .ph_build,$(PROJECTS))
-
-tidy:
-	@find * | egrep "#" | xargs rm -f
-	@find * | egrep "\~" | xargs rm -f
-
-clean: tidy $(addsuffix .ph_clean,$(PROJECTS))
-
-clobber: clean $(addsuffix .ph_clobber,$(PROJECTS))
+release: $(SRC) $(OBJ)
+	$(NVCC) $(CUFLAGS) $(OBJ) $(SRC) -o $(EXE) $(INCS) $(LIBS)
+sobol_gold.o: sobol_gold.cpp
+	$(CXX) $(CCFLAGS) $(INCS) $(LIBS) sobol_gold.cpp -c -o sobol_gold.o
+sobol.o: sobol.cpp
+	$(CXX) $(CCFLAGS) $(INCS) $(LIBS) sobol.cpp -c -o sobol.o
+sobol_primitives.o: sobol_primitives.cpp
+	$(CXX) $(CCFLAGS) $(INCS) $(LIBS) sobol_primitives.cpp -c -o sobol_primitives.o
+clean: $(SRC)
+	rm -f *.o $(EXE) 
