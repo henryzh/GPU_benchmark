@@ -18,10 +18,10 @@
 	
 
 .file	1	"<command-line>"
-.file	2	"/tmp/tmpxft_00003f61_00000000-6_mummergpu.cudafe2.gpu"
+.file	2	"/tmp/tmpxft_000018a1_00000000-6_mummergpu.cudafe2.gpu"
 .file	3	"common.cu"
 .file	4	"mummergpu.h"
-.file	5	"/usr/lib/gcc/x86_64-linux-gnu/4.6.1/include/stddef.h"
+.file	5	"/usr/lib/gcc/x86_64-linux-gnu/4.4.6/include/stddef.h"
 .file	6	"/usr/local/cuda/include/crt/device_runtime.h"
 .file	7	"/usr/local/cuda/include/host_defines.h"
 .file	8	"/usr/local/cuda/include/builtin_types.h"
@@ -64,8 +64,8 @@
 .reg .u64 %rd<27>;
 .reg .f32 %f<34>;
 .reg .pred %p<23>;
-.local .align 4 .b8 __cuda_local_var_17347_22_non_const_prev_16[4];
-.local .align 16 .b8 __cuda_local_var_17346_16_non_const_node_32[16];
+.local .align 4 .b8 __cuda_local_var_17358_22_non_const_prev_16[4];
+.local .align 16 .b8 __cuda_local_var_17357_16_non_const_node_32[16];
 .loc	16	70	0
 $LDWbegin__Z15mummergpuKernelP10MatchCoordPcPKiS3_ii:
 cvt.u32.u16 %r1, %ctaid.x;
@@ -204,7 +204,7 @@ mov.u32 %r53, 0;
 setp.ne.u32 %p9, %r8, %r53;
 @%p9 bra $Lt_0_37122;
 .loc	16	136	0
-st.local.u32 [__cuda_local_var_17347_22_non_const_prev_16+0], %r48;
+st.local.u32 [__cuda_local_var_17358_22_non_const_prev_16+0], %r48;
 mov.s32 %r54, %r39;
 mov.s32 %r55, %r37;
 .loc	16	86	0
@@ -246,10 +246,10 @@ mov.f32 %f15, 0f00000000;
 tex.2d.v4.u32.f32 {%r64,%r65,%r66,%r67},[nodetex,{%f10,%f12,%f14,%f16}];
 mov.s32 %r68, %r64;
 mov.s32 %r69, %r65;
-st.local.u32 [__cuda_local_var_17346_16_non_const_node_32+0], %r68;
-st.local.u32 [__cuda_local_var_17346_16_non_const_node_32+4], %r69;
-ld.local.s32 %r70, [__cuda_local_var_17346_16_non_const_node_32+4];
-ld.local.s32 %r71, [__cuda_local_var_17346_16_non_const_node_32+0];
+st.local.u32 [__cuda_local_var_17357_16_non_const_node_32+0], %r68;
+st.local.u32 [__cuda_local_var_17357_16_non_const_node_32+4], %r69;
+ld.local.s32 %r70, [__cuda_local_var_17357_16_non_const_node_32+4];
+ld.local.s32 %r71, [__cuda_local_var_17357_16_non_const_node_32+0];
 mov.u32 %r72, 0;
 setp.eq.s32 %p11, %r19, %r72;
 @%p11 bra $Lt_0_38402;
@@ -314,7 +314,7 @@ mov.s32 %r89, %r85;
 cvt.s8.s32 %r90, %r89;
 setp.eq.s32 %p15, %r34, %r90;
 @%p15 bra $Lt_0_39170;
-st.local.u32 [__cuda_local_var_17347_22_non_const_prev_16+0], %r48;
+st.local.u32 [__cuda_local_var_17358_22_non_const_prev_16+0], %r48;
 bra.uni $Lt_0_36354;
 $Lt_0_39170:
 .loc	16	196	0
@@ -341,11 +341,11 @@ $Lt_0_41218:
 $L_0_33794:
 .loc	16	198	0
 @%p13 bra $Lt_0_36866;
-st.local.u32 [__cuda_local_var_17347_22_non_const_prev_16+0], %r48;
+st.local.u32 [__cuda_local_var_17358_22_non_const_prev_16+0], %r48;
 bra.uni $Lt_0_36354;
 $Lt_0_40962:
-ld.local.u32 %r48, [__cuda_local_var_17347_22_non_const_prev_16+0];
-ld.local.s32 %r71, [__cuda_local_var_17346_16_non_const_node_32+0];
+ld.local.u32 %r48, [__cuda_local_var_17358_22_non_const_prev_16+0];
+ld.local.s32 %r71, [__cuda_local_var_17357_16_non_const_node_32+0];
 mov.s32 %r75, 0;
 $Lt_0_36354:
 $Lt_0_2562:
@@ -396,8 +396,8 @@ tex.2d.v4.u32.f32 {%r107,%r108,%r109,%r110},[nodetex,{%f26,%f28,%f30,%f32}];
 mov.s32 %r111, %r107;
 mov.s32 %r112, %r108;
 mov.s32 %r113, %r110;
-st.local.u32 [__cuda_local_var_17346_16_non_const_node_32+0], %r111;
-st.local.u32 [__cuda_local_var_17346_16_non_const_node_32+4], %r112;
+st.local.u32 [__cuda_local_var_17357_16_non_const_node_32+0], %r111;
+st.local.u32 [__cuda_local_var_17357_16_non_const_node_32+4], %r112;
 .loc	16	215	0
 mov.s32 %r8, %r113;
 add.s32 %r17, %r17, 1;
@@ -423,9 +423,9 @@ $LDWend__Z15mummergpuKernelP10MatchCoordPcPKiS3_ii:
 .reg .u64 %rd<24>;
 .reg .f32 %f<34>;
 .reg .pred %p<38>;
-.local .align 4 .b8 __cuda_local_var_17500_19_non_const_cur_16[4];
-.local .align 4 .b8 __cuda_local_var_17515_22_non_const_prev_20[4];
-.local .align 16 .b8 __cuda_local_var_17514_16_non_const_node_32[16];
+.local .align 4 .b8 __cuda_local_var_17511_19_non_const_cur_16[4];
+.local .align 4 .b8 __cuda_local_var_17526_22_non_const_prev_20[4];
+.local .align 16 .b8 __cuda_local_var_17525_16_non_const_node_32[16];
 .loc	16	238	0
 $LDWbegin__Z17mummergpuRCKernelP10MatchCoordPcPKiS3_ii:
 cvt.u32.u16 %r1, %ctaid.x;
@@ -472,7 +472,7 @@ ld.param.s32 %r9, [__cudaparm__Z17mummergpuRCKernelP10MatchCoordPcPKiS3_ii_min_m
 sub.s32 %r13, %r7, %r9;
 add.s32 %r14, %r13, 1;
 sub.s32 %r15, %r9, 1;
-ld.local.u32 %r16, [__cuda_local_var_17500_19_non_const_cur_16+0];
+ld.local.u32 %r16, [__cuda_local_var_17511_19_non_const_cur_16+0];
 mov.s32 %r17, 0;
 mov.s32 %r18, 0;
 mov.s32 %r19, %r14;
@@ -609,7 +609,7 @@ mov.u32 %r60, 0;
 setp.ne.u32 %p14, %r16, %r60;
 @%p14 bra $Lt_1_42498;
 .loc	16	311	0
-st.local.u32 [__cuda_local_var_17515_22_non_const_prev_20+0], %r55;
+st.local.u32 [__cuda_local_var_17526_22_non_const_prev_20+0], %r55;
 mov.s32 %r61, %r46;
 mov.s32 %r62, %r44;
 .loc	16	257	0
@@ -649,10 +649,10 @@ mov.f32 %f15, 0f00000000;
 tex.2d.v4.u32.f32 {%r71,%r72,%r73,%r74},[nodetex,{%f10,%f12,%f14,%f16}];
 mov.s32 %r75, %r71;
 mov.s32 %r76, %r72;
-st.local.u32 [__cuda_local_var_17514_16_non_const_node_32+0], %r75;
-st.local.u32 [__cuda_local_var_17514_16_non_const_node_32+4], %r76;
-ld.local.s32 %r77, [__cuda_local_var_17514_16_non_const_node_32+4];
-ld.local.s32 %r78, [__cuda_local_var_17514_16_non_const_node_32+0];
+st.local.u32 [__cuda_local_var_17525_16_non_const_node_32+0], %r75;
+st.local.u32 [__cuda_local_var_17525_16_non_const_node_32+4], %r76;
+ld.local.s32 %r77, [__cuda_local_var_17525_16_non_const_node_32+4];
+ld.local.s32 %r78, [__cuda_local_var_17525_16_non_const_node_32+0];
 mov.u32 %r79, 0;
 setp.eq.s32 %p16, %r18, %r79;
 @%p16 bra $Lt_1_43778;
@@ -759,7 +759,7 @@ mov.s32 %r104, %r100;
 cvt.s8.s32 %r105, %r104;
 setp.eq.s32 %p25, %r41, %r105;
 @%p25 bra $Lt_1_44546;
-st.local.u32 [__cuda_local_var_17515_22_non_const_prev_20+0], %r55;
+st.local.u32 [__cuda_local_var_17526_22_non_const_prev_20+0], %r55;
 bra.uni $Lt_1_41730;
 $Lt_1_44546:
 .loc	16	371	0
@@ -830,11 +830,11 @@ $Lt_1_46594:
 $L_1_39170:
 .loc	16	373	0
 @%p23 bra $Lt_1_42242;
-st.local.u32 [__cuda_local_var_17515_22_non_const_prev_20+0], %r55;
+st.local.u32 [__cuda_local_var_17526_22_non_const_prev_20+0], %r55;
 bra.uni $Lt_1_41730;
 $Lt_1_46338:
-ld.local.u32 %r55, [__cuda_local_var_17515_22_non_const_prev_20+0];
-ld.local.s32 %r78, [__cuda_local_var_17514_16_non_const_node_32+0];
+ld.local.u32 %r55, [__cuda_local_var_17526_22_non_const_prev_20+0];
+ld.local.s32 %r78, [__cuda_local_var_17525_16_non_const_node_32+0];
 mov.s32 %r82, 0;
 $Lt_1_41730:
 $Lt_1_2562:
@@ -884,8 +884,8 @@ tex.2d.v4.u32.f32 {%r131,%r132,%r133,%r134},[nodetex,{%f26,%f28,%f30,%f32}];
 mov.s32 %r135, %r131;
 mov.s32 %r136, %r132;
 mov.s32 %r137, %r134;
-st.local.u32 [__cuda_local_var_17514_16_non_const_node_32+0], %r135;
-st.local.u32 [__cuda_local_var_17514_16_non_const_node_32+4], %r136;
+st.local.u32 [__cuda_local_var_17525_16_non_const_node_32+0], %r135;
+st.local.u32 [__cuda_local_var_17525_16_non_const_node_32+4], %r136;
 .loc	16	390	0
 mov.s32 %r16, %r137;
 .loc	16	260	0

@@ -5,12 +5,13 @@ MODEL="cuda"
 INPUT="sim"
 BENCH="BFS2"
 CONFIG="test"
-#OPTION="no_coherence"
-OPTION="TO_NC"
+OPTION="no_coherence"
+#OPTION="TO_MSI"
+#OPTION="TO_NC"
 LOG_FILE=log.txt
 ERR_FILE=error.txt
 OUT_FILE=output.txt
-RESULT_DIR=$SIM_ROOT/results
+RESULT_DIR=/home/cxh/results
 
 cd $RESULT_DIR
 rm $ERR_FILE
