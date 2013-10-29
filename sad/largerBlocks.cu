@@ -8,6 +8,8 @@
 
 #include "sad.h"
 #include "largerBlocks.h"
+#include <stdio.h>
+
 
 typedef struct {
   unsigned short x;
@@ -115,11 +117,23 @@ __global__ void larger_sad_calc_16(unsigned short *blk_sad,
       uint i01 = ((uint *)bi)[search_pos + MAX_POS_PADDED/2];
       uint i10 = ((uint *)bi)[search_pos + 2*MAX_POS_PADDED/2];
       uint i11 = ((uint *)bi)[search_pos + 3*MAX_POS_PADDED/2];
-
+      
       ((uint *)bo_3)[search_pos]                  = i00 + i10;
       ((uint *)bo_3)[search_pos+MAX_POS_PADDED/2] = i01 + i11;
       ((uint *)bo_2)[search_pos]                  = i00 + i01;
       ((uint *)bo_2)[search_pos+MAX_POS_PADDED/2] = i10 + i11;
       ((uint *)bo_1)[search_pos]                  = (i00 + i01) + (i10 + i11);
+ /*
+      ushort2 s00 = { bi[search_pos*2], bi[search_pos*2+1] };
+      ushort2 s01 = { bi[(search_pos + MAX_POS_PADDED/2)*2], bi[(search_pos + MAX_POS_PADDED/2)*2+1] };
+      ushort2 s10 = { bi[(search_pos + 2*MAX_POS_PADDED/2)*2], bi[(search_pos + 2*MAX_POS_PADDED/2)*2+1] };
+      ushort2 s11 = { bi[(search_pos + 3*MAX_POS_PADDED/2)*2], bi[(search_pos + 3*MAX_POS_PADDED/2)*2+1] };
+
+      ((ushort2 *)bo_3)[search_pos]                  = make_ushort2(s00.x + s10.x, s00.y + s10.y);
+      ((ushort2 *)bo_3)[search_pos+MAX_POS_PADDED/2] = make_ushort2(s01.x + s11.x, s01.y + s11.y);
+      ((ushort2 *)bo_2)[search_pos]                  = make_ushort2(s00.x + s01.x, s00.y + s01.y);
+      ((ushort2 *)bo_2)[search_pos+MAX_POS_PADDED/2] = make_ushort2(s10.x + s11.x, s10.y + s11.y);
+      ((ushort2 *)bo_1)[search_pos]                  = make_ushort2((s00.x + s01.x)+(s10.x + s11.x), (s00.y + s01.y)+(s10.y + s11.y));
+      */
     }
 }

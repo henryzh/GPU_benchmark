@@ -1,10 +1,18 @@
+/***************************************************************************
+ *cr
+ *cr            (C) Copyright 2007 The Board of Trustees of the
+ *cr                        University of Illinois
+ *cr                         All Rights Reserved
+ *cr
+ ***************************************************************************/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/time.h>
 #include <inttypes.h>
+#include <parboil.h>
 #include <cuda.h>
 
-#include "parboil.h"
 #include "sad.h"
 #include "sad4.h"
 #include "largerBlocks.h"
@@ -320,7 +328,7 @@ main(int argc, char **argv)
 
     pb_SwitchToTimer(&timers, pb_TimerID_KERNEL);
 
-    /* Run the 4x4 kernel */
+    // Run the 4x4 kernel
     mb_sad_calc<<<dim3(CEIL(ref_image->width / 4, THREADS_W),
 		       CEIL(ref_image->height / 4, THREADS_H)),
       dim3(CEIL(MAX_POS, POS_PER_THREAD) * THREADS_W * THREADS_H),
@@ -331,13 +339,13 @@ main(int argc, char **argv)
        image_height_macroblocks);
     CUDA_ERRCK
 
-    /* Run the larger-blocks kernels */
+    // Run the larger-blocks kernels
     larger_sad_calc_8<<<macroblock_grid, dim3(32, 4)>>>
       (d_sads,
        image_width_macroblocks,
        image_height_macroblocks);
     CUDA_ERRCK
-
+    
     larger_sad_calc_16<<<macroblock_grid, dim3(32, 1)>>>
       (d_sads,
        image_width_macroblocks,
