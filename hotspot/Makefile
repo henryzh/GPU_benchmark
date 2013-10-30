@@ -8,15 +8,13 @@ ifeq ($(shell uname -m), x86_64)
 endif
 
 NVCC = $(CUDA_DIR)/bin/nvcc
-NVCC_FLAGS = -O2 #-Xptxas -dlcm=cg # -g
+NVCC_FLAGS = -O2 -arch=sm_20 #-Xptxas -dlcm=cg # -g
 INCS = -I$(CUDA_DIR)/include
 LIBS = -L$(CUDA_LIB_DIR)
 SRC = hotspot.cu
 EXE = hotspot
 
 release: $(SRC)
-	$(NVCC) $(NVCC_FLAGS) $(SRC) -o $(EXE) $(INCS) $(LIBS) 
-enum: $(SRC)
-	$(CC) -deviceemu $(SRC) -o $(EXE) $(INCS) -L$(LIBS) 
+	$(NVCC) $(NVCC_FLAGS) $(SRC) -o $(EXE) $(INCS) $(LIBS)  
 clean: $(SRC)
 	rm -f $(EXE) result.txt
