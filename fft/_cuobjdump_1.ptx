@@ -18,8 +18,8 @@
 	
 
 .file	1	"<command-line>"
-.file	2	"/tmp/tmpxft_00005223_00000000-6_fft_base.cudafe2.gpu"
-.file	3	"/usr/lib/gcc/x86_64-linux-gnu/4.6.1/include/stddef.h"
+.file	2	"/tmp/tmpxft_00005749_00000000-6_fft_base.cudafe2.gpu"
+.file	3	"/usr/lib/gcc/x86_64-linux-gnu/4.4.5/include/stddef.h"
 .file	4	"/usr/local/cuda/include/crt/device_runtime.h"
 .file	5	"/usr/local/cuda/include/host_defines.h"
 .file	6	"/usr/local/cuda/include/builtin_types.h"
@@ -40,10 +40,9 @@
 .file	21	"/usr/local/cuda/include/sm_13_double_functions.h"
 .file	22	"/usr/local/cuda/include/sm_20_atomic_functions.h"
 .file	23	"/usr/local/cuda/include/sm_20_intrinsics.h"
-.file	24	"/usr/local/cuda/include/sm_30_intrinsics.h"
-.file	25	"/usr/local/cuda/include/surface_functions.h"
-.file	26	"/usr/local/cuda/include/texture_fetch_functions.h"
-.file	27	"/usr/local/cuda/include/math_functions_dbl_ptx1.h"
+.file	24	"/usr/local/cuda/include/surface_functions.h"
+.file	25	"/usr/local/cuda/include/texture_fetch_functions.h"
+.file	26	"/usr/local/cuda/include/math_functions_dbl_ptx1.h"
 
 .const .align 4 .b8 __cudart_i2opi_f[24] = {65,144,67,60,153,149,98,219,192,221,52,245,209,87,39,252,41,21,68,78,110,131,249,162};
 
@@ -58,7 +57,7 @@
 .reg .f32 %f<188>;
 .reg .f64 %fd<5>;
 .reg .pred %p<25>;
-.local .align 8 .b8 __cuda___cuda_local_var_19212_10_non_const_v_1632[16];
+.local .align 8 .b8 __cuda___cuda_local_var_18227_10_non_const_v_1632[16];
 .local .align 4 .b8 __cuda___cuda_result_3248[28];
 .local .align 4 .b8 __cuda___cuda_result_6076[28];
 .loc	14	128	0
@@ -75,7 +74,7 @@ cvt.u32.u16 %r7, %ctaid.x;
 mul.lo.u32 %r8, %r1, %r7;
 cvt.u64.u32 %rd1, %r8;
 mul.wide.u32 %rd2, %r8, 8;
-mov.u64 %rd3, __cuda___cuda_local_var_19212_10_non_const_v_1632;
+mov.u64 %rd3, __cuda___cuda_local_var_18227_10_non_const_v_1632;
 cvt.rn.f64.s32 %fd1, %r5;
 mov.f64 %fd2, 0dc01921fb54442d18;	
 	mul.f64 %fd3, %fd1, %fd2;
@@ -647,18 +646,18 @@ mov.u32 %r167, 2;
 setp.ne.s32 %p23, %r9, %r167;
 @%p23 bra $Lt_0_22018;
 .loc	14	38	0
-ld.local.f32 %f179, [__cuda___cuda_local_var_19212_10_non_const_v_1632+0];
-ld.local.f32 %f180, [__cuda___cuda_local_var_19212_10_non_const_v_1632+4];
+ld.local.f32 %f179, [__cuda___cuda_local_var_18227_10_non_const_v_1632+0];
+ld.local.f32 %f180, [__cuda___cuda_local_var_18227_10_non_const_v_1632+4];
 .loc	14	39	0
-ld.local.f32 %f181, [__cuda___cuda_local_var_19212_10_non_const_v_1632+8];
+ld.local.f32 %f181, [__cuda___cuda_local_var_18227_10_non_const_v_1632+8];
 add.f32 %f182, %f179, %f181;
-st.local.f32 [__cuda___cuda_local_var_19212_10_non_const_v_1632+0], %f182;
-ld.local.f32 %f183, [__cuda___cuda_local_var_19212_10_non_const_v_1632+12];
+st.local.f32 [__cuda___cuda_local_var_18227_10_non_const_v_1632+0], %f182;
+ld.local.f32 %f183, [__cuda___cuda_local_var_18227_10_non_const_v_1632+12];
 add.f32 %f184, %f180, %f183;
-st.local.f32 [__cuda___cuda_local_var_19212_10_non_const_v_1632+4], %f184;
+st.local.f32 [__cuda___cuda_local_var_18227_10_non_const_v_1632+4], %f184;
 .loc	14	40	0
 sub.f32 %f185, %f179, %f181;
-st.local.f32 [__cuda___cuda_local_var_19212_10_non_const_v_1632+8], %f185;
+st.local.f32 [__cuda___cuda_local_var_18227_10_non_const_v_1632+8], %f185;
 sub.f32 %f186, %f180, %f183;
 .loc	14	100	0
 ld.param.s32 %r3, [__cudaparm__Z14GPU_FFT_GlobaliP6float2S0_i_Ns];
@@ -682,4 +681,5 @@ st.global.v2.f32 [%rd29+0], {%f185,%f186};
 exit;
 $LDWend__Z14GPU_FFT_GlobaliP6float2S0_i:
 } 
+
 

@@ -1,5 +1,5 @@
 # LBM, Xuhao Chen, UIUC
-COMMON=/home/cxh/benchmarks/common
+COMMON=/scr/pearson/gpgpu/benchmarks/common
 CUDA_DIR = /usr/local/cuda
 CUDA_LIB_DIR = $(CUDA_DIR)/lib64
 CC = gcc

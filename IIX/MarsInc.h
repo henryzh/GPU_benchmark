@@ -26,7 +26,8 @@
 #include <pthread.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-#include <cutil.h>
+//#include <cutil.h>
+#include "common.h"
 #include <cuda.h>
 #include <cuda_runtime.h>
 #include <string.h>

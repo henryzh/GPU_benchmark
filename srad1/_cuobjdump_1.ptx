@@ -18,8 +18,8 @@
 	
 
 .file	1	"<command-line>"
-.file	2	"/tmp/tmpxft_0000218f_00000000-6_main.cudafe2.gpu"
-.file	3	"/usr/lib/gcc/x86_64-linux-gnu/4.6.1/include/stddef.h"
+.file	2	"/tmp/tmpxft_000061af_00000000-6_main.cudafe2.gpu"
+.file	3	"/usr/lib/gcc/x86_64-linux-gnu/4.4.5/include/stddef.h"
 .file	4	"/usr/local/cuda/bin/../include/crt/device_runtime.h"
 .file	5	"/usr/local/cuda/bin/../include/host_defines.h"
 .file	6	"/usr/local/cuda/bin/../include/builtin_types.h"
@@ -45,10 +45,9 @@
 .file	26	"/usr/local/cuda/bin/../include/sm_13_double_functions.h"
 .file	27	"/usr/local/cuda/bin/../include/sm_20_atomic_functions.h"
 .file	28	"/usr/local/cuda/bin/../include/sm_20_intrinsics.h"
-.file	29	"/usr/local/cuda/bin/../include/sm_30_intrinsics.h"
-.file	30	"/usr/local/cuda/bin/../include/surface_functions.h"
-.file	31	"/usr/local/cuda/bin/../include/texture_fetch_functions.h"
-.file	32	"/usr/local/cuda/bin/../include/math_functions_dbl_ptx1.h"
+.file	29	"/usr/local/cuda/bin/../include/surface_functions.h"
+.file	30	"/usr/local/cuda/bin/../include/texture_fetch_functions.h"
+.file	31	"/usr/local/cuda/bin/../include/math_functions_dbl_ptx1.h"
 
 
 .entry _Z7extractlPf (
@@ -168,8 +167,8 @@ $LDWend__Z7preparelPfS_S_:
 .reg .u64 %rd<56>;
 .reg .f32 %f<30>;
 .reg .pred %p<20>;
-.shared .align 4 .b8 __cuda___cuda_local_var_15965_32_non_const_d_psum80[2048];
-.shared .align 4 .b8 __cuda___cuda_local_var_15966_32_non_const_d_psum22128[2048];
+.shared .align 4 .b8 __cuda___cuda_local_var_15680_32_non_const_d_psum80[2048];
+.shared .align 4 .b8 __cuda___cuda_local_var_15681_32_non_const_d_psum22128[2048];
 .loc	16	6	0
 $LDWbegin__Z6reduceliiPfS_:
 cvt.s32.u16 %r1, %ctaid.x;
@@ -180,8 +179,8 @@ ld.param.s32 %r5, [__cudaparm__Z6reduceliiPfS__d_no];
 setp.ge.s32 %p1, %r4, %r5;
 @%p1 bra $Lt_2_13826;
 .loc	16	25	0
-mov.u64 %rd1, __cuda___cuda_local_var_15965_32_non_const_d_psum80;
-mov.u64 %rd2, __cuda___cuda_local_var_15966_32_non_const_d_psum22128;
+mov.u64 %rd1, __cuda___cuda_local_var_15680_32_non_const_d_psum80;
+mov.u64 %rd2, __cuda___cuda_local_var_15681_32_non_const_d_psum22128;
 cvt.s64.s32 %rd3, %r3;
 mul.wide.s32 %rd4, %r3, 4;
 ld.param.s32 %r6, [__cudaparm__Z6reduceliiPfS__d_mul];
@@ -200,8 +199,8 @@ ld.global.f32 %f2, [%rd11+0];
 add.u64 %rd12, %rd4, %rd2;
 st.shared.f32 [%rd12+0], %f2;
 $Lt_2_13826:
-mov.u64 %rd1, __cuda___cuda_local_var_15965_32_non_const_d_psum80;
-mov.u64 %rd2, __cuda___cuda_local_var_15966_32_non_const_d_psum22128;
+mov.u64 %rd1, __cuda___cuda_local_var_15680_32_non_const_d_psum80;
+mov.u64 %rd2, __cuda___cuda_local_var_15681_32_non_const_d_psum22128;
 cvt.u32.u16 %r8, %nctaid.x;
 mul.lo.u32 %r9, %r8, 512;
 .loc	16	6	0
