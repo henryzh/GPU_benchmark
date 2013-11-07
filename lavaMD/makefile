@@ -25,7 +25,7 @@ a.out:		main.o \
 			./util/num/num.o \
 			./util/timer/timer.o \
 			./util/device/device.o \
-			-lm \
+			-lm -lstdc++\
 			-L/usr/local/cuda/lib64 \
 			-lcuda -lcudart \
 			$(OMP_LIB) \

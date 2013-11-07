@@ -228,12 +228,12 @@ bar = 0	reg = 14	lmem=32	smem=56
 	Format:	EIFMT_SVAL
 	Value:	Index : 0x0	Ordinal : 0x1	Offset  : 0x8	Size    : 0x8
 		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : SMEM	
-	<0x10>
+	<0xa>
 	Attribute:	EIATTR_KPARAM_INFO
 	Format:	EIFMT_SVAL
 	Value:	Index : 0x0	Ordinal : 0x0	Offset  : 0x0	Size    : 0x8
 		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : SMEM	
-	<0x11>
+	<0xb>
 	Attribute:	EIATTR_SYNC_STACK
 	Format:	EIFMT_SVAL
 	Value:	0x230118 0x20 
@@ -377,12 +377,12 @@ bar = 0	reg = 16	lmem=32	smem=56
 	Format:	EIFMT_SVAL
 	Value:	Index : 0x0	Ordinal : 0x1	Offset  : 0x8	Size    : 0x8
 		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : SMEM	
-	<0x10>
+	<0xa>
 	Attribute:	EIATTR_KPARAM_INFO
 	Format:	EIFMT_SVAL
 	Value:	Index : 0x0	Ordinal : 0x0	Offset  : 0x0	Size    : 0x8
 		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : SMEM	
-	<0x11>
+	<0xb>
 	Attribute:	EIATTR_SYNC_STACK
 	Format:	EIFMT_SVAL
 	Value:	0x230118 0x20 

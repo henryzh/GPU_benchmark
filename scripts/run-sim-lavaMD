@@ -1,16 +1,16 @@
 
-SIM_ROOT=/home/cxh/gpgpu-sim-ruby
-BENCH_ROOT=/home/cxh/benchmarks
+SIM_ROOT=/scr/cxh/gpgpu-sim-ruby
+BENCH_ROOT=/scr/cxh/benchmarks
 MODEL="cuda"
 INPUT="sim"
 BENCH="lavaMD"
 CONFIG="test"
-OPTION="no_coherence"
-#OPTION="TO_NC"
+#OPTION="no_coherence"
+OPTION="TO_NC"
 LOG_FILE=log.txt
 ERR_FILE=error.txt
 OUT_FILE=output.txt
-RESULT_DIR=/home/cxh/results
+RESULT_DIR=/scr/cxh/results
 
 cd $RESULT_DIR
 rm $ERR_FILE
