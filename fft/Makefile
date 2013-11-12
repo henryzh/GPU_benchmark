@@ -1,15 +1,14 @@
 # FFT, Xuhao Chen, UIUC
-#CUDA_DIR = /home/cxh/local/cuda-4.1/cuda
 CUDA_DIR = /usr/local/cuda
 CUDA_LIB_DIR = $(CUDA_DIR)/lib64
 COMMON = ../common
 CC = gcc
 CXX = g++
 NVCC = $(CUDA_DIR)/bin/nvcc
-LIB = -L/usr/local/cuda/lib64 -lm -lpthread
-INCLUDE = $(CUDA_DIR)/include
-CC_FLAGS = -I$(INCLUDE) -L$(CUDA_LIB_DIR)
-NVCC_FLAGS = -O2 -I$(INCLUDE) -L$(CUDA_LIB_DIR) #-arch=sm_10
+LIBS = -L$(CUDA_LIB_DIR)/lib64 -lm
+INCS = -I$(CUDA_DIR)/include -I$(COMMON)
+CC_FLAGS = $(INCS)
+NVCC_FLAGS = -O2 $(INCS) $(LIBS) #-arch=sm_10
 SRC = fft_base.cu
 OBJ = args.o parboil_cuda.o
 EXE = fft
