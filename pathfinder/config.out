@@ -9,12 +9,13 @@ GPGPU-Sim Configuration options:
 -gpgpu_ptx_inst_debug_to_file                    0 # Dump executed instructions' debug information to file
 -gpgpu_ptx_inst_debug_file       inst_debug.txt # Executed instructions' debug output file
 -gpgpu_ptx_inst_debug_thread_uid                    1 # Thread UID for executed instructions' debug output
+-coal_bypass                            0 # Coalescing Unit Bypass Enable (default off)
 -gpgpu_simd_model                       1 # 1 = post-dominator
 -gpgpu_shader_core_pipeline              1536:32 # shader core pipeline config, i.e., {<nthread>:<warpsize>}
 -gpgpu_tex_cache:l1  4:128:24,L:R:m:N,F:128:4,128:2 # per-shader L1 texture cache  (READ-ONLY) config  {<nsets>:<bsize>:<assoc>,<rep>:<wr>:<alloc>:<wr_alloc>,<mshr>:<N>:<merge>,<mq>:<rf>}
 -gpgpu_const_cache:l1 64:64:2,L:R:f:N,A:2:32,4 # per-shader L1 constant memory cache  (READ-ONLY) config  {<nsets>:<bsize>:<assoc>,<rep>:<wr>:<alloc>:<wr_alloc>,<mshr>:<N>:<merge>,<mq>} 
 -gpgpu_cache:il1     4:128:4,L:R:f:N,A:2:32,4 # shader L1 instruction cache config  {<nsets>:<bsize>:<assoc>,<rep>:<wr>:<alloc>:<wr_alloc>,<mshr>:<N>:<merge>,<mq>} 
--gpgpu_cache:dl1                     none # per-shader L1 data cache config  {<nsets>:<bsize>:<assoc>,<rep>:<wr>:<alloc>:<wr_alloc>,<mshr>:<N>:<merge>,<mq> | none}
+-gpgpu_cache:dl1     64:128:4,L:L:m:N,A:32:8,8 # per-shader L1 data cache config  {<nsets>:<bsize>:<assoc>,<rep>:<wr>:<alloc>:<wr_alloc>,<mshr>:<N>:<merge>,<mq> | none}
 -gmem_skip_L1D                          0 # global memory access skip L1D cache (implements -Xptxas -dlcm=cg, default=no skip)
 -gpgpu_perfect_mem                      0 # enable perfect memory mode (no cache miss)
 -gpgpu_shader_registers                32768 # Number of registers per shader core. Limits number of concurrent CTAs. (default 8192)
@@ -51,18 +52,18 @@ GPGPU-Sim Configuration options:
 -gpgpu_num_sp_units                     2 # Number of SP units (default=1)
 -gpgpu_num_sfu_units                    1 # Number of SF units (default=1)
 -gpgpu_num_mem_units                    1 # Number if ldst units (default=1) WARNING: not hooked up to anything
--gpgpu_scheduler                      lrr # Scheduler configuration: lrr|tl:num_active_warps default: lrr
+-gpgpu_scheduler                      gto # Scheduler configuration: lrr|tl:num_active_warps default: lrr
 -gpgpu_dram_scheduler                    1 # 0 = fifo, 1 = FR-FCFS (defaul)
 -gpgpu_dram_partition_queues              8:8:8:8 # i2$:$2d:d2$:$2i
 -l2_ideal                               0 # Use a ideal L2 cache that always hit
--gpgpu_cache:dl2     128:128:8,L:B:m:W,A:32:4,4 # unified banked L2 data cache config  {<nsets>:<bsize>:<assoc>,<rep>:<wr>:<alloc>:<wr_alloc>,<mshr>:<N>:<merge>,<mq>}
+-gpgpu_cache:dl2     32:128:16,L:B:m:W,A:32:4,4 # unified banked L2 data cache config  {<nsets>:<bsize>:<assoc>,<rep>:<wr>:<alloc>:<wr_alloc>,<mshr>:<N>:<merge>,<mq>}
 -gpgpu_cache:dl2_texture_only                    0 # L2 cache used for texture only
 -gpgpu_n_mem                            8 # number of memory modules (e.g. memory controllers) in gpu
 -gpgpu_n_mem_per_ctrlr                    2 # number of memory chips per memory controller
 -gpgpu_memlatency_stat                   14 # track and display latency statistics 0x2 enables MC, 0x4 enables queue logs
 -gpgpu_dram_sched_queue_size                   16 # 0 = unlimited (default); # entries per chip
 -gpgpu_dram_buswidth                    4 # default = 4 bytes (8 bytes per cycle at DDR)
--gpgpu_dram_burst_length                    4 # Burst length of each DRAM request (default = 4 data bus cycle)
+-gpgpu_dram_burst_length                    8 # Burst length of each DRAM request (default = 4 data bus cycle)
 -dram_data_command_freq_ratio                    2 # Frequency ratio between DRAM data bus and command bus (default = 2 times, i.e. DDR)
 -gpgpu_dram_timing_opt nbk=16:CCD=2:RRD=6:RCD=12:RAS=28:RP=12:RC=40: CL=12:WL=4:CDLR=5:WR=12:nbkgrp=4:CCDL=3:RTPL=2 # DRAM timing parameters = {nbk:tCCD:tRRD:tRCD:tRAS:tRP:tRC:CL:WL:tCDLR:tWR:nbkgrp:tCCDL:tRTPL}
 -rop_latency                           80 # ROP queue latency (default 85)
@@ -82,11 +83,12 @@ GPGPU-Sim Configuration options:
 -ruby_vns                               4 # Number of virtual networks (default=2)
 -ruby_vcs_per_class                     1 # Virtual channels per class (default=1)
 -ruby_vc_buffer_size                    8 # Virtual channel buffer size in # flits (default=8)
--ruby_latencies                    70:100 # Minimum latencies in core cycles (L1->L2:L2->Mem) (default=70:100)
+-ruby_latencies                 70:100:70 # Minimum latencies in core cycles (L1->L2:L2->Mem:L1->L1) (default=70:100:70)
 -ruby_latencies_multiplier              1.0:1.0 # Multiplier for ruby's latencies (L1->L2:L2->Mem) (default=1.0:1.0)
 -ruby_l1_t_per_cycle                    1 # Number of transitions per Ruby L1 cache controller per cycle (default=32)
 -ruby_l2_t_per_cycle                    1 # Number of transitions per Ruby L2 cache controller per cycle (default=32)
 -ruby_dir_t_per_cycle                   32 # Number of transitions per Ruby memory controller per cycle (default=32)
+-ruby_glc_t_per_cycle                   32 # Number of transitions per Ruby memory controller per cycle (default=32)
 -ruby_cl_fixed_lease                  800 # Cache Lease option - fixed lease time in Ruby/ICNT cycles (default=800)
 -ruby_cl_predictor_type                    0 # Cache Lease option - predictor type. 0=fixed, 1=global, 2=perL2, 3=PC-fixed, 4=PC-adaptive, 5=addr-fixed, 6=oracle, 7=PCsampler (default=0)
 -ruby_cl_pred_global              64:16:1 # Cache Lease option - predictor settings for global predictor (writeunexpired:l2evict:expiredhit) (default=64:16:1)
@@ -100,10 +102,15 @@ GPGPU-Sim Configuration options:
 -ruby_locality_profiler                 none # locality profiler configuration. Bins specified as pow2 {<start_bin>,<end_bin>, <skip_bin>}
 -ruby_l1_assoc                          4 # Ruby L1 associativity (default=4)
 -ruby_l1_sets_bits                      6 # Ruby L1 # of set bits (#sets=2^bits) (default=6)
--ruby_l2_assoc                          8 # Ruby L2 associativity (default=8)
--ruby_l2_sets_bits                      9 # Ruby L2 # of set bits (#sets=2^bits) (default=9)
+-ruby_l2_assoc                         16 # Ruby L2 associativity (default=8)
+-ruby_l2_sets_bits                      8 # Ruby L2 # of set bits (#sets=2^bits) (default=8)
 -ruby_dir_assoc                         8 # Ruby Directory associativity (default=8)
 -ruby_dir_sets_bits                     9 # Ruby Directory # of set bits (#sets=2^bits) (default=9)
+-ruby_glc_assoc                        16 # Ruby GLC associativity (default=8)
+-ruby_glc_sets_bits                     9 # Ruby GLC # of set bits (#sets=2^bits) (default=9)
+-ruby_l1_repl_policy                  LRU # Ruby L1 cache replacement policy (default=PSEDUO_LRU)
+-ruby_l2_repl_policy                  LRU # Ruby L2 cache replacement policy (default=PSEDUO_LRU)
+-ruby_glc_repl_policy                  NRR # Ruby GLC replacement policy (default=PSEDUO_LRU)
 -ruby_lifetime_profiler_perpc_outmode                    0 # Output mode for per-pc lifetime profiler (0=none, 1=stdout, 2=file, 3=both) (default=0)
 -ruby_lifetime_profiler_perpc_outfile lifetime_profiler_perpc.txt # Filename for output of per-pc information from lifetime profiler (default=lifetime_profiler_perpc.txt)
 -ruby_lifetime_profiler_peraddr_outmode                    0 # Output mode for per-address lifetime profiler (0=none, 1=stdout, 2=file, 3=both) (default=0)
@@ -132,7 +139,7 @@ GPGPU-Sim Configuration options:
 -visualizer_zlevel                      6 # Compression level of the visualizer output log (0=no comp, 9=highest)
 -enable_ptx_file_line_stats                    1 # Turn on PTX source line statistic profiling. (1 = On)
 -ptx_line_stats_filename gpgpu_inst_stats.txt # Output file for PTX source line statistics.
--save_embedded_ptx                      1 # saves ptx files embedded in binary as <n>.ptx
+-save_embedded_ptx                      0 # saves ptx files embedded in binary as <n>.ptx
 -keep                                   0 # keep intermediate files created by GPGPU-Sim when interfacing with external programs
 -gpgpu_ptx_save_converted_ptxplus                    0 # Saved converted ptxplus to a file
 -ptx_opcode_latency_int         4,13,4,5,145 # Opcode latencies for integers <ADD,MAX,MUL,MAD,DIV>Default 1,1,19,25,145

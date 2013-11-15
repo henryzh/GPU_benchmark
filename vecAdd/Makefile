@@ -8,7 +8,7 @@ CCFLAGS = -g -O2
 CXXFLAGS = -g -O2
 CUFLAGS = -O2 -arch=sm_20
 LIBS = -lm
-SRC = vecAdd.cu
+SRC = vecAdd-test.cu
 EXE = vecAdd
 
 all: $(OBJS)

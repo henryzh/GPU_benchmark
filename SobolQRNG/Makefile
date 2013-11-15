@@ -5,11 +5,12 @@ ifeq ($(shell uname -m), x86_64)
         CUDA_LIB_DIR := $(CUDA_DIR)/lib64
      endif
 endif
-SDK_LIB := -lshrutil_x86_64 -lcutil_x86_64 -L/home/cxh/CUDA-SDK/cuda-4.2/shared/lib -L/home/cxh/CUDA-SDK/cuda-4.2/C/lib -L/home/cxh/CUDA-SDK/cuda-4.2/C/common/lib/linux
+SDK_DIR := /home/cxh/CUDA-SDK/cuda-4.1
+SDK_LIB := -lshrutil_x86_64 -lcutil_x86_64 -L$(SDK_DIR)/shared/lib -L$(SDK_DIR)/C/lib -L$(SDK_DIR)/C/common/lib/linux
 CC := gcc
 CXX := g++
 NVCC := $(CUDA_DIR)/bin/nvcc
-INCS := -I$(CUDA_DIR)/include -I/home/cxh/CUDA-SDK/cuda-4.2/C/common/inc -I/home/cxh/CUDA-SDK/cuda-4.2/shared/inc
+INCS := -I$(CUDA_DIR)/include -I$(SDK_DIR)/C/common/inc -I$(SDK_DIR)/shared/inc
 LIBS := -L$(CUDA_LIB_DIR) $(SDK_LIB)
 EXE := sobol
 CUFILES := sobol_gpu.cu

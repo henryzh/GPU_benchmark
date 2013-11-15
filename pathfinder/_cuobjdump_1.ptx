@@ -9,320 +9,226 @@
 .target sm_20
 .address_size 64
 
-.file	1 "/tmp/tmpxft_000023f4_00000000-7_pathfinder_sync.cpp3.i"
-.file	2 "pathfinder_sync.cu"
-.file	3 "/usr/local/cuda-4.1/nvvm/ci_include.h"
+.file	1 "/tmp/tmpxft_0000105d_00000000-7_pathfinder.cpp3.i"
+.file	2 "pathfinder.cu"
 
 
 
-.entry _Z14dynproc_kerneliiPiS_S_iiiS_S_(
-.param .u32 _Z14dynproc_kerneliiPiS_S_iiiS_S__param_0,
-.param .u32 _Z14dynproc_kerneliiPiS_S_iiiS_S__param_1,
-.param .u64 _Z14dynproc_kerneliiPiS_S_iiiS_S__param_2,
-.param .u64 _Z14dynproc_kerneliiPiS_S_iiiS_S__param_3,
-.param .u64 _Z14dynproc_kerneliiPiS_S_iiiS_S__param_4,
-.param .u32 _Z14dynproc_kerneliiPiS_S_iiiS_S__param_5,
-.param .u32 _Z14dynproc_kerneliiPiS_S_iiiS_S__param_6,
-.param .u32 _Z14dynproc_kerneliiPiS_S_iiiS_S__param_7,
-.param .u64 _Z14dynproc_kerneliiPiS_S_iiiS_S__param_8,
-.param .u64 _Z14dynproc_kerneliiPiS_S_iiiS_S__param_9
+.entry _Z14dynproc_kerneliPiS_S_iiii(
+.param .u32 _Z14dynproc_kerneliPiS_S_iiii_param_0,
+.param .u64 _Z14dynproc_kerneliPiS_S_iiii_param_1,
+.param .u64 _Z14dynproc_kerneliPiS_S_iiii_param_2,
+.param .u64 _Z14dynproc_kerneliPiS_S_iiii_param_3,
+.param .u32 _Z14dynproc_kerneliPiS_S_iiii_param_4,
+.param .u32 _Z14dynproc_kerneliPiS_S_iiii_param_5,
+.param .u32 _Z14dynproc_kerneliPiS_S_iiii_param_6,
+.param .u32 _Z14dynproc_kerneliPiS_S_iiii_param_7
 )
 {
-.reg .pred %p<23>;
-.reg .s32 %r<123>;
-.reg .s64 %rl<42>;
-.reg .s16 %rc<17>;
+.reg .pred %p<16>;
+.reg .s32 %r<65>;
+.reg .s64 %rl<27>;
+.reg .s16 %rc<12>;
 
-	.shared .align 4 .b8 __cuda_local_var_16358_31_non_const_prev[1024];
+	.shared .align 4 .b8 __cuda_local_var_16915_37_non_const_prev[1024];
 
-	.shared .align 4 .b8 __cuda_local_var_16359_31_non_const_result[1024];
+	.shared .align 4 .b8 __cuda_local_var_16916_37_non_const_result[1024];
 
-ld.param.u32 %r2, [_Z14dynproc_kerneliiPiS_S_iiiS_S__param_1];
-ld.param.u32 %r3, [_Z14dynproc_kerneliiPiS_S_iiiS_S__param_5];
-ld.param.u32 %r5, [_Z14dynproc_kerneliiPiS_S_iiiS_S__param_7];
-.loc 2 71 1
-mov.u32 %r27, %ctaid.x;
-shl.b32 %r28, %r2, 1;
-mov.u32 %r29, 256;
+ld.param.u32 %r1, [_Z14dynproc_kerneliPiS_S_iiii_param_0];
+ld.param.u64 %rl9, [_Z14dynproc_kerneliPiS_S_iiii_param_2];
+ld.param.u32 %r2, [_Z14dynproc_kerneliPiS_S_iiii_param_4];
+ld.param.u32 %r13, [_Z14dynproc_kerneliPiS_S_iiii_param_7];
+cvta.to.global.u64 %rl3, %rl9;
+shl.b32 %r14, %r1, 1;
+mov.u32 %r15, 256;
+.loc 2 73 1
+sub.s32 %r16, %r15, %r14;
+.loc 2 66 1
+mov.u32 %r17, %ctaid.x;
 .loc 2 77 1
-sub.s32 %r30, %r29, %r28;
-.loc 2 78 1
-mul.lo.s32 %r31, %r27, %r30;
-sub.s32 %r32, %r31, %r5;
-add.s32 %r33, %r32, 255;
-.loc 2 72 1
-mov.u32 %r34, %tid.x;
-.loc 2 80 1
-add.s32 %r116, %r32, %r34;
+mul.lo.s32 %r18, %r17, %r16;
+sub.s32 %r19, %r18, %r13;
+add.s32 %r20, %r19, 255;
+.loc 2 67 1
+mov.u32 %r4, %tid.x;
 .loc 2 81 1
-neg.s32 %r35, %r32;
-.loc 2 78 1
-shr.s32 %r36, %r32, 31;
-and.b32 %r37, %r36, %r35;
-add.s32 %r38, %r3, -1;
-.loc 2 82 1
-setp.gt.s32 %p1, %r33, %r38;
-mov.u32 %r39, -255;
-sub.s32 %r40, %r39, %r32;
-add.s32 %r41, %r3, %r40;
-add.s32 %r42, %r41, 254;
-selp.b32 %r7, %r42, 255, %p1;
-add.s32 %r43, %r34, -1;
-.loc 2 84 1
-add.s32 %r44, %r34, 1;
-max.s32 %r115, %r37, %r43;
-min.s32 %r114, %r7, %r44;
+add.s32 %r5, %r19, %r4;
+.loc 2 86 1
+neg.s32 %r21, %r19;
+.loc 2 77 1
+shr.s32 %r22, %r19, 31;
+and.b32 %r23, %r22, %r21;
+add.s32 %r6, %r2, -1;
 .loc 2 87 1
-setp.lt.u32 %p2, %r34, %r37;
-@%p2 bra BB0_2;
+setp.gt.s32 %p2, %r20, %r6;
+mov.u32 %r24, -255;
+sub.s32 %r25, %r24, %r19;
+add.s32 %r26, %r2, %r25;
+add.s32 %r27, %r26, 254;
+selp.b32 %r7, %r27, 255, %p2;
+add.s32 %r28, %r4, -1;
+.loc 2 90 1
+add.s32 %r29, %r4, 1;
+max.s32 %r8, %r23, %r28;
+min.s32 %r9, %r7, %r29;
+.loc 2 93 1
+setp.lt.s32 %p3, %r4, %r23;
+@%p3 bra BB0_2;
 
-.loc 2 72 1
-mov.u32 %r112, %tid.x;
-.loc 2 87 1
-setp.le.u32 %p3, %r112, %r7;
-selp.u16 %rc15, 1, 0, %p3;
+.loc 2 67 1
+mov.u32 %r63, %tid.x;
+.loc 2 93 1
+setp.le.s32 %p4, %r63, %r7;
+selp.u16 %rc10, 1, 0, %p4;
 bra.uni BB0_3;
 
 BB0_2:
-mov.u16 %rc15, 0;
+mov.u16 %rc10, 0;
 
 BB0_3:
-ld.param.u32 %r103, [_Z14dynproc_kerneliiPiS_S_iiiS_S__param_0];
-.loc 2 88 1
-setp.lt.s32 %p4, %r103, 1;
-@%p4 bra BB0_25;
+.loc 2 94 1
+setp.le.s32 %p5, %r5, %r6;
+setp.gt.s32 %p6, %r5, -1;
+and.pred %p7, %p6, %p5;
+.loc 2 67 1
+mov.u32 %r62, %tid.x;
+.loc 2 104 1
+cvt.s64.s32 %rl4, %r62;
+mul.wide.s32 %rl10, %r62, 4;
+mov.u64 %rl11, __cuda_local_var_16915_37_non_const_prev;
+add.s64 %rl5, %rl11, %rl10;
+.loc 2 94 1
+@!%p7 bra BB0_5;
 
-ld.param.u64 %rl36, [_Z14dynproc_kerneliiPiS_S_iiiS_S__param_3];
-cvta.to.global.u64 %rl40, %rl36;
-ld.param.u64 %rl37, [_Z14dynproc_kerneliiPiS_S_iiiS_S__param_4];
-cvta.to.global.u64 %rl41, %rl37;
-mov.u32 %r113, 0;
-ld.param.u32 %r120, [_Z14dynproc_kerneliiPiS_S_iiiS_S__param_1];
+.loc 2 95 1
+mul.wide.s32 %rl12, %r5, 4;
+add.s64 %rl13, %rl3, %rl12;
+ld.global.u32 %r30, [%rl13];
+st.shared.u32 [%rl5], %r30;
 
 BB0_5:
-mov.u32 %r14, %r120;
-mov.u64 %rl38, %rl40;
-mov.u64 %rl7, %rl41;
-mov.u64 %rl41, %rl38;
-ld.param.u32 %r102, [_Z14dynproc_kerneliiPiS_S_iiiS_S__param_0];
-add.s32 %r47, %r102, -1;
-.loc 2 91 1
-setp.ne.s32 %p5, %r113, %r47;
-@%p5 bra BB0_10;
-
-ld.param.u32 %r110, [_Z14dynproc_kerneliiPiS_S_iiiS_S__param_6];
-add.s32 %r48, %r110, -1;
-ld.param.u32 %r106, [_Z14dynproc_kerneliiPiS_S_iiiS_S__param_1];
-.loc 2 91 1
-rem.s32 %r15, %r48, %r106;
-setp.eq.s32 %p6, %r15, 0;
-@%p6 bra BB0_10;
-
-shl.b32 %r49, %r15, 1;
-.loc 2 93 1
-sub.s32 %r51, %r29, %r49;
-.loc 2 94 1
-mul.lo.s32 %r53, %r51, %r27;
-ld.param.u32 %r111, [_Z14dynproc_kerneliiPiS_S_iiiS_S__param_7];
-.loc 2 94 1
-sub.s32 %r54, %r53, %r111;
-add.s32 %r55, %r54, 255;
-.loc 2 96 1
-add.s32 %r116, %r54, %r34;
 .loc 2 97 1
-neg.s32 %r57, %r54;
-.loc 2 94 1
-shr.s32 %r58, %r54, 31;
-and.b32 %r59, %r58, %r57;
-ld.param.u32 %r109, [_Z14dynproc_kerneliiPiS_S_iiiS_S__param_5];
-add.s32 %r60, %r109, -1;
-.loc 2 98 1
-setp.gt.s32 %p7, %r55, %r60;
-sub.s32 %r62, %r39, %r54;
-add.s32 %r63, %r109, %r62;
-add.s32 %r64, %r63, 254;
-selp.b32 %r17, %r64, 255, %p7;
-max.s32 %r115, %r59, %r43;
-min.s32 %r114, %r17, %r44;
-.loc 2 103 1
-setp.lt.u32 %p8, %r34, %r59;
-@%p8 bra BB0_9;
-
-setp.le.u32 %p9, %r34, %r17;
-selp.u16 %rc15, 1, 0, %p9;
-mov.u32 %r121, %r15;
-bra.uni BB0_11;
-
-BB0_9:
-mov.u16 %rc15, 0;
-mov.u32 %r121, %r15;
-bra.uni BB0_11;
-
-BB0_10:
-mov.u32 %r121, %r14;
-
-BB0_11:
-mov.u32 %r120, %r121;
-ld.param.u32 %r108, [_Z14dynproc_kerneliiPiS_S_iiiS_S__param_5];
-add.s32 %r68, %r108, -1;
-.loc 2 106 1
-setp.le.s32 %p10, %r116, %r68;
-setp.gt.s32 %p11, %r116, -1;
-and.pred %p12, %p11, %p10;
-.loc 2 106 1
-@!%p12 bra BB0_13;
-
-.loc 2 107 1
-mul.wide.s32 %rl8, %r116, 4;
-add.s64 %rl9, %rl41, %rl8;
-mul.wide.u32 %rl10, %r34, 4;
-mov.u64 %rl11, __cuda_local_var_16358_31_non_const_prev;
-add.s64 %rl12, %rl11, %rl10;
-.loc 2 107 1
-ld.global.u32 %r70, [%rl9];
-st.shared.u32 [%rl12], %r70;
-
-BB0_13:
-.loc 2 109 1
 bar.sync 0;
-mov.u32 %r122, 0;
-
-BB0_14:
-mov.u32 %r24, %r122;
-.loc 2 111 1
-setp.lt.s32 %p13, %r24, %r120;
-@%p13 bra BB0_15;
-bra.uni BB0_22;
-
-BB0_15:
-.loc 2 113 1
-add.s32 %r25, %r24, 1;
-mov.u32 %r75, 254;
-sub.s32 %r76, %r75, %r24;
-.loc 2 113 1
-setp.le.u32 %p14, %r34, %r76;
-setp.ge.u32 %p15, %r34, %r25;
-and.pred %p16, %p14, %p15;
-.loc 2 113 1
+.loc 2 101 1
 {
 .reg .s16 %temp1;
 .reg .s16 %temp2;
-cvt.s16.s8 %temp1, %rc15;
+cvt.s16.s8 %temp1, %rc10;
 mov.b16 %temp2, 0;
 cvt.s16.s8 %temp2, %temp2;
-setp.ne.s16 %p17, %temp1, %temp2;
+setp.ne.s16 %p1, %temp1, %temp2;
 }
-and.pred %p18, %p16, %p17;
-.loc 2 113 1
-@%p18 bra BB0_17;
+mul.wide.s32 %rl14, %r8, 4;
+add.s64 %rl6, %rl11, %rl14;
+mul.wide.s32 %rl16, %r9, 4;
+add.s64 %rl7, %rl11, %rl16;
+shl.b64 %rl17, %rl4, 2;
+mov.u64 %rl18, __cuda_local_var_16916_37_non_const_result;
+add.s64 %rl8, %rl18, %rl17;
+ld.param.u32 %r57, [_Z14dynproc_kerneliPiS_S_iiii_param_0];
+add.s32 %r10, %r57, -1;
+mov.u32 %r64, 0;
 
-mov.u16 %rc16, 0;
-bra.uni BB0_18;
-
-BB0_17:
-mul.wide.s32 %rl13, %r115, 4;
-mov.u64 %rl14, __cuda_local_var_16358_31_non_const_prev;
-add.s64 %rl15, %rl14, %rl13;
-mul.wide.u32 %rl16, %r34, 4;
-add.s64 %rl17, %rl14, %rl16;
-mul.wide.s32 %rl18, %r114, 4;
-add.s64 %rl19, %rl14, %rl18;
-.loc 2 116 1
-ld.shared.u32 %r78, [%rl17];
-.loc 2 115 1
-ld.shared.u32 %r80, [%rl15];
-min.s32 %r82, %r78, %r80;
-.loc 2 117 1
-ld.shared.u32 %r83, [%rl19];
-min.s32 %r85, %r83, %r82;
-ld.param.u32 %r105, [_Z14dynproc_kerneliiPiS_S_iiiS_S__param_1];
-.loc 2 120 1
-mad.lo.s32 %r86, %r113, %r105, %r24;
-ld.param.u32 %r107, [_Z14dynproc_kerneliiPiS_S_iiiS_S__param_5];
-.loc 2 120 1
-mad.lo.s32 %r87, %r86, %r107, %r116;
-ld.param.u64 %rl35, [_Z14dynproc_kerneliiPiS_S_iiiS_S__param_2];
-cvta.to.global.u64 %rl20, %rl35;
-.loc 2 121 1
-mul.wide.s32 %rl21, %r87, 4;
-add.s64 %rl22, %rl20, %rl21;
-ld.global.u32 %r88, [%rl22];
-add.s32 %r90, %r88, %r85;
-mov.u64 %rl23, __cuda_local_var_16359_31_non_const_result;
-add.s64 %rl24, %rl23, %rl16;
-.loc 2 121 1
-st.shared.u32 [%rl24], %r90;
-mov.u16 %rc16, 1;
-
-BB0_18:
-.loc 2 123 1
-bar.sync 0;
-add.s32 %r92, %r120, -1;
-.loc 2 124 1
-setp.eq.s32 %p19, %r24, %r92;
-@%p19 bra BB0_22;
-
-.loc 2 126 1
-{
-.reg .s16 %temp1;
-.reg .s16 %temp2;
-cvt.s16.s8 %temp1, %rc16;
-mov.b16 %temp2, 0;
-cvt.s16.s8 %temp2, %temp2;
-setp.eq.s16 %p20, %temp1, %temp2;
-}
-@%p20 bra BB0_21;
-
-mul.wide.u32 %rl25, %r34, 4;
-mov.u64 %rl26, __cuda_local_var_16359_31_non_const_result;
-add.s64 %rl27, %rl26, %rl25;
-mov.u64 %rl28, __cuda_local_var_16358_31_non_const_prev;
-add.s64 %rl29, %rl28, %rl25;
-.loc 2 127 1
-ld.shared.u32 %r94, [%rl27];
-st.shared.u32 [%rl29], %r94;
-
-BB0_21:
-.loc 2 128 1
-bar.sync 0;
-mov.u32 %r122, %r25;
+BB0_6:
+mov.u32 %r11, %r64;
+ld.param.u32 %r56, [_Z14dynproc_kerneliPiS_S_iiii_param_0];
+.loc 2 99 1
+setp.lt.s32 %p8, %r11, %r56;
+@%p8 bra BB0_7;
 bra.uni BB0_14;
 
-BB0_22:
-.loc 2 130 1
+BB0_7:
+.loc 2 101 1
+add.s32 %r12, %r11, 1;
+mov.u32 %r34, 254;
+sub.s32 %r35, %r34, %r11;
+.loc 2 101 1
+setp.le.s32 %p9, %r4, %r35;
+setp.ge.s32 %p10, %r4, %r12;
+and.pred %p11, %p9, %p10;
+and.pred %p12, %p11, %p1;
+.loc 2 101 1
+@%p12 bra BB0_9;
+
+mov.u16 %rc11, 0;
+bra.uni BB0_10;
+
+BB0_9:
+.loc 2 103 1
+ld.shared.u32 %r36, [%rl6];
+.loc 2 104 1
+ld.shared.u32 %r38, [%rl5];
+min.s32 %r40, %r38, %r36;
+.loc 2 105 1
+ld.shared.u32 %r41, [%rl7];
+min.s32 %r43, %r41, %r40;
+ld.param.u32 %r59, [_Z14dynproc_kerneliPiS_S_iiii_param_6];
+.loc 2 108 1
+add.s32 %r44, %r11, %r59;
+ld.param.u32 %r58, [_Z14dynproc_kerneliPiS_S_iiii_param_4];
+.loc 2 108 1
+mad.lo.s32 %r45, %r44, %r58, %r5;
+ld.param.u64 %rl25, [_Z14dynproc_kerneliPiS_S_iiii_param_1];
+cvta.to.global.u64 %rl19, %rl25;
+.loc 2 109 1
+mul.wide.s32 %rl20, %r45, 4;
+add.s64 %rl21, %rl19, %rl20;
+ld.global.u32 %r46, [%rl21];
+add.s32 %r48, %r46, %r43;
+st.shared.u32 [%rl8], %r48;
+mov.u16 %rc11, 1;
+
+BB0_10:
+.loc 2 111 1
+bar.sync 0;
+.loc 2 112 1
+setp.eq.s32 %p13, %r11, %r10;
+@%p13 bra BB0_14;
+
+.loc 2 114 1
 {
 .reg .s16 %temp1;
 .reg .s16 %temp2;
-cvt.s16.s8 %temp1, %rc16;
+cvt.s16.s8 %temp1, %rc11;
 mov.b16 %temp2, 0;
 cvt.s16.s8 %temp2, %temp2;
-setp.eq.s16 %p21, %temp1, %temp2;
+setp.eq.s16 %p14, %temp1, %temp2;
 }
-@%p21 bra BB0_24;
+@%p14 bra BB0_13;
 
-mul.wide.u32 %rl30, %r34, 4;
-mov.u64 %rl31, __cuda_local_var_16359_31_non_const_result;
-add.s64 %rl32, %rl31, %rl30;
-.loc 2 131 1
-mul.wide.s32 %rl33, %r116, 4;
-add.s64 %rl34, %rl7, %rl33;
-ld.shared.u32 %r98, [%rl32];
-st.global.u32 [%rl34], %r98;
+.loc 2 115 1
+ld.shared.u32 %r50, [%rl8];
+st.shared.u32 [%rl5], %r50;
 
-BB0_24:
-.loc 3 75 5
-membar.gl;
-.loc 2 88 28
-add.s32 %r113, %r113, 1;
-ld.param.u32 %r101, [_Z14dynproc_kerneliiPiS_S_iiiS_S__param_0];
-.loc 2 88 1
-setp.lt.s32 %p22, %r113, %r101;
-mov.u64 %rl40, %rl7;
-.loc 2 88 1
-@%p22 bra BB0_5;
+BB0_13:
+.loc 2 116 1
+bar.sync 0;
+mov.u32 %r64, %r12;
+bra.uni BB0_6;
 
-BB0_25:
-.loc 2 145 2
+BB0_14:
+.loc 2 121 1
+{
+.reg .s16 %temp1;
+.reg .s16 %temp2;
+cvt.s16.s8 %temp1, %rc11;
+mov.b16 %temp2, 0;
+cvt.s16.s8 %temp2, %temp2;
+setp.eq.s16 %p15, %temp1, %temp2;
+}
+@%p15 bra BB0_16;
+
+.loc 2 122 1
+ld.shared.u32 %r53, [%rl8];
+ld.param.u64 %rl26, [_Z14dynproc_kerneliPiS_S_iiii_param_3];
+cvta.to.global.u64 %rl22, %rl26;
+.loc 2 122 1
+mul.wide.s32 %rl23, %r5, 4;
+add.s64 %rl24, %rl22, %rl23;
+st.global.u32 [%rl24], %r53;
+
+BB0_16:
+.loc 2 124 2
 ret;
 }
 
