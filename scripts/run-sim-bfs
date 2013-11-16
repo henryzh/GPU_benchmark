@@ -1,28 +1,30 @@
 
-SIM_ROOT=/home/cxh/gpgpu-sim-ruby
-BENCH_ROOT=$SIM_ROOT/benchmarks
+SIM_ROOT=/data1/cxh/gpgpu-sim-ruby
+BENCH_ROOT=/data1/cxh/benchmarks
 MODEL="cuda"
 INPUT="sim"
 BENCH="bfs-rod"
-#CONFIG="ruby"
 CONFIG="test"
-#OPTION="MESI"
-#OPTION="GPU-VIni"
-OPTION="l2-2M"
+#PROTOCOL=no_coherence
+PROTOCOL=TO_NC
+#OPTION="512KL2"
+#OPTION="2ML2"
+OPTION="1M-512K"
+#OPTION="2M-1M"
+NUM=4
 LOG_FILE=log.txt
 ERR_FILE=error.txt
 OUT_FILE=output.txt
-RESULT_DIR=$SIM_ROOT/results
+RESULT_DIR=/data1/cxh/results
 
-cd $SIM_ROOT
-source gpgpusim-env.sh
 cd $RESULT_DIR
 rm $ERR_FILE
 echo "CUDA Simulation on GPGPU-Sim <$CONFIG>"
 for BMK in $BENCH; do
 for OPT in $OPTION; do
 for SIZE in $INPUT; do
-	output_dir=$RESULT_DIR/$OPT-$BMK-$SIZE
+	source $BENCH_ROOT/$PROTOCOL-env.sh
+	output_dir=$RESULT_DIR/$OPT-$BMK-$SIZE-$PROTOCOL-$NUM
 	mkdir $output_dir 2>> $RESULT_DIR/$ERR_FILE
 	echo ">>> Run $BMK <$SIZE> <$OPT> at `date`"
 	echo ">>> Run $BMK <$SIZE> <$OPT> at `date`" > $output_dir/$LOG_FILE
@@ -30,8 +32,8 @@ for SIZE in $INPUT; do
 	# launch gpgpu-sim
 	cd $BENCH_ROOT/$BMK
 	rm _cuobjdump*
-	cp $BENCH_ROOT/config/$CONFIG/$OPT/gpgpusim.config .
-	cp $BENCH_ROOT/config/$CONFIG/$OPT/baseline_icnt_config.txt .
+	cp $SIM_ROOT/configs/$CONFIG/$PROTOCOL/$OPT/gpgpusim.config .
+	cp $SIM_ROOT/configs/$CONFIG/$PROTOCOL/$OPT/baseline_icnt_config.txt .
 #	cp $BENCH_ROOT/config/$CONFIG/config_fermi_islip.icnt .
 #	cp $BENCH_ROOT/config/$CONFIG/$OPT/gpuwattch_gtx480.xml .
 
@@ -43,6 +45,7 @@ for SIZE in $INPUT; do
 	mv stats.txt $output_dir/.
 	mv config.out $output_dir/.
 	mv gpgpu_inst_stats.txt $output_dir/.
+	mv ruby_stat.txt $output_dir/.
 #	mv gpgpusim_power_report__* $output_dir/.
 
 	echo ">>> End $BMK <$SIZE> <$OPT> at `date`"
