@@ -5,9 +5,13 @@ MODEL="cuda"
 INPUT="sim"
 BENCH="backprop"
 CONFIG="test"
-PROTOCOL="no_coherence"
-#TO_NC
-OPTION=512KL2
+#PROTOCOL=no_coherence
+PROTOCOL=TO_ST
+#OPTION="512KL2"
+#OPTION="2ML2"
+OPTION="1M-512K"
+#OPTION="2M-1M"
+NUM=1
 LOG_FILE=log.txt
 ERR_FILE=error.txt
 OUT_FILE=output.txt
@@ -20,7 +24,7 @@ for BMK in $BENCH; do
 for OPT in $OPTION; do
 for SIZE in $INPUT; do
 	source $BENCH_ROOT/$PROTOCOL-env.sh
-	output_dir=$RESULT_DIR/$OPT-$BMK-$SIZE-$PROTOCOL
+	output_dir=$RESULT_DIR/$OPT-$BMK-$SIZE-$PROTOCOL-$NUM
 	mkdir $output_dir 2>> $RESULT_DIR/$ERR_FILE
 	echo ">>> Run $BMK <$SIZE> <$OPT> at `date`"
 	echo ">>> Run $BMK <$SIZE> <$OPT> at `date`" > $output_dir/$LOG_FILE
