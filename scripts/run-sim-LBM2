@@ -5,9 +5,9 @@ MODEL="cuda"
 INPUT="sim"
 BENCH="LBM2"
 CONFIG="test"
-#PROTOCOL="no_coherence"
-PROTOCOL=TO_ST
-OPTION=1M-512K
+OPTION="no_coherence"
+#OPTION="TO_NC"
+VARIANT=256KL2
 LOG_FILE=log.txt
 ERR_FILE=error.txt
 OUT_FILE=output.txt
@@ -19,8 +19,8 @@ echo "CUDA Simulation on GPGPU-Sim <$CONFIG>"
 for BMK in $BENCH; do
 for OPT in $OPTION; do
 for SIZE in $INPUT; do
-	source $BENCH_ROOT/$PROTOCOL-env.sh
-	output_dir=$RESULT_DIR/$OPT-$BMK-$SIZE-$PROTOCOL
+	source $BENCH_ROOT/$OPT-env.sh
+	output_dir=$RESULT_DIR/$OPT-$BMK-$SIZE
 	mkdir $output_dir 2>> $RESULT_DIR/$ERR_FILE
 	echo ">>> Run $BMK <$SIZE> <$OPT> at `date`"
 	echo ">>> Run $BMK <$SIZE> <$OPT> at `date`" > $output_dir/$LOG_FILE
@@ -28,8 +28,8 @@ for SIZE in $INPUT; do
 	# launch gpgpu-sim
 	cd $BENCH_ROOT/$BMK
 	rm _cuobjdump*
-	cp $SIM_ROOT/configs/$CONFIG/$PROTOCOL/$OPT/gpgpusim.config .
-	cp $SIM_ROOT/configs/$CONFIG/$PROTOCOL/$OPT/baseline_icnt_config.txt .
+	cp $SIM_ROOT/configs/$CONFIG/$OPT/$VARIANT/gpgpusim.config .
+	cp $SIM_ROOT/configs/$CONFIG/$OPT/$VARIANT/baseline_icnt_config.txt .
 #	cp $BENCH_ROOT/config/$CONFIG/config_fermi_islip.icnt .
 #	cp $BENCH_ROOT/config/$CONFIG/$OPT/gpuwattch_gtx480.xml .
 

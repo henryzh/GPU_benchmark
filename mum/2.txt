@@ -1,23 +1,54 @@
-Loading ref: ./data/NC_003997.20k.fna... 1399930 bp. [0.05364s]
-Opening ./data/NC_003997_q25bp.50k.fna...
-Building reference texture...
-  Creating Suffix Tree... 2316237 nodes [0.90860s]
-  Renumbering tree... [0.60323s]
-  Flattening Tree... [0.77609s]
-Running under CUDA 1.0
-CUDA device has 804978688 bytes of memory
-There are 724893696 bytes left on the board
-50000 queries (1250000 bp), need 4150000 bytes on the GPU [0.04672s]
-loadQueries on GPU: Allocating device memory for queries...
-loadQueries on GPU: allocated 1750000 bytes done
-allocating reference texture
-done
-done
-Allocating result array for 50000 queries (2400000 bytes) ...done
-Using blocks of 256 x 1 x 1 threads
-Using a grid of 196 x 1 x 1 blocks
-Memory footprint is:
-	queries: 1750000
-	ref: 80084992
-	results: 2400000
-kernel time= 5.638000
+[CUAPI] __cudaRegisterFatBinary
+[VERSION] GPGPU-Sim Simulator Version 3.1.2+ruby  [build 14831]
+[RUBY] L1_CACHE_ASSOC = 4
+[RUBY] L1_CACHE_NUM_SETS_BITS = 6
+[RUBY] L2_CACHE_ASSOC = 8
+[RUBY] L2_CACHE_NUM_SETS_BITS = 9
+[RUBY] L2_GLC_ASSOC = 8
+[RUBY] L2_GLC_NUM_SETS_BITS = 9
+[RUBY] L1_CACHE_REPL_POLICY = PSEDUO_LRU
+[RUBY] L2_CACHE_REPL_POLICY = PSEDUO_LRU
+[RUBY] GLC_REPL_POLICY = PSEDUO_LRU
+[RUBY] init ruby
+   Invalid token near "<" on line 6
+   Invalid token near ">" on line 6
+   Invalid token near "<" on line 867
+   Invalid token near ">" on line 867
+[CUAPI] __cudaRegisterFunction
+[CUAPI] __cudaRegisterFunction
+[CUAPI] __cudaRegisterTexture
+[CUAPI] __cudaRegisterTexture
+[CUAPI] __cudaRegisterTexture
+[CUAPI] cudaMalloc
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMalloc
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMalloc
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMallocArray
+[CUAPI] cudaMemcpyToArray
+[CUAPI] cudaBindTextureToArray
+[CUAPI] cudaMallocArray
+[CUAPI] cudaMemcpyToArray
+[CUAPI] cudaBindTextureToArray
+[CUAPI] cudaMallocArray
+[CUAPI] cudaMemcpyToArray
+[CUAPI] cudaBindTextureToArray
+[CUAPI] cudaMalloc
+[CUAPI] cudaMemset
+[CUAPI] __cudaLaunch
+[DEBUG] pushing kernel '_Z15mummergpuKernelP10MatchCoordPcPKiS3_ii' to stream 0
+[DEBUG] gridDim= (196,1,1) blockDim = (256,1,1)
+[DEBUG] CTA/core = 4, limited by: regs
+[WARNING] (_1.ptx:334) ** reading undefined register '%p19' (cuid:0). Setting to 0X00000000. This is okay if you are simulating the native ISA
+[STAT] kernel_sim_cycle = 1372887
+[STAT] tot_sim_cycle = 1372887
+[STAT] tot_sim_insn = 89351138
+[STAT] tot_ipc = 65.083
+[RUBY_STATS] L1D_cache_miss_rate = 41.3336%
+[RUBY_STATS] L1I_cache_miss_rate = -nan%
+[RUBY_STATS] L2_cache_miss_rate = 10.414%
+
+[STATS] simulation_time = 0 days, 0 hrs, 19 min, 8 sec (1148 sec)
+[CUAPI] cudaMemcpy
+[DEBUG] exit_simulation

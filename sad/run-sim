@@ -1,1 +1,1 @@
-./sad -i /scr/pearson/parsec-pin/parboil/datasets/sad/default/input/reference.bin,/scr/pearson/parsec-pin/parboil/datasets/sad/default/input/frame.bin -o out.bin
+./sad -i reference.bin,frame.bin -o out.bin

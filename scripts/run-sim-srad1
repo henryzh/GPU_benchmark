@@ -1,20 +1,17 @@
 
-SIM_ROOT=/data1/cxh/gpgpu-sim-ruby
-BENCH_ROOT=/data1/cxh/benchmarks
+SIM_ROOT=/home/cxh/gpgpu-sim-ruby
+BENCH_ROOT=/home/cxh/benchmarks
 MODEL="cuda"
 INPUT="sim"
 BENCH="srad1"
 CONFIG="test"
-#PROTOCOL=no_coherence
-PROTOCOL=TO_ST
-OPTION="1M-512K"
-#OPTION="2M-1M"
-#OPTION=1ML2
-NUM=2
+PROTOCOL=no_coherence
+#TO_NC
+OPTION="512KL2"
 LOG_FILE=log.txt
 ERR_FILE=error.txt
 OUT_FILE=output.txt
-RESULT_DIR=/data1/cxh/results
+RESULT_DIR=/home/cxh/results
 
 cd $RESULT_DIR
 rm $ERR_FILE
@@ -23,7 +20,7 @@ for BMK in $BENCH; do
 for OPT in $OPTION; do
 for SIZE in $INPUT; do
 	source $BENCH_ROOT/$PROTOCOL-env.sh
-	output_dir=$RESULT_DIR/$OPT-$BMK-$SIZE-$PROTOCOL-$NUM
+	output_dir=$RESULT_DIR/$OPT-$BMK-$SIZE
 	mkdir $output_dir 2>> $RESULT_DIR/$ERR_FILE
 	echo ">>> Run $BMK <$SIZE> <$OPT> at `date`"
 	echo ">>> Run $BMK <$SIZE> <$OPT> at `date`" > $output_dir/$LOG_FILE

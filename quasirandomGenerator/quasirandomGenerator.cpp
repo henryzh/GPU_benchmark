@@ -127,7 +127,7 @@ int main(int argc, char **argv)
 
     shrLog("Testing QRNG...\n\n");
         cutilSafeCall( cudaMemset(d_Output, 0, QRNG_DIMENSIONS * N * sizeof(float)) );
-		int numIterations = 20;
+		int numIterations = 1;
 		for (int i = -1; i < numIterations; i++)
 		{
 			if (i == 0)
