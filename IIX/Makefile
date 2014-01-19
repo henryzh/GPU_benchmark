@@ -33,4 +33,4 @@ MarsScan.o: MarsScan.cu
 MarsSort.o: MarsSort.cu
 	$(NVCC) $(NVCC_FLAGS) MarsSort.cu -c -o MarsSort.o
 clean:
-	rm -f *.o *~ $(EXE) $(OBJS) 
+	rm -f *.o *.txt *.out _* *~ $(EXE) $(OBJS) 

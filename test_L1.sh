@@ -1,15 +1,16 @@
 #!/bin/sh
 
-GPGPUSIM_DIR=/scr1/wu14/gpgpu-sim-ruby
+GPGPUSIM_DIR=/scr1/wu14/build/gpgpu-sim-ruby
 BENCHMARK_DIR=$PWD
 
 BUILD_TYPE=release
-PROTOCOL=non_coherent_g
+PROTOCOL=TO_ST_bp_g
 
-OUTPUT_DIR=test_output # use relative path according to PWD
+OUTPUT_DIR=$1
 
 #BENCHMARK_NAMES="BFS2 spmv IIX KMN ssc sad"
-BENCHMARK_NAMES="kmeans bfs-rod"
+#BENCHMARK_NAMES="BFS2 spmv IIX KMN ssc sad stencil hotspot FWT backprop srad1 srad2 nw fft lavaMD pvc bfs-rod"
+BENCHMARK_NAMES="backprop"
 
 echo "GPGPU-Sim: $GPGPUSIM_DIR"
 echo "BENCHMARKs: $BENCHMARK_DIR"

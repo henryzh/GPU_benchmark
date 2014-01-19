@@ -1,4 +1,4 @@
 #!/bin/sh
 
-#./SimilarityScore 1024 256
-./SimilarityScore 256 64
+./SimilarityScore 1024 256
+#./SimilarityScore 256 64

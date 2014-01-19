@@ -1,6 +1,6 @@
 
-export GPGPUSIM_ROOT=/home/cxh/gpgpu-sim-ruby
-export CUDA_VERSION_NUMBER=4020
+export GPGPUSIM_ROOT=/data1/cxh/gpgpu-sim-ruby
+export CUDA_VERSION_NUMBER=4010
 export GPGPUSIM_CONFIG=$CUDA_VERSION_NUMBER/release
 export CUDA_INSTALL_PATH=/usr/local/cuda
 export PATH=$PATH:$CUDA_INSTALL_PATH/bin
