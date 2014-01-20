@@ -1,1 +1,1 @@
-./kmeans -i input-large
+./kmeans -i kdd_cup
