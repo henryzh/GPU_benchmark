@@ -1,0 +1,165 @@
+gpu_sim_cycle = 132553
+gpu_sim_insn = 60440219
+gpu_ipc = 455.970
+gpu_tot_sim_cycle = 132553
+gpu_tot_sim_insn = 60440219
+gpu_tot_ipc =     455.9702
+gpu_stall_dramfull = 386
+gpu_stall_icnt2sh  = 200
+total_dl1_misses=0
+total_dl1_accesses=0
+total_dl1_miss_rate= -nan
+gpgpu_n_tot_icount = 60440219
+gpgpu_n_stall_shd_mem = 109812
+gpgpu_n_mem_accesses[read_local] = 0
+gpgpu_n_mem_accesses[write_local] = 0
+gpgpu_n_mem_accesses[read_global] = 0
+gpgpu_n_mem_accesses[write_global] = 0
+gpgpu_n_mem_accesses[atomic_global] = 0
+gpgpu_n_mem_accesses[texture] = 0
+gpgpu_n_mem_accesses[const] = 16
+gpgpu_n_accesses[global_load] = 249292
+gpgpu_n_accesses[global_store] = 110294
+gpgpu_n_accesses[global_atomic] = 0
+gpgpu_n_accesses[local_load] = 0
+gpgpu_n_accesses[local_store] = 0
+gpgpu_n_insn[load]  = 3992841
+gpgpu_n_insn[store] = 1983872
+gpgpu_n_insn[atomic] = 0
+gpgpu_n_insn[shmem] = 0
+gpgpu_n_insn[tex] = 0
+gpgpu_n_insn[const_mem] = 0
+gpgpu_n_insn[param_mem] = 2262400
+gpgpu_n_shmem_bkconflict = 0
+gpgpu_n_cache_bkconflict = 0
+gpgpu_n_intrawarp_mshr_merge = 0
+gpgpu_n_cmem_portconflict = 2864
+gpgpu_stall_shd_mem[c_mem][bk_conf] = 2864
+gpgpu_stall_shd_mem[c_mem][mshr_rc] = 0
+gpgpu_stall_shd_mem[c_mem][icnt_rc] = 0
+gpgpu_stall_shd_mem[t_mem][mshr_rc] = 0
+gpgpu_stall_shd_mem[t_mem][icnt_rc] = 0
+gpgpu_stall_shd_mem[s_mem][bk_conf] = 0
+gpgpu_stall_shd_mem[gl_mem][bk_conf] = 0
+gpgpu_stall_shd_mem[gl_mem][coal_stall] = 103936
+gpgpu_stall_shd_mem[g_mem_ld][mshr_rc] = 0
+gpgpu_stall_shd_mem[g_mem_ld][icnt_rc] = 392
+gpgpu_stall_shd_mem[g_mem_ld][wb_icnt_rc] = 0
+gpgpu_stall_shd_mem[g_mem_ld][wb_rsrv_fail] = 0
+gpgpu_stall_shd_mem[g_mem_st][mshr_rc] = 0
+gpgpu_stall_shd_mem[g_mem_st][icnt_rc] = 2620
+gpgpu_stall_shd_mem[g_mem_st][wb_icnt_rc] = 0
+gpgpu_stall_shd_mem[g_mem_st][wb_rsrv_fail] = 0
+gpgpu_stall_shd_mem[l_mem_ld][mshr_rc] = 0
+gpgpu_stall_shd_mem[l_mem_ld][icnt_rc] = 0
+gpgpu_stall_shd_mem[l_mem_ld][wb_icnt_rc] = 0
+gpgpu_stall_shd_mem[l_mem_ld][wb_rsrv_fail] = 0
+gpgpu_stall_shd_mem[l_mem_st][mshr_rc] = 0
+gpgpu_stall_shd_mem[l_mem_st][icnt_rc] = 0
+gpgpu_stall_shd_mem[l_mem_ld][wb_icnt_rc] = 0
+gpgpu_stall_shd_mem[l_mem_ld][wb_rsrv_fail] = 0
+gpu_reg_bank_conflict_stalls = 0
+Warp Occupancy Distribution:
+Stall:97377	W0_Idle:812237	W0_Scoreboard:1246494	W1:182965	W2:3	W3:6	W4:6	W5:6	W6:3	W7:0	W8:3	W9:0	W10:0	W11:0	W12:0	W13:0	W14:0	W15:0	W16:20480	W17:0	W18:0	W19:0	W20:15	W21:0	W22:3	W23:0	W24:0	W25:0	W26:0	W27:0	W28:0	W29:0	W30:0	W31:0	W32:1872784
+L2_write_miss = 0
+L2_write_hit = 0
+L2_read_miss = 0
+L2_read_hit = 0
+Cache L2_bank_000:
+MSHR contents
+
+DRAM[0]: 16 bks, busW=4 BL=4 CL=12, tRRD=2 tCCD=6, tRCD=12 tRAS=28 tRP=12 tRC=40
+n_cmd=174969 n_nop=174430 n_act=8 n_pre=3 n_req=132 n_rd=528 n_write=0 bw_util=0.006035
+n_activity=1753 dram_eff=0.6024
+bk0: 140a 174822i bk1: 128a 174824i bk2: 128a 174767i bk3: 128a 174746i bk4: 4a 174736i bk5: 0a 174802i bk6: 0a 174785i bk7: 0a 174809i bk8: 0a 174806i bk9: 0a 174753i bk10: 0a 174745i bk11: 0a 174680i bk12: 0a 174711i bk13: 0a 174720i bk14: 0a 174700i bk15: 0a 174662i 
+dram_util_bins: 0 0 0 0 0 0 0 0 0 0
+dram_eff_bins: 0 0 0 0 0 0 0 0 0 0
+mrqq: max=16 avg=0.0945425
+Cache L2_bank_001:
+MSHR contents
+
+DRAM[1]: 16 bks, busW=4 BL=4 CL=12, tRRD=2 tCCD=6, tRCD=12 tRAS=28 tRP=12 tRC=40
+n_cmd=174969 n_nop=174441 n_act=6 n_pre=2 n_req=130 n_rd=520 n_write=0 bw_util=0.005944
+n_activity=1661 dram_eff=0.6261
+bk0: 136a 174819i bk1: 128a 174826i bk2: 128a 174770i bk3: 128a 174746i bk4: 0a 174736i bk5: 0a 174801i bk6: 0a 174784i bk7: 0a 174809i bk8: 0a 174804i bk9: 0a 174752i bk10: 0a 174743i bk11: 0a 174680i bk12: 0a 174712i bk13: 0a 174719i bk14: 0a 174706i bk15: 0a 174716i 
+dram_util_bins: 0 0 0 0 0 0 0 0 0 0
+dram_eff_bins: 0 0 0 0 0 0 0 0 0 0
+mrqq: max=16 avg=0.0947082
+Cache L2_bank_002:
+MSHR contents
+
+DRAM[2]: 16 bks, busW=4 BL=4 CL=12, tRRD=2 tCCD=6, tRCD=12 tRAS=28 tRP=12 tRC=40
+n_cmd=174969 n_nop=174438 n_act=6 n_pre=1 n_req=131 n_rd=524 n_write=0 bw_util=0.00599
+n_activity=1691 dram_eff=0.6198
+bk0: 136a 174794i bk1: 128a 174820i bk2: 128a 174800i bk3: 128a 174791i bk4: 4a 174746i bk5: 0a 174776i bk6: 0a 174753i bk7: 0a 174787i bk8: 0a 174818i bk9: 0a 174769i bk10: 0a 174741i bk11: 0a 174692i bk12: 0a 174659i bk13: 0a 174640i bk14: 0a 174650i bk15: 0a 174667i 
+dram_util_bins: 0 0 0 0 0 0 0 0 0 0
+dram_eff_bins: 0 0 0 0 0 0 0 0 0 0
+mrqq: max=16 avg=0.0875869
+Cache L2_bank_003:
+MSHR contents
+
+DRAM[3]: 16 bks, busW=4 BL=4 CL=12, tRRD=2 tCCD=6, tRCD=12 tRAS=28 tRP=12 tRC=40
+n_cmd=174969 n_nop=174453 n_act=4 n_pre=0 n_req=128 n_rd=512 n_write=0 bw_util=0.005852
+n_activity=1617 dram_eff=0.6333
+bk0: 128a 174806i bk1: 128a 174838i bk2: 128a 174800i bk3: 128a 174778i bk4: 0a 174759i bk5: 0a 174759i bk6: 0a 174759i bk7: 0a 174769i bk8: 0a 174795i bk9: 0a 174748i bk10: 0a 174720i bk11: 0a 174686i bk12: 0a 174681i bk13: 0a 174696i bk14: 0a 174718i bk15: 0a 174759i 
+dram_util_bins: 0 0 0 0 0 0 0 0 0 0
+dram_eff_bins: 0 0 0 0 0 0 0 0 0 0
+mrqq: max=16 avg=0.0878156
+Cache L2_bank_004:
+MSHR contents
+
+DRAM[4]: 16 bks, busW=4 BL=4 CL=12, tRRD=2 tCCD=6, tRCD=12 tRAS=28 tRP=12 tRC=40
+n_cmd=174969 n_nop=174453 n_act=4 n_pre=0 n_req=128 n_rd=512 n_write=0 bw_util=0.005852
+n_activity=1567 dram_eff=0.6535
+bk0: 128a 174804i bk1: 128a 174819i bk2: 128a 174781i bk3: 128a 174767i bk4: 0a 174768i bk5: 0a 174740i bk6: 0a 174770i bk7: 0a 174775i bk8: 0a 174773i bk9: 0a 174722i bk10: 0a 174679i bk11: 0a 174654i bk12: 0a 174674i bk13: 0a 174715i bk14: 0a 174731i bk15: 0a 174758i 
+dram_util_bins: 0 0 0 0 0 0 0 0 0 0
+dram_eff_bins: 0 0 0 0 0 0 0 0 0 0
+mrqq: max=16 avg=0.0954569
+Cache L2_bank_005:
+MSHR contents
+
+DRAM[5]: 16 bks, busW=4 BL=4 CL=12, tRRD=2 tCCD=6, tRCD=12 tRAS=28 tRP=12 tRC=40
+n_cmd=174969 n_nop=174453 n_act=4 n_pre=0 n_req=128 n_rd=512 n_write=0 bw_util=0.005852
+n_activity=1567 dram_eff=0.6535
+bk0: 128a 174807i bk1: 128a 174820i bk2: 128a 174781i bk3: 128a 174767i bk4: 0a 174769i bk5: 0a 174738i bk6: 0a 174770i bk7: 0a 174775i bk8: 0a 174774i bk9: 0a 174722i bk10: 0a 174679i bk11: 0a 174654i bk12: 0a 174673i bk13: 0a 174714i bk14: 0a 174729i bk15: 0a 174758i 
+dram_util_bins: 0 0 0 0 0 0 0 0 0 0
+dram_eff_bins: 0 0 0 0 0 0 0 0 0 0
+mrqq: max=16 avg=0.0956627
+Cache L2_bank_006:
+MSHR contents
+
+DRAM[6]: 16 bks, busW=4 BL=4 CL=12, tRRD=2 tCCD=6, tRCD=12 tRAS=28 tRP=12 tRC=40
+n_cmd=174969 n_nop=174453 n_act=4 n_pre=0 n_req=128 n_rd=512 n_write=0 bw_util=0.005852
+n_activity=1665 dram_eff=0.615
+bk0: 128a 174841i bk1: 128a 174823i bk2: 128a 174802i bk3: 128a 174799i bk4: 0a 174753i bk5: 0a 174764i bk6: 0a 174741i bk7: 0a 174774i bk8: 0a 174767i bk9: 0a 174803i bk10: 0a 174748i bk11: 0a 174730i bk12: 0a 174727i bk13: 0a 174767i bk14: 0a 174788i bk15: 0a 174773i 
+dram_util_bins: 0 0 0 0 0 0 0 0 0 0
+dram_eff_bins: 0 0 0 0 0 0 0 0 0 0
+mrqq: max=16 avg=0.0713098
+Cache L2_bank_007:
+MSHR contents
+
+DRAM[7]: 16 bks, busW=4 BL=4 CL=12, tRRD=2 tCCD=6, tRCD=12 tRAS=28 tRP=12 tRC=40
+n_cmd=174969 n_nop=174453 n_act=4 n_pre=0 n_req=128 n_rd=512 n_write=0 bw_util=0.005852
+n_activity=1667 dram_eff=0.6143
+bk0: 128a 174830i bk1: 128a 174822i bk2: 128a 174787i bk3: 128a 174788i bk4: 0a 174758i bk5: 0a 174777i bk6: 0a 174747i bk7: 0a 174778i bk8: 0a 174755i bk9: 0a 174796i bk10: 0a 174743i bk11: 0a 174728i bk12: 0a 174735i bk13: 0a 174776i bk14: 0a 174816i bk15: 0a 174798i 
+dram_util_bins: 0 0 0 0 0 0 0 0 0 0
+dram_eff_bins: 0 0 0 0 0 0 0 0 0 0
+mrqq: max=16 avg=0.0721042
+Cache L2_bank_000:	Size = 131072 B (128 Set x 8-way x 128 byte line)
+		Access = 48, Miss = 3 (0.0625), PendingHit = 9 (0.188)
+Cache L2_bank_001:	Size = 131072 B (128 Set x 8-way x 128 byte line)
+		Access = 32, Miss = 2 (0.0625), PendingHit = 4 (0.125)
+Cache L2_bank_002:	Size = 131072 B (128 Set x 8-way x 128 byte line)
+		Access = 32, Miss = 2 (0.0625), PendingHit = 4 (0.125)
+Cache L2_bank_003:	Size = 131072 B (128 Set x 8-way x 128 byte line)
+		Access = 0, Miss = 0 (-nan), PendingHit = 0 (-nan)
+Cache L2_bank_004:	Size = 131072 B (128 Set x 8-way x 128 byte line)
+		Access = 0, Miss = 0 (-nan), PendingHit = 0 (-nan)
+Cache L2_bank_005:	Size = 131072 B (128 Set x 8-way x 128 byte line)
+		Access = 0, Miss = 0 (-nan), PendingHit = 0 (-nan)
+Cache L2_bank_006:	Size = 131072 B (128 Set x 8-way x 128 byte line)
+		Access = 0, Miss = 0 (-nan), PendingHit = 0 (-nan)
+Cache L2_bank_007:	Size = 131072 B (128 Set x 8-way x 128 byte line)
+		Access = 0, Miss = 0 (-nan), PendingHit = 0 (-nan)
+L2 Cache Total Miss Rate = 0.062
+L2_cacheblock_lifetimes_aggr = 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 max=0 avg=0.00 

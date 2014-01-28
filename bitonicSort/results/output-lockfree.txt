@@ -1,0 +1,46 @@
+0bbed74010e0578596f94aaebdc69e6a  /home/cxh/gpgpu-sim/v3.x/benchmarks/bitonicSort/bs
+[CUAPI] __cudaRegisterFatBinary
+[DEBUG] extract_code_using_cuobjdump
+[DEBUG] gpgpu_sim_thread_concurrent
+   Invalid token near "<" on line 6
+   Invalid token near ">" on line 6
+   Invalid token near "<" on line 449
+   Invalid token near ">" on line 449
+[CUAPI] __cudaRegisterFunction
+[DEBUG] Warning add_identifier@ptx_parser.cc
+[DEBUG] Warning add_identifier@ptx_parser.cc
+[DEBUG] Warning add_identifier@ptx_parser.cc
+[DEBUG] Warning add_identifier@ptx_parser.cc
+[CUAPI] __cudaRegisterFunction
+[BENCH] Bitonic Sort 16384 elements
+[BENCH] Xuhao Chen <cxh@illinois.edu>
+[BENCH] Lock-free Barrier
+[CUAPI] cudaMalloc
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMalloc
+[CUAPI] cudaMalloc
+[BENCH] blockCount=16, threadCount=512
+[CUAPI] cudaLaunch
+[DEBUG] pushing kernel '_Z19bitonicSortLockfreePfiPiS0_' to stream 0
+[DEBUG] gridDim = (16,1,1) blockDim = (512,1,1) 
+[DEBUG] Allocating CTA barrier: kernel_id=1, num_ctas=16
+[SYNC] CTA barrier allocated for Grid #1
+[SYNC] CTA barrier deallocated for Grid #1
+[DEBUG] Kenel done, CTA barrier deallocated
+[STATS] gpu_tot_sim_cycle = 136767
+[STATS] gpu_tot_sim_insn = 24595845
+[STATS] gpu_tot_ipc = 179.8376
+[STATS] Number of ld.volatile: 2592215
+[STATS] Number of st.volatile: 868864
+[STATS] Number of atomic: 0
+[STATS] gpu_tot_l1_miss_rate = -nan
+[STATS] gpu_tot_l2_miss_rate = 0.0028
+
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 1 min, 12 sec (72 sec)
+--------------------------------------------------------------------
+
+[CUAPI] cudaMemcpy
+[CUAPI] cudaFree
+[CUAPI] cudaFree
+[CUAPI] cudaFree
+[BENCH] Pass

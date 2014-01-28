@@ -1,0 +1,2 @@
+export PARBOIL_HOME=/data1/cxh/parboil
+PYTHONPATH=$PARBOIL_HOME/common/python python $PARBOIL_HOME/benchmarks/stencil/tools/compare-output 512x512x64.out $PARBOIL_HOME/datasets/stencil/default/output/512x512x64.out

@@ -1,0 +1,30 @@
+=== COMPILING ===
+
+1. Set environment variable NVIDIA_COMPUTE_SDK_LOCATION to point to NVIDIA CUDA SDK path
+2. Set environment variable CUDA_INSTALL_PATH to point to CUDA installation directory
+3. cd to benchmarks/ directory and run make
+4. Executables will be generated in the directory bin/release/
+
+
+=== RUNNING BENCHMARKS ===
+
+1. Set up LD_LIBRARY_PATH to point to CUDA libraries
+2. cd to bin/release
+3. Run commands below for each benchmark
+
+wave (STN from HPCA13 paper):
+./wave
+
+vpr:
+./vpr ../../inputdata/vtr/sample_arch.xml ../../inputdata/vtr/bgm.latren -place -gpu_place on -place_algorithm bounding_box
+
+octreepart (DLB from HPCA13 paper):
+mkdir -p data
+cp ../../inputdata/octreepart/octreecacheddata-100000particles.dat ./data/
+./octreepart  256 64 abp 100000 20
+
+CudaCutsCC:
+./cudaCutsCC ../../inputdata/CudaCutsCC/flower3.txt
+
+barneshut:
+./barneshut 30000 1

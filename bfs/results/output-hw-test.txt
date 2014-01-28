@@ -1,0 +1,4152 @@
+[CUAPI] __cudaRegisterFatBinary
+[DEBUG] extract_code_using_cuobjdump
+[DEBUG] gpgpu_sim_thread_concurrent
+[CUAPI] __cudaRegisterFunction
+[CUAPI] __cudaRegisterFunction
+[CUAPI] __cudaRegisterFunction
+[CUAPI] __cudaRegisterVar
+[CUAPI] __cudaRegisterVar
+[CUAPI] __cudaRegisterVar
+[BENCH] BFS from Parboil
+[CUAPI] cudaMalloc
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMalloc
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMalloc
+[CUAPI] cudaMalloc
+[CUAPI] cudaMalloc
+[CUAPI] cudaMalloc
+[CUAPI] cudaMalloc
+[CUAPI] cudaMalloc
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[BENCH] Starting GPU kernel
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMalloc
+[CUAPI] cudaMalloc
+[CUAPI] cudaMalloc
+[CUAPI] cudaMalloc
+[CUAPI] cudaMalloc
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMalloc
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaLaunch
+[DEBUG] pushing kernel '_Z17BFS_in_GPU_kernelPiS_P4int2S1_S_S_iS_iiS_' to stream 0
+[DEBUG] gridDim = (1,1,1) blockDim = (512,1,1) 
+[DEBUG] Allocating CTA barrier: kernel_id=1, num_ctas=1
+[SYNC] CTA barrier allocated for Grid #1
+[SYNC] CTA barrier deallocated for Grid #1
+[DEBUG] Kenel done, CTA barrier deallocated
+[STATS] gpu_tot_sim_cycle = 1397582
+[STATS] gpu_tot_sim_insn = 11638313
+[STATS] gpu_tot_ipc = 8.3275
+[STATS] Number of ld.volatile: 0
+[STATS] Number of st.volatile: 0
+[STATS] Number of atomic: 288193
+[STATS] gpu_tot_l1_miss_rate = 0.4732
+[STATS] gpu_tot_l2_miss_rate = 0.0444
+
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 1 min, 35 sec (95 sec)
+--------------------------------------------------------------------
+
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaLaunch
+[DEBUG] pushing kernel '_Z26BFS_kernel_multi_blk_inGPUPiS_P4int2S1_S_S_S_S_iiS_S_S_S_S_S_' to stream 0
+[DEBUG] gridDim = (14,1,1) blockDim = (512,1,1) 
+[DEBUG] Allocating CTA barrier: kernel_id=2, num_ctas=14
+[SYNC] CTA barrier allocated for Grid #2
+[SYNC] CTA #9 in grid #2 reaches barrier
+[SYNC] CTA #6 in grid #2 reaches barrier
+[SYNC] CTA #4 in grid #2 reaches barrier
+[SYNC] CTA #2 in grid #2 reaches barrier
+[SYNC] CTA #8 in grid #2 reaches barrier
+[SYNC] CTA #5 in grid #2 reaches barrier
+[SYNC] CTA #7 in grid #2 reaches barrier
+[SYNC] CTA #3 in grid #2 reaches barrier
+[SYNC] CTA #11 in grid #2 reaches barrier
+[SYNC] CTA #12 in grid #2 reaches barrier
+[SYNC] CTA #10 in grid #2 reaches barrier
+[SYNC] CTA #13 in grid #2 reaches barrier
+[SYNC] CTA #1 in grid #2 reaches barrier
+[SYNC] CTA #0 in grid #2 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #5 in grid #2 reaches barrier
+[SYNC] CTA #1 in grid #2 reaches barrier
+[SYNC] CTA #6 in grid #2 reaches barrier
+[SYNC] CTA #2 in grid #2 reaches barrier
+[SYNC] CTA #7 in grid #2 reaches barrier
+[SYNC] CTA #3 in grid #2 reaches barrier
+[SYNC] CTA #8 in grid #2 reaches barrier
+[SYNC] CTA #4 in grid #2 reaches barrier
+[SYNC] CTA #9 in grid #2 reaches barrier
+[SYNC] CTA #10 in grid #2 reaches barrier
+[SYNC] CTA #11 in grid #2 reaches barrier
+[SYNC] CTA #12 in grid #2 reaches barrier
+[SYNC] CTA #13 in grid #2 reaches barrier
+[SYNC] CTA #0 in grid #2 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA barrier deallocated for Grid #2
+[DEBUG] Kenel done, CTA barrier deallocated
+[STATS] gpu_tot_sim_cycle = 1417725
+[STATS] gpu_tot_sim_insn = 12096823
+[STATS] gpu_tot_ipc = 8.5326
+[STATS] Number of ld.volatile: 7183
+[STATS] Number of st.volatile: 2
+[STATS] Number of atomic: 298154
+[STATS] gpu_tot_l1_miss_rate = 0.4743
+[STATS] gpu_tot_l2_miss_rate = 0.0441
+
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 1 min, 40 sec (100 sec)
+--------------------------------------------------------------------
+
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaLaunch
+[DEBUG] pushing kernel '_Z17BFS_in_GPU_kernelPiS_P4int2S1_S_S_iS_iiS_' to stream 0
+[DEBUG] gridDim = (1,1,1) blockDim = (512,1,1) 
+[DEBUG] Allocating CTA barrier: kernel_id=3, num_ctas=1
+[SYNC] CTA barrier allocated for Grid #3
+[SYNC] CTA barrier deallocated for Grid #3
+[DEBUG] Kenel done, CTA barrier deallocated
+[STATS] gpu_tot_sim_cycle = 1429216
+[STATS] gpu_tot_sim_insn = 12184265
+[STATS] gpu_tot_ipc = 8.5251
+[STATS] Number of ld.volatile: 7183
+[STATS] Number of st.volatile: 2
+[STATS] Number of atomic: 300466
+[STATS] gpu_tot_l1_miss_rate = 0.4753
+[STATS] gpu_tot_l2_miss_rate = 0.0441
+
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 1 min, 41 sec (101 sec)
+--------------------------------------------------------------------
+
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaLaunch
+[DEBUG] pushing kernel '_Z26BFS_kernel_multi_blk_inGPUPiS_P4int2S1_S_S_S_S_iiS_S_S_S_S_S_' to stream 0
+[DEBUG] gridDim = (14,1,1) blockDim = (512,1,1) 
+[DEBUG] Allocating CTA barrier: kernel_id=4, num_ctas=14
+[SYNC] CTA barrier allocated for Grid #4
+[SYNC] CTA #6 in grid #4 reaches barrier
+[SYNC] CTA #7 in grid #4 reaches barrier
+[SYNC] CTA #8 in grid #4 reaches barrier
+[SYNC] CTA #9 in grid #4 reaches barrier
+[SYNC] CTA #10 in grid #4 reaches barrier
+[SYNC] CTA #11 in grid #4 reaches barrier
+[SYNC] CTA #12 in grid #4 reaches barrier
+[SYNC] CTA #2 in grid #4 reaches barrier
+[SYNC] CTA #3 in grid #4 reaches barrier
+[SYNC] CTA #4 in grid #4 reaches barrier
+[SYNC] CTA #5 in grid #4 reaches barrier
+[SYNC] CTA #13 in grid #4 reaches barrier
+[SYNC] CTA #1 in grid #4 reaches barrier
+[SYNC] CTA #0 in grid #4 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #4 reaches barrier
+[SYNC] CTA #2 in grid #4 reaches barrier
+[SYNC] CTA #3 in grid #4 reaches barrier
+[SYNC] CTA #4 in grid #4 reaches barrier
+[SYNC] CTA #5 in grid #4 reaches barrier
+[SYNC] CTA #6 in grid #4 reaches barrier
+[SYNC] CTA #7 in grid #4 reaches barrier
+[SYNC] CTA #8 in grid #4 reaches barrier
+[SYNC] CTA #9 in grid #4 reaches barrier
+[SYNC] CTA #10 in grid #4 reaches barrier
+[SYNC] CTA #11 in grid #4 reaches barrier
+[SYNC] CTA #12 in grid #4 reaches barrier
+[SYNC] CTA #13 in grid #4 reaches barrier
+[SYNC] CTA #0 in grid #4 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA barrier deallocated for Grid #4
+[DEBUG] Kenel done, CTA barrier deallocated
+[STATS] gpu_tot_sim_cycle = 1447541
+[STATS] gpu_tot_sim_insn = 12643702
+[STATS] gpu_tot_ipc = 8.7346
+[STATS] Number of ld.volatile: 14366
+[STATS] Number of st.volatile: 4
+[STATS] Number of atomic: 310462
+[STATS] gpu_tot_l1_miss_rate = 0.4763
+[STATS] gpu_tot_l2_miss_rate = 0.0439
+
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 1 min, 46 sec (106 sec)
+--------------------------------------------------------------------
+
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaLaunch
+[DEBUG] pushing kernel '_Z17BFS_in_GPU_kernelPiS_P4int2S1_S_S_iS_iiS_' to stream 0
+[DEBUG] gridDim = (1,1,1) blockDim = (512,1,1) 
+[DEBUG] Allocating CTA barrier: kernel_id=5, num_ctas=1
+[SYNC] CTA barrier allocated for Grid #5
+[SYNC] CTA barrier deallocated for Grid #5
+[DEBUG] Kenel done, CTA barrier deallocated
+[STATS] gpu_tot_sim_cycle = 1457989
+[STATS] gpu_tot_sim_insn = 12731309
+[STATS] gpu_tot_ipc = 8.7321
+[STATS] Number of ld.volatile: 14366
+[STATS] Number of st.volatile: 4
+[STATS] Number of atomic: 312777
+[STATS] gpu_tot_l1_miss_rate = 0.4773
+[STATS] gpu_tot_l2_miss_rate = 0.0437
+
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 1 min, 46 sec (106 sec)
+--------------------------------------------------------------------
+
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaLaunch
+[DEBUG] pushing kernel '_Z26BFS_kernel_multi_blk_inGPUPiS_P4int2S1_S_S_S_S_iiS_S_S_S_S_S_' to stream 0
+[DEBUG] gridDim = (14,1,1) blockDim = (512,1,1) 
+[DEBUG] Allocating CTA barrier: kernel_id=6, num_ctas=14
+[SYNC] CTA barrier allocated for Grid #6
+[SYNC] CTA #2 in grid #6 reaches barrier
+[SYNC] CTA #3 in grid #6 reaches barrier
+[SYNC] CTA #4 in grid #6 reaches barrier
+[SYNC] CTA #5 in grid #6 reaches barrier
+[SYNC] CTA #6 in grid #6 reaches barrier
+[SYNC] CTA #7 in grid #6 reaches barrier
+[SYNC] CTA #8 in grid #6 reaches barrier
+[SYNC] CTA #9 in grid #6 reaches barrier
+[SYNC] CTA #10 in grid #6 reaches barrier
+[SYNC] CTA #11 in grid #6 reaches barrier
+[SYNC] CTA #12 in grid #6 reaches barrier
+[SYNC] CTA #13 in grid #6 reaches barrier
+[SYNC] CTA #1 in grid #6 reaches barrier
+[SYNC] CTA #0 in grid #6 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #6 reaches barrier
+[SYNC] CTA #2 in grid #6 reaches barrier
+[SYNC] CTA #3 in grid #6 reaches barrier
+[SYNC] CTA #4 in grid #6 reaches barrier
+[SYNC] CTA #5 in grid #6 reaches barrier
+[SYNC] CTA #6 in grid #6 reaches barrier
+[SYNC] CTA #7 in grid #6 reaches barrier
+[SYNC] CTA #8 in grid #6 reaches barrier
+[SYNC] CTA #9 in grid #6 reaches barrier
+[SYNC] CTA #10 in grid #6 reaches barrier
+[SYNC] CTA #11 in grid #6 reaches barrier
+[SYNC] CTA #12 in grid #6 reaches barrier
+[SYNC] CTA #13 in grid #6 reaches barrier
+[SYNC] CTA #0 in grid #6 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #6 reaches barrier
+[SYNC] CTA #3 in grid #6 reaches barrier
+[SYNC] CTA #4 in grid #6 reaches barrier
+[SYNC] CTA #5 in grid #6 reaches barrier
+[SYNC] CTA #6 in grid #6 reaches barrier
+[SYNC] CTA #7 in grid #6 reaches barrier
+[SYNC] CTA #8 in grid #6 reaches barrier
+[SYNC] CTA #9 in grid #6 reaches barrier
+[SYNC] CTA #10 in grid #6 reaches barrier
+[SYNC] CTA #11 in grid #6 reaches barrier
+[SYNC] CTA #12 in grid #6 reaches barrier
+[SYNC] CTA #13 in grid #6 reaches barrier
+[SYNC] CTA #1 in grid #6 reaches barrier
+[SYNC] CTA #0 in grid #6 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #6 reaches barrier
+[SYNC] CTA #2 in grid #6 reaches barrier
+[SYNC] CTA #3 in grid #6 reaches barrier
+[SYNC] CTA #4 in grid #6 reaches barrier
+[SYNC] CTA #5 in grid #6 reaches barrier
+[SYNC] CTA #6 in grid #6 reaches barrier
+[SYNC] CTA #7 in grid #6 reaches barrier
+[SYNC] CTA #8 in grid #6 reaches barrier
+[SYNC] CTA #9 in grid #6 reaches barrier
+[SYNC] CTA #10 in grid #6 reaches barrier
+[SYNC] CTA #11 in grid #6 reaches barrier
+[SYNC] CTA #12 in grid #6 reaches barrier
+[SYNC] CTA #13 in grid #6 reaches barrier
+[SYNC] CTA #0 in grid #6 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #6 reaches barrier
+[SYNC] CTA #3 in grid #6 reaches barrier
+[SYNC] CTA #4 in grid #6 reaches barrier
+[SYNC] CTA #5 in grid #6 reaches barrier
+[SYNC] CTA #6 in grid #6 reaches barrier
+[SYNC] CTA #7 in grid #6 reaches barrier
+[SYNC] CTA #8 in grid #6 reaches barrier
+[SYNC] CTA #9 in grid #6 reaches barrier
+[SYNC] CTA #10 in grid #6 reaches barrier
+[SYNC] CTA #11 in grid #6 reaches barrier
+[SYNC] CTA #12 in grid #6 reaches barrier
+[SYNC] CTA #13 in grid #6 reaches barrier
+[SYNC] CTA #1 in grid #6 reaches barrier
+[SYNC] CTA #0 in grid #6 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #6 reaches barrier
+[SYNC] CTA #2 in grid #6 reaches barrier
+[SYNC] CTA #3 in grid #6 reaches barrier
+[SYNC] CTA #4 in grid #6 reaches barrier
+[SYNC] CTA #5 in grid #6 reaches barrier
+[SYNC] CTA #6 in grid #6 reaches barrier
+[SYNC] CTA #7 in grid #6 reaches barrier
+[SYNC] CTA #8 in grid #6 reaches barrier
+[SYNC] CTA #9 in grid #6 reaches barrier
+[SYNC] CTA #10 in grid #6 reaches barrier
+[SYNC] CTA #11 in grid #6 reaches barrier
+[SYNC] CTA #12 in grid #6 reaches barrier
+[SYNC] CTA #13 in grid #6 reaches barrier
+[SYNC] CTA #0 in grid #6 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #6 reaches barrier
+[SYNC] CTA #3 in grid #6 reaches barrier
+[SYNC] CTA #4 in grid #6 reaches barrier
+[SYNC] CTA #5 in grid #6 reaches barrier
+[SYNC] CTA #6 in grid #6 reaches barrier
+[SYNC] CTA #7 in grid #6 reaches barrier
+[SYNC] CTA #8 in grid #6 reaches barrier
+[SYNC] CTA #9 in grid #6 reaches barrier
+[SYNC] CTA #10 in grid #6 reaches barrier
+[SYNC] CTA #11 in grid #6 reaches barrier
+[SYNC] CTA #12 in grid #6 reaches barrier
+[SYNC] CTA #13 in grid #6 reaches barrier
+[SYNC] CTA #1 in grid #6 reaches barrier
+[SYNC] CTA #0 in grid #6 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #6 reaches barrier
+[SYNC] CTA #2 in grid #6 reaches barrier
+[SYNC] CTA #3 in grid #6 reaches barrier
+[SYNC] CTA #4 in grid #6 reaches barrier
+[SYNC] CTA #5 in grid #6 reaches barrier
+[SYNC] CTA #6 in grid #6 reaches barrier
+[SYNC] CTA #7 in grid #6 reaches barrier
+[SYNC] CTA #8 in grid #6 reaches barrier
+[SYNC] CTA #9 in grid #6 reaches barrier
+[SYNC] CTA #10 in grid #6 reaches barrier
+[SYNC] CTA #11 in grid #6 reaches barrier
+[SYNC] CTA #12 in grid #6 reaches barrier
+[SYNC] CTA #13 in grid #6 reaches barrier
+[SYNC] CTA #0 in grid #6 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA barrier deallocated for Grid #6
+[DEBUG] Kenel done, CTA barrier deallocated
+[STATS] gpu_tot_sim_cycle = 1504971
+[STATS] gpu_tot_sim_insn = 13915250
+[STATS] gpu_tot_ipc = 9.2462
+[STATS] Number of ld.volatile: 43095
+[STATS] Number of st.volatile: 15
+[STATS] Number of atomic: 331787
+[STATS] gpu_tot_l1_miss_rate = 0.4792
+[STATS] gpu_tot_l2_miss_rate = 0.0435
+
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 1 min, 58 sec (118 sec)
+--------------------------------------------------------------------
+
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaLaunch
+[DEBUG] pushing kernel '_Z17BFS_in_GPU_kernelPiS_P4int2S1_S_S_iS_iiS_' to stream 0
+[DEBUG] gridDim = (1,1,1) blockDim = (512,1,1) 
+[DEBUG] Allocating CTA barrier: kernel_id=7, num_ctas=1
+[SYNC] CTA barrier allocated for Grid #7
+[SYNC] CTA barrier deallocated for Grid #7
+[DEBUG] Kenel done, CTA barrier deallocated
+[STATS] gpu_tot_sim_cycle = 1515536
+[STATS] gpu_tot_sim_insn = 14003428
+[STATS] gpu_tot_ipc = 9.2399
+[STATS] Number of ld.volatile: 43095
+[STATS] Number of st.volatile: 15
+[STATS] Number of atomic: 334139
+[STATS] gpu_tot_l1_miss_rate = 0.4807
+[STATS] gpu_tot_l2_miss_rate = 0.0434
+
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 1 min, 59 sec (119 sec)
+--------------------------------------------------------------------
+
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaLaunch
+[DEBUG] pushing kernel '_Z26BFS_kernel_multi_blk_inGPUPiS_P4int2S1_S_S_S_S_iiS_S_S_S_S_S_' to stream 0
+[DEBUG] gridDim = (14,1,1) blockDim = (512,1,1) 
+[DEBUG] Allocating CTA barrier: kernel_id=8, num_ctas=14
+[SYNC] CTA barrier allocated for Grid #8
+[SYNC] CTA #2 in grid #8 reaches barrier
+[SYNC] CTA #3 in grid #8 reaches barrier
+[SYNC] CTA #4 in grid #8 reaches barrier
+[SYNC] CTA #5 in grid #8 reaches barrier
+[SYNC] CTA #6 in grid #8 reaches barrier
+[SYNC] CTA #7 in grid #8 reaches barrier
+[SYNC] CTA #8 in grid #8 reaches barrier
+[SYNC] CTA #9 in grid #8 reaches barrier
+[SYNC] CTA #10 in grid #8 reaches barrier
+[SYNC] CTA #11 in grid #8 reaches barrier
+[SYNC] CTA #12 in grid #8 reaches barrier
+[SYNC] CTA #13 in grid #8 reaches barrier
+[SYNC] CTA #1 in grid #8 reaches barrier
+[SYNC] CTA #0 in grid #8 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #8 reaches barrier
+[SYNC] CTA #2 in grid #8 reaches barrier
+[SYNC] CTA #3 in grid #8 reaches barrier
+[SYNC] CTA #4 in grid #8 reaches barrier
+[SYNC] CTA #5 in grid #8 reaches barrier
+[SYNC] CTA #6 in grid #8 reaches barrier
+[SYNC] CTA #7 in grid #8 reaches barrier
+[SYNC] CTA #8 in grid #8 reaches barrier
+[SYNC] CTA #9 in grid #8 reaches barrier
+[SYNC] CTA #10 in grid #8 reaches barrier
+[SYNC] CTA #11 in grid #8 reaches barrier
+[SYNC] CTA #12 in grid #8 reaches barrier
+[SYNC] CTA #13 in grid #8 reaches barrier
+[SYNC] CTA #0 in grid #8 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #8 reaches barrier
+[SYNC] CTA #3 in grid #8 reaches barrier
+[SYNC] CTA #4 in grid #8 reaches barrier
+[SYNC] CTA #5 in grid #8 reaches barrier
+[SYNC] CTA #6 in grid #8 reaches barrier
+[SYNC] CTA #7 in grid #8 reaches barrier
+[SYNC] CTA #8 in grid #8 reaches barrier
+[SYNC] CTA #9 in grid #8 reaches barrier
+[SYNC] CTA #10 in grid #8 reaches barrier
+[SYNC] CTA #11 in grid #8 reaches barrier
+[SYNC] CTA #12 in grid #8 reaches barrier
+[SYNC] CTA #13 in grid #8 reaches barrier
+[SYNC] CTA #1 in grid #8 reaches barrier
+[SYNC] CTA #0 in grid #8 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #8 reaches barrier
+[SYNC] CTA #2 in grid #8 reaches barrier
+[SYNC] CTA #3 in grid #8 reaches barrier
+[SYNC] CTA #4 in grid #8 reaches barrier
+[SYNC] CTA #5 in grid #8 reaches barrier
+[SYNC] CTA #6 in grid #8 reaches barrier
+[SYNC] CTA #7 in grid #8 reaches barrier
+[SYNC] CTA #8 in grid #8 reaches barrier
+[SYNC] CTA #9 in grid #8 reaches barrier
+[SYNC] CTA #10 in grid #8 reaches barrier
+[SYNC] CTA #11 in grid #8 reaches barrier
+[SYNC] CTA #12 in grid #8 reaches barrier
+[SYNC] CTA #13 in grid #8 reaches barrier
+[SYNC] CTA #0 in grid #8 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #8 reaches barrier
+[SYNC] CTA #3 in grid #8 reaches barrier
+[SYNC] CTA #4 in grid #8 reaches barrier
+[SYNC] CTA #5 in grid #8 reaches barrier
+[SYNC] CTA #6 in grid #8 reaches barrier
+[SYNC] CTA #7 in grid #8 reaches barrier
+[SYNC] CTA #8 in grid #8 reaches barrier
+[SYNC] CTA #9 in grid #8 reaches barrier
+[SYNC] CTA #10 in grid #8 reaches barrier
+[SYNC] CTA #11 in grid #8 reaches barrier
+[SYNC] CTA #12 in grid #8 reaches barrier
+[SYNC] CTA #13 in grid #8 reaches barrier
+[SYNC] CTA #1 in grid #8 reaches barrier
+[SYNC] CTA #0 in grid #8 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #8 reaches barrier
+[SYNC] CTA #2 in grid #8 reaches barrier
+[SYNC] CTA #3 in grid #8 reaches barrier
+[SYNC] CTA #4 in grid #8 reaches barrier
+[SYNC] CTA #5 in grid #8 reaches barrier
+[SYNC] CTA #6 in grid #8 reaches barrier
+[SYNC] CTA #7 in grid #8 reaches barrier
+[SYNC] CTA #8 in grid #8 reaches barrier
+[SYNC] CTA #9 in grid #8 reaches barrier
+[SYNC] CTA #10 in grid #8 reaches barrier
+[SYNC] CTA #11 in grid #8 reaches barrier
+[SYNC] CTA #12 in grid #8 reaches barrier
+[SYNC] CTA #13 in grid #8 reaches barrier
+[SYNC] CTA #0 in grid #8 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #8 reaches barrier
+[SYNC] CTA #3 in grid #8 reaches barrier
+[SYNC] CTA #4 in grid #8 reaches barrier
+[SYNC] CTA #5 in grid #8 reaches barrier
+[SYNC] CTA #6 in grid #8 reaches barrier
+[SYNC] CTA #7 in grid #8 reaches barrier
+[SYNC] CTA #8 in grid #8 reaches barrier
+[SYNC] CTA #9 in grid #8 reaches barrier
+[SYNC] CTA #10 in grid #8 reaches barrier
+[SYNC] CTA #11 in grid #8 reaches barrier
+[SYNC] CTA #12 in grid #8 reaches barrier
+[SYNC] CTA #13 in grid #8 reaches barrier
+[SYNC] CTA #1 in grid #8 reaches barrier
+[SYNC] CTA #0 in grid #8 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #8 reaches barrier
+[SYNC] CTA #2 in grid #8 reaches barrier
+[SYNC] CTA #3 in grid #8 reaches barrier
+[SYNC] CTA #4 in grid #8 reaches barrier
+[SYNC] CTA #5 in grid #8 reaches barrier
+[SYNC] CTA #6 in grid #8 reaches barrier
+[SYNC] CTA #7 in grid #8 reaches barrier
+[SYNC] CTA #8 in grid #8 reaches barrier
+[SYNC] CTA #9 in grid #8 reaches barrier
+[SYNC] CTA #10 in grid #8 reaches barrier
+[SYNC] CTA #11 in grid #8 reaches barrier
+[SYNC] CTA #12 in grid #8 reaches barrier
+[SYNC] CTA #13 in grid #8 reaches barrier
+[SYNC] CTA #0 in grid #8 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA barrier deallocated for Grid #8
+[DEBUG] Kenel done, CTA barrier deallocated
+[STATS] gpu_tot_sim_cycle = 1562700
+[STATS] gpu_tot_sim_insn = 15175239
+[STATS] gpu_tot_ipc = 9.7109
+[STATS] Number of ld.volatile: 71824
+[STATS] Number of st.volatile: 26
+[STATS] Number of atomic: 352649
+[STATS] gpu_tot_l1_miss_rate = 0.4827
+[STATS] gpu_tot_l2_miss_rate = 0.0432
+
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 2 min, 11 sec (131 sec)
+--------------------------------------------------------------------
+
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaLaunch
+[DEBUG] pushing kernel '_Z17BFS_in_GPU_kernelPiS_P4int2S1_S_S_iS_iiS_' to stream 0
+[DEBUG] gridDim = (1,1,1) blockDim = (512,1,1) 
+[DEBUG] Allocating CTA barrier: kernel_id=9, num_ctas=1
+[SYNC] CTA barrier allocated for Grid #9
+[SYNC] CTA barrier deallocated for Grid #9
+[DEBUG] Kenel done, CTA barrier deallocated
+[STATS] gpu_tot_sim_cycle = 1599239
+[STATS] gpu_tot_sim_insn = 15489404
+[STATS] gpu_tot_ipc = 9.6855
+[STATS] Number of ld.volatile: 71824
+[STATS] Number of st.volatile: 26
+[STATS] Number of atomic: 361377
+[STATS] gpu_tot_l1_miss_rate = 0.4848
+[STATS] gpu_tot_l2_miss_rate = 0.0431
+
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 2 min, 14 sec (134 sec)
+--------------------------------------------------------------------
+
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaLaunch
+[DEBUG] pushing kernel '_Z26BFS_kernel_multi_blk_inGPUPiS_P4int2S1_S_S_S_S_iiS_S_S_S_S_S_' to stream 0
+[DEBUG] gridDim = (14,1,1) blockDim = (512,1,1) 
+[DEBUG] Allocating CTA barrier: kernel_id=10, num_ctas=14
+[SYNC] CTA barrier allocated for Grid #10
+[SYNC] CTA #3 in grid #10 reaches barrier
+[SYNC] CTA #4 in grid #10 reaches barrier
+[SYNC] CTA #5 in grid #10 reaches barrier
+[SYNC] CTA #6 in grid #10 reaches barrier
+[SYNC] CTA #7 in grid #10 reaches barrier
+[SYNC] CTA #8 in grid #10 reaches barrier
+[SYNC] CTA #9 in grid #10 reaches barrier
+[SYNC] CTA #10 in grid #10 reaches barrier
+[SYNC] CTA #11 in grid #10 reaches barrier
+[SYNC] CTA #12 in grid #10 reaches barrier
+[SYNC] CTA #2 in grid #10 reaches barrier
+[SYNC] CTA #13 in grid #10 reaches barrier
+[SYNC] CTA #1 in grid #10 reaches barrier
+[SYNC] CTA #0 in grid #10 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #10 reaches barrier
+[SYNC] CTA #2 in grid #10 reaches barrier
+[SYNC] CTA #3 in grid #10 reaches barrier
+[SYNC] CTA #4 in grid #10 reaches barrier
+[SYNC] CTA #5 in grid #10 reaches barrier
+[SYNC] CTA #6 in grid #10 reaches barrier
+[SYNC] CTA #7 in grid #10 reaches barrier
+[SYNC] CTA #8 in grid #10 reaches barrier
+[SYNC] CTA #9 in grid #10 reaches barrier
+[SYNC] CTA #10 in grid #10 reaches barrier
+[SYNC] CTA #11 in grid #10 reaches barrier
+[SYNC] CTA #12 in grid #10 reaches barrier
+[SYNC] CTA #13 in grid #10 reaches barrier
+[SYNC] CTA #0 in grid #10 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #10 reaches barrier
+[SYNC] CTA #3 in grid #10 reaches barrier
+[SYNC] CTA #4 in grid #10 reaches barrier
+[SYNC] CTA #5 in grid #10 reaches barrier
+[SYNC] CTA #6 in grid #10 reaches barrier
+[SYNC] CTA #7 in grid #10 reaches barrier
+[SYNC] CTA #8 in grid #10 reaches barrier
+[SYNC] CTA #9 in grid #10 reaches barrier
+[SYNC] CTA #10 in grid #10 reaches barrier
+[SYNC] CTA #11 in grid #10 reaches barrier
+[SYNC] CTA #12 in grid #10 reaches barrier
+[SYNC] CTA #13 in grid #10 reaches barrier
+[SYNC] CTA #1 in grid #10 reaches barrier
+[SYNC] CTA #0 in grid #10 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #10 reaches barrier
+[SYNC] CTA #2 in grid #10 reaches barrier
+[SYNC] CTA #3 in grid #10 reaches barrier
+[SYNC] CTA #4 in grid #10 reaches barrier
+[SYNC] CTA #5 in grid #10 reaches barrier
+[SYNC] CTA #6 in grid #10 reaches barrier
+[SYNC] CTA #7 in grid #10 reaches barrier
+[SYNC] CTA #8 in grid #10 reaches barrier
+[SYNC] CTA #9 in grid #10 reaches barrier
+[SYNC] CTA #10 in grid #10 reaches barrier
+[SYNC] CTA #11 in grid #10 reaches barrier
+[SYNC] CTA #12 in grid #10 reaches barrier
+[SYNC] CTA #13 in grid #10 reaches barrier
+[SYNC] CTA #0 in grid #10 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #10 reaches barrier
+[SYNC] CTA #3 in grid #10 reaches barrier
+[SYNC] CTA #4 in grid #10 reaches barrier
+[SYNC] CTA #5 in grid #10 reaches barrier
+[SYNC] CTA #6 in grid #10 reaches barrier
+[SYNC] CTA #7 in grid #10 reaches barrier
+[SYNC] CTA #8 in grid #10 reaches barrier
+[SYNC] CTA #9 in grid #10 reaches barrier
+[SYNC] CTA #10 in grid #10 reaches barrier
+[SYNC] CTA #11 in grid #10 reaches barrier
+[SYNC] CTA #12 in grid #10 reaches barrier
+[SYNC] CTA #13 in grid #10 reaches barrier
+[SYNC] CTA #1 in grid #10 reaches barrier
+[SYNC] CTA #0 in grid #10 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #10 reaches barrier
+[SYNC] CTA #2 in grid #10 reaches barrier
+[SYNC] CTA #3 in grid #10 reaches barrier
+[SYNC] CTA #4 in grid #10 reaches barrier
+[SYNC] CTA #5 in grid #10 reaches barrier
+[SYNC] CTA #6 in grid #10 reaches barrier
+[SYNC] CTA #7 in grid #10 reaches barrier
+[SYNC] CTA #8 in grid #10 reaches barrier
+[SYNC] CTA #9 in grid #10 reaches barrier
+[SYNC] CTA #10 in grid #10 reaches barrier
+[SYNC] CTA #11 in grid #10 reaches barrier
+[SYNC] CTA #12 in grid #10 reaches barrier
+[SYNC] CTA #13 in grid #10 reaches barrier
+[SYNC] CTA #0 in grid #10 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA barrier deallocated for Grid #10
+[DEBUG] Kenel done, CTA barrier deallocated
+[STATS] gpu_tot_sim_cycle = 1636325
+[STATS] gpu_tot_sim_insn = 16419949
+[STATS] gpu_tot_ipc = 10.0346
+[STATS] Number of ld.volatile: 93371
+[STATS] Number of st.volatile: 34
+[STATS] Number of atomic: 376899
+[STATS] gpu_tot_l1_miss_rate = 0.4868
+[STATS] gpu_tot_l2_miss_rate = 0.0429
+
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 2 min, 23 sec (143 sec)
+--------------------------------------------------------------------
+
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaLaunch
+[DEBUG] pushing kernel '_Z17BFS_in_GPU_kernelPiS_P4int2S1_S_S_iS_iiS_' to stream 0
+[DEBUG] gridDim = (1,1,1) blockDim = (512,1,1) 
+[DEBUG] Allocating CTA barrier: kernel_id=11, num_ctas=1
+[SYNC] CTA barrier allocated for Grid #11
+[SYNC] CTA barrier deallocated for Grid #11
+[DEBUG] Kenel done, CTA barrier deallocated
+[STATS] gpu_tot_sim_cycle = 1723637
+[STATS] gpu_tot_sim_insn = 17168736
+[STATS] gpu_tot_ipc = 9.9608
+[STATS] Number of ld.volatile: 93371
+[STATS] Number of st.volatile: 34
+[STATS] Number of atomic: 397825
+[STATS] gpu_tot_l1_miss_rate = 0.4897
+[STATS] gpu_tot_l2_miss_rate = 0.0428
+
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 2 min, 30 sec (150 sec)
+--------------------------------------------------------------------
+
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaLaunch
+[DEBUG] pushing kernel '_Z26BFS_kernel_multi_blk_inGPUPiS_P4int2S1_S_S_S_S_iiS_S_S_S_S_S_' to stream 0
+[DEBUG] gridDim = (14,1,1) blockDim = (512,1,1) 
+[DEBUG] Allocating CTA barrier: kernel_id=12, num_ctas=14
+[SYNC] CTA barrier allocated for Grid #12
+[SYNC] CTA #12 in grid #12 reaches barrier
+[SYNC] CTA #2 in grid #12 reaches barrier
+[SYNC] CTA #3 in grid #12 reaches barrier
+[SYNC] CTA #4 in grid #12 reaches barrier
+[SYNC] CTA #5 in grid #12 reaches barrier
+[SYNC] CTA #6 in grid #12 reaches barrier
+[SYNC] CTA #7 in grid #12 reaches barrier
+[SYNC] CTA #8 in grid #12 reaches barrier
+[SYNC] CTA #9 in grid #12 reaches barrier
+[SYNC] CTA #10 in grid #12 reaches barrier
+[SYNC] CTA #11 in grid #12 reaches barrier
+[SYNC] CTA #13 in grid #12 reaches barrier
+[SYNC] CTA #1 in grid #12 reaches barrier
+[SYNC] CTA #0 in grid #12 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #12 reaches barrier
+[SYNC] CTA #2 in grid #12 reaches barrier
+[SYNC] CTA #3 in grid #12 reaches barrier
+[SYNC] CTA #4 in grid #12 reaches barrier
+[SYNC] CTA #5 in grid #12 reaches barrier
+[SYNC] CTA #6 in grid #12 reaches barrier
+[SYNC] CTA #7 in grid #12 reaches barrier
+[SYNC] CTA #8 in grid #12 reaches barrier
+[SYNC] CTA #9 in grid #12 reaches barrier
+[SYNC] CTA #10 in grid #12 reaches barrier
+[SYNC] CTA #11 in grid #12 reaches barrier
+[SYNC] CTA #12 in grid #12 reaches barrier
+[SYNC] CTA #13 in grid #12 reaches barrier
+[SYNC] CTA #0 in grid #12 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA barrier deallocated for Grid #12
+[DEBUG] Kenel done, CTA barrier deallocated
+[STATS] gpu_tot_sim_cycle = 1741217
+[STATS] gpu_tot_sim_insn = 17627423
+[STATS] gpu_tot_ipc = 10.1236
+[STATS] Number of ld.volatile: 100554
+[STATS] Number of st.volatile: 36
+[STATS] Number of atomic: 407790
+[STATS] gpu_tot_l1_miss_rate = 0.4921
+[STATS] gpu_tot_l2_miss_rate = 0.0426
+
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 2 min, 34 sec (154 sec)
+--------------------------------------------------------------------
+
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaLaunch
+[DEBUG] pushing kernel '_Z17BFS_in_GPU_kernelPiS_P4int2S1_S_S_iS_iiS_' to stream 0
+[DEBUG] gridDim = (1,1,1) blockDim = (512,1,1) 
+[DEBUG] Allocating CTA barrier: kernel_id=13, num_ctas=1
+[SYNC] CTA barrier allocated for Grid #13
+[SYNC] CTA barrier deallocated for Grid #13
+[DEBUG] Kenel done, CTA barrier deallocated
+[STATS] gpu_tot_sim_cycle = 1751420
+[STATS] gpu_tot_sim_insn = 17713732
+[STATS] gpu_tot_ipc = 10.1139
+[STATS] Number of ld.volatile: 100554
+[STATS] Number of st.volatile: 36
+[STATS] Number of atomic: 410052
+[STATS] gpu_tot_l1_miss_rate = 0.4943
+[STATS] gpu_tot_l2_miss_rate = 0.0425
+
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 2 min, 35 sec (155 sec)
+--------------------------------------------------------------------
+
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaLaunch
+[DEBUG] pushing kernel '_Z26BFS_kernel_multi_blk_inGPUPiS_P4int2S1_S_S_S_S_iiS_S_S_S_S_S_' to stream 0
+[DEBUG] gridDim = (14,1,1) blockDim = (512,1,1) 
+[DEBUG] Allocating CTA barrier: kernel_id=14, num_ctas=14
+[SYNC] CTA barrier allocated for Grid #14
+[SYNC] CTA #2 in grid #14 reaches barrier
+[SYNC] CTA #3 in grid #14 reaches barrier
+[SYNC] CTA #4 in grid #14 reaches barrier
+[SYNC] CTA #5 in grid #14 reaches barrier
+[SYNC] CTA #6 in grid #14 reaches barrier
+[SYNC] CTA #7 in grid #14 reaches barrier
+[SYNC] CTA #8 in grid #14 reaches barrier
+[SYNC] CTA #9 in grid #14 reaches barrier
+[SYNC] CTA #10 in grid #14 reaches barrier
+[SYNC] CTA #11 in grid #14 reaches barrier
+[SYNC] CTA #12 in grid #14 reaches barrier
+[SYNC] CTA #13 in grid #14 reaches barrier
+[SYNC] CTA #1 in grid #14 reaches barrier
+[SYNC] CTA #0 in grid #14 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #14 reaches barrier
+[SYNC] CTA #2 in grid #14 reaches barrier
+[SYNC] CTA #3 in grid #14 reaches barrier
+[SYNC] CTA #4 in grid #14 reaches barrier
+[SYNC] CTA #5 in grid #14 reaches barrier
+[SYNC] CTA #6 in grid #14 reaches barrier
+[SYNC] CTA #7 in grid #14 reaches barrier
+[SYNC] CTA #8 in grid #14 reaches barrier
+[SYNC] CTA #9 in grid #14 reaches barrier
+[SYNC] CTA #10 in grid #14 reaches barrier
+[SYNC] CTA #11 in grid #14 reaches barrier
+[SYNC] CTA #12 in grid #14 reaches barrier
+[SYNC] CTA #13 in grid #14 reaches barrier
+[SYNC] CTA #0 in grid #14 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA barrier deallocated for Grid #14
+[DEBUG] Kenel done, CTA barrier deallocated
+[STATS] gpu_tot_sim_cycle = 1769640
+[STATS] gpu_tot_sim_insn = 18171515
+[STATS] gpu_tot_ipc = 10.2685
+[STATS] Number of ld.volatile: 107737
+[STATS] Number of st.volatile: 38
+[STATS] Number of atomic: 419981
+[STATS] gpu_tot_l1_miss_rate = 0.4962
+[STATS] gpu_tot_l2_miss_rate = 0.0424
+
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 2 min, 40 sec (160 sec)
+--------------------------------------------------------------------
+
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaLaunch
+[DEBUG] pushing kernel '_Z17BFS_in_GPU_kernelPiS_P4int2S1_S_S_iS_iiS_' to stream 0
+[DEBUG] gridDim = (1,1,1) blockDim = (512,1,1) 
+[DEBUG] Allocating CTA barrier: kernel_id=15, num_ctas=1
+[SYNC] CTA barrier allocated for Grid #15
+[SYNC] CTA barrier deallocated for Grid #15
+[DEBUG] Kenel done, CTA barrier deallocated
+[STATS] gpu_tot_sim_cycle = 2157121
+[STATS] gpu_tot_sim_insn = 21504878
+[STATS] gpu_tot_ipc = 9.9692
+[STATS] Number of ld.volatile: 107737
+[STATS] Number of st.volatile: 38
+[STATS] Number of atomic: 511326
+[STATS] gpu_tot_l1_miss_rate = 0.5000
+[STATS] gpu_tot_l2_miss_rate = 0.0424
+
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 3 min, 9 sec (189 sec)
+--------------------------------------------------------------------
+
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaLaunch
+[DEBUG] pushing kernel '_Z26BFS_kernel_multi_blk_inGPUPiS_P4int2S1_S_S_S_S_iiS_S_S_S_S_S_' to stream 0
+[DEBUG] gridDim = (14,1,1) blockDim = (512,1,1) 
+[DEBUG] Allocating CTA barrier: kernel_id=16, num_ctas=14
+[SYNC] CTA barrier allocated for Grid #16
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #16 reaches barrier
+[SYNC] CTA #2 in grid #16 reaches barrier
+[SYNC] CTA #3 in grid #16 reaches barrier
+[SYNC] CTA #4 in grid #16 reaches barrier
+[SYNC] CTA #5 in grid #16 reaches barrier
+[SYNC] CTA #6 in grid #16 reaches barrier
+[SYNC] CTA #7 in grid #16 reaches barrier
+[SYNC] CTA #8 in grid #16 reaches barrier
+[SYNC] CTA #9 in grid #16 reaches barrier
+[SYNC] CTA #10 in grid #16 reaches barrier
+[SYNC] CTA #11 in grid #16 reaches barrier
+[SYNC] CTA #12 in grid #16 reaches barrier
+[SYNC] CTA #13 in grid #16 reaches barrier
+[SYNC] CTA #0 in grid #16 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA barrier deallocated for Grid #16
+[DEBUG] Kenel done, CTA barrier deallocated
+[STATS] gpu_tot_sim_cycle = 3242453
+[STATS] gpu_tot_sim_insn = 49337473
+[STATS] gpu_tot_ipc = 15.2161
+[STATS] Number of ld.volatile: 825938
+[STATS] Number of st.volatile: 337
+[STATS] Number of atomic: 956875
+[STATS] gpu_tot_l1_miss_rate = 0.5185
+[STATS] gpu_tot_l2_miss_rate = 0.0433
+
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 7 min, 45 sec (465 sec)
+--------------------------------------------------------------------
+
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaLaunch
+[DEBUG] pushing kernel '_Z17BFS_in_GPU_kernelPiS_P4int2S1_S_S_iS_iiS_' to stream 0
+[DEBUG] gridDim = (1,1,1) blockDim = (512,1,1) 
+[DEBUG] Allocating CTA barrier: kernel_id=17, num_ctas=1
+[SYNC] CTA barrier allocated for Grid #17
+[SYNC] CTA barrier deallocated for Grid #17
+[DEBUG] Kenel done, CTA barrier deallocated
+[STATS] gpu_tot_sim_cycle = 3253374
+[STATS] gpu_tot_sim_insn = 49422286
+[STATS] gpu_tot_ipc = 15.1911
+[STATS] Number of ld.volatile: 825938
+[STATS] Number of st.volatile: 337
+[STATS] Number of atomic: 959084
+[STATS] gpu_tot_l1_miss_rate = 0.5324
+[STATS] gpu_tot_l2_miss_rate = 0.0440
+
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 7 min, 46 sec (466 sec)
+--------------------------------------------------------------------
+
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaLaunch
+[DEBUG] pushing kernel '_Z26BFS_kernel_multi_blk_inGPUPiS_P4int2S1_S_S_S_S_iiS_S_S_S_S_S_' to stream 0
+[DEBUG] gridDim = (14,1,1) blockDim = (512,1,1) 
+[DEBUG] Allocating CTA barrier: kernel_id=18, num_ctas=14
+[SYNC] CTA barrier allocated for Grid #18
+[SYNC] CTA #2 in grid #18 reaches barrier
+[SYNC] CTA #3 in grid #18 reaches barrier
+[SYNC] CTA #4 in grid #18 reaches barrier
+[SYNC] CTA #5 in grid #18 reaches barrier
+[SYNC] CTA #6 in grid #18 reaches barrier
+[SYNC] CTA #7 in grid #18 reaches barrier
+[SYNC] CTA #8 in grid #18 reaches barrier
+[SYNC] CTA #9 in grid #18 reaches barrier
+[SYNC] CTA #10 in grid #18 reaches barrier
+[SYNC] CTA #11 in grid #18 reaches barrier
+[SYNC] CTA #12 in grid #18 reaches barrier
+[SYNC] CTA #13 in grid #18 reaches barrier
+[SYNC] CTA #1 in grid #18 reaches barrier
+[SYNC] CTA #0 in grid #18 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #18 reaches barrier
+[SYNC] CTA #2 in grid #18 reaches barrier
+[SYNC] CTA #3 in grid #18 reaches barrier
+[SYNC] CTA #4 in grid #18 reaches barrier
+[SYNC] CTA #5 in grid #18 reaches barrier
+[SYNC] CTA #6 in grid #18 reaches barrier
+[SYNC] CTA #7 in grid #18 reaches barrier
+[SYNC] CTA #8 in grid #18 reaches barrier
+[SYNC] CTA #9 in grid #18 reaches barrier
+[SYNC] CTA #10 in grid #18 reaches barrier
+[SYNC] CTA #11 in grid #18 reaches barrier
+[SYNC] CTA #12 in grid #18 reaches barrier
+[SYNC] CTA #0 in grid #18 reaches barrier
+[SYNC] CTA #13 in grid #18 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #18 reaches barrier
+[SYNC] CTA #3 in grid #18 reaches barrier
+[SYNC] CTA #4 in grid #18 reaches barrier
+[SYNC] CTA #5 in grid #18 reaches barrier
+[SYNC] CTA #6 in grid #18 reaches barrier
+[SYNC] CTA #7 in grid #18 reaches barrier
+[SYNC] CTA #8 in grid #18 reaches barrier
+[SYNC] CTA #9 in grid #18 reaches barrier
+[SYNC] CTA #10 in grid #18 reaches barrier
+[SYNC] CTA #11 in grid #18 reaches barrier
+[SYNC] CTA #12 in grid #18 reaches barrier
+[SYNC] CTA #13 in grid #18 reaches barrier
+[SYNC] CTA #1 in grid #18 reaches barrier
+[SYNC] CTA #0 in grid #18 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #18 reaches barrier
+[SYNC] CTA #2 in grid #18 reaches barrier
+[SYNC] CTA #3 in grid #18 reaches barrier
+[SYNC] CTA #4 in grid #18 reaches barrier
+[SYNC] CTA #5 in grid #18 reaches barrier
+[SYNC] CTA #6 in grid #18 reaches barrier
+[SYNC] CTA #7 in grid #18 reaches barrier
+[SYNC] CTA #8 in grid #18 reaches barrier
+[SYNC] CTA #9 in grid #18 reaches barrier
+[SYNC] CTA #10 in grid #18 reaches barrier
+[SYNC] CTA #11 in grid #18 reaches barrier
+[SYNC] CTA #12 in grid #18 reaches barrier
+[SYNC] CTA #13 in grid #18 reaches barrier
+[SYNC] CTA #0 in grid #18 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #18 reaches barrier
+[SYNC] CTA #3 in grid #18 reaches barrier
+[SYNC] CTA #4 in grid #18 reaches barrier
+[SYNC] CTA #5 in grid #18 reaches barrier
+[SYNC] CTA #6 in grid #18 reaches barrier
+[SYNC] CTA #7 in grid #18 reaches barrier
+[SYNC] CTA #8 in grid #18 reaches barrier
+[SYNC] CTA #9 in grid #18 reaches barrier
+[SYNC] CTA #10 in grid #18 reaches barrier
+[SYNC] CTA #11 in grid #18 reaches barrier
+[SYNC] CTA #12 in grid #18 reaches barrier
+[SYNC] CTA #13 in grid #18 reaches barrier
+[SYNC] CTA #1 in grid #18 reaches barrier
+[SYNC] CTA #0 in grid #18 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #18 reaches barrier
+[SYNC] CTA #2 in grid #18 reaches barrier
+[SYNC] CTA #3 in grid #18 reaches barrier
+[SYNC] CTA #4 in grid #18 reaches barrier
+[SYNC] CTA #5 in grid #18 reaches barrier
+[SYNC] CTA #6 in grid #18 reaches barrier
+[SYNC] CTA #7 in grid #18 reaches barrier
+[SYNC] CTA #8 in grid #18 reaches barrier
+[SYNC] CTA #9 in grid #18 reaches barrier
+[SYNC] CTA #10 in grid #18 reaches barrier
+[SYNC] CTA #11 in grid #18 reaches barrier
+[SYNC] CTA #12 in grid #18 reaches barrier
+[SYNC] CTA #13 in grid #18 reaches barrier
+[SYNC] CTA #0 in grid #18 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #18 reaches barrier
+[SYNC] CTA #3 in grid #18 reaches barrier
+[SYNC] CTA #4 in grid #18 reaches barrier
+[SYNC] CTA #5 in grid #18 reaches barrier
+[SYNC] CTA #6 in grid #18 reaches barrier
+[SYNC] CTA #7 in grid #18 reaches barrier
+[SYNC] CTA #8 in grid #18 reaches barrier
+[SYNC] CTA #9 in grid #18 reaches barrier
+[SYNC] CTA #10 in grid #18 reaches barrier
+[SYNC] CTA #11 in grid #18 reaches barrier
+[SYNC] CTA #12 in grid #18 reaches barrier
+[SYNC] CTA #13 in grid #18 reaches barrier
+[SYNC] CTA #1 in grid #18 reaches barrier
+[SYNC] CTA #0 in grid #18 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #18 reaches barrier
+[SYNC] CTA #2 in grid #18 reaches barrier
+[SYNC] CTA #3 in grid #18 reaches barrier
+[SYNC] CTA #4 in grid #18 reaches barrier
+[SYNC] CTA #5 in grid #18 reaches barrier
+[SYNC] CTA #6 in grid #18 reaches barrier
+[SYNC] CTA #7 in grid #18 reaches barrier
+[SYNC] CTA #8 in grid #18 reaches barrier
+[SYNC] CTA #9 in grid #18 reaches barrier
+[SYNC] CTA #10 in grid #18 reaches barrier
+[SYNC] CTA #11 in grid #18 reaches barrier
+[SYNC] CTA #12 in grid #18 reaches barrier
+[SYNC] CTA #13 in grid #18 reaches barrier
+[SYNC] CTA #0 in grid #18 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #18 reaches barrier
+[SYNC] CTA #3 in grid #18 reaches barrier
+[SYNC] CTA #4 in grid #18 reaches barrier
+[SYNC] CTA #5 in grid #18 reaches barrier
+[SYNC] CTA #6 in grid #18 reaches barrier
+[SYNC] CTA #7 in grid #18 reaches barrier
+[SYNC] CTA #8 in grid #18 reaches barrier
+[SYNC] CTA #9 in grid #18 reaches barrier
+[SYNC] CTA #10 in grid #18 reaches barrier
+[SYNC] CTA #11 in grid #18 reaches barrier
+[SYNC] CTA #12 in grid #18 reaches barrier
+[SYNC] CTA #13 in grid #18 reaches barrier
+[SYNC] CTA #1 in grid #18 reaches barrier
+[SYNC] CTA #0 in grid #18 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #18 reaches barrier
+[SYNC] CTA #2 in grid #18 reaches barrier
+[SYNC] CTA #3 in grid #18 reaches barrier
+[SYNC] CTA #4 in grid #18 reaches barrier
+[SYNC] CTA #5 in grid #18 reaches barrier
+[SYNC] CTA #6 in grid #18 reaches barrier
+[SYNC] CTA #7 in grid #18 reaches barrier
+[SYNC] CTA #8 in grid #18 reaches barrier
+[SYNC] CTA #9 in grid #18 reaches barrier
+[SYNC] CTA #10 in grid #18 reaches barrier
+[SYNC] CTA #11 in grid #18 reaches barrier
+[SYNC] CTA #12 in grid #18 reaches barrier
+[SYNC] CTA #13 in grid #18 reaches barrier
+[SYNC] CTA #0 in grid #18 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #18 reaches barrier
+[SYNC] CTA #3 in grid #18 reaches barrier
+[SYNC] CTA #4 in grid #18 reaches barrier
+[SYNC] CTA #5 in grid #18 reaches barrier
+[SYNC] CTA #6 in grid #18 reaches barrier
+[SYNC] CTA #7 in grid #18 reaches barrier
+[SYNC] CTA #8 in grid #18 reaches barrier
+[SYNC] CTA #9 in grid #18 reaches barrier
+[SYNC] CTA #10 in grid #18 reaches barrier
+[SYNC] CTA #11 in grid #18 reaches barrier
+[SYNC] CTA #12 in grid #18 reaches barrier
+[SYNC] CTA #13 in grid #18 reaches barrier
+[SYNC] CTA #1 in grid #18 reaches barrier
+[SYNC] CTA #0 in grid #18 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #18 reaches barrier
+[SYNC] CTA #2 in grid #18 reaches barrier
+[SYNC] CTA #3 in grid #18 reaches barrier
+[SYNC] CTA #4 in grid #18 reaches barrier
+[SYNC] CTA #5 in grid #18 reaches barrier
+[SYNC] CTA #6 in grid #18 reaches barrier
+[SYNC] CTA #7 in grid #18 reaches barrier
+[SYNC] CTA #8 in grid #18 reaches barrier
+[SYNC] CTA #9 in grid #18 reaches barrier
+[SYNC] CTA #10 in grid #18 reaches barrier
+[SYNC] CTA #11 in grid #18 reaches barrier
+[SYNC] CTA #12 in grid #18 reaches barrier
+[SYNC] CTA #13 in grid #18 reaches barrier
+[SYNC] CTA #0 in grid #18 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #2 in grid #18 reaches barrier
+[SYNC] CTA #3 in grid #18 reaches barrier
+[SYNC] CTA #4 in grid #18 reaches barrier
+[SYNC] CTA #5 in grid #18 reaches barrier
+[SYNC] CTA #6 in grid #18 reaches barrier
+[SYNC] CTA #7 in grid #18 reaches barrier
+[SYNC] CTA #8 in grid #18 reaches barrier
+[SYNC] CTA #9 in grid #18 reaches barrier
+[SYNC] CTA #10 in grid #18 reaches barrier
+[SYNC] CTA #11 in grid #18 reaches barrier
+[SYNC] CTA #12 in grid #18 reaches barrier
+[SYNC] CTA #13 in grid #18 reaches barrier
+[SYNC] CTA #1 in grid #18 reaches barrier
+[SYNC] CTA #0 in grid #18 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA #1 in grid #18 reaches barrier
+[SYNC] CTA #2 in grid #18 reaches barrier
+[SYNC] CTA #3 in grid #18 reaches barrier
+[SYNC] CTA #4 in grid #18 reaches barrier
+[SYNC] CTA #5 in grid #18 reaches barrier
+[SYNC] CTA #6 in grid #18 reaches barrier
+[SYNC] CTA #7 in grid #18 reaches barrier
+[SYNC] CTA #8 in grid #18 reaches barrier
+[SYNC] CTA #9 in grid #18 reaches barrier
+[SYNC] CTA #10 in grid #18 reaches barrier
+[SYNC] CTA #11 in grid #18 reaches barrier
+[SYNC] CTA #12 in grid #18 reaches barrier
+[SYNC] CTA #13 in grid #18 reaches barrier
+[SYNC] CTA #0 in grid #18 reaches barrier
+[SYNC] all CTAs have reached barrier, release waiting CTAs...
+[SYNC] CTA barrier deallocated for Grid #18
+[DEBUG] Kenel done, CTA barrier deallocated
+[STATS] gpu_tot_sim_cycle = 3329250
+[STATS] gpu_tot_sim_insn = 51316048
+[STATS] gpu_tot_ipc = 15.4137
+[STATS] Number of ld.volatile: 876213
+[STATS] Number of st.volatile: 357
+[STATS] Number of atomic: 986488
+[STATS] gpu_tot_l1_miss_rate = 0.5435
+[STATS] gpu_tot_l2_miss_rate = 0.0445
+
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 8 min, 4 sec (484 sec)
+--------------------------------------------------------------------
+
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaLaunch
+[DEBUG] pushing kernel '_Z17BFS_in_GPU_kernelPiS_P4int2S1_S_S_iS_iiS_' to stream 0
+[DEBUG] gridDim = (1,1,1) blockDim = (512,1,1) 
+[DEBUG] Allocating CTA barrier: kernel_id=19, num_ctas=1
+[SYNC] CTA barrier allocated for Grid #19
+[SYNC] CTA barrier deallocated for Grid #19
+[DEBUG] Kenel done, CTA barrier deallocated
+[STATS] gpu_tot_sim_cycle = 5053703
+[STATS] gpu_tot_sim_insn = 64418125
+[STATS] gpu_tot_ipc = 12.7467
+[STATS] Number of ld.volatile: 876213
+[STATS] Number of st.volatile: 357
+[STATS] Number of atomic: 1239216
+[STATS] gpu_tot_l1_miss_rate = 0.5494
+[STATS] gpu_tot_l2_miss_rate = 0.0448
+
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 9 min, 48 sec (588 sec)
+--------------------------------------------------------------------
+
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaFree
+[CUAPI] cudaFree
+[CUAPI] cudaFree
+[CUAPI] cudaEventSynchronize
+[BENCH] GPU kernel done
+[BENCH] Kernel called 16 times (10, 9, 0)
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[CUAPI] cudaFree
+[CUAPI] cudaFree
+[CUAPI] cudaFree
+[CUAPI] cudaFree
+[CUAPI] cudaFree
+[CUAPI] cudaFree
+IO        : 0.270113
+Kernel    : 587.000000
+Copy      : 0.410237
+Driver    : 587.010083
+CPU/Kernel Overlap: 587.000000
+Timer Wall Time: 587.690857

@@ -1,0 +1,54 @@
+[CUAPI] __cudaRegisterFatBinary
+[VERSION] GPGPU-Sim Simulator Version 3.1.2+ruby  [build 14831]
+[RUBY] L1_CACHE_ASSOC = 4
+[RUBY] L1_CACHE_NUM_SETS_BITS = 6
+[RUBY] L2_CACHE_ASSOC = 8
+[RUBY] L2_CACHE_NUM_SETS_BITS = 9
+[RUBY] L2_GLC_ASSOC = 8
+[RUBY] L2_GLC_NUM_SETS_BITS = 9
+[RUBY] L1_CACHE_REPL_POLICY = PSEDUO_LRU
+[RUBY] L2_CACHE_REPL_POLICY = PSEDUO_LRU
+[RUBY] GLC_REPL_POLICY = PSEDUO_LRU
+[RUBY] init ruby
+   Invalid token near "<" on line 6
+   Invalid token near ">" on line 6
+   Invalid token near "<" on line 867
+   Invalid token near ">" on line 867
+[CUAPI] __cudaRegisterFunction
+[CUAPI] __cudaRegisterFunction
+[CUAPI] __cudaRegisterTexture
+[CUAPI] __cudaRegisterTexture
+[CUAPI] __cudaRegisterTexture
+[CUAPI] cudaMalloc
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMalloc
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMalloc
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMallocArray
+[CUAPI] cudaMemcpyToArray
+[CUAPI] cudaBindTextureToArray
+[CUAPI] cudaMallocArray
+[CUAPI] cudaMemcpyToArray
+[CUAPI] cudaBindTextureToArray
+[CUAPI] cudaMallocArray
+[CUAPI] cudaMemcpyToArray
+[CUAPI] cudaBindTextureToArray
+[CUAPI] cudaMalloc
+[CUAPI] cudaMemset
+[CUAPI] __cudaLaunch
+[DEBUG] pushing kernel '_Z15mummergpuKernelP10MatchCoordPcPKiS3_ii' to stream 0
+[DEBUG] gridDim= (196,1,1) blockDim = (256,1,1)
+[DEBUG] CTA/core = 4, limited by: regs
+[WARNING] (_1.ptx:334) ** reading undefined register '%p19' (cuid:0). Setting to 0X00000000. This is okay if you are simulating the native ISA
+[STAT] kernel_sim_cycle = 1372887
+[STAT] tot_sim_cycle = 1372887
+[STAT] tot_sim_insn = 89351138
+[STAT] tot_ipc = 65.083
+[RUBY_STATS] L1D_cache_miss_rate = 41.3336%
+[RUBY_STATS] L1I_cache_miss_rate = -nan%
+[RUBY_STATS] L2_cache_miss_rate = 10.414%
+
+[STATS] simulation_time = 0 days, 0 hrs, 19 min, 8 sec (1148 sec)
+[CUAPI] cudaMemcpy
+[DEBUG] exit_simulation

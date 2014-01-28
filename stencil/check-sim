@@ -1,0 +1,2 @@
+export PARBOIL_HOME=/data1/cxh/parboil
+PYTHONPATH=$PARBOIL_HOME/common/python python $PARBOIL_HOME/benchmarks/stencil/tools/compare-output result.out result-ref.out

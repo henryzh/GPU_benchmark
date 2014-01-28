@@ -1,0 +1,2 @@
+export PARBOIL_HOME=/scr/cxh/parboil
+PYTHONPATH=$PARBOIL_HOME/common/python python $PARBOIL_HOME/benchmarks/spmv/tools/compare-output Dubcova3.mtx.out $PARBOIL_HOME/datasets/spmv/large/output/Dubcova3.mtx.out

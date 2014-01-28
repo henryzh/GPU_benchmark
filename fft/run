@@ -1,0 +1,1 @@
+./fft -i array.bin 256 1024 -o result.dat

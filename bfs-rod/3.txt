@@ -1,0 +1,364 @@
+[DEBUG] CUDARTAPI __cudaRegisterFatBinary
+[DEBUG] gpgpu_sim_thread_concurrent
+591f8bc8ffc1eb34250a1aeb373b1035  /home/cxh/gpgpu-sim/v3.x/benchmarks/bfs/bfs
+[DEBUG] CUDARTAPI __cudaRegisterFunction
+[DEBUG] CUDARTAPI __cudaRegisterFunction
+Reading File
+Read File
+[DEBUG] CUDARTAPI cudaMalloc
+[DEBUG] CUDARTAPI cudaMemcpy
+[DEBUG] CUDARTAPI cudaMalloc
+[DEBUG] CUDARTAPI cudaMemcpy
+[DEBUG] CUDARTAPI cudaMalloc
+[DEBUG] CUDARTAPI cudaMemcpy
+[DEBUG] CUDARTAPI cudaMalloc
+[DEBUG] CUDARTAPI cudaMemcpy
+[DEBUG] CUDARTAPI cudaMalloc
+[DEBUG] CUDARTAPI cudaMemcpy
+[DEBUG] CUDARTAPI cudaMalloc
+[DEBUG] CUDARTAPI cudaMemcpy
+[DEBUG] CUDARTAPI cudaMalloc
+Copied Everything to GPU memory
+Start traversing the tree
+[DEBUG] CUDARTAPI cudaMemcpy
+[DEBUG] CUDARTAPI cudaLaunch
+[DEBUG] pushing kernel '_Z6KernelP4NodePiPbS2_S2_S1_i' to stream 0
+[DEBUG] gridDim= (1954,1,1) blockDim = (512,1,1) 
+[STATS] gpu_tot_sim_cycle = 20171
+[STATS] gpu_tot_sim_insn = 14003675
+[STATS] gpu_tot_ipc = 694.2479
+[STATS] gpu_tot_l2_misses = 0
+[STATS] gpu_tot_l2_accesses = 0
+[STATS] gpu_tot_l2_miss_rate = -nan
+
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 0 min, 53 sec (53 sec)
+--------------------------------------------------------------------
+
+[DEBUG] CUDARTAPI cudaLaunch
+[DEBUG] pushing kernel '_Z7Kernel2PbS_S_S_i' to stream 0
+[DEBUG] gridDim= (1954,1,1) blockDim = (512,1,1) 
+[STATS] gpu_tot_sim_cycle = 40347
+[STATS] gpu_tot_sim_insn = 28007295
+[STATS] gpu_tot_ipc = 694.1606
+[STATS] gpu_tot_l2_misses = 0
+[STATS] gpu_tot_l2_accesses = 0
+[STATS] gpu_tot_l2_miss_rate = -nan
+
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 1 min, 44 sec (104 sec)
+--------------------------------------------------------------------
+
+[DEBUG] CUDARTAPI cudaMemcpy
+[DEBUG] CUDARTAPI cudaMemcpy
+[DEBUG] CUDARTAPI cudaLaunch
+[DEBUG] pushing kernel '_Z6KernelP4NodePiPbS2_S2_S1_i' to stream 0
+[DEBUG] gridDim= (1954,1,1) blockDim = (512,1,1) 
+[STATS] gpu_tot_sim_cycle = 60970
+[STATS] gpu_tot_sim_insn = 42011578
+[STATS] gpu_tot_ipc = 689.0532
+[STATS] gpu_tot_l2_misses = 0
+[STATS] gpu_tot_l2_accesses = 0
+[STATS] gpu_tot_l2_miss_rate = -nan
+
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 2 min, 35 sec (155 sec)
+--------------------------------------------------------------------
+
+[DEBUG] CUDARTAPI cudaLaunch
+[DEBUG] pushing kernel '_Z7Kernel2PbS_S_S_i' to stream 0
+[DEBUG] gridDim= (1954,1,1) blockDim = (512,1,1) 
+[STATS] gpu_tot_sim_cycle = 81160
+[STATS] gpu_tot_sim_insn = 56015450
+[STATS] gpu_tot_ipc = 690.1854
+[STATS] gpu_tot_l2_misses = 0
+[STATS] gpu_tot_l2_accesses = 0
+[STATS] gpu_tot_l2_miss_rate = -nan
+
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 3 min, 27 sec (207 sec)
+--------------------------------------------------------------------
+
+[DEBUG] CUDARTAPI cudaMemcpy
+[DEBUG] CUDARTAPI cudaMemcpy
+[DEBUG] CUDARTAPI cudaLaunch
+[DEBUG] pushing kernel '_Z6KernelP4NodePiPbS2_S2_S1_i' to stream 0
+[DEBUG] gridDim= (1954,1,1) blockDim = (512,1,1) 
+[STATS] gpu_tot_sim_cycle = 101526
+[STATS] gpu_tot_sim_insn = 70023118
+[STATS] gpu_tot_ipc = 689.7063
+[STATS] gpu_tot_l2_misses = 0
+[STATS] gpu_tot_l2_accesses = 0
+[STATS] gpu_tot_l2_miss_rate = -nan
+
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 4 min, 20 sec (260 sec)
+--------------------------------------------------------------------
+
+[DEBUG] CUDARTAPI cudaLaunch
+[DEBUG] pushing kernel '_Z7Kernel2PbS_S_S_i' to stream 0
+[DEBUG] gridDim= (1954,1,1) blockDim = (512,1,1) 
+[STATS] gpu_tot_sim_cycle = 121750
+[STATS] gpu_tot_sim_insn = 84028310
+[STATS] gpu_tot_ipc = 690.1710
+[STATS] gpu_tot_l2_misses = 0
+[STATS] gpu_tot_l2_accesses = 0
+[STATS] gpu_tot_l2_miss_rate = -nan
+
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 5 min, 14 sec (314 sec)
+--------------------------------------------------------------------
+
+[DEBUG] CUDARTAPI cudaMemcpy
+[DEBUG] CUDARTAPI cudaMemcpy
+[DEBUG] CUDARTAPI cudaLaunch
+[DEBUG] pushing kernel '_Z6KernelP4NodePiPbS2_S2_S1_i' to stream 0
+[DEBUG] gridDim= (1954,1,1) blockDim = (512,1,1) 
+[STATS] gpu_tot_sim_cycle = 144173
+[STATS] gpu_tot_sim_insn = 98056018
+[STATS] gpu_tot_ipc = 680.1274
+[STATS] gpu_tot_l2_misses = 0
+[STATS] gpu_tot_l2_accesses = 0
+[STATS] gpu_tot_l2_miss_rate = -nan
+
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 6 min, 8 sec (368 sec)
+--------------------------------------------------------------------
+
+[DEBUG] CUDARTAPI cudaLaunch
+[DEBUG] pushing kernel '_Z7Kernel2PbS_S_S_i' to stream 0
+[DEBUG] gridDim= (1954,1,1) blockDim = (512,1,1) 
+[STATS] gpu_tot_sim_cycle = 164650
+[STATS] gpu_tot_sim_insn = 112069190
+[STATS] gpu_tot_ipc = 680.6510
+[STATS] gpu_tot_l2_misses = 0
+[STATS] gpu_tot_l2_accesses = 0
+[STATS] gpu_tot_l2_miss_rate = -nan
+
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 7 min, 1 sec (421 sec)
+--------------------------------------------------------------------
+
+[DEBUG] CUDARTAPI cudaMemcpy
+[DEBUG] CUDARTAPI cudaMemcpy
+[DEBUG] CUDARTAPI cudaLaunch
+[DEBUG] pushing kernel '_Z6KernelP4NodePiPbS2_S2_S1_i' to stream 0
+[DEBUG] gridDim= (1954,1,1) blockDim = (512,1,1) 
+[STATS] gpu_tot_sim_cycle = 196303
+[STATS] gpu_tot_sim_insn = 126211801
+[STATS] gpu_tot_ipc = 642.9438
+[STATS] gpu_tot_l2_misses = 0
+[STATS] gpu_tot_l2_accesses = 0
+[STATS] gpu_tot_l2_miss_rate = -nan
+
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 8 min, 0 sec (480 sec)
+--------------------------------------------------------------------
+
+[DEBUG] CUDARTAPI cudaLaunch
+[DEBUG] pushing kernel '_Z7Kernel2PbS_S_S_i' to stream 0
+[DEBUG] gridDim= (1954,1,1) blockDim = (512,1,1) 
+[STATS] gpu_tot_sim_cycle = 217932
+[STATS] gpu_tot_sim_insn = 140270237
+[STATS] gpu_tot_ipc = 643.6422
+[STATS] gpu_tot_l2_misses = 0
+[STATS] gpu_tot_l2_accesses = 0
+[STATS] gpu_tot_l2_miss_rate = -nan
+
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 8 min, 55 sec (535 sec)
+--------------------------------------------------------------------
+
+[DEBUG] CUDARTAPI cudaMemcpy
+[DEBUG] CUDARTAPI cudaMemcpy
+[DEBUG] CUDARTAPI cudaLaunch
+[DEBUG] pushing kernel '_Z6KernelP4NodePiPbS2_S2_S1_i' to stream 0
+[DEBUG] gridDim= (1954,1,1) blockDim = (512,1,1) 
+[STATS] gpu_tot_sim_cycle = 284221
+[STATS] gpu_tot_sim_insn = 155058884
+[STATS] gpu_tot_ipc = 545.5574
+[STATS] gpu_tot_l2_misses = 0
+[STATS] gpu_tot_l2_accesses = 0
+[STATS] gpu_tot_l2_miss_rate = -nan
+
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 10 min, 13 sec (613 sec)
+--------------------------------------------------------------------
+
+[DEBUG] CUDARTAPI cudaLaunch
+[DEBUG] pushing kernel '_Z7Kernel2PbS_S_S_i' to stream 0
+[DEBUG] gridDim= (1954,1,1) blockDim = (512,1,1) 
+[STATS] gpu_tot_sim_cycle = 310205
+[STATS] gpu_tot_sim_insn = 169367592
+[STATS] gpu_tot_ipc = 545.9860
+[STATS] gpu_tot_l2_misses = 0
+[STATS] gpu_tot_l2_accesses = 0
+[STATS] gpu_tot_l2_miss_rate = -nan
+
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 11 min, 14 sec (674 sec)
+--------------------------------------------------------------------
+
+[DEBUG] CUDARTAPI cudaMemcpy
+[DEBUG] CUDARTAPI cudaMemcpy
+[DEBUG] CUDARTAPI cudaLaunch
+[DEBUG] pushing kernel '_Z6KernelP4NodePiPbS2_S2_S1_i' to stream 0
+[DEBUG] gridDim= (1954,1,1) blockDim = (512,1,1) 
+[STATS] gpu_tot_sim_cycle = 461656
+[STATS] gpu_tot_sim_insn = 187709519
+[STATS] gpu_tot_ipc = 406.6004
+[STATS] gpu_tot_l2_misses = 0
+[STATS] gpu_tot_l2_accesses = 0
+[STATS] gpu_tot_l2_miss_rate = -nan
+
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 13 min, 42 sec (822 sec)
+--------------------------------------------------------------------
+
+[DEBUG] CUDARTAPI cudaLaunch
+[DEBUG] pushing kernel '_Z7Kernel2PbS_S_S_i' to stream 0
+[DEBUG] gridDim= (1954,1,1) blockDim = (512,1,1) 
+[STATS] gpu_tot_sim_cycle = 493477
+[STATS] gpu_tot_sim_insn = 203288235
+[STATS] gpu_tot_ipc = 411.9508
+[STATS] gpu_tot_l2_misses = 0
+[STATS] gpu_tot_l2_accesses = 0
+[STATS] gpu_tot_l2_miss_rate = -nan
+
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 14 min, 50 sec (890 sec)
+--------------------------------------------------------------------
+
+[DEBUG] CUDARTAPI cudaMemcpy
+[DEBUG] CUDARTAPI cudaMemcpy
+[DEBUG] CUDARTAPI cudaLaunch
+[DEBUG] pushing kernel '_Z6KernelP4NodePiPbS2_S2_S1_i' to stream 0
+[DEBUG] gridDim= (1954,1,1) blockDim = (512,1,1) 
+[STATS] gpu_tot_sim_cycle = 869268
+[STATS] gpu_tot_sim_insn = 238325952
+[STATS] gpu_tot_ipc = 274.1685
+[STATS] gpu_tot_l2_misses = 0
+[STATS] gpu_tot_l2_accesses = 0
+[STATS] gpu_tot_l2_miss_rate = -nan
+
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 20 min, 22 sec (1222 sec)
+--------------------------------------------------------------------
+
+[DEBUG] CUDARTAPI cudaLaunch
+[DEBUG] pushing kernel '_Z7Kernel2PbS_S_S_i' to stream 0
+[DEBUG] gridDim= (1954,1,1) blockDim = (512,1,1) 
+[STATS] gpu_tot_sim_cycle = 901609
+[STATS] gpu_tot_sim_insn = 257739736
+[STATS] gpu_tot_ipc = 285.8664
+[STATS] gpu_tot_l2_misses = 0
+[STATS] gpu_tot_l2_accesses = 0
+[STATS] gpu_tot_l2_miss_rate = -nan
+
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 21 min, 35 sec (1295 sec)
+--------------------------------------------------------------------
+
+[DEBUG] CUDARTAPI cudaMemcpy
+[DEBUG] CUDARTAPI cudaMemcpy
+[DEBUG] CUDARTAPI cudaLaunch
+[DEBUG] pushing kernel '_Z6KernelP4NodePiPbS2_S2_S1_i' to stream 0
+[DEBUG] gridDim= (1954,1,1) blockDim = (512,1,1) 
+[STATS] gpu_tot_sim_cycle = 1473304
+[STATS] gpu_tot_sim_insn = 326768884
+[STATS] gpu_tot_ipc = 221.7933
+[STATS] gpu_tot_l2_misses = 0
+[STATS] gpu_tot_l2_accesses = 0
+[STATS] gpu_tot_l2_miss_rate = -nan
+
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 30 min, 18 sec (1818 sec)
+--------------------------------------------------------------------
+
+[DEBUG] CUDARTAPI cudaLaunch
+[DEBUG] pushing kernel '_Z7Kernel2PbS_S_S_i' to stream 0
+[DEBUG] gridDim= (1954,1,1) blockDim = (512,1,1) 
+[STATS] gpu_tot_sim_cycle = 1505598
+[STATS] gpu_tot_sim_insn = 345208004
+[STATS] gpu_tot_ipc = 229.2830
+[DEBUG] CUDARTAPI cudaMemcpy
+[STATS] gpu_tot_l2_misses = 0
+[STATS] gpu_tot_l2_accesses = 0
+[STATS] gpu_tot_l2_miss_rate = -nan
+
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 31 min, 31 sec (1891 sec)
+--------------------------------------------------------------------
+
+[DEBUG] CUDARTAPI cudaMemcpy
+[DEBUG] CUDARTAPI cudaLaunch
+[DEBUG] pushing kernel '_Z6KernelP4NodePiPbS2_S2_S1_i' to stream 0
+[DEBUG] gridDim= (1954,1,1) blockDim = (512,1,1) 
+[STATS] gpu_tot_sim_cycle = 1770431
+[STATS] gpu_tot_sim_insn = 388927456
+[STATS] gpu_tot_ipc = 219.6795
+[STATS] gpu_tot_l2_misses = 0
+[STATS] gpu_tot_l2_accesses = 0
+[STATS] gpu_tot_l2_miss_rate = -nan
+
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 36 min, 10 sec (2170 sec)
+--------------------------------------------------------------------
+
+[DEBUG] CUDARTAPI cudaLaunch
+[DEBUG] pushing kernel '_Z7Kernel2PbS_S_S_i' to stream 0
+[DEBUG] gridDim= (1954,1,1) blockDim = (512,1,1) 
+[STATS] gpu_tot_sim_cycle = 1795206
+[STATS] gpu_tot_sim_insn = 403138316
+[STATS] gpu_tot_ipc = 224.5638
+[STATS] gpu_tot_l2_misses = 0
+[STATS] gpu_tot_l2_accesses = 0
+[STATS] gpu_tot_l2_miss_rate = -nan
+
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 37 min, 9 sec (2229 sec)
+--------------------------------------------------------------------
+
+[DEBUG] CUDARTAPI cudaMemcpy
+[DEBUG] CUDARTAPI cudaMemcpy
+[DEBUG] CUDARTAPI cudaLaunch
+[DEBUG] pushing kernel '_Z6KernelP4NodePiPbS2_S2_S1_i' to stream 0
+[DEBUG] gridDim= (1954,1,1) blockDim = (512,1,1) 
+[STATS] gpu_tot_sim_cycle = 1848849
+[STATS] gpu_tot_sim_insn = 418103313
+[STATS] gpu_tot_ipc = 226.1425
+[DEBUG] CUDARTAPI cudaLaunch
+[DEBUG] pushing kernel '_Z7Kernel2PbS_S_S_i' to stream 0
+[DEBUG] gridDim= (1954,1,1) blockDim = (512,1,1) 
+[STATS] gpu_tot_l2_misses = 0
+[STATS] gpu_tot_l2_accesses = 0
+[STATS] gpu_tot_l2_miss_rate = -nan
+[STATS] gpu_tot_sim_cycle = 1869038
+[STATS] gpu_tot_sim_insn = 432107245
+[STATS] gpu_tot_ipc = 231.1923
+[STATS] gpu_tot_l2_misses = 0
+[STATS] gpu_tot_l2_accesses = 0
+[STATS] gpu_tot_l2_miss_rate = -nan
+
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 39 min, 17 sec (2357 sec)
+--------------------------------------------------------------------
+
+[DEBUG] CUDARTAPI cudaMemcpy
+[DEBUG] CUDARTAPI cudaMemcpy
+[DEBUG] CUDARTAPI cudaLaunch
+[DEBUG] pushing kernel '_Z6KernelP4NodePiPbS2_S2_S1_i' to stream 0
+[DEBUG] gridDim= (1954,1,1) blockDim = (512,1,1) 
+[STATS] gpu_tot_sim_cycle = 1889295
+[STATS] gpu_tot_sim_insn = 446111902
+[STATS] gpu_tot_ipc = 236.1261
+[STATS] gpu_tot_l2_misses = 0
+[STATS] gpu_tot_l2_accesses = 0
+[STATS] gpu_tot_l2_miss_rate = -nan
+
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 40 min, 9 sec (2409 sec)
+--------------------------------------------------------------------
+
+[DEBUG] CUDARTAPI cudaLaunch
+[DEBUG] pushing kernel '_Z7Kernel2PbS_S_S_i' to stream 0
+[DEBUG] gridDim= (1954,1,1) blockDim = (512,1,1) 
+[STATS] gpu_tot_sim_cycle = 1909465
+[STATS] gpu_tot_sim_insn = 460115486
+[STATS] gpu_tot_ipc = 240.9657
+[STATS] gpu_tot_l2_misses = 0
+[STATS] gpu_tot_l2_accesses = 0
+[STATS] gpu_tot_l2_miss_rate = -nan
+
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 41 min, 2 sec (2462 sec)
+--------------------------------------------------------------------
+
+[DEBUG] CUDARTAPI cudaMemcpy
+Kernel Executed 12 times
+[DEBUG] CUDARTAPI cudaMemcpy
+Result stored in result.txt
+[DEBUG] CUDARTAPI cudaFree
+[DEBUG] CUDARTAPI cudaFree
+[DEBUG] CUDARTAPI cudaFree
+[DEBUG] CUDARTAPI cudaFree
+[DEBUG] CUDARTAPI cudaFree
+[DEBUG] CUDARTAPI cudaFree
+

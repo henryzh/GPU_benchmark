@@ -1,0 +1,147 @@
+gpu_sim_cycle = 2371980
+gpu_sim_insn = 62010368
+gpu_ipc = 26.143
+gpu_tot_sim_cycle = 2371980
+gpu_tot_sim_insn = 62010368
+gpu_tot_ipc =      26.1429
+gpu_stall_dramfull = 474
+gpu_stall_icnt2sh  = 257
+total_dl1_misses=0
+total_dl1_accesses=0
+total_dl1_miss_rate= -nan
+gpgpu_n_tot_icount = 62010368
+gpgpu_n_stall_shd_mem = 6741102
+gpgpu_n_mem_accesses[read_local] = 0
+gpgpu_n_mem_accesses[write_local] = 0
+gpgpu_n_mem_accesses[read_global] = 0
+gpgpu_n_mem_accesses[write_global] = 0
+gpgpu_n_mem_accesses[atomic_global] = 0
+gpgpu_n_mem_accesses[texture] = 0
+gpgpu_n_mem_accesses[const] = 16
+gpgpu_n_accesses[global_load] = 2564000
+gpgpu_n_accesses[global_store] = 96000
+gpgpu_n_accesses[global_atomic] = 0
+gpgpu_n_accesses[local_load] = 0
+gpgpu_n_accesses[local_store] = 0
+gpgpu_n_insn[load]  = 19840000
+gpgpu_n_insn[store] = 640000
+gpgpu_n_insn[atomic] = 0
+gpgpu_n_insn[shmem] = 0
+gpgpu_n_insn[tex] = 0
+gpgpu_n_insn[const_mem] = 0
+gpgpu_n_insn[param_mem] = 1492992
+gpgpu_n_shmem_bkconflict = 0
+gpgpu_n_cache_bkconflict = 0
+gpgpu_n_intrawarp_mshr_merge = 0
+gpgpu_n_cmem_portconflict = 2864
+gpgpu_stall_shd_mem[c_mem][bk_conf] = 2864
+gpgpu_stall_shd_mem[c_mem][mshr_rc] = 0
+gpgpu_stall_shd_mem[c_mem][icnt_rc] = 0
+gpgpu_stall_shd_mem[t_mem][mshr_rc] = 0
+gpgpu_stall_shd_mem[t_mem][icnt_rc] = 0
+gpgpu_stall_shd_mem[s_mem][bk_conf] = 0
+gpgpu_stall_shd_mem[gl_mem][bk_conf] = 0
+gpgpu_stall_shd_mem[gl_mem][coal_stall] = 2020000
+gpgpu_stall_shd_mem[g_mem_ld][mshr_rc] = 0
+gpgpu_stall_shd_mem[g_mem_ld][icnt_rc] = 4458489
+gpgpu_stall_shd_mem[g_mem_ld][wb_icnt_rc] = 0
+gpgpu_stall_shd_mem[g_mem_ld][wb_rsrv_fail] = 0
+gpgpu_stall_shd_mem[g_mem_st][mshr_rc] = 0
+gpgpu_stall_shd_mem[g_mem_st][icnt_rc] = 259749
+gpgpu_stall_shd_mem[g_mem_st][wb_icnt_rc] = 0
+gpgpu_stall_shd_mem[g_mem_st][wb_rsrv_fail] = 0
+gpgpu_stall_shd_mem[l_mem_ld][mshr_rc] = 0
+gpgpu_stall_shd_mem[l_mem_ld][icnt_rc] = 0
+gpgpu_stall_shd_mem[l_mem_ld][wb_icnt_rc] = 0
+gpgpu_stall_shd_mem[l_mem_ld][wb_rsrv_fail] = 0
+gpgpu_stall_shd_mem[l_mem_st][mshr_rc] = 0
+gpgpu_stall_shd_mem[l_mem_st][icnt_rc] = 0
+gpgpu_stall_shd_mem[l_mem_ld][wb_icnt_rc] = 0
+gpgpu_stall_shd_mem[l_mem_ld][wb_rsrv_fail] = 0
+gpu_reg_bank_conflict_stalls = 0
+Warp Occupancy Distribution:
+Stall:3542764	W0_Idle:2019324	W0_Scoreboard:68403230	W1:0	W2:0	W3:0	W4:0	W5:0	W6:0	W7:0	W8:0	W9:0	W10:0	W11:0	W12:0	W13:0	W14:0	W15:0	W16:0	W17:0	W18:0	W19:0	W20:0	W21:0	W22:0	W23:0	W24:0	W25:0	W26:0	W27:0	W28:0	W29:0	W30:0	W31:0	W32:1937824
+L2_write_miss = 0
+L2_write_hit = 0
+L2_read_miss = 0
+L2_read_hit = 0
+Cache L2_bank_000:
+MSHR contents
+
+DRAM[0]: 16 bks, busW=4 BL=4 CL=12, tRRD=2 tCCD=6, tRCD=12 tRAS=28 tRP=12 tRC=40
+n_cmd=3131013 n_nop=3081857 n_act=2538 n_pre=2522 n_req=11024 n_rd=30980 n_write=13116 bw_util=0.02817
+n_activity=264621 dram_eff=0.3333
+bk0: 1708a 3122238i bk1: 2416a 3122063i bk2: 2488a 3123951i bk3: 2712a 3123003i bk4: 2544a 3124168i bk5: 2648a 3123831i bk6: 2476a 3123584i bk7: 2624a 3122562i bk8: 2396a 3122885i bk9: 2492a 3121694i bk10: 1756a 3120998i bk11: 1300a 3118961i bk12: 816a 3119633i bk13: 592a 3117963i bk14: 808a 3114122i bk15: 1204a 3045932i 
+dram_util_bins: 0 0 0 0 0 0 0 0 0 0
+dram_eff_bins: 0 0 0 0 0 0 0 0 0 0
+mrqq: max=7 avg=0.00308271
+Cache L2_bank_001:
+MSHR contents
+
+DRAM[1]: 16 bks, busW=4 BL=4 CL=12, tRRD=2 tCCD=6, tRCD=12 tRAS=28 tRP=12 tRC=40
+n_cmd=3131013 n_nop=3081903 n_act=2529 n_pre=2513 n_req=11017 n_rd=31052 n_write=13016 bw_util=0.02815
+n_activity=264480 dram_eff=0.3332
+bk0: 1744a 3121478i bk1: 2404a 3122129i bk2: 2448a 3123437i bk3: 2592a 3123453i bk4: 2684a 3124160i bk5: 2680a 3123711i bk6: 2444a 3123766i bk7: 2568a 3122885i bk8: 2436a 3122944i bk9: 2528a 3121632i bk10: 1744a 3121129i bk11: 1312a 3119396i bk12: 832a 3120072i bk13: 604a 3117783i bk14: 812a 3112432i bk15: 1220a 3046691i 
+dram_util_bins: 0 0 0 0 0 0 0 0 0 0
+dram_eff_bins: 0 0 0 0 0 0 0 0 0 0
+mrqq: max=6 avg=0.00312423
+Cache L2_bank_002:
+MSHR contents
+
+DRAM[2]: 16 bks, busW=4 BL=4 CL=12, tRRD=2 tCCD=6, tRCD=12 tRAS=28 tRP=12 tRC=40
+n_cmd=3131013 n_nop=3090405 n_act=2102 n_pre=2086 n_req=9105 n_rd=25720 n_write=10700 bw_util=0.02326
+n_activity=223570 dram_eff=0.3258
+bk0: 1384a 3123882i bk1: 2056a 3124280i bk2: 2008a 3124494i bk3: 2220a 3124537i bk4: 2156a 3125416i bk5: 2076a 3124952i bk6: 2132a 3125412i bk7: 2044a 3124782i bk8: 2104a 3124487i bk9: 2032a 3123077i bk10: 1508a 3123093i bk11: 1052a 3121708i bk12: 716a 3122173i bk13: 536a 3121175i bk14: 680a 3116635i bk15: 1016a 3060731i 
+dram_util_bins: 0 0 0 0 0 0 0 0 0 0
+dram_eff_bins: 0 0 0 0 0 0 0 0 0 0
+mrqq: max=5 avg=0.00270104
+Cache L2_bank_003:
+MSHR contents
+
+DRAM[3]: 16 bks, busW=4 BL=4 CL=12, tRRD=2 tCCD=6, tRCD=12 tRAS=28 tRP=12 tRC=40
+n_cmd=3131013 n_nop=3090523 n_act=1973 n_pre=1957 n_req=9140 n_rd=25776 n_write=10784 bw_util=0.02335
+n_activity=220646 dram_eff=0.3314
+bk0: 1420a 3123818i bk1: 2064a 3123963i bk2: 2064a 3124540i bk3: 2080a 3124548i bk4: 2064a 3125373i bk5: 2080a 3125100i bk6: 2108a 3124973i bk7: 2132a 3123722i bk8: 2156a 3124453i bk9: 2052a 3122799i bk10: 1504a 3122515i bk11: 1084a 3121344i bk12: 692a 3121530i bk13: 524a 3120484i bk14: 700a 3116916i bk15: 1052a 3063881i 
+dram_util_bins: 0 0 0 0 0 0 0 0 0 0
+dram_eff_bins: 0 0 0 0 0 0 0 0 0 0
+mrqq: max=9 avg=0.00317341
+Cache L2_bank_004:
+MSHR contents
+
+DRAM[4]: 16 bks, busW=4 BL=4 CL=12, tRRD=2 tCCD=6, tRCD=12 tRAS=28 tRP=12 tRC=40
+n_cmd=3131013 n_nop=3089869 n_act=2172 n_pre=2156 n_req=9204 n_rd=26060 n_write=10756 bw_util=0.02352
+n_activity=227141 dram_eff=0.3242
+bk0: 1444a 3123435i bk1: 2104a 3123592i bk2: 2016a 3124887i bk3: 2180a 3124929i bk4: 2204a 3126104i bk5: 2212a 3125337i bk6: 2160a 3124961i bk7: 2176a 3125183i bk8: 2088a 3124942i bk9: 2100a 3123663i bk10: 1464a 3123327i bk11: 1024a 3121998i bk12: 688a 3121980i bk13: 532a 3121435i bk14: 684a 3117661i bk15: 984a 3059231i 
+dram_util_bins: 0 0 0 0 0 0 0 0 0 0
+dram_eff_bins: 0 0 0 0 0 0 0 0 0 0
+mrqq: max=4 avg=0.00165889
+Cache L2_bank_005:
+MSHR contents
+
+DRAM[5]: 16 bks, busW=4 BL=4 CL=12, tRRD=2 tCCD=6, tRCD=12 tRAS=28 tRP=12 tRC=40
+n_cmd=3131013 n_nop=3089891 n_act=2227 n_pre=2211 n_req=9171 n_rd=25984 n_write=10700 bw_util=0.02343
+n_activity=228062 dram_eff=0.3217
+bk0: 1376a 3123211i bk1: 2040a 3123788i bk2: 2104a 3125538i bk3: 2208a 3125675i bk4: 2120a 3125429i bk5: 2232a 3125729i bk6: 2104a 3125616i bk7: 2108a 3124962i bk8: 2084a 3125012i bk9: 2108a 3123862i bk10: 1488a 3123723i bk11: 1056a 3122570i bk12: 688a 3121983i bk13: 524a 3121037i bk14: 704a 3117377i bk15: 1040a 3056724i 
+dram_util_bins: 0 0 0 0 0 0 0 0 0 0
+dram_eff_bins: 0 0 0 0 0 0 0 0 0 0
+mrqq: max=4 avg=0.00147237
+Cache L2_bank_006:
+MSHR contents
+
+DRAM[6]: 16 bks, busW=4 BL=4 CL=12, tRRD=2 tCCD=6, tRCD=12 tRAS=28 tRP=12 tRC=40
+n_cmd=3131013 n_nop=3082061 n_act=2566 n_pre=2550 n_req=10959 n_rd=30988 n_write=12848 bw_util=0.028
+n_activity=262278 dram_eff=0.3343
+bk0: 1788a 3121979i bk1: 2360a 3120703i bk2: 2428a 3123084i bk3: 2720a 3122798i bk4: 2604a 3123231i bk5: 2668a 3123295i bk6: 2440a 3123583i bk7: 2616a 3122460i bk8: 2416a 3122705i bk9: 2512a 3120761i bk10: 1764a 3120958i bk11: 1268a 3119917i bk12: 812a 3119847i bk13: 628a 3117333i bk14: 812a 3113361i bk15: 1152a 3044423i 
+dram_util_bins: 0 0 0 0 0 0 0 0 0 0
+dram_eff_bins: 0 0 0 0 0 0 0 0 0 0
+mrqq: max=8 avg=0.00531713
+Cache L2_bank_007:
+MSHR contents
+
+DRAM[7]: 16 bks, busW=4 BL=4 CL=12, tRRD=2 tCCD=6, tRCD=12 tRAS=28 tRP=12 tRC=40
+n_cmd=3131013 n_nop=3082215 n_act=2575 n_pre=2559 n_req=10916 n_rd=30820 n_write=12844 bw_util=0.02789
+n_activity=262255 dram_eff=0.333
+bk0: 1732a 3121356i bk1: 2448a 3121433i bk2: 2400a 3123555i bk3: 2644a 3123291i bk4: 2616a 3124490i bk5: 2636a 3123081i bk6: 2496a 3124432i bk7: 2620a 3123181i bk8: 2452a 3123118i bk9: 2424a 3120953i bk10: 1752a 3121799i bk11: 1192a 3119450i bk12: 824a 3119681i bk13: 604a 3117626i bk14: 792a 3113026i bk15: 1188a 3044642i 
+dram_util_bins: 0 0 0 0 0 0 0 0 0 0
+dram_eff_bins: 0 0 0 0 0 0 0 0 0 0
+mrqq: max=8 avg=0.00436983

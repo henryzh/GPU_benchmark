@@ -1,0 +1,51 @@
+
+SIM_ROOT=/scr/cxh/gpgpu-sim-ruby
+BENCH_ROOT=/scr/cxh/benchmarks
+MODEL="cuda"
+INPUT="sim"
+BENCH="vecAdd"
+CONFIG="test"
+#OPTION="no_coherence"
+OPTION="TO_NC"
+LOG_FILE=log.txt
+ERR_FILE=error.txt
+OUT_FILE=output.txt
+RESULT_DIR=/scr/cxh/results
+
+cd $RESULT_DIR
+rm $ERR_FILE
+echo "CUDA Simulation on GPGPU-Sim <$CONFIG>"
+for BMK in $BENCH; do
+for OPT in $OPTION; do
+for SIZE in $INPUT; do
+	source $BENCH_ROOT/$OPT-env.sh
+	output_dir=$RESULT_DIR/$OPT-$BMK-$SIZE
+	mkdir $output_dir 2>> $RESULT_DIR/$ERR_FILE
+	echo ">>> Run $BMK <$SIZE> <$OPT> at `date`"
+	echo ">>> Run $BMK <$SIZE> <$OPT> at `date`" > $output_dir/$LOG_FILE
+
+	# launch gpgpu-sim
+	cd $BENCH_ROOT/$BMK
+	rm _cuobjdump*
+	cp $SIM_ROOT/configs/$CONFIG/$OPT/gpgpusim.config .
+	cp $SIM_ROOT/configs/$CONFIG/$OPT/baseline_icnt_config.txt .
+#	cp $BENCH_ROOT/config/$CONFIG/config_fermi_islip.icnt .
+#	cp $BENCH_ROOT/config/$CONFIG/$OPT/gpuwattch_gtx480.xml .
+
+	rm stats.txt config.out 2> $output_dir/$ERR_FILE
+	./run-$SIZE > $output_dir/$OUT_FILE 2>> $output_dir/$ERR_FILE
+	echo ">>> Check Results"
+        echo ">>> Check Results" >> $output_dir/$LOG_FILE
+	./check-$SIZE >> $output_dir/$ERR_FILE
+	mv stats.txt $output_dir/.
+	mv config.out $output_dir/.
+	mv gpgpu_inst_stats.txt $output_dir/.
+	mv ruby_stat.txt $output_dir/.
+#	mv gpgpusim_power_report__* $output_dir/.
+
+	echo ">>> End $BMK <$SIZE> <$OPT> at `date`"
+	echo ">>> End $BMK <$SIZE> <$OPT> at `date`" >> $output_dir/$LOG_FILE
+	echo ">>> ========================================================"
+done;
+done;
+done;

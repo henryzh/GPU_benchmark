@@ -1,0 +1,22 @@
+[CUAPI] __cudaRegisterFatBinary
+[VERSION] GPGPU-Sim V3.1.2+ruby [build 14831]
+[RUBY] initializing gpusim_ruby
+[RUBY] init ruby
+[CUAPI] __cudaRegisterFunction
+[BENCH] CUDA Sum, n = 32768
+[BENCH] Xuhao Chen <cxh@illinois.edu>
+[BENCH] Block Size: 256
+[BENCH] Number of Blocks: 64
+[BENCH] Hardware Barrier
+[CUAPI] cudaMalloc
+[CUAPI] cudaMalloc
+[CUAPI] cudaMemcpy
+[DEBUG] Setting Ruby membar
+[CUAPI] cudaMemset
+[CUAPI] __cudaLaunch
+[DEBUG] pushing kernel '_Z3sumPKfjPf' to stream 0
+[DEBUG] gridDim= (64,1,1) blockDim = (256,1,1)
+[DEBUG] Setting Ruby membar
+[DEBUG] Allocating CTA barrier: kernel_id=1, num_ctas=64
+[SYNC] CTA barrier allocated for Grid #1
+[DEBUG] CTA/core = 6, limited by: threads

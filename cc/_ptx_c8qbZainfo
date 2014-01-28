@@ -1,0 +1,68 @@
+ptxas info    : Compiling entry function '_Z29kernel_push1_start_stochasticPiS_S_S_S_S_S_S_S_iiiiiiS_S_S_Pb' for 'sm_20'
+ptxas info    : Function properties for _Z29kernel_push1_start_stochasticPiS_S_S_S_S_S_S_S_iiiiiiS_S_S_Pb
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 15 registers, 1424+0 bytes smem, 160 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z17kernel_start_sinkPiS_S_S_S_S_S_S_iiiiiiS_S_S_Pb' for 'sm_20'
+ptxas info    : Function properties for _Z17kernel_start_sinkPiS_S_S_S_S_S_S_iiiiiiS_S_S_Pb
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 9 registers, 152 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z16adjustedgeweightPiS_S_S_S_S_S_S_S_S_S_S_iiiiii' for 'sm_20'
+ptxas info    : Function properties for _Z16adjustedgeweightPiS_S_S_S_S_S_S_S_S_S_S_iiiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 20 registers, 152 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z23kernel_push2_stochasticPiS_S_S_S_S_S_S_S_iiiiiiS_S_S_Pb' for 'sm_20'
+ptxas info    : Function properties for _Z23kernel_push2_stochasticPiS_S_S_S_S_S_S_S_iiiiiiS_S_S_Pb
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 24 registers, 1424+0 bytes smem, 160 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z23kernel_push_stochastic1PiS_S_PbS_i' for 'sm_20'
+ptxas info    : Function properties for _Z23kernel_push_stochastic1PiS_S_PbS_i
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 8 registers, 76 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z11kernel_pushiiiPiS_S_S_S_S_S_S_S_S_S_S_iiiiii' for 'sm_20'
+ptxas info    : Function properties for _Z11kernel_pushiiiPiS_S_S_S_S_S_S_S_S_S_S_iiiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 38 registers, 168 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z13CudaWeightCueiPiS_S_S_S_S_S_S_S_S_S_iii' for 'sm_20'
+ptxas info    : Function properties for _Z13CudaWeightCueiPiS_S_S_S_S_S_S_S_S_S_iii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 21 registers, 140 bytes cmem[0], 4 bytes cmem[16]
+ptxas info    : Compiling entry function '_Z10kernel_EndPiS_S_' for 'sm_20'
+ptxas info    : Function properties for _Z10kernel_EndPiS_S_
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 8 registers, 56 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z23kernel_push_stochastic2PiS_S_S_i' for 'sm_20'
+ptxas info    : Function properties for _Z23kernel_push_stochastic2PiS_S_S_i
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 10 registers, 68 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z15kernel_pull_endPiS_S_S_S_S_S_S_S_iiiiii' for 'sm_20'
+ptxas info    : Function properties for _Z15kernel_pull_endPiS_S_S_S_S_S_S_S_iiiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 12 registers, 128 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z10CudaWeightiPiS_S_S_S_S_S_S_S_iii' for 'sm_20'
+ptxas info    : Function properties for _Z10CudaWeightiPiS_S_S_S_S_S_S_S_iii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 20 registers, 124 bytes cmem[0], 4 bytes cmem[16]
+ptxas info    : Compiling entry function '_Z23kernel_push1_stochasticPiS_S_S_S_S_S_S_S_iiiiiiS_S_' for 'sm_20'
+ptxas info    : Function properties for _Z23kernel_push1_stochasticPiS_S_S_S_S_S_S_S_iiiiiiS_S_
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 20 registers, 1424+0 bytes smem, 144 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z10kernel_bfsPiS_S_S_S_PbiiiiiiS0_S_' for 'sm_20'
+ptxas info    : Function properties for _Z10kernel_bfsPiS_S_S_S_PbiiiiiiS0_S_
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 14 registers, 120 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z25kernel_relabel_stochasticPiS_S_S_S_S_S_S_S_iiiiiiS_S_' for 'sm_20'
+ptxas info    : Function properties for _Z25kernel_relabel_stochasticPiS_S_S_S_S_S_S_S_iiiiiiS_S_
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 16 registers, 1424+0 bytes smem, 144 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z12kernel_bfs_tPiS_S_Pbiiiiii' for 'sm_20'
+ptxas info    : Function properties for _Z12kernel_bfs_tPiS_S_Pbiiiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 10 registers, 88 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z14kernel_relabelPiS_S_S_S_S_S_S_iiiiii' for 'sm_20'
+ptxas info    : Function properties for _Z14kernel_relabelPiS_S_S_S_S_S_S_iiiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 12 registers, 120 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z14copyedgeweightPiS_S_S_S_S_S_S_S_S_S_S_S_S_S_iiiiii' for 'sm_20'
+ptxas info    : Function properties for _Z14copyedgeweightPiS_S_S_S_S_S_S_S_S_S_S_S_S_S_iiiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 12 registers, 176 bytes cmem[0]

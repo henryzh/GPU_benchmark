@@ -1,0 +1,1 @@
+./lbm -i 120_120_150_ldc.of -o result.dat -- 1

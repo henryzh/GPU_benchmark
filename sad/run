@@ -1,0 +1,1 @@
+./sad -i /home/cxh/workspace/parboil/datasets/sad/default/input/reference.bin,/home/cxh/workspace/parboil/datasets/sad/default/input/frame.bin -o out.bin

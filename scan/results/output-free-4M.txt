@@ -1,0 +1,41 @@
+09c6968b8e965cfdc9e4805e9cfae615  /home/cxh/gpgpu-sim/v3.x/benchmarks/scan/scan
+[CUAPI] __cudaRegisterFatBinary
+[DEBUG] extract_code_using_cuobjdump
+[DEBUG] gpgpu_sim_thread_concurrent
+[CUAPI] __cudaRegisterFunction
+[BENCH] Scan with 4194304 elements, 16384 partial sums
+[BENCH] gridSize=16384, blockSize=256, shmem_sz=1026
+[BENCH] Free Barrier, result is supposed to be incorrect
+[CUAPI] cudaMalloc
+[CUAPI] cudaMalloc
+[CUAPI] cudaMemset
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMalloc
+[CUAPI] cudaMalloc
+[CUAPI] cudaMemset
+[CUAPI] cudaMemset
+[CUAPI] cudaLaunch
+[DEBUG] pushing kernel '_Z11scan_kernelPiPjS0_S_' to stream 0
+[DEBUG] gridDim = (16384,1,1) blockDim = (256,1,1) 
+[DEBUG] Allocating CTA barrier: kernel_id=1, num_ctas=16384
+[SYNC] CTA barrier allocated for Grid #1
+[SYNC] CTA barrier deallocated for Grid #1
+[DEBUG] Kenel done, CTA barrier deallocated
+[STATS] gpu_tot_sim_cycle = 1771528
+[STATS] gpu_tot_sim_insn = 912555776
+[STATS] gpu_tot_ipc = 515.1235
+[STATS] Number of ld.volatile: 0
+[STATS] Number of st.volatile: 0
+[STATS] Number of atomic: 0
+[STATS] gpu_tot_l1_miss_rate = 0.9996
+[STATS] gpu_tot_l2_miss_rate = 0.3089
+
+[DEBUG] gpgpu_simulation_time = 0 days, 0 hrs, 39 min, 27 sec (2367 sec)
+--------------------------------------------------------------------
+
+[CUAPI] cudaMemcpy
+[CUAPI] cudaMemcpy
+[ERROR] out[512]=257, ref=513
+[ERROR] out[513]=258, ref=514
+[CUAPI] cudaFree
+[CUAPI] cudaFree

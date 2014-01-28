@@ -1,0 +1,2 @@
+export PARBOIL_HOME=/home/cxh/workspace/parboil
+mpirun -np `cat /proc/cpuinfo | grep processor | wc -l` ./sgemm -i $PARBOIL_HOME/datasets/sgemm/small/input/matrix1.txt,$PARBOIL_HOME/datasets/sgemm/small/input/matrix2.txt,$PARBOIL_HOME/datasets/sgemm/small/input/matrix2t.txt -o matrix3.txt

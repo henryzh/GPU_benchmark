@@ -1,0 +1,42 @@
+[CUAPI] __cudaRegisterFatBinary
+[VERSION] GPGPU-Sim V3.1.2+ruby [build 14831]
+[RUBY] initializing gpusim_ruby
+[RUBY] init ruby
+   Invalid token near "<" on line 6
+   Invalid token near ">" on line 6
+   Invalid token near "<" on line 376
+   Invalid token near ">" on line 376
+[CUAPI] __cudaRegisterFunction
+GPGPU-Sim PTX: Warning temp_param_reg was declared previous at _1.ptx:60 skipping new declaration
+GPGPU-Sim PTX: Warning param0 was declared previous at _1.ptx:61 skipping new declaration
+GPGPU-Sim PTX: Warning param1 was declared previous at _1.ptx:64 skipping new declaration
+GPGPU-Sim PTX: Warning retval0 was declared previous at _1.ptx:66 skipping new declaration
+[CUAPI] __cudaRegisterFunction
+[BENCH] Bitonic Sort 32768 elements
+[BENCH] Xuhao Chen <cxh@illinois.edu>
+[BENCH] Hardware Barrier
+[CUAPI] cudaMalloc
+[CUAPI] cudaMemcpy
+[DEBUG] Setting Ruby membar
+[BENCH] blockCount=32, threadCount=512
+[CUAPI] __cudaLaunch
+[DEBUG] pushing kernel '_Z17bitonicSortAtomicPfi' to stream 0
+[DEBUG] gridDim= (32,1,1) blockDim = (512,1,1)
+[DEBUG] Setting Ruby membar
+[DEBUG] Allocating CTA barrier: kernel_id=1, num_ctas=32
+[SYNC] CTA barrier allocated for Grid #1
+[DEBUG] CTA/core = 3, limited by: threads
+[SYNC] CTA barrier deallocated for Grid #1
+[DEBUG] Kenel done, CTA barrier deallocated
+[STAT] kernel_sim_cycle = 99670
+[STAT] tot_sim_cycle = 99670
+[STAT] tot_sim_insn = 51478528
+[STAT] tot_ipc = 516.490
+[RUBY_STATS] L1D_cache_miss_rate = 4.59932%
+[RUBY_STATS] L1I_cache_miss_rate = -nan%
+[RUBY_STATS] L2_cache_miss_rate = 6.01857%
+
+[STATS] simulation_time = 0 days, 0 hrs, 1 min, 38 sec (98 sec)
+[CUAPI] cudaMemcpy
+[DEBUG] Setting Ruby membar
+[BENCH] Pass

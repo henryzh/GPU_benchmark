@@ -1,0 +1,8 @@
+ptxas info    : Compiling entry function '_Z14invert_mappingPfS_ii' for 'sm_20'
+ptxas info    : Function properties for _Z14invert_mappingPfS_ii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 10 registers, 56 bytes cmem[0], 4352 bytes cmem[2]
+ptxas info    : Compiling entry function '_Z11kmeansPointPfiiiPiS_S_S0_' for 'sm_20'
+ptxas info    : Function properties for _Z11kmeansPointPfiiiPiS_S_S0_
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 12 registers, 88 bytes cmem[0], 4352 bytes cmem[2]

@@ -1,0 +1,1 @@
+./sad -i reference.bin,frame.bin -o out.bin

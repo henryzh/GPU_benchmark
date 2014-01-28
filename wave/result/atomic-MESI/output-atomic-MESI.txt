@@ -1,0 +1,41 @@
+[CUAPI] __cudaRegisterFatBinary
+[VERSION] GPGPU-Sim V3.1.2+ruby [build 14831]
+[RUBY] initializing gpusim_ruby
+[RUBY] init ruby
+[CUAPI] __cudaRegisterFunction
+[BENCH] Stencil-Wave <cxh@illinois.edu>
+[BENCH] Atomic Barrier
+[BENCH] Block Size: 512 (8,8,8) 
+[BENCH] Number of Blocks: 32
+[CUAPI] cudaMalloc
+[CUAPI] cudaMalloc
+[CUAPI] cudaMemcpy
+[DEBUG] Setting Ruby membar
+[CUAPI] cudaMemcpy
+[DEBUG] Setting Ruby membar
+[CUAPI] cudaMalloc
+[CUAPI] cudaMemcpy
+[DEBUG] Setting Ruby membar
+[CUAPI] __cudaLaunch
+[DEBUG] pushing kernel '_Z11wave_kernelPfS_fS_i' to stream 0
+[DEBUG] gridDim= (32,1,1) blockDim = (8,8,8)
+[DEBUG] Setting Ruby membar
+[DEBUG] Allocating CTA barrier: kernel_id=1, num_ctas=32
+[SYNC] CTA barrier allocated for Grid #1
+[DEBUG] CTA/core = 2, limited by: regs
+[SYNC] CTA barrier deallocated for Grid #1
+[DEBUG] Kenel done, CTA barrier deallocated
+[STAT] kernel_sim_cycle = 2381953
+[STAT] tot_sim_cycle = 2381953
+[STAT] tot_sim_insn = 64039712
+[STAT] tot_ipc = 26.885
+[STATS] gpu_tot_l1_miss_rate = -nan
+[STATS] gpu_tot_l2_miss_rate = 0.0625
+
+[STATS] simulation_time = 0 days, 0 hrs, 25 min, 46 sec (1546 sec)
+[CUAPI] cudaMemcpy
+[DEBUG] Setting Ruby membar
+[BENCH] Total error = 0.000000
+[BENCH] Average error = 0.000000
+[DEBUG] exit_simulation
+[DEBUG] Setting Ruby membar

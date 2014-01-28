@@ -1,0 +1,2 @@
+export PARBOIL_HOME=/home/cxh/workspace/parboil
+PYTHONPATH=$PARBOIL_HOME/common/python python $PARBOIL_HOME/benchmarks/bfs/tools/compare-output bfs-1M.out bfs.out

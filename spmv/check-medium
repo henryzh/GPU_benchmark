@@ -1,0 +1,2 @@
+export PARBOIL_HOME=/home/cxh/workspace/parboil
+PYTHONPATH=$PARBOIL_HOME/common/python python $PARBOIL_HOME/benchmarks/spmv/tools/compare-output bcsstk18.mtx.out $PARBOIL_HOME/datasets/spmv/medium/output/bcsstk18.mtx.out

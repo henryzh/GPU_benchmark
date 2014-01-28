@@ -1,0 +1,37 @@
+[CUAPI] __cudaRegisterFatBinary
+[VERSION] GPGPU-Sim V3.1.2+ruby [build 14831]
+[RUBY] initializing gpusim_ruby
+[RUBY] init ruby
+   Invalid token near "<" on line 6
+   Invalid token near ">" on line 6
+   Invalid token near "<" on line 385
+   Invalid token near ">" on line 385
+[CUAPI] __cudaRegisterFunction
+[CUAPI] __cudaRegisterFunction
+[BENCH] Bitonic Sort 32768 elements
+[BENCH] Xuhao Chen <cxh@illinois.edu>
+[BENCH] Atomic Barrier
+[CUAPI] cudaMalloc
+[CUAPI] cudaMemcpy
+[DEBUG] Setting Ruby membar
+[BENCH] blockCount=32, threadCount=512
+[CUAPI] __cudaLaunch
+[DEBUG] pushing kernel '_Z17bitonicSortAtomicPfi' to stream 0
+[DEBUG] gridDim= (32,1,1) blockDim = (512,1,1)
+[DEBUG] Setting Ruby membar
+[DEBUG] Allocating CTA barrier: kernel_id=1, num_ctas=32
+[SYNC] CTA barrier allocated for Grid #1
+[DEBUG] CTA/core = 3, limited by: threads
+[SYNC] CTA barrier deallocated for Grid #1
+[DEBUG] Kenel done, CTA barrier deallocated
+[STAT] kernel_sim_cycle = 190076
+[STAT] tot_sim_cycle = 190076
+[STAT] tot_sim_insn = 58411518
+[STAT] tot_ipc = 307.306
+[STATS] gpu_tot_l1_miss_rate = -nan
+[STATS] gpu_tot_l2_miss_rate = 0.0625
+
+[STATS] simulation_time = 0 days, 0 hrs, 2 min, 11 sec (131 sec)
+[CUAPI] cudaMemcpy
+[DEBUG] Setting Ruby membar
+[BENCH] Pass

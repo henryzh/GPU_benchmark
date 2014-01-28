@@ -1,0 +1,3 @@
+cp _cuobjdump_complete_output_atomic _cuobjdump_complete_output
+cp _ptx_info_atomic _ptx_info
+./bs

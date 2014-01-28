@@ -1,0 +1,2 @@
+export PARBOIL_HOME=/home/cxh/workspace/parboil
+./sgemm -i $PARBOIL_HOME/datasets/sgemm/medium/input/matrix1.txt,$PARBOIL_HOME/datasets/sgemm/medium/input/matrix2.txt,$PARBOIL_HOME/datasets/sgemm/medium/input/matrix2t.txt -o matrix3.txt
