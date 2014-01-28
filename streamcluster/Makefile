@@ -26,4 +26,4 @@ $(EXE): streamcluster_cuda_cpu.cpp streamcluster_cuda.cu streamcluster_header.cu
 	$(NVCC) $(INCS) $(NVCC_FLAGS) streamcluster_cuda_cpu.cpp streamcluster_cuda.cu streamcluster_header.cu -o $(EXE) -lcuda
 
 clean:
-	rm -f *.o *~ *.txt $(EXE) *.linkinfo
+	rm -f *.o *~ *.txt $(EXE) *.linkinfo _*
