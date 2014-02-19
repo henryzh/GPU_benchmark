@@ -24,4 +24,4 @@ args.o: $(COMMON)/args.c
 main.o: main.cc
 	$(CXX) $(CC_FLAGS) -c main.cc -o main.o
 clean: $(SRC)
-	rm -f $(EXE) *.o
+	rm -f $(EXE) *.o _*

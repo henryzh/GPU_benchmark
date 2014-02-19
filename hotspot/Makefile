@@ -17,4 +17,4 @@ EXE = hotspot
 release: $(SRC)
 	$(NVCC) $(NVCC_FLAGS) $(SRC) -o $(EXE) $(INCS) $(LIBS)  
 clean: $(SRC)
-	rm -f $(EXE) result.txt
+	rm -f $(EXE) *.txt _* 
