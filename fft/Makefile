@@ -22,4 +22,4 @@ parboil_cuda.o: $(COMMON)/parboil_cuda.c
 args.o: $(COMMON)/args.c
 	$(CC) $(CC_FLAGS) -c $(COMMON)/args.c -o args.o
 clean: $(SRC)
-	rm -f $(EXE) *.o
+	rm -f $(EXE) *.o _*

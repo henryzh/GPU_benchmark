@@ -26,4 +26,4 @@ kmeans: $(OBJS)
 kmeans_cuda.o: kmeans_cuda.cu 
 	$(NVCC) $(NVCC_FLAGS) -c kmeans_cuda.cu
 clean:
-	rm -f *.o *~ kmeans
+	rm -f *.o _* *~ kmeans *.txt

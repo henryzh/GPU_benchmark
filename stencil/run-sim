@@ -1,1 +1,1 @@
-./stencil -i 128x128x32.bin 128 128 32 1 -o 128x128x32.out
+./run-default

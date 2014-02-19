@@ -1,31 +1,29 @@
 
-SIM_ROOT=/scr1/pearson/gpgpu/gpgpu-sim-ruby
-BENCH_ROOT=/scr1/pearson/gpgpu/benchmarks
+SIM_ROOT=/data1/cxh/gpgpu-sim-ruby
+BENCH_ROOT=/data1/cxh/benchmarks
 MODEL="cuda"
 INPUT="sim"
 BENCH="srad1"
-CONFIG="ruby"
-OPTION="no_coherence_L1-a4-s5_L2-a16-s9
-        no_coherence_L1-a4-s6_L2-a16-s9
-        no_coherence_L1-a4-s7_L2-a16-s9
-        no_coherence_L1-a4-s8_L2-a16-s9
-        no_coherence_L1-a4-s9_L2-a16-s9
-        no_coherence_L1-a4-s10_L2-a16-s9"
-
-
+CONFIG="test"
+PROTOCOL=no_coherence
+OPTION="L1-a4-s5_L2-a16-s9
+        L1-a4-s6_L2-a16-s9
+        L1-a4-s7_L2-a16-s9
+        L1-a4-s8_L2-a16-s9
+        L1-a4-s9_L2-a16-s9
+        L1-a4-s10_L2-a16-s9"
 LOG_FILE=log.txt
 ERR_FILE=error.txt
 OUT_FILE=output.txt
-RESULT_DIR=$SIM_ROOT/results
+RESULT_DIR=/data1/cxh/results
 
-cd $BENCH_ROOT
-source no_coherence-runenv.sh
 cd $RESULT_DIR
 rm -f $ERR_FILE
 echo "CUDA Simulation on GPGPU-Sim <$CONFIG>"
 for BMK in $BENCH; do
 for OPT in $OPTION; do
 for SIZE in $INPUT; do
+	source $BENCH_ROOT/$PROTOCOL-env.sh
 	output_dir=$RESULT_DIR/$OPT-$BMK-$SIZE
 	mkdir $output_dir 2>> $RESULT_DIR/$ERR_FILE
 	echo ">>> Run $BMK <$SIZE> <$OPT> at `date`"
@@ -34,11 +32,10 @@ for SIZE in $INPUT; do
 	# launch gpgpu-sim
 	cd $BENCH_ROOT/$BMK
 	rm -f _cuobjdump*
-	cp $BENCH_ROOT/config/$CONFIG/$OPT/gpgpusim.config .
-	cp $BENCH_ROOT/config/$CONFIG/$OPT/baseline_icnt_config.txt .
-#	cp $BENCH_ROOT/config/$CONFIG/config_fermi_islip.icnt .
-#	cp $BENCH_ROOT/config/$CONFIG/$OPT/gpuwattch_gtx480.xml .
-
+	make clean > $output_dir/$LOG_FILE;
+	make > $output_dir/$LOG_FILE 2>> $output_dir/$ERR_FILE;
+	cp $SIM_ROOT/configs/$CONFIG/$PROTOCOL/$OPT/gpgpusim.config .
+	cp $SIM_ROOT/configs/$CONFIG/$PROTOCOL/$OPT/baseline_icnt_config.txt .
 	rm stats.txt config.out 2> $output_dir/$ERR_FILE
 	./run-$SIZE > $output_dir/$OUT_FILE 2>> $output_dir/$ERR_FILE
 	echo ">>> Check Results"
@@ -48,8 +45,7 @@ for SIZE in $INPUT; do
         mv ruby_stat.txt $output_dir/.
 	mv config.out $output_dir/.
 	mv gpgpu_inst_stats.txt $output_dir/.
-#	mv gpgpusim_power_report__* $output_dir/.
-
+	make clean
 	echo ">>> End $BMK <$SIZE> <$OPT> at `date`"
 	echo ">>> End $BMK <$SIZE> <$OPT> at `date`" >> $output_dir/$LOG_FILE
 	echo ">>> ========================================================"
