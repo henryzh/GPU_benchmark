@@ -1,4 +1,0 @@
-ptxas info    : Compiling entry function '_Z11wave_kernelPfS_fS_iPViS1_' for 'sm_20'
-ptxas info    : Function properties for _Z11wave_kernelPfS_fS_iPViS1_
-    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
-ptxas info    : Used 26 registers, 88 bytes cmem[0]
