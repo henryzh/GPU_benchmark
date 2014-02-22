@@ -5,10 +5,11 @@ MODEL="cuda"
 INPUT="sim"
 BENCH="BFS2"
 CONFIG="test"
-PROTOCOL=no_coherence
+#PROTOCOL=no_coherence
+PROTOCOL=SRRIP-3
 #PROTOCOL=TO_NC
-OPTION="64KL1"
-#OPTION="1ML2"
+#OPTION="64KL1"
+OPTION="1ML2"
 #OPTION="1M-512K"
 #OPTION="2M-1M"
 NUM=2
@@ -34,9 +35,6 @@ for SIZE in $INPUT; do
 	rm _cuobjdump*
 	cp $SIM_ROOT/configs/$CONFIG/$PROTOCOL/$OPT/gpgpusim.config .
 	cp $SIM_ROOT/configs/$CONFIG/$PROTOCOL/$OPT/baseline_icnt_config.txt .
-#	cp $BENCH_ROOT/config/$CONFIG/config_fermi_islip.icnt .
-#	cp $BENCH_ROOT/config/$CONFIG/$OPT/gpuwattch_gtx480.xml .
-
 	rm stats.txt config.out 2> $output_dir/$ERR_FILE
 	./run-$SIZE > $output_dir/$OUT_FILE 2>> $output_dir/$ERR_FILE
 	echo ">>> Check Results"
@@ -46,8 +44,6 @@ for SIZE in $INPUT; do
 	mv config.out $output_dir/.
 	mv gpgpu_inst_stats.txt $output_dir/.
 	mv ruby_stat.txt $output_dir/.
-#	mv gpgpusim_power_report__* $output_dir/.
-
 	echo ">>> End $BMK <$SIZE> <$OPT> at `date`"
 	echo ">>> End $BMK <$SIZE> <$OPT> at `date`" >> $output_dir/$LOG_FILE
 	echo ">>> ========================================================"
