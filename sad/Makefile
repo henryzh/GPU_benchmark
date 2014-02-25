@@ -17,9 +17,9 @@ all: $(OBJ)
 main.o: main.cu
 	$(NVCC) $(NVCC_FLAGS) main.cu -c -o main.o
 largerBlocks.o: largerBlocks.cu
-	$(NVCC) $(NVCC_FLAGS) largerBlocks_base.cu -c -o largerBlocks.o
+	$(NVCC) $(NVCC_FLAGS) largerBlocks.cu -c -o largerBlocks.o
 sad4.o: sad4.cu
-	$(NVCC) $(NVCC_FLAGS) sad4_base.cu -c -o sad4.o
+	$(NVCC) $(NVCC_FLAGS) sad4.cu -c -o sad4.o
 file.o: file.c
 	$(CC) $(CC_FLAGS) file.c -c -o file.o
 image.o: image.c
