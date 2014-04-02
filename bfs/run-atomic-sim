@@ -1,3 +1,0 @@
-cp ptx/_cuobjdump_complete_output_atomic _cuobjdump_complete_output
-cp ptx/_ptx_info_atomic _ptx_info
-./bfs -i graph_1M.dat -o bfs.out

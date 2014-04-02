@@ -1,1 +1,0 @@
-./vpr_exe sample_arch.xml bgm.latren -place -gpu_place on -place_algorithm bounding_box

@@ -1,3 +1,0 @@
-cp ptx/_cuobjdump_complete_output_hw _cuobjdump_complete_output
-cp ptx/_ptx_info_hw _ptx_info
-./bfs -i graph_UT.dat -o bfs.out
