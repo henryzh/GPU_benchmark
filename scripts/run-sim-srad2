@@ -1,20 +1,20 @@
 
 SIM_ROOT=/data1/cxh/gpgpu-sim-ruby
 BENCH_ROOT=/data1/cxh/benchmarks
+RESULT_DIR=/data1/cxh/results
 MODEL="cuda"
 INPUT="sim"
 BENCH="srad2"
 CONFIG="test"
 #PROTOCOL=no_coherence
-#PROTOCOL=TO_NC
-PROTOCOL=SRRIP-3
+PROTOCOL=TO_NC
+#PROTOCOL=SRRIP-3
 #OPTION="64KL1"
 OPTION="1ML2"
-NUM=1
+NUM=3
 LOG_FILE=log.txt
 ERR_FILE=error.txt
 OUT_FILE=output.txt
-RESULT_DIR=/data1/cxh/results
 
 cd $RESULT_DIR
 rm $ERR_FILE

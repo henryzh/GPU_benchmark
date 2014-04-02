@@ -1,5 +1,5 @@
 
-HOME=/data8/cxh
+HOME=/data1/cxh
 SIM_ROOT=$HOME/gpgpu-sim-ruby
 BENCH_ROOT=$HOME/benchmarks
 RESULT_DIR=/data1/cxh/results
@@ -7,9 +7,11 @@ MODEL="cuda"
 INPUT="sim"
 BENCH="srad1"
 CONFIG="test"
-PROTOCOL="no_coherence TO_NC"
-OPTION="64KL1"
-NUM=1
+#PROTOCOL="no_coherence TO_NC"
+PROTOCOL="TO_NC"
+OPTION="1ML2"
+#OPTION="64KL1"
+NUM=2
 LOG_FILE=log.txt
 ERR_FILE=error.txt
 OUT_FILE=output.txt

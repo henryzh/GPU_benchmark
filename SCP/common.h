@@ -14,7 +14,7 @@
     } }
 
 #define CUDA_SAFE_CALL(call) CUDA_SAFE_CALL_NO_SYNC(call);
-
+#define cutilSafeCall(call) CUDA_SAFE_CALL(call)
 #define CUT_CHECK_ERROR(errorMessage) {                                      \
     cudaError_t err = cudaGetLastError();                                    \
     if( cudaSuccess != err) {                                                \
@@ -23,5 +23,5 @@
         exit(EXIT_FAILURE);                                                  \
     }                                                                        \
   }
-
+#define cutilCheckMsg(errorMessage) CUT_CHECK_ERROR(errorMessage)
 #endif

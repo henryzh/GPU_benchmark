@@ -1,1 +1,0 @@
-./bfs -i graph_UT.dat -o bfs.out
