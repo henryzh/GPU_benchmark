@@ -1,0 +1,55 @@
+#CUDA_DIR = /home/cxh/local/cuda-3.1/cuda
+CUDA_DIR = /usr/local/cuda
+#SDK_DIR = /home/cxh/CUDA-SDK/cuda-4.2/C
+CUDA_LIB_DIR := $(CUDA_DIR)/lib
+ifeq ($(shell uname -m), x86_64)
+     ifeq ($(shell if test -d $(CUDA_DIR)/lib64; then echo T; else echo F; fi), T)
+     	CUDA_LIB_DIR := $(CUDA_DIR)/lib64
+     endif
+endif
+# Add source files here
+EXE := WordCount
+# Cuda source files (compiled with cudacc)
+CUFILES	:= main.cu MarsLib.cu MarsScan.cu MarsSort.cu
+# C/C++ source files (compiled with gcc / c++)
+CCFILES	:= MarsUtils.cpp
+OBJS := main.o MarsLib.o MarsScan.o MarsSort.o MarsUtils.o
+
+# Rules and targets
+#include ../../common/common.mk
+# C compiler
+CC = gcc
+CXX = g++
+CC_FLAGS = -g -O2
+CXX_FLAGS = -g -O2 -I$(CUDA_DIR)/include #-I$(SDK_DIR)/common/inc
+
+# CUDA compiler
+NVCC = $(CUDA_DIR)/bin/nvcc
+NVCC_FLAGS = -I$(CUDA_DIR)/include #-I$(SDK_DIR)/common/inc
+
+# 'make dbg=1' enables NVCC debugging
+ifeq ($(dbg),1)
+	NVCC_FLAGS += -g -O0
+else
+	NVCC_FLAGS += -O2
+endif
+
+# 'make emu=1' compiles the CUDA kernels for emulation
+ifeq ($(emu),1)
+	NVCC_FLAGS += -deviceemu
+endif
+
+$(EXE): $(OBJS)
+	$(NVCC) $(NVCC_FLAGS) $(OBJS) -o $(EXE) -L$(CUDA_LIB_DIR) -lcuda -lcudart -lm -lstdc++
+MarsUtils.o: MarsUtils.cpp
+	$(CXX) $(CXX_FLAGS) $< -c
+main.o: main.cu
+	$(NVCC) $(NVCC_FLAGS) main.cu -c -o main.o
+MarsLib.o: MarsLib.cu
+	$(NVCC) $(NVCC_FLAGS) MarsLib.cu -c -o MarsLib.o
+MarsScan.o: MarsScan.cu
+	$(NVCC) $(NVCC_FLAGS) MarsScan.cu -c -o MarsScan.o
+MarsSort.o: MarsSort.cu
+	$(NVCC) $(NVCC_FLAGS) MarsSort.cu -c -o MarsSort.o
+clean:
+	rm -f *.o *.txt *.out *.config _* *~ $(EXE) $(OBJS) 
