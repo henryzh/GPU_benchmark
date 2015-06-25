@@ -22,3 +22,6 @@ result.txt
 */generated/*
 */obj/*
 */bin/*
+*.xml
+*.icnt
+*.config
