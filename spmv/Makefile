@@ -5,7 +5,7 @@ OBJS=main.o file.o gpu_info.o parboil_cuda.o args.o
 TOOLS_FLAG=-I$(TOOLS_DIR)
 OBJS += common/convert_dataset.o common/mmio.o
 
-CUDA_DIR = /usr/local/cuda
+CUDA_DIR ?= $(CUDA_INSTALL_PATH)
 CUDA_LIB_DIR = $(CUDA_DIR)/lib64
 CC = gcc
 CXX = g++

@@ -2,7 +2,7 @@
 EXE := iix
 CUFILES	:= main.cu MarsScan.cu  MarsSort.cu MarsLib.cu 
 CCFILES	:= MarsUtils.cpp
-CUDA_DIR = /usr/local/cuda
+CUDA_DIR ?= $(CUDA_INSTALL_PATH)
 SDK_DIR = /home/cxh/CUDA-SDK/cuda-4.2/C
 CUDA_LIB_DIR := $(CUDA_DIR)/lib
 ifeq ($(shell uname -m), x86_64)

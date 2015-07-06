@@ -3,6 +3,7 @@
 //#include <time.h>
 #include <assert.h>
 #include "common.h"
+#include <cuda_runtime_api.h>
 
 #define BLOCK_SIZE 256
 #define STR_SIZE 256

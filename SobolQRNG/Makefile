@@ -1,11 +1,11 @@
-CUDA_DIR = /usr/local/cuda
+CUDA_DIR ?= $(CUDA_INSTALL_PATH)
 CUDA_LIB_DIR := $(CUDA_DIR)/lib
 ifeq ($(shell uname -m), x86_64)
      ifeq ($(shell if test -d $(CUDA_DIR)/lib64; then echo T; else echo F; fi), T)
         CUDA_LIB_DIR := $(CUDA_DIR)/lib64
      endif
 endif
-SDK_DIR := /home/cxh/CUDA-SDK/cuda-4.1
+SDK_DIR ?= $(NVIDIA_CUDA_SDK_LOCATION)
 SDK_LIB := -lshrutil_x86_64 -lcutil_x86_64 -L$(SDK_DIR)/shared/lib -L$(SDK_DIR)/C/lib -L$(SDK_DIR)/C/common/lib/linux
 CC := gcc
 CXX := g++

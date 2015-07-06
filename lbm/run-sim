@@ -1,1 +1,1 @@
-./lbm -i /home/cxh/workspace/parboil/datasets/lbm/short/input/120_120_150_ldc.of -o result.dat -- 1
+./lbm -i /home/hangzhang/work_space/benchmarks/dataset/parboil/lbm/short/input/120_120_150_ldc.of -o result.dat -- 1

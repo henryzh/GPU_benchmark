@@ -1,11 +1,11 @@
 #Xuhao Chen <cxh@illinois.edu>
-CUDA_DIR = /usr/local/cuda
+CUDA_DIR ?= $(CUDA_INSTALL_PATH)
 #CUDA_DIR = /home/cxh/local/cuda-5.5
 CUDA_LIB_DIR = $(CUDA_DIR)/lib64
 CC = gcc
 CXX = g++
 NVCC = $(CUDA_DIR)/bin/nvcc
-LIBS = -L/usr/local/cuda/lib64 -lm -lpthread -lstdc++
+LIBS = -L/home/hangzhang/local/cuda/lib64 -lm -lpthread -lstdc++
 INCS = -I$(CUDA_DIR)/include -I./
 CCFLAGS = -g -O2 -I$(INCLUDE) -L$(CUDA_LIB_DIR)
 CUFLAGS= -O2 -arch=sm_20

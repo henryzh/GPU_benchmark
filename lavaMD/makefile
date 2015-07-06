@@ -1,4 +1,4 @@
-CUDA_DIR = /usr/local/cuda
+CUDA_DIR ?= $(CUDA_INSTALL_PATH)
 CUDA_LIB_DIR := $(CUDA_DIR)/lib
 ifeq ($(shell uname -m), x86_64)
      ifeq ($(shell if test -d $(CUDA_DIR)/lib64; then echo T; else echo F; fi), T)
@@ -26,7 +26,7 @@ a.out:		main.o \
 			./util/timer/timer.o \
 			./util/device/device.o \
 			-lm -lstdc++\
-			-L/usr/local/cuda/lib64 \
+			-L$(CUDA_LIB_DIR) \
 			-lcuda -lcudart \
 			$(OMP_LIB) \
 			-o lavaMD

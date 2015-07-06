@@ -1,11 +1,11 @@
 # LBM, Xuhao Chen, UIUC
-COMMON=/scr/cxh/benchmarks/common
-CUDA_DIR = /usr/local/cuda
+COMMON=../common
+CUDA_DIR ?= $(CUDA_INSTALL_PATH)
 CUDA_LIB_DIR = $(CUDA_DIR)/lib64
 CC = gcc
 CXX = g++
 NVCC = $(CUDA_DIR)/bin/nvcc
-LIB = -L/usr/local/cuda/lib64 -lm -lpthread
+LIB = -L/home/hangzhang/local/cuda/lib64 -lm -lpthread
 INCLUDE = $(CUDA_DIR)/include -I$(COMMON)
 CC_FLAGS = -I$(INCLUDE) -L$(CUDA_LIB_DIR)
 NVCC_FLAGS = -I$(INCLUDE) -L$(CUDA_LIB_DIR) #-arch=sm_10

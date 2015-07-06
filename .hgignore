@@ -25,3 +25,5 @@ result.txt
 *.xml
 *.icnt
 *.config
+gpgpusim_power*
+include/*

@@ -1,4 +1,4 @@
-CUDA_DIR = /usr/local/cuda
+CUDA_DIR ?= $(CUDA_INSTALL_PATH)
 # CUDA toolkit libraries
 CUDA_LIB_DIR := $(CUDA_DIR)/lib
 ifeq ($(shell uname -m), x86_64)
