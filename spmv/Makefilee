@@ -1,0 +1,32 @@
+# SPMV Parboil
+COMMON=../common
+TOOLS_DIR=./common
+OBJS=main.o file.o gpu_info.o parboil_cuda.o args.o
+TOOLS_FLAG=-I$(TOOLS_DIR)
+OBJS += common/convert_dataset.o common/mmio.o
+
+CUDA_DIR = /home/hangzhang/local/cuda
+CUDA_LIB_DIR = $(CUDA_DIR)/lib64
+CC = gcc
+CXX = g++
+NVCC = $(CUDA_DIR)/bin/nvcc
+LIBS = -L$(CUDA_LIB_DIR) -lm -lpthread -lstdc++
+INCS = -I$(CUDA_DIR)/include
+CC_FLAGS = $(INCLUDE) -L$(CUDA_LIB_DIR)
+NVCC_FLAGS = -O2 -Xptxas -dlcm=cg #-g
+EXE = spmv
+
+release: $(OBJS)
+	$(NVCC) $(INCS) $(LIBS) $(NVCC_FLAGS) $(OBJS) -o $(EXE)
+main.o: main.cu
+	$(NVCC) $(INCS) $(LIBS) $(NVCC_FLAGS) $(TOOLS_FLAG) main.cu -c -o main.o
+file.o: file.cc
+	$(CXX) $(CC_FLAGS) -c file.cc -o file.o
+gpu_info.o: gpu_info.cc
+	$(CXX) $(CC_FLAGS) -c gpu_info.cc -o gpu_info.o
+parboil_cuda.o: $(COMMON)/parboil_cuda.c
+	$(NVCC) $(INCS) $(LIBS) $(CC_FLAGS) -c $(COMMON)/parboil_cuda.c -o parboil_cuda.o
+args.o: $(COMMON)/args.c
+	$(CC) $(CC_FLAGS) -c $(COMMON)/args.c -o args.o
+clean: $(SRC)
+	rm -f $(EXE) *.o

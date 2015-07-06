@@ -1,0 +1,19 @@
+#!/bin/bash
+
+BENCHMARKS=`ls -1 -F | awk '/\//' | sed 's/\///'`;
+
+default: 
+    for BMK in $BENCHMARKS;
+    do
+        make -C $BMK
+    done
+if [ $1 == "cleanup" ] 
+then 
+    for BMK in $BENCHMARKS;
+    do
+        cd $BMK
+        make clean
+        cd ..
+    done
+else
+fi
