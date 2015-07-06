@@ -27,3 +27,5 @@ result.txt
 *.config
 gpgpusim_power*
 include/*
+.nfs*
+gpgpu_inst_stats.txt
