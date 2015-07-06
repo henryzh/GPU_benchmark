@@ -6,4 +6,4 @@ SUPPORT=genformula
 include ../common.mk
 
 genformula: genformula.c
-	$(CC) -O -o $@ $<
+	$(CC) -I/../include/lonestar -O -o $@ $<

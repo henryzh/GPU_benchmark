@@ -1,6 +1,6 @@
 # Vector Addition
 BENCH_HOME=/home/cxh/benchmarks
-CUDA_DIR=/usr/local/cuda
+CUDA_DIR ?= $(CUDA_INSTALL_PATH)
 NVCC = $(CUDA_DIR)/bin/nvcc
 CC = gcc
 CXX = g++

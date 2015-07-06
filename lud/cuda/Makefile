@@ -1,5 +1,7 @@
+
+CUDA_DIR ?= $(CUDA_INSTALL_PATH)
 CC = gcc
-NVCC = /usr/local/cuda/bin/nvcc
+NVCC = $(CUDA_DIR)/bin/nvcc
 DEFS += -DGPU_TIMER $(SPACE)
 NVCCFLAGS += -I../common -O3 -use_fast_math -lm $(SPACE)# -arch=sm_13
 CFLAGS += -I../common -I/usr/include/cuda -O3 -Wall $(SPACE)

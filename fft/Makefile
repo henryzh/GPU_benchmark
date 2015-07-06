@@ -1,5 +1,5 @@
 # FFT, Xuhao Chen, UIUC
-CUDA_DIR = /usr/local/cuda
+CUDA_DIR ?= $(CUDA_INSTALL_PATH)
 CUDA_LIB_DIR = $(CUDA_DIR)/lib64
 COMMON = ../common
 CC = gcc

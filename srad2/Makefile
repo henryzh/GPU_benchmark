@@ -1,6 +1,6 @@
 # SRAD2 CUDA
 #CUDA_DIR = /home/cxh/local/cuda-3.1/cuda
-CUDA_DIR = /usr/local/cuda
+CUDA_DIR ?= $(CUDA_INSTALL_PATH)
 # CUDA toolkit libraries
 CUDA_LIB_DIR := $(CUDA_DIR)/lib
 ifeq ($(shell uname -m), x86_64)

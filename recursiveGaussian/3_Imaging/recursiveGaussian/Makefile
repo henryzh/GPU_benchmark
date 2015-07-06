@@ -2,7 +2,7 @@
 include ./findcudalib.mk
 
 # Location of the CUDA Toolkit
-CUDA_PATH ?= /usr/local/cuda
+CUDA_PATH ?= $(CUDA_INSTALL_PATH)
 
 # internal flags
 NVCCFLAGS   := -m${OS_SIZE}

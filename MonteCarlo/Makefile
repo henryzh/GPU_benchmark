@@ -1,15 +1,16 @@
-CUDA_DIR = /usr/local/cuda
+CUDA_DIR ?= $(CUDA_INSTALL_PATH)
 CUDA_LIB_DIR := $(CUDA_DIR)/lib
 ifeq ($(shell uname -m), x86_64)
      ifeq ($(shell if test -d $(CUDA_DIR)/lib64; then echo T; else echo F; fi), T)
         CUDA_LIB_DIR := $(CUDA_DIR)/lib64
      endif
 endif
-SDK_LIB := -lcutil_x86_64 -L/home/cxh/CUDA-SDK/cuda-4.2/shared/lib -L/home/cxh/CUDA-SDK/cuda-4.2/C/lib -L/home/cxh/CUDA-SDK/cuda-4.2/C/common/lib/linux
+SDK_LOCATION = $(NVIDIA_CUDA_SDK_LOCATION)
+SDK_LIB := -lcutil_x86_64 -L$(NVIDIA_CUDA_SDK_LOCATION)/shared/lib -L$(NVIDIA_CUDA_SDK_LOCATION)/C/lib -L$(NVIDIA_CUDA_SDK_LOCATION)/C/common/lib/linux
 CC := gcc
 CXX := g++
 NVCC := $(CUDA_DIR)/bin/nvcc
-INCS := -I$(CUDA_DIR)/include -I/home/cxh/CUDA-SDK/cuda-4.2/C/common/inc -I/home/cxh/CUDA-SDK/cuda-4.2/shared/inc
+INCS := -I$(CUDA_DIR)/include -I$(NVIDIA_CUDA_SDK_LOCATION)/C/common/inc -I$(NVIDIA_CUDA_SDK_LOCATION)/shared/inc
 LIBS := -L$(CUDA_LIB_DIR) $(SDK_LIB)
 EXE := MonteCarlo
 CUFILES := MonteCarlo_SM10.cu

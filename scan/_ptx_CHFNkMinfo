@@ -1,4 +1,0 @@
-ptxas info    : Compiling entry function '_Z11scan_kernelPiPjS_' for 'sm_20'
-ptxas info    : Function properties for _Z11scan_kernelPiPjS_
-    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
-ptxas info    : Used 13 registers, 56 bytes cmem[0], 4 bytes cmem[16]

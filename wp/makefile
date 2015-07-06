@@ -69,7 +69,7 @@ DEBUGOUTPUT = -DDEBUG_I=$(DEBUG_I) -DDEBUG_J=$(DEBUG_J) -DDEBUG_K=$(DEBUG_K) $(F
 ########################  END OF SECTION YOU CAN CHANGE ################
 
 #NVCC   = nvcc -DCUDA
-CUDA_INSTALL_PATH = /usr/local/cuda
+CUDA_INSTALL_PATH ?= /home/hangzhang/local/cuda
 NVCC    = $(CUDA_INSTALL_PATH)/bin/nvcc -DCUDA #--ptxas-options=-v
 PHASE   = -cuda --compiler-options -fno-strict-aliasing  
 NVOPT   = $(DEVICEEMU_NVCC) $(PROMOTE) $(DEBUGDEBUG) $(DEBUGOUTPUT) \

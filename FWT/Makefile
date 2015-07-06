@@ -1,5 +1,5 @@
 # Copyright 1993-2006 NVIDIA Corporation.  All rights reserved.
-CUDA_DIR = /usr/local/cuda
+CUDA_DIR ?= $(CUDA_INSTALL_PATH)
 # CUDA toolkit libraries
 CUDA_LIB_DIR := $(CUDA_DIR)/lib
 ifeq ($(shell uname -m), x86_64)
@@ -10,10 +10,11 @@ endif
 
 CC := gcc
 NVCC := $(CUDA_DIR)/bin/nvcc
-SDK_INC := /home/cxh/CUDA-SDK/cuda-4.1/C/common/inc
-SDK_SHARED_INC := /home/cxh/CUDA-SDK/cuda-4.1/shared/inc
-SDK_LIB := /home/cxh/CUDA-SDK/cuda-4.1/C/lib
-SDK_SHARED_LIB := /home/cxh/CUDA-SDK/cuda-4.1/shared/lib
+SDK_PATH ?= $(NVIDIA_CUDA_SDK_LOCATION)
+SDK_INC := $(SDK_PATH)/C/common/inc
+SDK_SHARED_INC := $(SDK_PATH)/shared/inc
+SDK_LIB := $(SDK_PATH)/C/lib
+SDK_SHARED_LIB := $(SDK_PATH)/shared/lib
 INCS := -I$(CUDA_DIR)/include -I./ -I$(SDK_INC) -I$(SDK_SHARED_INC)
 LIBS := -L$(SDK_LIB) -L$(CUDA_LIB_DIR) -L$(SDK_SHARED_LIB)
 EXE := FWT
