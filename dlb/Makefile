@@ -12,7 +12,7 @@ INCLUDE := $(CUDA_DIR)/include
 EXE := octreepart
 SRC := main.cu rand.cu lbstatic.cu helper.cu lbabp.cu octree.cu
 CU_DEPS := helper.h lbabp.h lbstatic.h octree.h octree_kernel.h rand.h task.h
-CUFLAGS += -arch=sm_20 -Xptxas -dlcm=cg #-g
+CUFLAGS += -arch=sm_13 -Xptxas -dlcm=cg #-g
 
 release: $(SRC)
 	$(CC) $(CUFLAGS) $(SRC) -o $(EXE) -I$(INCLUDE) -L$(CUDA_LIB_DIR)

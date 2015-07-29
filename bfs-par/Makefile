@@ -9,7 +9,7 @@ ifeq ($(shell uname -m), x86_64)
 endif
 
 NVCC = $(CUDA_DIR)/bin/nvcc
-CUFLAGS = -arch=sm_20 -Xptxas -dlcm=cg #--ptxas-options=-v
+CUFLAGS = -arch=sm_13 -Xptxas -dlcm=cg #--ptxas-options=-v
 INCLUDE = -I$(CUDA_DIR)/include -I./
 SRC = main.cu
 OBJS = args.o parboil_cuda.o

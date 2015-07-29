@@ -8,7 +8,7 @@ NVCC = $(CUDA_DIR)/bin/nvcc
 LIBS = -L/home/hangzhang/local/cuda/lib64 -lm -lpthread -lstdc++
 INCS = -I$(CUDA_DIR)/include -I./
 CCFLAGS = -g -O2 -I$(INCLUDE) -L$(CUDA_LIB_DIR)
-CUFLAGS= -O2 -arch=sm_20
+CUFLAGS= -O2 -arch=sm_13
 SRC = main.cu
 OBJ = args.o parboil_cuda.o file.o
 EXE = stencil

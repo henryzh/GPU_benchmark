@@ -7,7 +7,7 @@ CXX = g++
 NVCC = $(CUDA_DIR)/bin/nvcc
 LIB = -L/home/hangzhang/local/cuda/lib64 -lm -lpthread
 INCLUDE = -I$(CUDA_DIR)/include -I$(PARBOIL_DIR)
-NVCC_FLAGS = -O2 -arch=sm_20 -Xptxas -dlcm=cg
+NVCC_FLAGS = -O2 -arch=sm_13 -Xptxas -dlcm=cg
 SRC = bitonic_sort.cu $(PARBOIL_DIR)/parboil_cuda.c
 EXE = bs
 

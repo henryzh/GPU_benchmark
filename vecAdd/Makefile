@@ -6,7 +6,7 @@ CC = gcc
 CXX = g++
 CCFLAGS = -g -O2
 CXXFLAGS = -g -O2
-CUFLAGS = -O2 -arch=sm_20
+CUFLAGS = -O2 -arch=sm_13
 LIBS = -lm
 SRC = vecAdd.cu
 EXE = vecAdd

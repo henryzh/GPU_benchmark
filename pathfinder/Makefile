@@ -7,7 +7,7 @@ ifeq ($(shell uname -m), x86_64)
 endif
 
 CC := $(CUDA_DIR)/bin/nvcc
-CUFLAGS := -O2 -arch=sm_20 --ptxas-options=-v
+CUFLAGS := -O2 --ptxas-options=-v
 INCLUDE := $(CUDA_DIR)/include
 SRC = pathfinder.cu
 EXE = pathfinder

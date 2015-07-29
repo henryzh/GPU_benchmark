@@ -14,7 +14,7 @@ CC = gcc
 CXX = g++ 
 CCFLAGS = -g -O2 $(PORT_FLAGS)
 CXXFLAGS = -g -O2 $(PORT_FLAGS)
-CUFLAGS = -O2 -arch=sm_20 -Xptxas -dlcm=cg
+CUFLAGS = -O2 -arch=sm_13 -Xptxas -dlcm=cg
 LIBS = -L$(CUDA_LIB_DIR) -lm
 SRC = reduction.cu
 EXE = reduction

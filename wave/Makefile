@@ -11,7 +11,7 @@ INCLUDE := $(CUDA_DIR)/include
 
 EXE := wave
 SRC := wave.cu
-CUFLAGS += -arch=sm_20 #-Xptxas -dlcm=cg # -g
+CUFLAGS += -arch=sm_13 #-Xptxas -dlcm=cg # -g
 
 release: $(SRC)
 	$(CC) $(CUFLAGS) $(SRC) -o $(EXE) -I$(INCLUDE) -L$(CUDA_LIB_DIR)

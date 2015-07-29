@@ -8,7 +8,7 @@ ifeq ($(shell uname -m), x86_64)
 endif
 
 NVCC = $(CUDA_DIR)/bin/nvcc
-NVCC_FLAGS = -O2 -arch=sm_20 #-Xptxas -dlcm=cg # -g
+NVCC_FLAGS = -O2 -arch=sm_13 #-Xptxas -dlcm=cg # -g
 INCS = -I$(CUDA_DIR)/include
 LIBS = -L$(CUDA_LIB_DIR)
 SRC = hotspot.cu
