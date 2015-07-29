@@ -8,7 +8,7 @@ NVCC = $(CUDA_DIR)/bin/nvcc
 LIB = -L/home/hangzhang/local/cuda/lib64 -lm -lpthread
 INCLUDE = $(CUDA_DIR)/include
 CC_FLAGS = -O3 -I$(INCLUDE) -L$(CUDA_LIB_DIR)
-NVCC_FLAGS = -O3 -I$(INCLUDE) -L$(CUDA_LIB_DIR) -arch=sm_20# --ptxas-options=-v
+NVCC_FLAGS = -O3 -I$(INCLUDE) -L$(CUDA_LIB_DIR) -arch=sm_13# --ptxas-options=-v
 SRC = scan_sync.cu
 EXE = scan
 
