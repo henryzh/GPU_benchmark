@@ -1,5 +1,3 @@
-#!/bin/sh
-
-
-#./SimilarityScore 1024 256
 ./SimilarityScore 512 128
+#!/bin/sh
+#./SimilarityScore 1024 256

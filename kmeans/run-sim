@@ -1,1 +1,1 @@
-./kmeans -i kdd_cup
+./kmeans -i ./kdd_cup

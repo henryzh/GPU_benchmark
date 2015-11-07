@@ -1,8 +1,9 @@
 #!bin/bash
 
 BENCHMARKS=`ls -1 -F | awk '/\//' | sed 's/\///'`;
-BENCHMARKS="aes backprop barneshut BFS2 bfs-rod blk cc cfd dlb hotspot IIX kmeans KMN lavaMD lbm LBM2 lps lud mum NeuralNetwork nn NN nw pvc pvr ray sad SM spmv srad1 srad2 ssc streamcluster SYRK vecAdd wave WC wp pathfinder bitonicSort FWT MonteCarlo quasirandomGenerator reduction sad scan SCP"
+BENCHMARKS="aes backprop BFS2 bfs-rod blk cc cfd dlb hotspot IIX kmeans KMN lavaMD lbm LBM2 lps lud mum NeuralNetwork nn NN nw pvc pvr ray sad SM spmv srad1 srad2 ssc streamcluster SYRK vecAdd wave WC wp pathfinder FWT MonteCarlo quasirandomGenerator reduction sad scan SCP"
 
+#cannot run bitonicSort barneshut
 if [ $# > 1 ] && [ $1 == "clean" ] 
 then 
     for BMK in $BENCHMARKS;
@@ -21,4 +22,3 @@ else
         fi 
     done
 fi
-@
